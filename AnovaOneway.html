@@ -1,0 +1,245 @@
+<html>
+<title>일원배치법</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+<td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> <font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="anovaoneway2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <font size="4" color="#a70105"><b>일원배치법(One-way ANOVA) <br>
+            <br>
+            </b></font><font size=3><b>Stat>ANOVA&gt;One-way</b></font> <font size="4" color="#a70105"><b> 
+            </b></font> 
+            <center>
+              <font size="4" color="#a70105"><b></b></font> 
+            </center>
+            <br>
+            <br>
+            <font size="-1">하나의 인자가 측정값에 어떤 영향을 미치는가를 조사하는 방법이다. 인자의 수준이 k개이면 
+            각 수준을 적용한 측정값을 얻어서 수준 별 평균이 서로 동일한지 여부를 검정한다. 이것은 여러 모집단의 평균을 비교하는 
+            것과 같다. 모집단 k의 평균을 μ<sub>k</sub>라 하면 일원배치법에서 검정하는 가설은 다음과 같다.<br>
+            <br>
+            가설 : H<sub>0</sub> : μ<sub>1</sub> = μ<sub>2</sub> = <sup>...</sup> 
+            = μ<sub>k</sub><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H<sub>1</sub> 
+            : 적어도 하나의 평균이 다르다. <br>
+            <br>
+            분산분석결과 유의수준이 0.05일 때 해당 항목에 대한 P-Value가 0.05보다 작으면 귀무가설을 기각하고 적어도 
+            하나의 평균이 다르다는 결론을 내린다. <br>
+            일원배치법을 적용하기 위해서는 데이터의 정규성 및 등분산성을 확인하여야 하며, 이를 검정하기 위해서는 MINITAB의 
+            <A HREF=NormalTest.html#1>Normality Test</a> 와 <a href="equal_var.htm">Test 
+            for Equal variances</a>를 활용한다.<br>
+            <br>
+            <br>
+            <br>
+            <b><font size="2">1. MINITAB을 사용한 일원배치법 <a href="data/Anova01.zip">(Anova01.mtw)</a></font></b><br>
+            <br>
+            같은 등급의 서로 다른 5가지 소형 자동차(A, B, C, D, E)의 연비(리터당 평균 주행거리)를 비교하기 위해 소형 
+            자동차들의 연비를 측정한 결과 다음 데이터를 얻었다. 자동차별로 연비에 차이가 있다고 할 수 있는가 분석하라. <br>
+            </font><br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/AnovaOneway_02.gif border=0 align=center><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 가설 : H<sub>0</sub> : μ<sub>A</sub> 
+            = μ<sub>B</sub> = μ<sub>C</sub> = μ<sub>D</sub> = μ<sub>E</sub><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<sub>1</sub> 
+            : 적어도 하나의 평균이 다르다.<br>
+            <br>
+            <br>
+            <br>
+            <b>1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaOneway_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><a name="2"></a><b>1.2 Interval Plot을 
+            그려 본다. <a href="data/Anova01.zip">(데이터 : Anova01.mtw)</a></b><br>
+            <br>
+            분산분석에 앞서 다양한 형태의 시각적 분석도구를 통해 데이터를 분석함으로써 데이터의 특성 및 개선 포인트를 쉽게 잡아낼 
+            수 있다.<br>
+            <br>
+            ① Stat > ANOVA > Interval Plot 선택 <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ② Y variable 란에 '연비'와 Group variable란에 '자동차'를 입력 
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <b> [ Graph 창에 나타난 결과</b></font><b> ]</b></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_07.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위에서 보는 바와 같이 Interval Plot을 통해 각 수준 
+            별 평균 값을 비교할 수 있다. 이 예제에서는 자동차 B와 E의 연비가 낮으며 자동차 C와 D의 표준오차 구간이 넓으므로 
+            데이터 변동이 커 보인다. <br>
+            <br>
+            <br>
+            <br>
+            <a name="3"></a><b>1.3 Main Effects Plot을 그려 본다. <a href="data/Anova01.zip">(데이터 : Anova01.mtw)</a></b><br>
+            <br>
+            ① Stat > ANOVA > Main Effects Plot 선택 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_09.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ② Responses란에 '연비'와 Factors란에 '자동차'를 입력 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_10.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ③ OK 버튼을 클릭<br>
+            <br>
+            <b> [ Graph 창에 나타난 결과 ]</b></font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaOneway_11.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 자동차 C의 연비가 가장 높으며 자동차 E의 연비가 가장 낮은 
+            것을 볼 수 있으며 자동차 간의 연비는 차이가 있는 것으로 예측된다.<br>
+            <br>
+            <br>
+            <br>
+            <b>1.4 분산분석을 실시한다.</b><br>
+            <br>
+            ① Stat > ANOVA > One-way 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaOneway_12.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ② Response란에 '연비'와 Factor란에 '자동차'를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaOneway_13.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ③ OK 버튼을 클릭<br>
+            <br>
+            <b> &nbsp;&nbsp; [ Session 창에 나타난 결과 ]</b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaOneway_14.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위 결과에서 자동차 인자에 대한 P-value가 0.001이므로 
+            유의수준 5%에서 귀무가설을 기각하고 5종류의 자동차 간의 연비는 차이가 있다는 결론을 내린다.<br>
+            <br>
+            <br>
+            <br>
+            <b>1.5 결과 해석</b><br>
+            <br>
+            <b> [ Session 창에 나타난 결과</b> <b>]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaOneway_15.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> DF는 자유도(Degree of Freedom)이고 자동차의 자유도는 
+            4, 오차항(Error)의 자유도는 18이며 총 자유도는 자동차와 오차항의 자유도를 더한 4+18=22가 된다.<br>
+            SS는 제곱합(Sum of Square)이며 이는 측정값의 변동을 나타내는 값이다. 자동차의 변동은 27.323, 오차항의 
+            변동은 17.284이며 총변동은 27.323+17.284=44.606이 된다.<br>
+            MS(Mean Square)는 평균제곱이며 이는 제곱합을 자유도로 나눈 값이다. 따라서 자동차의 평균제곱은 27.323/4=6.831이고 
+            오차항의 평균제곱은 17.284/18=0.960이 된다.<br>
+            F는 F-통계량이며 자동차의 평균제곱을 오차항의 자유도로 나눈 값이다. 여기서 F-통계량은 6.831/0.960=7.11이 
+            된다. 이 값은 자유도가 자동차의 자유도 4, 오차항의 자유도 18인 F 분포를 따르며 P-Value를 계산하는데 사용된다. 
+            우리는 이 예제에서 0.014의 P-Value를 얻었다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+       
+      </table>
+    </tr>
+    </table>
+</body></html>
+

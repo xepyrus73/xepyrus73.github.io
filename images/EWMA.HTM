@@ -1,0 +1,197 @@
+<HTML>
+<HEAD>
+<TITLE>EWMA 관리도</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="5864">&nbsp;</td>
+    <td height="5864"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a> 
+            <br>
+            <br>
+            <CENTER>
+              <div align="left"><font size="4"><b> <font color="#a70105">EWMA 
+                관리도</font></b></font> 
+                <div align="center"></div>
+                <font size="4"><b> </b></font></div>
+            </CENTER>
+            <br>
+            <BR>
+            <b><font size="2">1. 지수가중 이동평균 (Exponentially Weighted Moving Average 
+            : EWMA)</font></b><br>
+            <br>
+            <font size="-1">t 시점까지의 관측치 <img src="images/ewma_01.gif" width="92" height="22" align="absmiddle">의 
+            지수가중 이동평균은 다음과 같이 정의 된다. <br>
+            <br>
+            <img src="images/ewma_02.gif" width="267" height="96"> <br>
+            <br>
+            여기서 α는 0과 1 사이의 값을 갖는 상수이고 <img src="images/ewma_03.gif" width="48" height="20" align="absmiddle">이다. 
+            지수가중 이동평균<img src="images/ewma_04.gif" width="21" height="21" align="absmiddle"> 
+            는 <img src="images/ewma_05.gif" width="112" height="23" align="absmiddle">의 
+            가중치를 주는 이동평균으로 과거 데이터일수록 가중치가 줄어드는 효과가 있다. 참고로 지수가중 이동평균의 가중치의 합은 
+            <br>
+            <br>
+            <img src="images/ewma_06.gif" width="168" height="44"> <br>
+            <br>
+            임을 알 수 있다. <img src="images/ewma_08.gif" width="19" height="21" align="absmiddle">의 
+            분산이<img src="images/ewma_09.gif" width="40" height="21" align="absmiddle"> 
+            이고 서로 독립일 때 <img src="images/ewma_10.gif" width="16" height="20" align="absmiddle">의 
+            분산은 다음과 같이 구해진다.<br>
+            <br>
+            <img src="images/ewma_11.gif" width="240" height="50"><br>
+            <br>
+            t가 증가함에 따라 <img src="images/ewma_10.gif" width="16" height="20" align="absmiddle">의 
+            분산은 다음 값으로 수렴한다.<br>
+            <br>
+            <img src="images/ewma_12.gif" width="179" height="51"><br>
+            <br>
+            <br>
+            따라서 샘플번호 t가 어느 수준 이상 커지면 지수가중 이동평균 관리도의 관리 한계선은 다음과 같이 구해진다. <br>
+            <br>
+            <img src="images/ewma_13.gif" width="167" height="129"><br>
+            <br>
+            <br>
+            공정평균의 미세한 이동을 탐지하는 데는 지수가중 이동평균 관리도가 <a href="movingaverage.htm">이동평균 
+            관리도</a>에 비해 휠씬 효과적이다. 그리고 α값이 작을수록 공정평균의 이동을 더 빨리 탐지할 수 있다. 참고로 α=1인 
+            경우 지수가중 이동평균 관리도는 <a href="xbar2.htm"><img src="images/ewma_14.gif" width="16" height="19" align="absmiddle" border="0">관리도</a>와 
+            동일함을 알 수 있다. </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <b><font size="2">2. MINITAB을 사용한 EWMA 관리도의 작성 
+            <a href="data/ewma.zip">(데이터 : Ewma.mtw)</a><br>
+            </font></b><font size="2"> </font> </font></td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="left"><font size="-1"><br>
+              <BR>
+              플라스틱 가공시 사용하는 첨가제 중의 하나는 제품의 투과율(%)이 중요한 특성이다. 이 특성을 관리하기 위해 16일 
+              동안 매일 하나의 제품에 대해 투과율을 측정하였다. 지수가중 이동평균(EWMA) 관리도를 이용하여 프로세스가 안정적인지를 
+              판단하라 <BR>
+              <BR>
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/ewma_15.gif" width="534" height="168"> <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/ewma_16.gif" width="172" height="282"><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> 2.2 EWMA관리도를 작성한다.</b> </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            ① Stat > Control Charts > EWMA…를 선택한다.<br>
+            <BR>
+            <BR>
+            <BR>
+            <img src="images/ewma_17.gif" width="496" height="365"> </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <BR>
+            ② Single column에 투과율(%)이 포함된 열을 선택하고 Subgroup size에 부분군의 수 1을<br>
+            &nbsp;&nbsp;&nbsp; 입력한 후, Weight of EWMA에 0.2를 입력한다.</font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/ewma_18.gif" width="560" height="389"> <br>
+            <br>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Estimate] <br>
+            <br>
+            <img src="images/ewma_19.gif" width="560" height="616"><br>
+            <br>
+            [S Limits]<br>
+            <br>
+            <img src="images/ewma_20.gif" width="560" height="455"><br>
+            <br>
+            <img src="images/ewma_21.gif" width="560" height="393"><br>
+            <br>
+            <img src="images/ewma_22.gif" width="464" height="282"><br>
+            <br>
+            <img src="images/ewma_23.gif" width="494" height="357"><br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <img src="images/ewma_24.gif" width="458" height="208"> <br>
+            <br>
+            [Options]<br>
+            <br>
+            <br>
+            <img src="images/ewma_25.gif" width="554" height="356"><br>
+            <br>
+            <br>
+            ③ OK를 클릭한다. <b><br>
+            </b><br>
+            다음과 같은 그래프와 함께 지수가중 이동평균 관리도에 대한 정보를 제공하는 창이 생성된다. <br>
+            <br>
+            <img src="images/ewma_26.gif" width="507" height="364"><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            위의 그래프를 보면 모든 점들이 관리한계선 내에 있으므로 이 프로세스는 이상이 없는 것으로 판단한다. <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

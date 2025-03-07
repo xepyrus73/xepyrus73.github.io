@@ -1,0 +1,126 @@
+<html>
+<title>공분산</title>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+
+ 
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+<td width=20>&nbsp; </td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><font size="-1"><br>
+            <font size="4" color="#a70105"><br>
+            <a name="1"></a></font></font><font size="4" color="#a70105"><b></b> 
+            <b>공분산(Covariance)</b></font> <br>
+            <br>
+            <font size=3><b>Stat>Basic Statistics>Covariance</b></font> 
+            <center>
+              <font size="4" color="#a70105"><b></b></font> 
+            </center>
+            <font size="-1"><br>
+            <br>
+            두 확률변수 X와 Y에 대하여 <img src=images/Covariance_01.gif border=0 align=absmiddle>값은 
+            X의 증감에 따른 Y의 증감의 경향을 나타낸다고 볼 수 있다. 따라서 <img src=images/Covariance_01.gif border=0 align=absmiddle>의 
+            기대값을 X와 Y의 공분산이라고 한다. </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"><br>
+            공분산은 <a href="CorrCoeff.html">상관계수</a>와 마찬가지로 두 확률변수 사이의 관련성을 나타내며 
+            상관계수처럼 두 변수 간의 증감의 경향을 나타내지만 분산처럼 각 변수의 단위에 의존한다. 즉, 표준화되지 않은 상관계수이다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Covariance_02.gif border=0 align=center><br>
+            <img src=images/Covariance_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ※ 상관계수와 공분산과의 관계<br>
+            <br>
+            공분산을 X의 표준편차와 Y의 표준편차로 나누어 X와 Y의 단위에 무관하도록 표준화시킨 값이 상관계수이다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Covariance_04.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 이때 s<sub>X</sub>는 X의 표준편차이고, s<sub>y</sub>는 
+            Y의 표준편차이다.<br>
+            <br>
+            <br>
+            <br>
+            <b><font size="2">1. MINITAB을 사용한 공분산의 계산 <a href="data/Corr01.zip">(데이터 : Corr01.mtw)</a></font></b><br>
+            <br>
+            ① Stat > Basic Statistics > Covariance 선택</font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/Covariance_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variables란에 '표면돌기'와 '평균입경'을 입력한다. 
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/Covariance_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <b> [ Session 창에 나타난 결과 ]</b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/Covariance_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 표면돌기와 평균입경의 공분산은 46.9444이다. 여기서 상관계수를 
+            구하려면 표면돌기와 평균입경의 표준편차는 각각 4.9272, 10.082이므로 상관계수는 46.9444/(4.9272 
+            <sup>.</sup> 10.082) = 0.945가 된다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+      
+    </tr>
+    </table>
+</body></html>
+

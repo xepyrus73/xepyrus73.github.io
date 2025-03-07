@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>공변량(Covariate) 응용의 예</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="1840">&nbsp;</td>
+    <td height="1840"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="1882"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size=4><b><font color="#a70105">공변량(Covariate) 
+            응용의 예</font></b></font><font color="#a70105"><br>
+            <br>
+            </font><br>
+            <font size="-1">어떤 실험에서 반응변수 y외에 반응변수와 선형 관계 (Linear relationship)을 
+            갖는 x가 존재하는 경우, 보통 x는 통제할 수 없는 변수 (Uncontrollable variable)이며 x에 따라 
+            y가 관측된다. 이러한 x를 공변량 (Covariate 또는 Concomitant variable)이라 부른다. 예를 
+            들어, 3개의 서로 다른 기계에 의해 생산되는 Monofilament Fiber간의 차이를 검출하려는 경우를 가정하자. 
+            그런데, Fiber의 강도는 그것의 Thickness에 영향을 받기 때문에 (일반적으로 두꺼운 Fiber가 얇은 Fiber보다 
+            강도가 높다.), 기계간의 순수한 강도상 차이를 검출하기 위해서는 Fiber 강도 (y)에 대한 두께 (Thickness, 
+            x)의 영향을 제거 시켜 줘야 한다. 이런 경우, MINITAB의 General Linear Model에서 반응변수 y는 
+            강도, 기계는 요인 (Factor), 두께는 공변량 변수로 지정하여 분석하면 기계간의 순수한 강도상 차이를 검출할 수 
+            있게 된다.</font><br>
+            <br>
+            <br>
+            <b><font size="2">(1) 상황</font></b><br>
+            <p><font size="-1">어느 사출 공장에서는 사출량을 늘리면 늘릴수록 양품의 비율이 높아질 것으로 예상되어 
+              사출량을 늘리고 있다. 실제 이러한 가정이 맞는지를 통계적으로 확인하기 위해서 여러 대의 사출기계로부터 사출량 (연속형 
+              데이터)에 따른 직행율 데이터를 아래 도표와 같이 수집하였다. 그런데, 문제는 기계 (이산형 데이터)에 따라 직행율에 
+              차이가 있는 것 같아, 기계에 상관없이 사출량과 직행율 간의 관계를 통계적으로 밝히는 것이 어려워, 기계도 사출량과 
+              같이 직행율에 영향을 미치는 인자로 함께 묶어 통계적인 분석을 시도하려 한다.</font></p>
+            <p><img src="images/anova_tips02_01.gif" width="557" height="248"></p>
+            <p><br>
+              <br>
+              <b><font size="2">(2) MINITAB 분석 결과 <br>
+              <br>
+              </font></b><font size="2"> <font size="-1">먼저, MINITAB의 General 
+              Linear Model의 초기 입력 창에서 기계를 변량인자로 지정한다. </font></font></p>
+            <p><img src="images/anova_tips02_02.gif" width="467" height="313"><br>
+              <br>
+              <br>
+              <font size="-1">다음, Covariates 버튼을 눌러, 아래 입력창에서 사출량을 공변량으로 지정한다. 
+              <br>
+              <br>
+              <img src="images/anova_tips02_03.gif" width="477" height="320"> 
+              <br>
+              <br>
+              </font></p>
+            <p><font size="-1">분석 실행 결과는 다음과 같다.<br>
+              <br>
+              <img src="images/anova_tips02_04.gif" width="553" height="512"> 
+              </font></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

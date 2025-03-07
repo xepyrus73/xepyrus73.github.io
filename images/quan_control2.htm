@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<TITLE>계량형 관리도(Variables Control Charts)</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="560"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <b><font size="4" color="#A70105">계량형 관리도(Variables Control Charts)</font></b><br>
+              <b><font size="2"><br>
+              <br>
+              <br>
+              <img src="images/point.gif" width="11" height="12"></font></b><font size="2"><a href="#1">계량형 
+              관리도의 개요</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="definetest.html">관리도의 
+              Test 방법</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="control_boxcox.html">Box-Cox 
+              변환</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="xbarr2.htm">X 
+              bar-R 관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="xbars2.htm">X 
+              bar-S 관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="imr2.htm">I-MR 
+              관리도 </a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="imrrs2.htm">I-MR-R/S 
+              관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="zmr2.htm">zmr2.htm</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="xbar2.htm">X 
+              bar 관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="r2.htm">R 
+              관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="s2.htm">S 
+              관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="individual2.htm">Individual 
+              관리도</a><br>
+              <img src="images/point.gif" width="11" height="12"><a href="movingrange2.htm">Moving 
+              Range 관리도 </a><br>
+              <br>
+              </font><b><font size="2"><br>
+              </font></b></div>
+            <div align="left"><font size="3"><b><A name="1">계량형 관리도</a></b></font></div>
+            <b><font size="2"></font></b>
+<p><b><font size="2"> <br>
+              1. 품질변동과 관리도</font></b><br>
+            </p>
+            <p><font size="-1"> 어느 생산공정에서나 생산되는 제품의 품질에는 차이가 나게 마련이다. 충분히 잘 설계되고 
+              관리되는 생산 공정이라 할지라도 완전히 동일한 품질의 제품을 생산하기란 현실적으로 불가능하다. 왜냐 하면, 조정이 
+              불가능한 작업환경의 변화, 작업자들간의 다소의 숙련도 차이, 동일한 종류의 생산설비 간의 기능차이, 사용하는 원자재간의 
+              미세한 차이 등과 같은 관리가 불가능한 많은 요인들이 존재하기 때문이다. 만약 이와 같은 불가피한 원인들에 의한 품질변동이 
+              문제가 되지 않는다면 그러한 품질변동은 자연스러운 것으로 받아 들일 수 있다. 통계적 품질관리에서는 이와 같은 자연스러운 
+              품질변동의 요인을 우연요인(Chance Cause)이라고 부르고 생산공정에서의 품질변동이 이러한 우연요인에 의해서만 
+              지배되는 경우 그 공정은 통계적으로 관리상태(In Statistical Control)에 있다고 말한다. 이와는 다른 
+              품질변동의 예로서 생산설비의 이상, 미숙련 작업자의 투입 또는 불량자재의 사용 등과 같이 공정이 관리상태를 이탈함으로써 
+              품질변동이 발생하는 경우를 들 수 있다. 이와 같이 우연요인 이외의 변동요인을 이상요인(Assignable Cause)이라 
+              부르고 공정에 이상요인이 발생한 경우 그 공정은 관리상태를 벗어났다고 말하거나 혹은 이상상태에 있다고도 한다. 관리도는 
+              공정에 이상요인이 발생하였을 경우 가능한 빨리 이를 탐지하여 수정조치를 취함으로써 불량품의 발생을 사전에 억제하는 
+              기능이 있다. 또한, 관리도는 품질특성의 변화를 그래프로 나타낸 것으로 관리상태에서의 품질특성치의 평균을 나타내는 
+              중심선(Central Line: CL), 관리상한선(Upper Control Limit: UCL), 그리고 관리하한선(Lower 
+              Control Limit: LCL)으로 구성된다. 샘플들을 추출하여 계산한 값들을 관리도상에 타점하여 점들이 관리한계선 
+              내에 있고 특별한 패턴이 없다면 공정은 관리상태에 있다고 하며, 만약 점들이 관리한계선을 벗어나거나 혹은 비정상적인 
+              패턴을 가진다면 공정은 이상상태에 있다고 판단하여 그 원인을 추적한다. <br>
+              </font><font size="-1"> </font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <b><font size="2"><br>
+            <br>
+            2. 계량형 관리도의 개요<br>
+            <br>
+            </font></b><font size="2"> </font> </font></td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="left"><font size="-1">제품의 품질특성이 길이, 중량, 강도, 부피 등과 같이 연속적으로 
+              변하는 수치를 갖는 경우를 계량형 품질특성이라 한다. 예를 들면 피스톤의 지름, 통조림의 중량, 철근의 인장강도, 
+              제품의 수율, 화학제품의 여과율 등은 계량형 품질특성에 해당한다. 품질특성이 계량형인 경우 공정의 평균 및 산포가 
+              직접 품질(불량률)에 영향을 미치므로 그 평균과 산포를 모두 관리할 필요가 있는데 공정평균의 관리를 위해서는 X bar 
+              또는 X 관리도가, 공정산포의 관리를 위해서는 R 또는 S 관리도가 널리 이용된다.<BR>
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

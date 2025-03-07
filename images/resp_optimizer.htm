@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>요인배치 실험의 Response Optimizer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=24 height="310">&nbsp;</td>
+    <td height="310" width="556"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">요인배치 
+            실험의 Response Optimizer</font></b></font><br>
+            <br>
+            <font size=3><b> Stat>DOE>Factorial >Response Optimizer<br>
+            <br>
+            <br>
+            </b><font size="-1">하나 이상의 반응변수의 목표 값을 동시에 만족시키기 위한 인자들의 최적의 수준조합을 
+            찾아내고자 할 때 사용한다. MINITAB의 Response Optimizer는 먼저 Stat > DOE > Factorial 
+            > Analyze Factorial Design… 을 사용해 실험 결과의 분석이 이루어져야 사용할 수 있다. </font></font> 
+            <font size="-1"><br>
+            <br>
+            <br>
+            <b><font size="2">1. MINITAB을 사용한 Response Optimizer의 실행 <a href="data/doe01_r.zip">(데이터 
+            : Doe01_r.mtw)</a></font></b></font><br>
+            <br>
+            <font size="-1">① DOE > Factorial > Response Optimizer...를 선택한다. <br>
+            </font><br>
+            <img src="images/Resp_Optimizer_01.gif" width="560" height="224"><br>
+            <p><br>
+              <font size="-1">② "Selected: " 에 반응변수 '여과율(Filtration)'을 <img src="images/Resp_Optimizer_02.gif" width="40" height="20" align="absmiddle">을 
+              이용하여 옮긴다. <br>
+              <br>
+              <img src="images/Resp_Optimizer_03.gif" width="475" height="281"> 
+              <br>
+              <br>
+              <br>
+              ③ Setup...을 클릭한다.<br>
+              <br>
+              반응변수에 대한 목표값(Target)을 입력한다. "Minimize"은 반응변수의 값을 최소화 시키는 인자들의 조건을 
+              찾아 내는 것이고, "Target"은 찾고자 하는 반응변수의 값이 특정한 값으로 주어 졌을 때 사용하며 "Maximize"은 
+              반응변수의 값을 최대로 하는 인자들의 조건을 찾을 때 사용한다.<br>
+              여기서는 하한값이 60, 상한값은 100 그리고 목표값이 90인 경우의 예를 살펴 보자. <br>
+              <br>
+              <img src="images/Resp_Optimizer_04.gif" width="560" height="324"> 
+              </font></p>
+            <p><img src="images/Resp_Optimizer_05.gif" width="560" height="96"><br>
+              <br>
+              
+            <font size="-1">Goal은 반응변수가 추구하는 특성에 따라 세 종류가 있다. <br>
+            <ul>
+              <li>Minimize : 최저의 반응값을 만족시키는 인자의 최적조합을 찾아준다. <br>
+              <li>Target : 목표로 하는 반응값을 만족시키는 인자의 최적조합을 찾아준다.<br>
+              <li>Maximize : 최고의 반응값을 만족시키는 인자의 최적조합을 찾아준다.
+            </ul>
+            <img src="images/Resp_Optimizer_06.gif" width="162" height="124"> 
+            <br>
+            <br>
+            Weight는 만족도 함수 모양을 정의 한다. (0.1에서 10까지)<br>
+            <ul>
+              <li>Weight가 0.1인 경우는 목표값(Target)의 한계 값을 만족하면 만족도(desirability)가 
+                1이 되게끔 되어 있고, <br>
+              <li>Weight가 10일 경우는 목표값에 근접하면 만족도가 1이 되고 ,<br>
+              <li>Weight가 1인 경우는 목표값에서 벗어나는 정도에 만족도의 값이 비례해서 작아지게끔 되어있다. 
+            </ul>
+            <br>
+            Importance는 반응변수의 상대적인 규정한다. (0.1에서 10까지) <br>
+            <br>
+            <br>
+            ④ Options...을 클릭한다.<br>
+            <br>
+            이 옵션은 목표로 하는 반응변수의 값을 찾기 위한 각 인자들의 수준의 시작 값을 지정하는 기능이다. 모든 최적 해를 구하는 
+            방법론은 처음에 각 인자들에 대한 초기값이 있어야 목표로 하는 반응변수의 목표 값을 찾아 갈 수 있다. 만일 우리가 어느 
+            정도 최적 해에 대한 정보를 가지고 있다면 이들 정보를 이용하여 각 인자들의 초기값을 지정하면 된다. 그러나 대부분의 
+            최적 해를 구하는 문제에서 이러한 정보를 얻기가 쉽지 않기 때문에 임의의 값으로 지정을 하면 된다. 본 예에서는 모든 
+            인자의 수준의 초기 값을 1로 주고 최적 해를 찾도록 하자.<br>
+            <br>
+            <img src="images/Resp_Optimizer_08.gif" width="462" height="267"> 
+            <br>
+            <br>
+            <br>
+            ⑤ OK 버튼을 클릭한다.<br>
+            <br>
+            <b>Response Optimization 창 <br>
+            <br>
+            <img src="images/Resp_Optimizer_09.gif" width="540" height="327"> 
+            <br>
+            <br>
+            </b>A인자의 수준은 0.6840, B인자의 수준은 0.9507, C인자의 수준은 0.9861, D인자의 수준은 0.9637 
+            일 때 반응값(여과율)은 89.9755로 목표값(Target)에 가장 근사한다. 목표값에 대한 만족도도 0.99918로 
+            높게 나타난다.<b><br>
+            <br>
+            Session 창에 나타난 결과<br>
+            <br>
+            <img src="images/Resp_Optimizer_10.gif" width="396" height="355"> 
+            <br>
+            <br>
+            </b>그래프의 결과와 동일하며 쉽게 모든 사항을 확인할 수 있다. <b><br>
+            <br>
+            </b><br>
+            ⑥ 수준의 변화<b><br>
+            <br>
+            </b>원하는 수준값을 직접입력 시킬 수도 있는데 위의 밑줄 쳐진 "Cur"에서 원하는 인자의 적합된 수준값을 두 번 
+            클릭하면 다음과 같은 창이 뜨는데 여기서 Input New Level Value 란에 원하는 값을 넣으면 된다. 우선은 
+            A인자에 수준을 0.7로 해 보겠다. <br>
+            <b><br>
+            <img src="images/Resp_Optimizer_11.gif" width="328" height="108"><br>
+            <br>
+            <br>
+            ■ 변화된 결과 보기 <br>
+            <br>
+            <img src="images/Resp_Optimizer_12.gif" width="560" height="437"> 
+            <br>
+            </b>반응값과 만족도가 변화됨을 알 수 있다. A인자의 수준이 0.7로 변화하면 반응값은 90.1309로 변화되고 만족도는 
+            0.98691이 된다. 또한 위의 화살표 되어있는 붉은 선을 직접 움직이면서도 변화 시킬 수 있다.<br>
+            MINITAB에서는 이 Session 창의 최적 해를 구하려면 반드시 인자의 변수 명을 영문으로 입력해야 된다. 만일 
+            변수 명을 한글로 입력하면 Response Optimization의 그래프 화면은 출력되지만 Session 창의 Response 
+            Optimization 은 출력되지 않는다. 이것은 MINITAB이 영문환경에서 개발 되었기 때문에 한글을 인식하지 못하는 
+            프로그램 상의 오류인 것으로 생각된다. 다시 한번 강조 하지만 인자들의 변수 명을 반드시 영문으로 지정할 것을 강조한다. 
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

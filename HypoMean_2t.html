@@ -1,0 +1,138 @@
+<html>
+<title>2-Sample t 검정</title>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')"  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="2436">&nbsp;</td>
+    <td height="2436"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="hypomean_2t2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <center>
+              <font size="4" color="#a70105"></font><b></b> 
+              <div align="left"> <b><font size="4" color="#a70105"> 2-Sample t 
+                검정<br>
+                <br>
+                </font><font size="3"><b>Stat&gt; Basic Statistics&gt; 2 Sample 
+                t </b></font><font size="4" color="#a70105"> </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <font size="-1">표준편차를 모를 때 서로 독립인 두 집단의 평균을 비교하기 위해 사용한다. <a href="HypoMean_Z.html">1-Sample 
+            Z 검정</a>과 마찬가지로 두 집단 데이터 각각의 정규성 여부를 검토하여야 하며, 이는 MINITAB의 <A HREF=NormalTest.html> 
+            Normality Test</a>를 통해 확인할 수 있다. 단, 시료수가 많은 경우 (보통 각각 30개 이상), 정규성을 
+            확인할 필요가 없다. 아울러, 두 집단간의 분산이 같은지를 사전에 검토해야 하며, 이는 MINITAB의 Test for 
+            Equal Variances 또는 <a href="HypoVar.html">2 Variances</a>를 통해 확인할 
+            수 있다.<br>
+            <br>
+            <br>
+            <br>
+            <b> <font size="2">1. MINITAB을 사용한 2 Sample t 검정 <a href="data/Hypo03.zip">(데이터 
+            : Hypo03.mtw) </a></font></b><font size="2"><br>
+            </font><br>
+            농약 살충제의 원제의 순도는 원료에 포함되는 불순물의 함량에 의해 크게 좌우된다. 현재 원료의 공급업체는 B인데, A라는 
+            업체는 B에 비해 낮은 불순물 함량을 가지고 있다고 주장하고 있다. A와 B업체의 원료에서 각각 랜덤하게 추출된 샘플의 
+            불순물 함량 데이터를 통해 위의 사실을 유의수준 5%에서 검정하여라.<br>
+            <br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/HypoMean_2t_01.gif border=0 align=center><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> A라는 업체는 B에 비해 낮은 불순물 함량을 가지고 있다고 주장하므로 
+            다음과 같이 가설을 설정한다.<br>
+            <br>
+            <I>H</I><sub>0</sub> : <I>u</I><sub>A</sub> = <I>u</I><sub>B</sub> 
+            <br>
+            <br>
+            <I>H</I><sub>1</sub>: <I>u</I><sub>A</sub> < <I>u</I><sub>B</sub><br>
+            <br>
+            <br>
+            <br>
+            <b>1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoMean_2t_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> 1.2 MINITAB의 실행 </b><br>
+            <br>
+            ① Stat > Basic Statistics > 2-Sample t 선택 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/HypoMean_2t_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">② 업체A, B의 데이터 열을 입력한다. </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <br>
+            <img src=images/HypoMean_2t_06.gif border=0 align=center> <br>
+            <br>
+            <img src=images/HypoMean_2t_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <b>Session 창에 나타난 결과 </b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoMean_2t_08.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <br>
+            <br>
+            <font size=2><b> <font size="-1">1.3 결과 해석 </font></b></font><font size="-1"><br>
+            <br>
+            P-Value 가 0.001<0.05 이므로 <I>H</I><sub>0</sub> 를 기각한다. 즉, 업체 A는 업체B에 
+            비해 낮은 불순물 함량을 가지고 있다고 말할 수 있다. <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+          </td>
+        </tr>
+      </table>
+      
+    </tr>
+    </table>
+</body></html>
+

@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>혼합물 실험의 Contour/Surface (Wireframe) Plot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="4203">&nbsp;</td>
+    <td height="4203"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="317"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><font color="#a70105"><b>혼합물 
+            실험의 Contour/Surface (Wireframe) Plot</b></font></font><br>
+            <br>
+            <br>
+            <font size="-1">Contour Plot은 이차원의 평면 그래프로 이 Plot은 만족할 만한 반응 값을 확인하고 
+            조건을 잡는데 유용하다.<br>
+            Surface(wireframe) Plot은 3차원의 표면으로 출력되는 그래프로 이 Plot은 만족할 만한 반응 값을 
+            확인하고 조건을 잡는데 유용하다.<br>
+            <br>
+            <br>
+            <font size="2">1. Contour/Surface(Wireframe) Plot의 작성 <a href="data/sim_cen_r.zip">(데이터 
+            : Sim_Cen_r.mtw)</a> </font><br>
+            <br>
+            ① Stat > DOE > Mixture > Contour/Surface(Wireframe) Plots...을 선택한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_01.gif" width="567" height="213"><br>
+            <br>
+            <br>
+            ② Contour plot과 Surface (Wireframe) plot을 선택하고 각각 Setup...을 클릭한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_02.gif" width="370" height="175"> <br>
+            <br>
+            <br>
+            ③ Response 란에 '탄성계수'를 입력한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_03.gif" width="564" height="392"><br>
+            <ul>
+              <li>Components 란은 실험의 성분(인자)을 각 각 어떤 축(X,Y,Z)으로 할 것인지를 지정할 수 있다. 
+                본 예에서는 Select a triplet of components for a single plot을 선택하여 
+                세 성분을 축으로 사용한다. 즉, X축에 접착제, Y축에 산화제 그리고 Z축에 연료를 지정하였다. 사용자가 얼마든지 
+                각 축 (X,Y,Z)을 지정할 수 있다. 만약 성분이 4개 있다면 아래에 있는 Select four components 
+                for a matrix plot을 선택한다. 그 외에 4개 이상(Generate plots for all triplets 
+                of components: 세 성분을 짝을 지어 모든 경우를 나타냄)이거나 공정변수의 쌍(Select a pair 
+                of numeric process variables for a single plot, Generate plot 
+                for all pair of numeric process variables)으로 비교할 수 있다.<br>
+              <li>Model Fitted in에서는 모델의 적합을 실험 점의 비율로 할 것인지 Pseudo 성분으로 할 것인지를 
+                선택한다.<br>
+              <li>Component Unit in Plots에서는 Plot에 실험 점을 어떤 유형으로 나타낼지를 지정하는데 혼합량으로 
+                하려면 Amount를 성분 비로 하려면 Proportion을 선택하면 된다. 또한 Pseudo성분으로 하려면 Pseudocomponent를 
+                선택한다. <br>
+            </ul>
+            <br>
+            ☞ Pseudo성분<br>
+            MINITAB에서 default로 성분의 하한을 0으로 지정한다. 그러나 어떤 성분은 반드시 들어가야 하기 때문에 하한을 
+            0으로 지정해서는 안되며, 또한 어떤 성분은 일정량 이상 들어가서는 안 되는 경우도 있는데 이때 상한을 지정해야 한다. 
+            Pseudo 성분 데이터 영역을 rescale 하여 각 성분의 최소허용 가능량을 0으로 한다. <br>
+            <br>
+            <br>
+            ④ Contours...를 클릭한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_04.gif" width="465" height="259"> <br>
+            <br>
+            Contour Levels 란에 Number부분에 5를 입력하면 5개의 등고선이 생긴다.(2-15까지 입력) Line 
+            Styles는 등고선의 형태를 나타내는데 각각 다른 선을 선택했다. <br>
+            Line Colors는 선의 색을 검정으로 할지 각각 다른 색을 할 지를 선택한다. <br>
+            <br>
+            <br>
+            ⑤ Options...를 클릭한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_05.gif" width="526" height="275"> <br>
+            <br>
+            <1> 각 축의 최소 경계선을 선정한다. 본 예에서는 하한 치를 최소값으로 지정하였다. 그러나 최소값을 따로 지정할 수도 
+            있다. 그래프의 Grid Lines의 구간을 0.1로 정했다.<br>
+            <2> Design Points 란에 Displayed on the plot을 클릭하면 실험 점을 표시해 준다. <br>
+            <br>
+            <br>
+            ⑥ Surface (Wireframe) plot의 Setup...을 클릭<br>
+            <br>
+            <img src="IMAGES/contourplot3_06.gif" width="370" height="135"> <br>
+            <br>
+            <br>
+            ⑦ Response 란에 '탄성계수'를 입력한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_07.gif" width="565" height="382"><br>
+            <ul>
+              <li>Components 란은 실험의 성분(인자)을 각 각 어떤 축(X,Y,Z)으로 할 것인지를 지정할 수 있다. 
+                본 예에서는 Select a triplet of components for a single plot을 선택하여 
+                세 성분을 축으로 사용한다. 즉, X축에 접착제, Y축에 산화제 그리고 Z축에 연료를 지정하였다. 사용자가 얼마든지 
+                각 축 (X,Y,Z)을 지정할 수 있다. 만약 성분이 4개 있다면 아래에 있는 Select four components 
+                for a matrix plot을 선택한다. 그 외에 4개 이상(Generate plots for all triplets 
+                of components: 세 성분을 짝을 지어 모든 경우를 나타냄)이거나 공정변수의 쌍(Select a pair 
+                of numeric process variables for a single plot, Generate plot 
+                for all pair of numeric process variables)으로 비교할 수 있다.<br>
+              <li>Model Fitted in에서는 모델의 적합을 실험 점의 비율로 할 것인지 pseudo성분으로 할 것인지를 
+                선택한다.<br>
+              <li>Component Unit in Plots에서는 Plot에 실험 점을 어떤 유형으로 나타낼지를 지정하는데 혼합량으로 
+                하려면 Amount를 성분 비로 하려면 Proportion을 선택하면 된다. 또한 Pseudo성분으로 하려면 Pseudocomponent를 
+                선택한다. <br>
+            </ul>
+            <br>
+            ⑧ Wireframe...를 클릭한다. <br>
+            <br>
+            <img src="IMAGES/contourplot3_08.gif" width="370" height="159"> <br>
+            <br>
+            Wireframe의 색상과 Surface의 색상을 원하는 형태로 지정할 수 있다.<br>
+            <br>
+            <br>
+            ⑨ Options...를 클릭한다.<br>
+            <br>
+            <img src="IMAGES/contourplot3_09.gif" width="526" height="234"><br>
+            <br>
+            각 축의 최소 경계선을 선정한다. Specify를 선택하여 직접 입력할 수도 있다. <br>
+            Title 란에는 plot의 제목을 지정할 수 있다. <br>
+            <br>
+            <br>
+            ⑩ OK를 클릭한다.<br>
+            <br>
+            Graph 창에 나타난 결과 : Contour Plot <br>
+            <br>
+            <img src="IMAGES/contourplot3_10.gif" width="395" height="312"><br>
+            <br>
+            산화제가 0.45이고 연료가 0.55일 때 접착제가 0쪽으로 갈 수록 탄성계수가 3000이상인 등고선을 그리고 있다. 
+            위의 그림에서 적색의 점으로 표시한 지역이 탄성계수가 3000이상이 되는 영역이다.<br>
+            <br>
+            <br>
+            Graph 창에 나타난 결과 : Surface Plots <br>
+            <br>
+            <img src="IMAGES/contourplot3_11.gif" width="420" height="302"> <br>
+            <br>
+            Contour Plot과 동일한 결과가 나온다. 이 Plot은 A와 B의 값의 변화에 대한 반응변수를 3차원그래프로 그린 
+            것이다. Contour Plot에 비하여 좀 더 시각적인 효과 높을 수 있으나 반응변수의 특정한 값을 만족하는 인자들의 
+            값을 알고자 할 때는 Contour Plot이 좀 더 유용하게 쓰일 수 있다. 따라서 Contour Plot과 Surface 
+            Plot을 함께 사용하는 것이 바람직 하다. </font> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

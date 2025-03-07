@@ -1,0 +1,134 @@
+<html>
+<title>계측기 선형성</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=621>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="597"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td  height="323"> 
+            <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="gagelinear2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+              <br>
+              <font size="4" color="#a70105"><b> 계측기 선형성(Gage Linearity)</b></font><br>
+              <br>
+              <b><font size=3><b><font color="#000000">Stat>Quality Tools&gt;<b>Gage 
+              Linearity Study</b> </font></b></font></b> <br>
+              <br>
+              <br>
+              <font size="-1">측정기에 따라서는 측정값에 따라 <A HREF=MeasureManage2.html#2>정확도</a>가 
+              달라질 수도 있다. 0 ~ 300Kg까지 측정 가능한 저울의 경우를 예를 들어 보자. 이 저울로 체중을 측정할 때, 
+              50Kg 정도 되는 청소년의 체중은 정확하게 측정하면서 100Kg 정도 되는 씨름 선수의 체중을 측정할 때는 참값과 
+              다소 차이가 나도록 측정한다면 이 저울은 선형성 문제가 있는 것이다.<br>
+              </font><br>
+              <br>
+              <br>
+              <font size=3><b> <font size="2">1. 사용 방법 <a HREF="data/Gage03.zip">(데이터 : Gage03.mtw)</a></font></b></font><br>
+              <br>
+              <font size="-1">MINITAB에서는 측정기의 선형성을 분석하는 도구로서 Gage Linearity Study를 
+              제공하고 있는데, 이하 예를 통하여 사용 방법을 알아본다.<br>
+              <br>
+              L 전자에서는 측정시스템의 정확도를 검증하기 위하여 Gage linearity Study를 실시하였다. 데이터는 다음과 
+              같다.<br>
+              </font><br>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/GageLinear_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 부품과 참값, 그리고 측정치를 입력한다. 여기서 Master는 참값을 의미한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/GageLinear_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Quality Tools > Gage Linearity Study 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/GageLinear_03.gif border=0 align=center> 
+            <br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Part number에는 Part, Master measurement에는 Master 그리고 Measurement data에는 
+                        <br>&nbsp;&nbsp;&nbsp;측정치에 대한 데이터를 선택한다. Process Variation은 총 공정 변동량 
+                        (6<sup>*</sup>historical sigma)<br>&nbsp;&nbsp;&nbsp;을 입력한다. (여기서는 15로 가정).<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/GageLinear_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <br>
+            <br>
+            <b> 1.3 결과 해석</b><br>
+            <br>
+            <b>[ Session 창에 나타난 결과 ]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/GageLinear_05.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 이 계측기는 측정 구간에 따라 오차의 부호 및 값이 선형으로 변하고 
+            있고, %linearity는 13.167로서 아래 평가 기준치와 비교해 볼 때, 계측기로서 사용이 부적합하므로 적절한 
+            교정이 요구되고 있다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/GageLinear_06.gif border=0 align=center><br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+	
+    </tr>
+    </table>
+</body></html>
+

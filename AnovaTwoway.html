@@ -1,0 +1,241 @@
+<html>
+<title>이원배치법</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="4502">&nbsp;</td>
+    <td height="4502"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="anovatwoway2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <b><font size="4" color="#a70105">이원배치법(Two-way ANOVA)</font></b> 
+            <br>
+            <br>
+            <font size=3><b>Stat>ANOVA&gt;Interactions Plot</b></font> <br>
+            <br>
+            <br>
+            <font size="-1"> 두 개의 인자가 측정값에 어떠한 영향을 미치는가를 분석하는 방법이다. 두 개의 인자를 기준으로 
+            각 수준별로 평균의 동일성과 교호작용의 효과를 조사하는 것이다.<br>
+            교호작용(Interaction)이란 2개 이상의 인자 사이의 조합에서 발생하는 변동을 말한다. 예를 들어 인장강도에 영향을 
+            미치는 변동요인으로 합성온도의 효과, 제조공법의 효과, 합성온도와 제조공법의 조합에서 이루어지는 교호작용의 효과, 실험오차 
+            등으로 분해될 수 있을 것이다. 교호작용을 조사하려면 각 인자의 수준 조합에서 실험을 2회 이상 반복야 한다. MINITAB의<A HREF=interactionplot1.html> 
+            Stat > ANOVA > Interactions Plot</a>를 이용하여 교호작용 Graph 창를 그릴 수 있다. 
+            <br>
+            2개의 인자를 A와 B라 하고 A의 처리효과를 <i>a</i><sub>i</sub> (i = 1, 2, · · ·, l), 
+            B의 처리효과를 <i>b</i><sub>j</sub> (j = 1, 2, · · ·, m)라고 하면 이원배치법에서 검정하는 
+            가설은 다음 세 가지이다. <br>
+            <br>
+            <br>
+            a) 인자 A의 처리효과에 대한 가설<br>
+            <br>
+            가설 : H<sub>0</sub> : <I>a</I><sub>1</sub> = <I>a</I><sub>2</sub> = 
+            <sup>...</sup> = <I>a</I><sub>1</sub> (인자 A의 각 수준에서의 처리효과가 같다.)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<sub>1</sub> 
+            : H<sub>0</sub>가 아니다. (인자 A의 적어도 하나의 수준에서는 처리효과가 다르다.) <br>
+            <br>
+            b) 인자 B의 처리효과에 대한 가설<br>
+            <br>
+            가설 : H<sub>0</sub> : <I>b</I><sub>1</sub> = <I>b</I><sub>2</sub> = 
+            <sup>...</sup> = <I>b</I><sub>m</sub> (인자 B의 각 수준에서의 처리효과가 같다.)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<sub>1</sub> 
+            : H<sub>0</sub>가 아니다. (인자 B의 적어도 하나의 수준에서는 처리효과가 다르다.)<br>
+            <br>
+            c) 인자 A와 B의 교호작용에 대한 가설<br>
+            <br>
+            H<sub>0</sub> : <I>(ab)</I><sub>ij</sub> = 0 (<i>i</i>=1, 2, · · ·, 
+            l, j = 1, 2, · · · , <i>m</i>) (인자 A와 B 간의 교호작용이 유의하지 않다.) <br>
+            H<sub>1</sub> : H<sub>0</sub>가 아니다. (인자 A와 B 간의 교호작용이 유의하다.) <br>
+            <br>
+            분산분석결과 유의수준이 0.05일 때 해당 항목에 대한 P-value가 0.05보다 작으면 귀무가설을 기각하고 해당 항목의 
+            처리효과가 유의하다라는 결론을 내린다. 이원배치법을 적용하기 위해서는 데이터 (또는 잔차)의 정규성 및 등분산성, 독립성 
+            등을 확인하여야 하며, 이는 과정에서 설명한다. <br>
+            <br>
+            <br>
+            <b><font size="2">1. MINITAB을 사용한 이원배치법<a href="data/Anova03.zip"> 
+            (데이터 : Anova03.mtw)</a></font></b><br>
+            <br>
+            특정 화학 제품을 압력관(Pressure vessel)에 통과시켜 생산하고 있다. 이 제품의 여과율(Filtration 
+            rate)에 대한 공정 요인들의 영향을 평가하기 위해 공정온도 2수준, 포름알데히드 농도 2수준에서 반복 4회씩 실험을 
+            한 결과 여과율에 대한 데이터가 다음과 같다. 분산분석을 실시하려고 한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="287"> <font size="-1"><img src=images/AnovaTwoway_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaTwoway_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.2 Main Effects Plot을 그려 본다.</b><br>
+            <br>
+            분산분석에 앞서 다양한 형태의 시각적 분석도구를 통해 데이터를 분석함으로써 데이터의 특성 및 개선 포인트를 쉽게 잡아낼 
+            수 있다.<br>
+            <br>
+            ① Stat > ANOVA > Main Effects Plot 선택 </font></td>
+        </tr>
+        <tr> 
+          <td height="309"> <br>
+            <br>
+            <img src=images/AnovaTwoway_03.gif border=0 align=center><br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Responses란에 '여과율'와 Factors란에 '온도' 
+            '농도'를 입력 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <b> [ Graph 창에 나타난 결과</b></font><b> ]</b></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_05.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 공정온도 1수준과 포름알데히드 농도 1수준의 여과율이 높은 것을 
+            볼 수 있다.<br>
+            <br>
+            <br>
+            <br>
+            <a name="2"></a><b>1.3 Interactions Plot을 그려 본다. <a href="data/Anova03.zip">(데이터 
+            : Anova03.mtw)</a></b><br>
+            <br>
+            ① Stat > ANOVA > Interactions Plot 선택 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Responses란에 '여과율'을 입력하고 Factors란에 
+            '온도', '농도'를 입력한다. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭<br>
+            <br>
+            <b> [ Graph 창에 나타난 결과 ]</b></font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_08.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위의 Graph 창에서 점들을 잇는 선이 평행하지 않으므로 온도와 
+            농도간에는 교호 작용이 존재하는 것으로 보인다. <br>
+            <br>
+            <br>
+            <b>1.3 분산분석을 실시한다.</b><br>
+            <br>
+            ① Stat > ANOVA > Two-way 선택<br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="316"> <font size="-1"><br>
+            <img src=images/AnovaTwoway_09.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Response란에 '여과율', Row factor란에 '온도', 
+            Column factor란에 '농도'를 입력<br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="311"> <font size="-1"><br>
+            <img src=images/AnovaTwoway_10.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ③ OK 버튼을 클릭한다.<br>
+            <br>
+            <b> [ Session 창에 나타난 결과 ]</b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaTwoway_11.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위 결과에서 온도의 P-value는 0.007이므로 온도는 여과율에 
+            유의한 영향을 미치고 있으며, 농도의 P-value는 0.170이므로 농도의 효과는 유의하지 않고 온도와 농도간의 교호작용의 
+            P-value는 0.018이므로 여과율에 유의한 영향을 미치고 있다고 볼 수 있다. <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+      
+  </tr>
+    </table>
+</body></html>
+

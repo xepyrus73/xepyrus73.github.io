@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>1- Sample Z검정</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="2">&nbsp;</td>
+    <td height="2"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">1- Sample Z검정</font></b></font><br>
+            <br>
+            <font size=3><b></b></font><font size=3><b> Stat>Basic Statistics>1-Sample 
+            Z</b></font> <br>
+            <br>
+            <br>
+            <font size="-1">표준편차를 알고 있을 때의 모평균에 관한 검정이다. 데이터의 정규성 여부를 검토하여야 하며, 
+            이는 MINITAB의 <a href="normaltest.html">Normality Test</a>를 통해 확인할 수 
+            있다. 단, 시료수가 많은 경우 (보통 30개 이상), 정규성을 확인할 필요가 없다. <br>
+            MINITAB 메뉴인 1-Sample Z를 활용하여 모평균의 검정뿐 아니라 모평균의 추정을 할 수 있다. 따라서 표준편차를 
+            알고 있을 때의 모평균에 대한 신뢰구간을 구할 수 있다. <br>
+            <b><font size="2"><br>
+            <br>
+            1. MINITAB을 사용한 Z 검정 <a href="data/hypo01.zip">(데이터 : Hypo01.mtw)</a></font></b> 
+            <br>
+            </font> 
+            <p><font size="-1">염료 제품의 수율을 향상시키기 위하여 노력해 온 프로젝트 팀은 그 성과로 수율이 73% 
+              이상의 결과를 가져왔다고 이야기하고 있다. 로트로부터 8개의 샘플을 취하여 다음과 같은 데이터를 얻었다.<br>
+              <br>
+              70.7 &nbsp;74.7 &nbsp;69.0 &nbsp;65.2 &nbsp;71.1 &nbsp;86.0 &nbsp;73.2 &nbsp;86.8 <br>
+              <br>
+              수율이 73%이상이라고 할 수 있는지를 유의수준 5%에서 검정하고자 한다. 기존의 데이터에 의해 표준편차는 7%라는 
+              것을 알고 있다. <br>
+              <br>
+              검정 대상값이 73%이고 수율이 73%이상이라고 할 수 있는지를 검정하는 것이므로 다음과 같이 가설을 설정한다. </font></p>
+            <p><font size="-1"> H<sub>0</sub> : <font face="symbol">m</font> =<font face="symbol">m</font><sub>0</sub> 
+              ( = 73%)<br>
+              H<sub>1</sub> : <font face="symbol">m</font></font> <font size="-1">><font face="symbol">m</font><sub>0</sub> 
+              ( = 73%)<br>
+              <br>
+              1.1 데이터의 입력<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB worksheet에 아래의 데이터를 입력한다.</font><br>
+              <br>
+              <img src="images/HypoMean_Z2_01.gif" width="119" height="193"> <br>
+              <br>
+              <br>
+              <font size="-1">1.2 1-Sample Z 검정을 실시한다.</font><br>
+              <font size="-1"><br>
+              ① Stat > Basic Statistics > 1-Sample Z 선택</font> <br>
+              <br>
+              <img src="images/HypoMean_Z2_02.gif" width="457" height="225"> <br>
+              <br>
+              <br>
+              <font size="-1">② Variables란에 제품 수율의 데이터 열을 입력하고 Sigma란에 표준편차를 입력한다. 
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Test mean 란에는 검정 대상값 <font face="symbol">m</font><sub>0</sub> 
+              를 입력한다. <br>
+              <br>
+              <img src="images/HypoMean_Z2_03.gif" width="349" height="235"> <br>
+              <br>
+              ☞ 1 Sample Z -> Options <br>
+              신뢰수준 및 대립가설의 형태를 결정해 준다. 물론 신뢰구간만을 구하고자 할 때는 대립가설의 형태에 신경 쓸 필요가 
+              없다. <br>
+              <br>
+              <img src="images/HypoMean_Z2_04.gif" width="388" height="151"> <br>
+              <br>
+              ☞ 1 Sample Z -> Graphs<br>
+              MINITAB은 다음과 같은 세 가지 형태의 그래프를 Output과 함께 출력하므로, 원하는 그래프를 선택할 수 있다. 
+              그래프에는 평균의 신뢰구간뿐 아니라 귀무가설에서 설정한 <font face="symbol">m</font><sub>0</sub> 
+              대비 추정한 평균값 <img src="images/HypoMean_Pair2_13.gif" width="16" height="19" align="absmiddle">의 
+              상대적 위치도 제시해 준다. <br>
+              <br>
+              <img src="images/HypoMean_Z2_05.gif" width="308" height="138"> <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. <br>
+              <b><br>
+              Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_Z2_06.gif" width="337" height="181"> <br>
+              <br>
+              Graph 창에 나타난 결과<br>
+              <br>
+              <img src="images/HypoMean_Z2_07.gif" width="360" height="268"> <br>
+              <br>
+              <br>
+              </b>1.3 결과 해석<b><br>
+              <br>
+              </b>P-Value 가 0.261>0.05 이므로 H0 를 기각할 수 없다. 즉, 제품의 수율이 73%보다 크다고 
+              말할 수 없다. Box-plot에서 하단의 빨간색으로 표시된 구간은 평균의 95% 신뢰구간을 나타낸다. 또한 귀무가설 
+              H<sub>0</sub>에서 설정한 평균치 <font face="symbol">m</font><sub>0</sub> 
+              대비 추정한 평균값 <img src="images/HypoMean_Pair2_13.gif" width="16" height="19" align="absmiddle">의 
+              상대적 위치도 제시해 준다. <br>
+              <br>
+              <br>
+              <b><font size="2">2. MINITAB을 사용한 모평균의 신뢰구간 추정 (표준편차를 알고 있을 때) <br>
+              <br>
+              </font></b><font size="2"> <font size="-1">위 문제에서 모평균에 대한 95% 신뢰구간을 
+              구하고자 하자.<br>
+              <br>
+              ① Stat > Basic Statistics > 1-Sample Z 선택</font></font><b><font size="2"><font size="-1"><br>
+              </font></font></b><font size="2"><font size="-1">② Variables란에 제품 
+              수율의 데이터 열을 입력하고 Sigma란에 표준편차를 입력 한다. <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; 단, 신뢰구간을 구하는 경우 Test mean 란은 공란으로 남겨둔다. 
+              <br>
+              <br>
+              <img src="images/HypoMean_Z2_08.gif" width="313" height="215"> <br>
+              <br>
+              <br>
+              ☞ 1 Sample Z - Options <br>
+              신뢰수준을 입력한다. 물론 신뢰구간만을 구하고자 할 때는 대립가설의 형태에 신경 쓸 필요가 없다. <br>
+              <br>
+              <img src="images/HypoMean_Z2_09.gif" width="376" height="163"> <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다.<br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_Z2_10.gif" width="359" height="103"> <br>
+              </b><br>
+              : 염료제품의 수율에 대한 95%신뢰구간은 ( 69.74, 79.44 )임을 알 수 있다. </font></font></font> 
+            </p>
+          </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

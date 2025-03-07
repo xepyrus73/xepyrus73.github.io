@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+<TITLE>혼합물 실험의 Response Optimizer</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="560"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> <font size="4" color="#a70105"><b><br>
+            <br>
+            <A name="1"></a> 혼합물 실험의 Response Trace Plot<br>
+            </b></font><br>
+              <br>
+              <br>
+            <font size="-1">분석을 통하여 얻어진 결과를 토대로 최적의 값을 구하는 최적수준을 구하는 것이 최종의 목적이다. 
+            어떤 수준의 조합인 경우에 최적 값을 갖는지에 대하여 MINITAB에서는 Response Trace Plot, <a href="contourplot3.htm">Contour/Surface 
+            Plot</a>, <a href="resp_optimizer3.htm">Response Optimizer</a> 등의 
+            방법을 제공한다. <br>
+            <br>
+            <br>
+            <b><font size="2">1. Response Trace Plot의 작성 <a href="data/sim_cen_r.zip">(데이터 
+            : Sim_Cen_r.mtw)</a><br>
+            <br>
+            </font></b> 이 Plot은 각각의 성분들이 반응변수에 어떻게 영향을 주는지에 대해 분석할 수 있다. </font> 
+          </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> <br>
+            </b> ① Stat > DOE > Response Surface > Contour/Surface(Wireframe)Plots...을 
+            선택한다. <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="images/responsetrace_01.gif" width="560" height="216"><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> 
+            </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <br>
+            ② Response 란에 '탄성계수'를 입력한다.<br>
+            <br>
+            <img src="images/responsetrace_02.gif" width="478" height="331"><br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">Trace 
+            Direction<1>에서 탄성계수에 영향을 미치는 성분 중에서 만약 Pseudo 성분이 있는 경우에는 Piepel을 
+            없는 경우에는 Cox를 선택하여 Plot을 그린다.<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">Model 
+            Fitted In<2>에서 모델의 적합 값을 구할 때 비율(Proportions)로 할 것인지 Pseudo 성분(Pseudo 
+            components)으로 할 것인지를 지정한다.<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">	
+            Reference Blend<3>에서<br>
+            - Centroid of vertices 꼭지점의 중심으로 한다.<br>
+            - Row ID: Workseet에 저장된 제약점을 사용한다.<br>
+            - Coordinates : 동등한 값으로 분할한다. <br>
+            <br>
+            <br>
+            ☞ Pseudo성분<br>
+            <br>
+            MINITAB에서 default로 성분의 하한을 0으로 지정한다. 그러나 어떤 성분은 반드시 들어가야 하기 때문에 하한을 
+            0으로 지정해서는 안되며, 또한 어떤 성분은 일정량 이상 들어가서는 안 되는 경우도 있는데 이때 상한을 지정해야 한다. 
+            Pseudo 성분 데이터 영역을 rescale 하여 각 성분의 최소 허용 가능량을 0으로 한다. <br>
+            <br>
+            예로, A와 B를 섞어서 되는 혼합물이 있을 경우 A+B 는 50이고, A는 반드시 20이상은 들어가야 한다. 그럴 경우 
+            양, 비율, pseudo성분에 대한 실험 점은 다음과 같다<br>
+            <br>
+            <img src="images/responsetrace_03.gif" width="560" height="107"> <br>
+            <br>
+            <br>
+            <br>
+            ③ Curves...는 Plot에서의 선의 종류와 색깔을 지정한다.<br>
+            <br>
+            <br>
+            <img src="images/responsetrace_04.gif" width="399" height="177"><br>
+            <br>
+            <br>
+            <br>
+            ④ Options...를 클릭 <br>
+            <br>
+            <img src="images/responsetrace_05.gif" width="313" height="193"><br>
+            <br>
+            X축과 Y축의 척도의 최소, 최대를 설정할 수 있다.<br>
+            <br>
+            <br>
+            ⑤ OK를 클릭한다.<br>
+            <br>
+            <br>
+            Graph 창에 나타난 결과 <br>
+            <img src="images/responsetrace_06.gif" width="560" height="413"><br>
+            <br>
+            <br>
+            <br>
+            산화제, 연료 및 접착제의 양이 Reference Blend값 보다 작거나 클 때 탄성계수는 어떻게 변하는 가를 볼 수 
+            있다. 위의 그림에서 알 수 있듯이 산화제의 경우 Reference Blend보다 클 경우에는 탄성계수가 일관되게 감소한다. 
+            연료는 Reference Blend보다 클 경우에 탄성계수가 증가하다가 감소한다. 접착제는 Reference Blend보다 
+            클 경우에 탄성계수가 감소함을 알 수 있다. Reference Blend는 각 성분의 양에 대한 기준이 될만한 값을 나타낸다. 
+            </font></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="%BB%F5%20%C6%FA%B4%F5/images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table>
+<br>
+</BODY>
+</HTML>

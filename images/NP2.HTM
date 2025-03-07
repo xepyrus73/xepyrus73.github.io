@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+<TITLE>NP 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <A name="1"></a> <font size="4"><b><font color="#a70105">NP 관리도</font> 
+              </b></font> </div>
+            <div align="center">
+                <font size="4"><b> </b></font></div>            
+            <br>
+            <b><font size="2">1. NP관리도의 개요</font></b><br>
+            <br>
+            <font size="-1">불량률 관리도에서 부분군의 크기 n이 일정한 경우에는 부분군 불량률 <img src="images/np2_01.gif" width="11" height="19" align="absmiddle">대신 
+            부분군내 불량개수 X를 관리하는 np관리도를 사용할 수 있다. np 관리도는 <a href="p2.htm">p 관리도</a>에 
+            비해 계산량이 적고 사용하기 편리하다는 장점이 있다. np관리도의 중심선 및 관리 한계선은 다음과 같다. </font><br>
+            <br>
+            <img src="images/np2_02.gif" width="176" height="82"> <br>
+            <br>
+            <font size="-1">공정 불량률 p를 모르는 경우에는 일정 기간동안 관측된 자료로부터 p를 추정하여 사용한다. 
+            부분군 크기가 매번 변할 때는 p관리도를 사용하여야 하지만 부분군 크기가 일정한 경우에는 np관리도를 사용하는 것이 계산도 
+            간편하고 이해하기도 쉽다. 그러나 np 관리도는 부분군 크기가 일정한 경우로만 그 사용이 제한되므로 두 가지의 관리도를 
+            혼용하는 데서 오는 혼란을 방지하기 위해서는 p관리도 한 가지만 사용할 수도 있다. <br>
+            <br>
+            </font><font size="-1">
+            </font></td>
+        </tr>
+        <tr> 
+          <td> 
+          </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <b><font size="2">2. MINITAB을 사용한 NP 관리도의 작성 (<a href="data/np.zip">데이터 
+            : NP.mtw)</a><br>
+            </font></b><font size="2"> </font> </font></td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="left"><font size="-1"><br>
+              아래 데이터는 어느 2차 전지 생산업체에서 용접 후 발생하는 누설전류로 인한 불량품의 개수를 나타낸 것이다. 샘플의 
+              크기는 50개이고 총 800개의 제품을 검사하였다. 누설전류로 인한 불량비율이 일정한지 확인하시오.<br>
+              <BR>
+              <img src="images/np2_03.gif" width="540" height="90"><BR>
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>
+            </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> <br>
+            <br>
+            2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="images/np2_04.gif" width="144" height="281"><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> 2.2 NP관리도를 작성한다.<br>
+            </b></font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">① Stat > Control Charts > NP…를 선택한다.<br>
+            <br>
+            <br>
+            <img src="images/np2_05.gif" width="469" height="426"><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> ② Variable에 불량수가 포함된 열을 선택하고, Subgroup size에 50을 
+            입력한다.</font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/np2_06.gif" width="560" height="388"><br>
+            <br>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Test] <br>
+            <br>
+            <img src="images/np2_07.gif" width="505" height="322"><br>
+            <br>
+            <br>
+            <br>
+            [Estimate]<br>
+            <br>
+            <img src="images/np2_08.gif" width="550" height="345"> <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            [S Limits]<br>
+            <br>
+            <img src="images/np2_09.gif" width="560" height="447"> <br>
+            <br>
+            <img src="images/np2_10.gif" width="530" height="348"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/np2_11.gif" width="475" height="274"><br>
+            <br>
+            <img src="images/np2_12.gif" width="500" height="360"> <br>
+            <br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <img src="images/np2_13.gif" width="457" height="218"><br>
+            <br>
+            <br>
+            [Options]<br>
+            <br>
+            <img src="images/np2_14.gif" width="454" height="298"><br>
+            <br>
+            <br>
+            ③ OK를 클릭한다. <b><br>
+            </b><br>
+            다음과 같은 그래프와 함께 np관리도에 대한 정보를 제공하는 창이 생성된다.<br>
+            <br>
+            <br>
+            <img src="images/np2_15.gif" width="518" height="376"><br>
+            <br>
+            <br>
+            관리한계에서 벗어난 점이 없으며, 특별한 추세나 런도 나타나지 않는다. 따라서, 이 추세는 안정적이고 50개의 제품 중 
+            불량수는 대략 10으로 집중되어 있다. 따라서 이러한 추세는 가까운 미래에도 계속될 것이라고 믿을 수 있다.<BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

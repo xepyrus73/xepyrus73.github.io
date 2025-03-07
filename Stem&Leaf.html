@@ -1,0 +1,143 @@
+<html>
+<title>줄기-잎 그림 (Stem and Leaf Plot)</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=596>
+  <tr>
+    <td width=41>&nbsp;</td>
+    <td width="555"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=572>
+        <tr> 
+          <td > 
+            <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b>줄기-잎 그림 (Stem and Leaf Plot)</b></font><br>
+              <br>
+              <b><font size="3">Graph&gt;Stem-and-Leaf </font></b> <br>
+              <br>
+              <br>
+              <font size="-1">줄기-잎 그림은 <a href="Histogram.html">히스토그램</a>에 비해 
+              데이터 수가 비교적 적은 경우에 유용하며 원래 데이터의 정보를 잃지 않고 분포 형태를 파악할 수 있다.<br>
+              <br>
+              <b>☞ 히스토그램과의 비교</b><br>
+              <br>
+              A. 장점 <br>
+              <br>
+              </font></div>
+            <li><font size="-1"> 원래의 자료 값이 그대로 보존되어 있기 때문에 자료에 담겨있는 정보가 전혀 유실되지 
+              않는다.<br>
+              <br>
+              </font> 
+            <li><font size="-1"> 자료 값이 크기 순으로 나열되어 있기 때문에 특정위치에 있는 자료값(중위수, 백분위수 
+              등)을 <br>&nbsp;&nbsp;&nbsp;
+              쉽게 구할 수 있다.<br>
+              <br>
+              <br>
+              B. 단점<br>
+              <br>
+              </font> 
+            <li><font size="-1"> 자료 집단의 크기가 아주 클 때는 부적합하다.<br>
+              → 제한된 공간으로 많은 양의 자료를 적는 것이 불편하다.<br>
+              </font><br>
+              <br>
+              <br>
+              <font size=3><b> <font size="2">1. MINITAB을 사용한 줄기-잎 그림의 작성 <a HREF="data/Graph01.zip">(그래프 
+              : Graph 01.mtw)</a></font></b></font><br>
+              <br>
+              <font size="-1">S정공은 국내공장의 A라인서 100개의 데이터를 수집하여 기어의 지름을 측정하고 줄기 
+              잎 그림을 작성하였다.<br>
+              </font><br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/Stem&Leaf_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 다음과 같이 데이터를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/Stem&Leaf_02.gif" width="164" height="265"><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Graph > Stem and Leaf를 선택한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Stem&Leaf_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variables에 C1을 선택한다. 부 명령어 Increment를 
+            사용하여 줄기의 간격을 조정할 수 있는데<br>&nbsp;&nbsp;&nbsp;
+            여기서는 0.1을 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Stem&Leaf_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <br>
+            <b>[ Session 창에 나타난 결과</b> <b>]</b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Stem&Leaf_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.3 결과 해석</b><br>
+            <br>
+            첫 번째 열에서는 데이터의 중앙값의 위치와 양끝에서 중앙값까지 누적된 데이터 수를 보여 주고 있다. 그리고 첫번째 줄기는 
+            27.6이고 Leaf Unit은 0.01이므로 첫번째 자료는 27.67이고 두 번째 자료는 27.71을 의미한다. 전체적인 
+            모양으로 보아 기어지름의 분포가 안정되어 있지 않으며, 1차적으로 29.9 이상 되는 값에 대해서 이상원인을 규명해야 
+            한다.<br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+      
+    </tr>
+    </table>
+</body></html>
+

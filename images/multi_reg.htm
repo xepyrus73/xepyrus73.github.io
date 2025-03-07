@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>중회귀 분석 (Multiple Regression)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=627>
+  <tr> 
+    <td width=20 height="201">&nbsp;</td>
+    <td height="201" width="607"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">중회귀 분석 (Multiple 
+            Regression)</font></b></font><br>
+            <br>
+            <font size=3><b></b></font><font size=3><b> Stat>Regression>Regression<br>
+            </b></font> <br>
+            <br>
+            <font size="-1">대부분의 공업적 또는 사회적인 현상을 설명하는 데 있어서 종속변수 y의 변화는 보통 둘 이상의 
+            독립변수에 의하여 영향을 받는다. 따라서 적절한 독립변수를 잘 선택하여 이 들의 함수로서 종속변수를 나타낼 경우 우리는 
+            좀 더 정도(Precision) 높은 예측을 할 수 있다. <br>
+            이처럼 종속변수의 변화를 설명하기 위하여 k개의 <img src="images/Multi_reg_11.gif" width="31" height="16" align="absmiddle">독립변수를 
+            사용하는 선형 회귀모형을 중선형 회귀 모형이라 부르며 중선형 회귀 모형에 대한 회귀분석을 중회귀 분석이라 부른다. 기본 
+            개념은 <a href="regression2.htm">단순 회귀분석</a>과 같으며 차이점은 한 개의 독립변수 대신에 
+            두개 이상의 독립변수를 사용한다는 점이다. <br>
+            <br>
+            </font> 
+            <p><font size="2"><b>1. 중회귀 모형</b></font></p>
+            <p><font size="-1">독립변수 x가 여러 개인 경우를 중회귀라 하며, 다음과 같은 모형을 사용한다. <br>
+              <br>
+              <img src="images/Multi_reg_12.gif" width="310" height="22"> <br>
+              <br>
+              단, <img src="images/Multi_reg_13.gif" width="13" height="15" align="absmiddle">들은 
+              서로 독립이며 <img src="images/Multi_reg_14.gif" width="53" height="19" align="absmiddle">를 
+              따르는 확률변수이다. <br>
+              중회귀 모형에서 미지의 모수 <img src="images/Multi_reg_15.gif" width="71" height="17" align="absmiddle">에 
+              대한 추정은 단순회귀와 마찬가지로 최소제곱법을 이용하며 중회귀 직선의 추정식은 다음과 같다. <br>
+              <br>
+              <img src="images/Multi_reg_16.gif" width="206" height="28"> <br>
+              <font size="2"><b><br>
+              2. MINITAB을 사용한 중회귀 분석 <a href="data/multi_regression.zip">(데이터 
+              : multi_regression.mtw)</a> <br>
+              <br>
+              </b><font size="-1">어떤 PCS 회사는 전국에 수백개의 대리점을 갖고 있다. 각 대리점의 월별 판매액(y) 
+              과 대리점 관할구역의 인구수(x<sub>1</sub>)와 가구 당 월 평균수입액(x<sub>2</sub>)에 따라 
+              어떤 관련성을 갖고 있는 지를 조사하기 위하여 아래와 같은 데이터를 얻었다. 중회귀 방정식을 구하고 회귀분석을 실시하라. 
+              <br>
+              <br>
+              <img src="images/Multi_reg_01.gif" width="520" height="256"> <br>
+              <br>
+              <br>
+              2.1 데이터 입력<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet에 아래의 데이터를 입력한다. <br>
+              <br>
+              <img src="images/Multi_reg_02.gif" width="463" height="315"> <br>
+              <br>
+              <br>
+              2.2 중회귀 분석을 실시한다.<br>
+              <br>
+              ① Stat > Regression > Regression 선택<br>
+              <br>
+              <img src="images/Multi_reg_03.gif" width="532" height="235"> <br>
+              <br>
+              <br>
+              ② Response 란에 종속변수 열인 월별 판매액과 Predictors 란에는 독립변수 열인 관할구역 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;인구와 가구당 월 평균수입액을 선택하여 입력한다. <br>
+              <br>
+              <img src="images/Multi_reg_04.gif" width="516" height="245"> <br>
+              <br>
+              <br>
+              ☞ Regression -> Options<br>
+              <br>
+              <img src="images/Multi_reg_05.gif" width="546" height="320"> <br>
+              <br>
+              ☞ Regression -> Options -> Display <br>
+              <br>
+              <u>Variance inflation factors</u><br>
+              종속변수간에 상관성이 있을 때 추정된 회귀식 계수의 변동이 어느 정도로 커지 는가를 측정한 분산 팽창 계수이다. (값이 
+              1이면 예측 변수간의 상관성이 없다는 것을 의미하며, 5~10보다 크면 독립변수 간에 상관성이 크다는 의미이다.) 
+              <br>
+              <br>
+              <u>Durbin-Waston statistic </u><br>
+              잔차들의 자기 상관을 검출하고자 할 때 체크하며, 이 값이 4에 가까우면 음의 자기상관, 0에 가까우면 양의 자기상관이 
+              있다고 볼 수 있다. <br>
+              <br>
+              <u>PRESS and predicted R-square</u><br>
+              PRESS 통계량과 Adjusted R-square 를 출력에 나타내고자 할 때 체크. <br>
+              <br>
+              ☞ Regression -> Options -> Prediction intervals for new observations<br>
+              <br>
+              : 관할구역 인구수가 삼십만이고 가구 당 월평균 수입액이 삼백 오십만원일 때의 월별 판매액의 기대값을 추정할 수 있다. 
+              <br>
+              <br>
+              ☞ Regression -> Graphs : 각 독립 변수들에 대한 잔차 관련 그래프를 그릴 수 있다. <br>
+              <br>
+              <img src="images/Multi_reg_06.gif" width="555" height="215"> <br>
+              <br>
+              ☞ Regression -> Graphs -> Residual plots<br>
+              Histogram of residuals : 잔차의 히스토그램을 그린다.<br>
+              Normal Plot of residuals : 잔차를 정규확률지에 그린다.<br>
+              Residuals versus fits : 잔차 대 회귀식에 의한 Y값을 그린다.<br>
+              Residuals versus order : 데이터 순서에 따른 잔차를 그린다. <br>
+              <br>
+              ☞ Regression -> Results<br>
+              <br>
+              <img src="images/Multi_reg_07.gif" width="373" height="177"><br>
+              <br>
+              : 어떤 결과를 Session 창에 출력시킬지에 대한 선택을 한다.<br>
+              <br>
+              ☞ Regression -> Storage <br>
+              <br>
+              <img src="images/Multi_reg_08.gif" width="337" height="142"> <br>
+              <br>
+              : 체크하는 항목들은 워크시트의 특정 열에 결과가 저장된다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 </b><br>
+              <br>
+              <img src="images/Multi_reg_17.gif" width="610" height="473"> <img src="images/Multi_reg_18.gif" width="610" height="298"><br>
+              <br>
+              <br>
+              2.3 결과 분석<br>
+              <br>
+              - 월별 판매액(y)와 월평균 수입액(x<sub>1</sub>) 관할구역 인구수(x<sub>2</sub>)사이의 추정 
+              회귀식은<br>
+              <br>
+              <img src="images/Multi_reg_19.gif" width="200" height="24"> <br>
+              - 회귀식의 계수에 대한 t-검정으로 t값이 높은 변수일수록 y를 설명하는데 공헌도가 크다.<br>
+              P-Value는 0.05보다 작은 값이면 유의하다고 말할 수 있으나 만일 0.05보다 크다고 해당변수를 빼고 회귀식을 
+              구하는 것보다 잔차 분석을 한 후 결정하도록 한다. <br>
+              <br>
+              - 결정계수 R2 = 0.983로 총변동 중에서 98.3%가 회귀직선에 의하여 설명되고 있다. <br>
+              <br>
+              - 분산분석의 결과가 출력되는 부분으로서 F 검정의 P-Value가 0으로서 0.05보다 작으므로 회귀방정식은 큰 
+              의미를 갖는다고 말할 수 있다.<br>
+              <br>
+              - 단순회귀분석에는 없는 부분으로서 결과 중 Seq SS는 Sequential sums of squares라고 한다. 
+              해석은 다음과 같다. 먼저 관할구역인구에 대한 Seq SS 는 44150 이다. 이는 관할구역인구만이 모형에 포함될 
+              때의 Seq SS 이다. 반면 가구당 월평균수입액의 Seq SS 는 223 으로, 이는 관할구역인구가 모형에 포함되어 
+              있다는 가정 아래, 가구당 월평균수입액을 모형에 추가함에 의해 발생하는 Seq SS 이다.<br>
+              <br>
+              - 이상치에 대한 내용이 출력되는 부분으로 가장 우측에 X가 나오면 예측변수에 대해서, R이 나오면 반응변수에 대한 
+              것으로 판단한다. 13번째 관측치가 이상점으로 판명되었으며 이는 실측치와 회귀식에 의해 적합 된 결과간에 차이가 많이 
+              있다는 것을 의미한다. <br>
+              <br>
+              - 가구 당 월평균 수입액이 삼백오십만원이고 관할 구역 인구수가 삼십만일 때의 월별 판매액의 기대값에 대한 점 추정값은 
+              184.45(십만원)이며, 95% 신뢰구간은 (178.06, 190.83)임을 알 수 있다. <br>
+              <br>
+              <b>Graph 창에 나타난 결과 <br>
+              <br>
+              <img src="images/Multi_reg_09.gif" width="340" height="252"> <br>
+              <br>
+              <br>
+              <img src="images/Multi_reg_10.gif" width="342" height="255"> <br>
+              <br>
+              </b>관할구역 인구수(x<sub>1</sub>)의 관측값과 잔차의 관계, 가구당 월평균 수입액(x<sub>2</sub>)의 관측값과 잔차의 관계를 확인할 
+              수 있다. </font></font></font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

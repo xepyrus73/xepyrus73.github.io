@@ -1,0 +1,84 @@
+A:link
+{
+    COLOR: blue;
+    FONT-SIZE: 9pt;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: red;
+    FONT-SIZE: 9pt;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #999933;
+    FONT-SIZE: 9pt;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: dimgray;
+    FONT-SIZE: 9pt;
+    TEXT-DECORATION: underline
+}
+TH
+{
+    BACKGROUND-COLOR: #999966;
+    COLOR: white;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: 300;
+    HEIGHT: 18pt;
+    TEXT-ALIGN: center
+}
+TD
+{
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 9pt;
+    HEIGHT: 18pt;
+    TEXT-INDENT: 0pt
+}
+TD.m
+{
+    FONT-SIZE: 9pt
+}
+INPUT
+{
+    FONT-SIZE: 9pt
+}
+SELECT
+{
+    FONT-SIZE: 9pt
+}
+TEXTAREA
+{
+    FONT-SIZE: 9pt
+}
+OPTION
+{
+    FONT-SIZE: 9pt
+}
+BODY
+{
+    MARGIN: 0px;
+    OVERFLOW: auto
+}
+.right
+{
+    TEXT-ALIGN: right
+}
+.center
+{
+    TEXT-ALIGN: center
+}
+.left
+{
+    TEXT-ALIGN: left
+}
+.hide
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none
+}

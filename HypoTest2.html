@@ -1,0 +1,137 @@
+<html>
+<title>모분산의 검정</title>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="hypotest2m.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <a name="1"></a> 
+            <center>
+              <font size="4" color="#a70105"></font><div align="left"> 
+              <b><font size="4" color="#a70105"> 모분산의 검정(Hypothesis tests 
+                of variance)</font></b></div>
+               
+            </center>
+            <br>
+            <br>
+            <br>
+                        <br>
+            <ul>
+              <li><a href=#2><font size="-1">통계적 가설검정의 개요</font></a><font size="-1"><br>
+                <br>
+                </font> 
+              <li><font size="-1">MINITAB을 사용한 모분산의 검정<br>
+                <br>
+                - <a href=HypoVar.html#1>2 Variances</a> <br>
+                <br>
+                <br>
+                </font> 
+            </ul>
+            
+            <br>
+            <a name="2"></a><font size=3 ><b> 통계적 가설 검정(Hypothesis Test)</b></font><br>
+            <br>
+            <br>
+            <font size=3><b><font size="2">1. 가설 검정이란?</font></b></font><br>
+            <br>
+            <font size="-1">모집단의 분포 모양이나 모수 (평균, 분산, 불량률 등) 에 대한 가설을 세우고, 샘플에 
+            기초하여 가설의 채택 또는 기각을 결정하는 통계적 기법을 말한다. 예를 들어 A회사에서 생산한 제품의 평균 수명은 60,000km라는 
+            주장을 했을 때 이와 같은 주장은 가설이 된다. 이러한 가설을 검정하기 위하여 제품 30개를 임의로 선택하여 수명시험 
+            후 이를 기초로 가설의 채택이나 기각을 결정하는 것을 말한다. <br>
+            <br>
+            <br>
+            </font><font size="2"><br>
+            <b>2. 용어 정의 </b></font><br>
+            <br>
+            <br>
+            <font size=2><b> <font size="-1">2.1 대립가설 H<sub>1</sub>과 귀무가설 H<sub>0</sub></font></b></font><font size="-1"><br>
+            <br>
+            - 대립가설 (Alternative Hypothesis : H<sub>1</sub> )<br>
+            샘플로부터 확실한 근거에 의하여 입증하고자 하는 가설로서, 흔히 H<sub>1</sub>으로 나타낸 다. 주로 우리의 
+            관심은 대립가설에 있다고 볼 수 있다.<br>
+            <br>
+            - 귀무가설 (Null Hypothesis : H<sub>0</sub> )<br>
+            대립가설과 상반되는 가설로서 흔히 H<sub>0</sub>으로 나타낸다. 일반적으로 알려져 있는 사 실은 귀무가설로 설정한다.<br>
+            <br>
+            <br>
+            <b> 2.2 유의수준(Significance level)이란? </b> <br>
+            <br>
+            귀무가설 H<sub>0</sub>가 참일 때 귀무가설을 기각하는 오류를 범할 확률의 최대 허용 한계이 다. 일반적으로 
+            유의수준을 나타내기 위하여 <i><font face="Symbol">a</font></i>라는 기호를 사용한다. 가설검정에서 
+            는 오류의 허용 확률을 미리 정해놓고, 그 기준에 따라 가설의 채택이나 기각을 결정하게 된다.<br>
+            <br>
+            <br>
+            <b> 2.3 P-Value와 유의수준의 관계 </b><br>
+            <br>
+            P-Value는 귀무가설 H<sub>0</sub>를 기각했을 때, 우리의 판단이 잘못되었을 확률을 의미한다. 따라서 유의수준 
+            <i><font face="Symbol">a</font></i>보다 P-Value가 작게 되면 귀무가설 H<sub>0</sub>를 
+            기각할 수 있다. <br>
+            <br>
+            <br>
+            <br>
+            <b><font size="2">3. 가설 검정의 종류</font></b><br>
+            <br>
+            <br>
+            <b> 3.1 모평균의 검정 </b> <br>
+            <br>
+            - 한 개의 모평균에 관한 가설의 검정<br>
+            <a href=HypoMean_Z.html#1>1-Sample Z</a> : 표준편차를 알 때 모평균의 검정<br>
+            <a href=HypoMean_1t.html#1>1-Sample t</a> : 표준편차를 모를 때 모평균의 검정<br>
+            <br>
+            - 두 개 모평균의 비교<br>
+            <a href=HypoMean_2t.html#1>2-Sample t</a> : 서로 독립인 두 집단의 평균 비교를 위해 
+            사용 <br>
+            <a href=HypoMean_Pair.html#1>Paired t</a> : 데이터가 쌍의 형태를 띌 때, 두 조의 
+            모평균 차에 관한 검정<br>
+            <br>
+            <br>
+            <a href=HypoTest2.html#1><b> 3.2 모분산의 검정</b></a> <br>
+            <br>
+            - 여러 개 분산의 동일성 검정<br>
+            <a href=HypoVar.html#1>2 Variances</a> : 두 개 모집단의 분산에 대한 동일성 검정 <br>
+            Test for Equal Variances : 두 개 이상 모집단의 분산에 대한 동일성 검정<br>
+            <br>
+            <br>
+            <a href=HypoTest3.html#1> <b> 3.3 모비율의 검정 </b></a> <br>
+            <br>
+            - 한 개의 모비율에 관한 가설의 검정<br>
+            <a href=HypoProp_1P.html#1>1 Proportio</a>n : 모비율 p에 관한 검정<br>
+            <br>
+            - 두 개의 모비율 차에 관한 가설의 검정<br>
+            <a href=HypoProp_2P.html#1>2 Proportions</a> : 두 모비율의 차인 <i>p</i><sub>1</sub> 
+            - <i>p</i><sub>2</sub>에 관한 검정 <br>
+            <br>
+            <br>
+            <a href=HypoChi.html#1><b> 3.4 카이제곱 검정</b> </a> <br>
+            <br>
+            범주형 자료의 가설검정을 위해 활용되는 검정 방법으로 검정의 종류는 독립성 검정, 동일성 검정 및 적합도 검정이 있다. 
+            여기서, 범주형 자료(Categorical Data)란, 예를 들어 조사대상을 남자 또는 여자로 분류하거나, 질병의 치료 
+            결과를 악화, 현상 유지, 호전 등으로 분류하거나, 또는 제품의 검사결과를 양호, 보통, 불량 등으로 분류하는 경우가 
+            있다. 이와 같이 측정 결과를 특정 속성이나 범주로 구분하여 돗수로 나타낸 자료를 범주형 자료라고 한다. 범주형 자료는 
+            이산형 자료의 일종이다. <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font> </td>
+        </tr>
+      </table>
+    
+  </tr>
+    </table>
+</body></html>
+
