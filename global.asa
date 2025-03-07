@@ -1,0 +1,34 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+
+Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+Set objStream = objFile.OpenTextFile(Server.MapPath("counter.txt"),1)
+Application("count") = objStream.ReadLine
+objStream.close()
+Set objStream = nothing
+Set objFile = nothing
+
+End Sub
+
+Sub Application_OnEnd
+Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+Set objStream = objFile.OpenTextFile(Server.MapPath("counter.txt"),2)
+objStream.WriteLine(Application("count"))
+objStream.close()
+Set objStream = nothing
+Set objFile = nothing
+End Sub
+
+Sub Session_OnStart
+Application.Lock
+Application("count") = Application("count") + 1
+Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+Set objStream = objFile.OpenTextFile(Server.MapPath("counter.txt"),2)
+objStream.WriteLine(Application("count"))
+Application.UnLock
+objStream.close()
+set objStream = nothing
+set objFile = nothing
+End Sub
+
+</SCRIPT>

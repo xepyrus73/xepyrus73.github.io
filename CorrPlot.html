@@ -1,0 +1,120 @@
+<html>
+<title>산점도</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+      <tr>
+          <td  height="225"> 
+            <div align="left"> <font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b>산점도(Scatter Plot)</b></font><br>
+              <br>
+              <b><font size="3">Graph&gt;Plot </font></b><br>
+              <br>
+              <br>
+              <font size="-1">두 변수 간의 관련성을 개략적으로 알 수 있다. 두 변수 X, Y 값을 가로축과 세로축에 
+              점으로 표시하여 관련성에 대한 윤곽을 그래프를 통해 보여 준다. 경도라는 품질특성에 대한 잠재요인으로 특정 성분의 
+              함량이 있다면 이 함량에 따라 경도가 어떻게 달라지는지 알 필요가 있다. 이런 경우 산점도를 이용하면 두 자료에 대한 
+              관련성을 쉽게 알 수 있다. 두 변수 사이의 관련성을 수량화하는 데는 상관계수(Correlation Coefficient)를 
+              사용한다.<br>
+              <br>
+              다음은 일반적으로 많이 나타나는 산점도의 형태를 보여주고 있다.<br>
+              <br>
+              </font> </div>
+          </td>
+      </tr>
+      <tr>
+          <td> <img src=images/CorrPlot_01.gif border=0 align=bottom>&nbsp;&nbsp;&nbsp;&nbsp;<img src=images/CorrPlot_02.gif border=0 align=bottom>&nbsp;&nbsp;&nbsp;&nbsp;<img src=images/CorrPlot_03.gif border=0><br>
+	</td>
+      </tr>
+      <tr>
+          <td > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;(a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            <br>
+            위에서 (a)는 x가 증가할수록 y도 증가하는 경향이 있으며 (b)는 x가 증가하면 y는 감소하는 경향을 볼 수 있으며 
+            (c)는 x와 y사이에는 아무런 관련성이 없을 것으로 예상할 수 있다. 즉, (a)는 양의 상관관계가 있고 (b)는 음의 
+            상관관계가 있고 (c)는 상관관계가 없다.<br>
+            <br>
+            </font><br>
+            <br>
+            <font size=3><b> Graph>Plot을 사용한 산점도의 작성</b></font> <br>
+            <br>
+
+      <font size=2><b>  1. 사용 방법 <a HREF="data/Analgraph03.zip">(데이터 : Analgraph03.mtw)</a></b></font><br><br>
+            <font size="-1">PVC Resin 제조업체는 PVC Resin을 가공하여 제품을 만드는 고객들로부터 가공 
+            후 제품 에서 표면돌기가 많이 발생한다고 불만을 들어 오고 있다. 이 문제를 개선하기 위해 팀은 우선 표면돌기의 갯수를 
+            대신하여 공정 내에서 측정할 수 있는 대용 특성을 찾기 위해 표면돌기 갯수와 입자의 평균입경 간의 상관관계를 조사하고자 
+            한다. 먼저 산점도를 그려서 두 변수사이의 관련성을 파악하라.<br>
+            </font><br>
+            <font size=2><b> <font size="-1">1.1 데이터의 입력 </font></b></font><font size="-1"><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            </font><br>
+</td>
+      </tr>
+      <tr>
+        <td>
+		<img src=images/CorrPlot_04.gif border=0 align=center><br><br> <br><br> 
+</td>
+      </tr>
+      <tr>
+          <td > <font size=2><b> <font size="-1">1.2 MINITAB의 실행</font></b></font><font size="-1"><br>
+            <br>
+            ① Graph > Plot 선택<br>
+            </font><br>
+</td>
+      </tr>
+      <tr>
+        <td>
+		<img src=images/CorrPlot_05.gif border=0 align=center><br><br> <br><br> 
+</td>
+      </tr>
+      <tr>
+          <td > <font size="-1">② Graph variables 란에 '표면돌기'와 '평균입경'을 
+            입력</font><br>
+            <br>
+</td>
+      </tr>
+      <tr>
+        <td>
+		<img src=images/CorrPlot_06.gif border=0 align=center><br><br> <br><br> 
+</td>
+      </tr>
+      <tr>
+          <td > <font size="-1">③ OK 버튼을 클릭한다.<br>
+            <br>
+            <b>[ Graph 창에 나타난 결과</b> <b>]</b><br>
+            <br>
+            </font> </td>
+      </tr>
+      <tr>
+        <td>
+		<img src=images/CorrPlot_07.gif border=0 align=center><br><br> 
+</td>
+      </tr>
+      <tr>
+          <td > <font size="-1">강한 양의 상관관계가 있음을 볼 수 있다.<br>
+            </font><br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+          </td>
+    </tr>
+    </table>
+
+	
+    </tr>
+    </table>
+</body></html>
+

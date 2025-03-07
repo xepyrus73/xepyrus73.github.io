@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<TITLE>p 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=581>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="561"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="p2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> p 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;P 
+                </font></b></font></b> <b><font size="4" color="#a70105"> </font></b><b><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <BR>
+            <font size=3><b><font size="2">1. p 관리도의 개요</font></b></font><br>
+            <br>
+            <font size="-1">불량률이 p인 생산공정으로부터 크기 n의 샘플을 취해 그 중에서 발견되는 불량 개수를 X라 
+            하면 X는 이항분포 b(n,p)를 따르고 그 평균과 분산은 각각 np, np(1-p)이다. 불량률을 관리하는 데는 P 
+            관리도가 널리 이용되는데 P 관리도에서 추출되는 샘플(부분군)의 불량률 <img src=images/P_01.gif  border=0 align=absmiddle> 
+            를 관리한다. <img src=images/P_02.gif  border=0 align=absmiddle>의 평균과 분산은 
+            각각 p, p(1-p)/n이므로 현재 생산공정의 평균 불량률을 알고 있거나 목표로 하는 표준불량률이 주어져 있는 경우 
+            P 관리도의 관리 한계선은 각각 다음과 같이 얻어진다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/P_03.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 공정 불량률 p를 모를 경우에는 일정 기간동안 관측된 자료로부터 
+            p를 추정하여 사용한다. p를 추정하기 위해서는 보통 20~25개의 예비샘플을 추출하여 사용한다. 부분군의 크기 및 부분군내 
+            불량수를 각각 <img src=images/P_04.gif border=0 align=absmiddle> 라 할 때 예비 
+            샘플로부터 추정된 평균불량률 <img src=images/P_05.gif  border=0 align=absmiddle> 
+            =(총불량품수)/(총검사개수)= <img src=images/P_06.gif  border=0 align=absmiddle> 
+            를 이용하여 P관리도의 중심선 및 관리한계선을 구하면 다음과 같다. <br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> <b><font size="2">2. MINITAB을 사용한 
+            P관리도의 작성 <a href="data/P.zip">(데이터 : P.mtw)</a></font></b><br>
+            <br>
+            <BR>
+            PVC Resin 제조업체는 PVC Resin을 가공하여 제품을 만드는 고객들로부터 가공 후 제품에서 표면돌기가 많이 
+            발생한다고 불만을 들어 오고 있었다. 문제를 개선하기 위해 six-sigma팀은 우선 표면돌기의 비율을 추정하고자 2370개의 
+            제품을 검사하여 192개에서 표면돌기를 발견하였다. P관리도를 통해 공정의 관리 상태를 파악해보자.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/P_07.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력 </b><br>
+            <BR>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/P_08.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> <b>2.2 MINITAB의 실행<br>
+            </b><br>
+            ① Stat > Control Charts > p<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/P_09.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable 란에 관측된 손상 표면돌기 수'x', Subgroup 
+            in란에 표본 크기 'n'을 입력한다. <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/P_10.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다. <BR>
+            <BR>
+            <b> 2.3 결과 해석</b><BR>
+            <BR>
+            <b> Graph 창에 나타난 결과</b> <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/P_11.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td  height="2"> <font size="-1"><I>P</I><sub>9</sub>=0.175값이 
+            관리 상한을 벗어나므로 공정은 이상상태이다. 이 시점에서 손상 비율이 상당히 증가하였음을 나타낸다. 그 이유는 조사되고 
+            교정되어야 한다. 또한 표본 4~17을 보면 14개의 연속된 점들이 상하로 반복이동하고 있다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"><BR>
+            </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>2- Sample t 검정</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="3361">&nbsp;</td>
+    <td height="3361"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153">
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">2- Sample 
+              t 검정</font></b></font><br>
+              <br>
+              <font size=3><b></b></font><font size=3><b> Stat>Basic Statistics>2-Sample 
+              t</b></font> <br>
+            </p>
+            <p> <font size="-1">표준편차를 모를 때 서로 독립인 두 집단의 평균을 비교하기 위해 사용한다. <a href="hypomean_z2.htm">1-Sample 
+              Z 검정</a>과 마찬가지로 두 집단 데이터 각각의 정규성 여부를 검토하여야 하며, 이는 MINITAB의 <a href="normaltest.html">Normality 
+              Test</a>를 통해 확인할 수 있다. 단, 시료수가 많은 경우 (보통 각각 30개 이상), 정규성을 확인할 필요가 
+              없다. 아울러, 두 집단간의 분산이 같은지를 사전에 검토해야 하며, 이는 MINITAB의 <a href="hypovar2.htm">2 
+              Variances</a>를 통해 확인할 수 있다.<br>
+              만일 두 모집단의 분산이 동일하다면, MINITAB 활용 시 Assume Equal Variances란에 체크를 하고, 
+              그렇지 않으면 체크하지 않고 분석을 수행하면 된다. Assume Equal Variances를 클릭하게 되면 분산 
+              추정 시 사용하는 데이터 양이 늘어나므로, 분산 추정 시 정도를 높일 수 있다는 장점이 있다. <br>
+              <br>
+              <font size="2"><b><br>
+              1. 1. MINITAB을 사용한 2 Sample t 검정 <a href="data/hypo03.zip">(데이터 
+              : Hypo03.mtw)</a> <br>
+              <br>
+              </b><font size="-1">농약 살충제의 원제의 순도는 원료에 포함되는 불순물의 함량에 의해 크게 좌우된다. 
+              현재 원료의 공급업체는 B인데, A라는 업체는 B에 비해 낮은 불순물 함량을 가지고 있다고 주장하고 있다. A와 B업체의 
+              원료에서 각각 랜덤하게 추출된 샘플의 불순물 함량 데이터를 통해 위의 사실을 유의수준 5%에서 검정하여라. <br>
+              <br>
+              <img src="images/HypoMean_2t2_01.gif" width="353" height="313"> 
+              <br>
+              <br>
+              A라는 업체는 B에 비해 낮은 불순물 함량을 가지고 있다고 주장하므로 다음과 같이 가설을 설정한다. <br>
+              <br>
+              H<sub>0</sub> : <font face="symbol">m</font><font size="2"><font size="-1"><sub>A</sub></font></font> 
+              =<font face="symbol">m</font><sub>B</sub> <br>
+              H<sub>1</sub> : <img src="images/HypoMean_2t2_17.gif" width="43" height="14"><br>
+              <br>
+              본 예제 데이터의 경우 업체A와 업체B 데이터에 대한 Normality Test 결과 P-Value가 각각 0.121과 
+              0.789로, 데이터의 정규성 가정에 무리가 없다. (분석방법은 <a href="normaltest.html">Normality 
+              Test</a> 참조). 2 Sample t 검정을 시행하기 위해서는 두 모집단의 분산이 동일한 지 여부를 먼저 검정하여야 
+              한다. 검정 방법은 다음과 같다.<br>
+              <br>
+              업체 A와 업체 B의 분산을 각각 <img src="images/HypoMean_2t2_02.gif" width="49" height="17">이라고 
+              하면 분산의 동일성 검정에 대한 가설을 다음과 같이 설정할 수 있다.<br>
+              <br>
+              <font size="2"><font size="-1">H<sub>0</sub> :</font></font> <img src="images/HypoMean_2t2_03.gif" width="52" height="17" align="absmiddle"><br>
+              <font size="2"><font size="-1">H<sub>1</sub> : </font></font> <img src="images/HypoMean_2t2_04.gif" width="54" height="16" align="absmiddle"><br>
+              <br>
+              <br>
+              1.1 데이터의 입력 <br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+              <br>
+              <img src="images/HypoMean_2t2_05.gif" width="172" height="264"><br>
+              <br>
+              <br>
+              1.2 Variances…검정을 실시한다.<br>
+              <br>
+              ① Stat > Basic Statistics > 2 Variances 선택<br>
+              <br>
+              <img src="images/HypoMean_2t2_06.gif" width="336" height="175"><br>
+              <br>
+              <br>
+              ② 데이터 열을 입력한다.<br>
+              <br>
+              <img src="images/HypoMean_2t2_07.gif" width="385" height="222"><br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다.<br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_2t2_08.gif" width="449" height="324"> 
+              <br>
+              <br>
+              Graph 창에 나타난 결과<br>
+              <br>
+              <img src="images/HypoMean_2t2_09.gif" width="332" height="239"> 
+              <br>
+              <br>
+              </b>☞ 결과 해석<b><br>
+              </b>F-test 결과 P-value가 0.516으로 두 모집단의 분산이 서로 같다는 판정을 할 수 있 다. 다음 
+              그림은 두 모집단 표준편차의 신뢰구간 및 Box-plot을 보여주고 있다. <b><br>
+              </b>2 Variances 검정에 대한 상세한 설명은 2 Variances검정을 참조하기 바란다. <br>
+              <br>
+              <br>
+              1.3 MINITAB을 사용한 2-Sample t 검정 <br>
+              <br>
+              앞서 두 모집단의 분산이 서로 동일하다는 것을 확인했다. 이 정보를 기초로 해서 두 모집단의 평균치 비교는 다음과 
+              같은 절차에 의해 시행한다.<br>
+              <br>
+              ① Stat > Basic Statistics > 2-Sample t 선택<br>
+              <br>
+              <img src="images/HypoMean_2t2_10.gif" width="373" height="197"> 
+              <br>
+              <br>
+              <br>
+              ② 업체A, B의 데이터 열을 입력한다. <img src="images/HypoMean_2t2_11.gif" width="425" height="261"> 
+              <br>
+              <br>
+              <br>
+              ☞ 2 Sample t -> Options<br>
+              신뢰수준 및 대립가설의 형태를 결정해 준다. 물론 신뢰구간만을 구하고자 할 때는 대 립 가설의 형태에 신경 쓸 필요가 
+              없다. <br>
+              <br>
+              <img src="images/HypoMean_2t2_12.gif" width="390" height="133"> 
+              <br>
+              <br>
+              ☞ 2 Sample t -> Graphs<br>
+              MINITAB에서는 Histogram of data, Dotplot of data, 그리고 Boxplot of data 
+              등 세 가지 형태의 그래프를 Output과 함께 출력할 수 있으므로, 원하는 그래프를 선택할 수 있다. <br>
+              그래프에는 평균의 신뢰구간 뿐 아니라 귀무가설에서 설정한 <font face="symbol">m</font><sub>0</sub> 
+              대비 추정한 평균값 <img src="images/HypoMean_2t2_18.gif" width="53" height="18" align="absmiddle">의 
+              상대적 위치도 제시해 준다. <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_2t2_13.gif" width="385" height="185"> 
+              <br>
+              <br>
+              </b>☞ 결과 해석 <br>
+              P-Value 가 0.001<0.05 이므로 H<sub>0</sub>를 기각한다. 즉, 업체 A는 업체B에 비해 낮은 
+              불순물 함량을 가지고 있다고 말할 수 있다. 출력물의 하단에 다음과 같은 코멘트가 있다; "Both use Pooled 
+              StDev = 0.0744" . 이는 두 모집단의 등 분산을 가정한 결과이다. 즉, "Assume Equal Variance"를 
+              선택한 결과이다. 본 예제에서 합동 표준편차 (Pooled standard deviation) 은 0.0744 이며, 
+              모든 분석 결과들은 이 값에 기초해 얻어졌다. <br>
+              <br>
+              <br>
+              1.4 두 모평균 차의 신뢰구간 <br>
+              <br>
+              2-Sample t를 이용하여 두 모평균 차의 신뢰구간을 구할 수 있으며, 등분산인 경우와 등분산이 아닌 경우는 위와 
+              동일하게 Assume equal variances 의 체크 여부를 통해 구분할 수 있다.<br>
+              <br>
+              앞의 문제에서 두 모평균 차의 95% 신뢰구간을 구하도록 하자.<br>
+              <br>
+              ① Stat > Basic Statistics > 2-Sample t 선택 <br>
+              <br>
+              <img src="images/HypoMean_2t2_14.gif" width="424" height="200"> 
+              <br>
+              <br>
+              ☞ 2 Sample t - Options <br>
+              신뢰구간만을 구하고자 할 때는 Test mean 이나 대립가설의 형태에 신경 쓸 필요가 없다.<br>
+              <br>
+              <img src="images/HypoMean_2t2_15.gif" width="353" height="122"> 
+              <br>
+              <br>
+              <br>
+              ② OK 버튼을 클릭한다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_2t2_16.gif" width="435" height="203"> 
+              <br>
+              <br>
+              </b>: 앞의 결과에서 알 수 있듯이 A업체는 B업체에 비해 낮은 불순불 함량을 가지 고 있기 때문에 두 모평균차의 
+              95%신뢰구간은 (-0.1046, -0.0276)으로 음수값이 나오는 것을 알 수 있다. </font></font></font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<HTML>
+<HEAD>
+<TITLE>I-MR-R/S(Between/Within)관리도 </TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left">
+              <p><a href="immrrs.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic_on.gif',1)"><img src="images/b_basic.gif" width="55" height="24" border="0" name="Image1"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro01_on.gif',1)"><img src="images/b_pro01.gif" width="55" height="24" border="0" name="Image2"></a><br>
+                <br>
+                <A name="1"></a> <font size="4" color="#a70105"><b>I-MR-R/S(Between/Within) 
+                관리도</b></font> </p>
+              <p><b><font size=3><b><font color="#000000">Stat>Control Charts&gt;I-MR-R/S(Between/Within) 
+                </font></b></font></b><br>
+                <br>
+                <BR>
+                <font size=3><b><font size="2">1. I-MR-R/S(Between/Within) 관리도의 
+                개요</font></b></font><br>
+                <br>
+                <font size="-1"> I-MR-R/S관리도는 I관리도, MR관리도, R관리도 혹은 S관리도를 하나의 화면에 
+                모두 나타내준다. 먼저 I관리도는 공정의 평균이 관리 상태인지를 판단하고, MR관리도는 부분군 간의 변동이 관리 
+                상태인지를 판단한다. 또한 R관리도 혹은 S관리도는 부분군내의 변동이 관리 상태인지를 판단해 준다. 이 때 I관리도는 
+                각 부분군의 평균을 하나의 관측 값으로 취급하여 만든 I관리도를 나타내며, MR관리도 역시 인접한 두부분군 간의 
+                평균의 범위를 기초로 하여 구해진다. I관리도, MR관리도, 그리고 R관리도와 S관리도를 나타내는 중심선 및 관리한계선은 
+                다음의 식으로 구해진다. 여기서 MR관리도와 R관리도의 차이점은 범위의 결정방법에 있다. MR관리도는 인접하는 
+                두 부분군의 평균의 범위를 사용하는 반면, R관리도의 범위는 부분군내에 있는 <img src="images/imrrs2_01.gif" width="77" height="21" align="absmiddle">을 
+                사용한다. 따라서, MR관리도는 n=2인 경우에 대한 계수<img src="images/imrrs2_02.gif" width="56" height="20" align="absmiddle">를 
+                사용하며, R관리도는 부분군의 크기에 해당하는 계수를 사용한다. <br>
+                특히, I-MR-R/S관리도에서 I관리도는 <a href="imr2.htm">I-MR관리도</a>와는 약간의 차이가 
+                있다. I-MR관리도는 하나의 데이터를 관리도 상에 타점하는 반면, I-MR-R/S관리도에서는 부분군의 평균 값이 
+                I-MR관리도의 하나의 데이터처럼 취급된다. <BR>
+                <br>
+                <br>
+                <img src="images/imrrs2_03.gif" width="506" height="356"> <br>
+                <br>
+                <br>
+                </font> </p>
+            </div>
+            </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">S 관리도의 경우</font><BR>
+            <br>
+            <img src="images/imrrs2_04.gif" width="93" height="80"> <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>2. MINITAB을 사용한 I-MR-R/S 관리도의 작성 <a href="data/i-mr-r_s.zip">(데이터 
+            : I-MR-R_S.mtw)</a></b></font><font size="-1"><br>
+            <br>
+            사출성형 업체는 자동차의 엔진블록 상단에 조립되는 실린더 헤드커버를 생산하고 있다. 이때 엔진블록과 실린더 헤드커버 간의 
+            간격(Gap)이 크면 오일의 누수(leak)가 발생하게 된다. 부분군의 크기가 3인 데이터를 10회에 걸쳐 수집하였는데 
+            이 부분군 간에 차이가 있는지 I-MR-R관리도를 이용하여 공정을 해석하라. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/imrrs2_05.gif" width="460" height="221"><br>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imrrs2_06.gif" width="172" height="387"><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 I-MR-R/S(Between/Within) 관리도를 
+            작성한다..</b><br>
+            <br>
+            ① Stat > Control Charts > I-MR-R/S(Between/Within)…를 선택한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imrrs2_07.gif" width="451" height="320"><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② 엔진블록과 실린더 헤드커버 간의 간격(Gap)이 포함되어 있는 
+            열과 부분군의 크기가 포함되어 있는 열을 선택한다.<BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/imrrs2_08.gif" width="560" height="412"><br>
+            <br>
+            <br>
+            <BR>
+            <BR>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Test] <br>
+            <br>
+            <br>
+            <img src="images/imrrs2_09.gif" width="560" height="524"><br>
+            <br>
+            <br>
+            [Estimate]<br>
+            <br>
+            <br>
+            <img src="images/imrrs2_10.gif" width="560" height="574"><br>
+            <br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <br>
+            <img src="images/imrrs2_11.gif" width="393" height="214"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/imrrs2_12.gif" width="532" height="384"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/imrrs2_13.gif" width="518" height="476"><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <br>
+            ③ OK를 클릭한다.<br>
+            <br>
+            다음과 같은 그래프와 함께 I-MR-RS 관리도에 대한 정보를 제공하는 창이 생성된다.<br>
+            <br>
+            <img src="images/imrrs2_14.gif" width="489" height="387"> <br>
+            <br>
+            <img src="images/imrrs2_15.gif" width="507" height="416"> <br>
+            <br>
+            <BR>
+            <b> </b><br>
+            모든 점들이 Individual 관리도, MR관리도, 그리고 R관리도의 관리한계선에 안에 타점 되어 있고 특별한 패턴이 
+            보이지 않으므로 공정이 안정상태라고 판단할 수 있다. I관리도에서 공정의 평균이 관리 상태인지를 판단할 수 있고, MR관리도에서는 
+            부분군 간의 변동이 관리 상태인지를, 그리고 R관리도에서는 부분군내의 변동이 관리 상태인지를 판단할 수 있다.<br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

@@ -1,0 +1,495 @@
+<html>
+<head>
+<title>부분 요인배치 실험의 설계</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=650>
+  <tr> 
+    <td width=20 height="12897">&nbsp;</td>
+    <td height="12897"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=630>
+        <tr> 
+          <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">부분 요인배치 실험의 
+            설계</font></b></font><br>
+            <br>
+            <br>
+            <font size="2"><b>1. MINITAB을 사용한 2수준 부분 요인배치 실험의 설계 <a href="data/Fraction_1.zip">(데이터 
+            : Fraction_1.mtw)</a><br>
+            <br>
+            </b></font><font size="-1">어떤 제품의 특성 중에서 투과율에 영향을 미치는 인자가 A, B, C, 
+            D 라고 생각되었다. <br>
+            하지만 한 번의 실험에서 들어가는 비용과 시간이 많이 소요 되기 때문에 모든 실험을 실시 하기가 힘들다. 고차의 교호작용을 
+            구하지 않고 실험의 크기를 작게 할 수 있는 1/2의 부분요인 배치법을 설계하려 한다. 각 수준의 수는 2이다.<br>
+            <br>
+            ① Stat>DOE>Factorial>Create Factorial Design…을 선택한다.<br>
+            <br>
+            <img src="images/FFDesign_Create2m_01.gif" width="568" height="211"><br>
+            </font> 
+            <p><br>
+              <font size="-1">② </font><font size="-1">Type of Design에서 2-level 
+              factorial (default generators)을 선택하고, Number of factors<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              란에는 인자의 수를 4로 선택한다. </font></p>
+            <p><img src="images/FFDesign_Create2m_02.gif" width="499" height="305"><br>
+              <br>
+              <font size="-1">o Number of factors는 인자의 수를 지정하는데 사용된다. 최대로 배치할 
+              수 있는 인자의 수는 15개이다.<br>
+              <br>
+              o Type of Design에서</font><br>
+              <br>
+              <font size="-1"><b>2-level factorial (default generators) </b><br>
+              2수준의 요인 배치법을 실시할 경우 사용된다. Default generators의 경우 MINTAB에서 정의된 교락 
+              관계식을 사용하여 설계를 한다. 인자는 2에서 15 까지 배치할 수 있다. <br>
+              <b>2-level factorial (specify generators)</b><br>
+              특정한 2수준의 요인 배치법을 실시할 경우 사용된다. 인자의 배치나 블록의 설계에 있어 Specify generators을 
+              이용하여 사용자가 직접 교락의 관계식을 정의 할 수 있다. <br>
+              <b>Plackett-Burman design</b><br>
+              분해능이 III인 실험 계획으로 주효과를 검출하는데 사용한다. 주효과는 2차 교호 작용과 교락 되어 있기 때문에 2차 
+              교호작용은 무시해도 좋다는 가정이 있어야 한다. 따라서 이 방법은 여러 인자들 중에서 반응변수에 영향을 크게 미치는 
+              중요한 인자들만을 선별할 때 사용된다. 단, 인자의 수는 실험의 시행 수 보다 작아야 한다. 인자는 2에서 47까지 
+              배치할 수 있다. <br>
+              <b>General full factorial design</b><br>
+              실험인자 수준에 따른 모든 조합에서 실시되는 실험계획으로서 작은 스크리닝 실험 또는 최적화 실험에 사용된다. 인자는 
+              2에서 9까지 배치할 수 있다. 인자의 수준은 2수준으로 고정되어 있는 것이 아니다. 만일 한 인자의 수준이 4수준 
+              이라면 이 인자에 해당하는 부분에 4수준을 입력하면 된다. 구체적인 사용 방법은 완전 요인배치법을 참고하십시오. <br>
+              <br>
+              <br>
+              <b>☞ 참 고</b> <br>
+              인자별 가능한 설계를 보려면 Display Available Designs…을 클릭한다.<br>
+              인자별 실험수(Run)와 분해능(Resolution: 실험의 정밀도)을 볼 수 있다.</font> 
+            <font size="-1"><br>
+            여기서는 인자가 4이고 실험수가 8이므로 분해능은 IV 이다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_03.gif" width="567" height="352"> 
+            <br>
+            <br>
+            그림내의 같은 로마숫자는 동일한 분해능을 나타낸다.<br>
+            분해능이 높은 순서는 로마숫자가 높은 순서이다. ( Full > Ⅶ > Ⅵ > Ⅴ > Ⅳ > Ⅲ) <br>
+            실험의 분해능은 다음과 같다.<br>
+            <ul>
+              <li>III는 주효과가 2차 교호작용과 교락 되었으며, 2차 교호작용간에도 교락 되었다.<br>
+              <li>IV는 주효과가 2차 교호작용과 교락 되지 않으나, 2차 교호작용간에는 교락 되었다.<br>
+              <li>V는 주효과가 2차 교호작용과 교락 되지 않으나, 2차 교호작용은 3차 교호작용과 교락 되었다.<br>
+              <li>점차적으로 차수가 늘어나면서 서로 교락 되어 있는 인자들의 차수가 증가하게 된다.<br>
+            </ul>
+            ③ Designs…을 클릭하고, 2**(4-1)의 1/2요인 실험 설계를 선택한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_04.gif" width="472" height="257"> 
+            <br>
+            <br>
+            Number of center points는 Design에 중심점을 넣어 계획할 때, Number of replicates는 
+            실험을 반복해서 할 경우에 반복수를 지정한다. 또한 Number of blocks를 통해 실험설계시 블록을 지정할 수 
+            있다.<br>
+            <br>
+            <ul>
+              <li>중심점(Center point)을 추가 하여 실험을 하는 목적은 효과의 형태가 선형인지 비선형(곡선형태)인지를 
+                알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 계량적일 경우에는 쉽게 중심점을 
+                추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다.<br>
+                <br>
+              <li>반복(Replicate)은 동일한 처리에 대하여 실험을 2회 이상 실시하는 것이다. 반복의 횟수가 증가 함에 
+                따라서 오차항 추정의 정밀도가 증가한다. 또한 반복횟수가 증가함에 따라서 구할 수 있는 교호작용 효과의 차수가 
+                증가하게 된다. <br>
+                <br>
+              <li>블록(Block)의 경우 실험의 반응값을 동일한 실험조건에서 얻기가 힘들 때 중요하지 않은 인자를 블록 설계를 
+                통하여 교락 시키고자 할 때 사용된다. 여기서는 MINITAB에서 지정하는 생성자를 사용하나 2-level factorial 
+                (specify generators)에서는 직접 정의할 수 있다. <br>
+                <br>
+              
+            </ul>
+            </font> 
+            <p>
+            <font size="-1">④ Designs…을 지정하고 나면 나머지 옵션 버튼들이 나타난다. 여기서 Factors…버튼을 
+            클릭 한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_05.gif" width="393" height="254"> 
+            <br>
+            <br>
+            Name 란에 인자의 명을 입력하고 Low 란에는 인자 수준의 낮은 값을 High 란에는 인자 수준의 높은 값을 입력한다. 
+            MINITAB에서는 default값으로 coded된 값인 -1과 1을 지원한다. 여기서는 default 값을 선택하자.<br>
+            <br>
+            인자의 수준값을 0과 1로 두지않고 -1과 1로 두는 이유는 균형과 직교의 특성이 있으면 쉽게 인자들을 분석할 수 있다. 
+            <br>
+            <br>
+            <img src="images/FFDesign_Create2m_06.gif" width="185" height="114"> 
+            <br>
+            <br>
+            □ <b>균형 (Balanced)</b><br>
+            실험에서 각 변수는 고(+1)와 저(-1) 수준에서 동일한 수의 run을 갖는다.<br>
+            또한 A수준을 모두 더하면 (-1)+(-1)+(+1)+(+1)=0이 된다.<br>
+            이러한 속성은 변수의 각 수준이 최종 결과에 동등한 영향을 주도록 함으로써 이 설계에 대한 수학적 분석이 쉽게 이루어지도록 
+            해 준다. <br>
+            <br>
+            □ <b>직교 (Orthogonality)</b><br>
+            주효과(A, B)의 플러스와 마이너스 부호가 주효과 난의 부호들을 곱한 난이 균형을 이루도록 배열해 준다. 이것은 각 
+            인자들이 서로 독립이 되도록 해 준다. AB난을 전부 더하면, (-1)(-1)+(+1)(-1)+(-1)(+1)+(+1)(+1)=0이 
+            된다. <br>
+            <br>
+            <br>
+            ⑤ Options…의 Fraction 부분에 Use Fraction number에 2를 입력한다. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; default는 랜덤으로 설정되어 있다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_07.gif" width="518" height="255"> 
+            <br>
+            <br>
+            Fold Design은 인자에 대해 실험 수를 Fold 한다. 하지만 여기서는 사용하지 않도록 한다. 그리고, Randomize 
+            runs를 클릭하면 실험순서를 랜덤하게 하고, Base for random data generator 란은 실험순서의 
+            랜덤화에 대한 역할을 한다. 실험순서를 랜덤화 할 때 마다 동일한 값을 입력하면 동일한 실험순서를 얻는다.<br>
+            랜덤하게 설계된 것을 Worksheet에 저장하려면 Store design in worksheet를 클릭한다. <br>
+            <ul>
+              <li>Fraction<br>
+                만약 1/2 부분 요인실험을 할 경우에는 2개의 Fraction이 생기고, 1/4 부분 요인실험을 할 경우에는 
+                4개의 Fraction이 생긴다. 만약 1/4 부분 요인실험을 한다면 생성자가 2개 이상 있어야 하는데 5인자(A, 
+                B, C, D, E)인 경우 default로 생성자는 D=AB, E=AC가 된다. 이 때 Fraction number에 
+                따라 실험계획이 다르다. <br>
+                <br>
+                <fraction number> <b>&lt;Fraction number&gt;</b><br>
+                <br>
+                <fraction number><fraction number><fraction number>
+              <li>1 D=-AB E=-AC <br>
+              <li>2 D= AB E=-AC<br>
+              <li>3 D=-AB E= AC<br>
+              <li>4 D= AB E= AC <br>
+                <fraction number><fraction number> <fraction number><fraction number><fraction number><fraction number><fraction number><fraction number><br>
+              <li>Use principal fraction 과 Use fraction number의 사용 <br>
+                Use principal fraction 과 Use fraction number을 사용하여 부분 요인배치를 설계할 
+                수 있다. 차이점은 Use principal fraction의 경우는 생성자의 부호가 모두 +인 것 만을 사용한다. 
+                예를 들면 위에서 Use principal fraction을 사용하면 fraction number 4에 해당하는 
+                생성자 D= AB와 E= AC를 사용한다. 그러나 Use fraction number을 이용하는 경우는 사용자가 
+                지정하는 번호에 해당하는 생성자를 이용한다. 예를 들어 fraction number 1로 지정하면 생성자는 D=-AB 
+                와 E=-AC가 된다.<br>
+                <br>
+            </ul>
+            </font> 
+            <p>
+            <font size="-1">⑥ Results…는 Session 창에 출력되는 형태를 선택할 수 있다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_08.gif" width="528" height="275"> 
+            <br>
+            <br>
+            <ul>
+              <li>Printed Results에 Session 창에 출력되는 것을 선택한다.<br>
+                <b>Summary table</b> : 디자인에 대한 개략적인 정보를 제공한다.<br>
+                <b>Alias table</b> : 인자에 대한 별명(Alias)구조를 예와 같은 형태로 제공해 준다.<br>
+                예) I + ABD + ACE + BCF + DEF + ABEF + ACDF + BCDE<br>
+                <b>Data table</b> : random하게 배치되는 인자의 수준을 부호로 표시한다.<br>
+                <b>Defining relation</b> : 정의 구조에 대하여 다음의 예와 같은 형태로 표현된다.<br>
+                예) Design Generators: D = AB E = AC F = BC <br>
+                <br>
+              <li>Content of Table 란은 교호작용의 차수를 어떻게 할 것인가를 지정한다.<br>
+                만약 2로 하면 2차 교호작용이 4으로 하면 4차의 교호작용이 블록과 교락된다.<br>
+            </ul>
+            </font> 
+            <p><font size="-1"><br>
+              ⑦ OK 버튼을 클릭한다.<br>
+              <br>
+              <b>Session창에 나타난 결과</b><br>
+              <br>
+              <img src="images/FFDesign_Create2m_09.gif" width="567" height="574"> 
+              <br>
+              <br>
+              Fractional Factorial Design 부분은 부분 요인 실험의 설계된 형태를 나타내어 준다. 인자는 4가지이고 
+              반복이 1이고 중심점은 없으며 실험횟수는 8임을 알 수 있다. 이것은 4인자의 1/2 부분 요인실험의 배치로 분해능이 
+              IV이다. 이 경우 주효과와 3인자 교호작용의 효과가 교락 되어 있기 때문에 3인자 교호작용의 효과가 유의하지 않을 
+              때 사용할 수 있다. 2인자 교호작용간의 효과를 분리 하려면 실험을 추가적으로 실시하여 분해능을 증가 시키면 된다. 
+              정의 구조를 정의 관계라고도 한다. <br>
+              <br>
+              중심점(Center point)<br>
+              모든 인자의 높은 수준과 낮은 수준의 중앙값을 나타낸다. 중심점을 추가 하여 실험을 하는 목적은 효과의 형태가 선형인지 
+              비선형(곡선형태)인지를 알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 계량적일 
+              경우에는 쉽게 중심 점을 추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다. <br>
+              <br>
+              반복(replicate)<br>
+              동일한 처리에 대하여 실험을 2회 이상 실시하는 것이다. 반복의 횟수가 증가 함에 따라서 오차항 추정의 정밀도가 증가한다. 
+              또한 반복횟수가 증가함에 따라서 구할 수 있는 교호작용의 차수가 증가한다. <br>
+              <br>
+              블록(block)<br>
+              실험의 모든 관측치들은 동일한 조건에서 얻기 힘들므로 실험을 시각적 혹은 공간적으 로 분할하여 그 내부에서 실험의 
+              환경이 균일하도록 만들어 놓는 것이다. 따라서 중요 하지 않은 인자는 블록설계를 통해 교락 시키면 실험에 따른 오차를 
+              분리해서 구할 수 있다. <br>
+              <br>
+              <br>
+              <b>Worksheet에 나타난 결과</b><br>
+              <br>
+              Worksheet에 설계된 표가 생성된다. <br>
+              <br>
+              <img src="images/FFDesign_Create2m_10.gif" width="566" height="266"><br>
+              <br>
+              StdOrder는 Yate's의 표준배열 순서이고 RunOrder는 실험의 순서이다. 즉,Yates의 계산법에 의해 
+              구해진 표준배열의 실험순서(StdOrder)를 랜덤하게 순서를 정해서 실행(RunOrder)한다. 표준배열을 사용하면 
+              직교성과 균형성을 만족시킨다. CenterPt가 1 이면 중심점이 없다(있다는 0)는 뜻이고 Blocks가 1 이면 
+              블록화가 되지 않았다는 뜻이다. <br>
+              <br>
+              <br>
+              <font size="2"><b>2. 인자를 추가하고 블록을 설계하며 folding 실험계획하기</b></font> 
+              <br>
+              <br>
+              실험계획이나 실험을 실시한 후에 새로운 인자를 추가 시키거나 새로운 불록을 설계해야 하는 경우에 생성자(generators)를 
+              사용하여 인자를 증가 시키거나 블록을 설계할 수 있다. 이 때 MINITAB에서 지원하는 것이 2-level factorial 
+              (specify generators)이다. 예를 들어 처음에 설계한 실험이 4 개의 인자의 부분요인 실험일 때 여기에 
+              생성자를 이용하여 새로운 인자를 추가하고 새로운 블록을 설계하는 문제를 고려하여 보자. 또한 A인자에 대하여 folding설계를 
+              하고자 한다. <br>
+              <br>
+              ① Stat > DOE > Factorial > Create Factorial Design...<br>
+              <br>
+              <img src="images/FFDesign_Create2m_11.gif" width="567" height="166"> 
+              <br>
+              <br>
+              <br>
+              ② Type of Design 에서 2-level factorial (specify generators)선택하고 인자수를 
+              입력 하는 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Number of factors 란에 4을 선택하고 Designs...을 
+              클릭한다. <br>
+              <br>
+              <img src="images/FFDesign_Create2m_12.gif" width="497" height="253"> 
+              <br>
+              <br>
+              Number of factors는 인자의 수를 지정하는데 사용된다. <br>
+              <br>
+              <br>
+              ③ 2**(4-1)의 1/2 요인 실험설계를 선택한다. <br>
+              <br>
+              <img src="images/FFDesign_Create2m_13.gif" width="465" height="263"> 
+              <br>
+              <br>
+              Number of center points는 설계에 중심점을 넣어 계획할 때, Number of replicates는 
+              실험을 반복할 경우에 반복 수를 지정한다. <br>
+              <br>
+              <b>중심점(Center point)</b><br>
+              모든 인자의 높은 수준과 낮은 수준의 중앙값을 나타낸다. 중심점을 추가 하여 실험을 하는 목적은 효과의 형태가 선형인지 
+              비선형(곡선형태)인지를 알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 계량적일 
+              경우에는 쉽게 중심점을 추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다.<br>
+              <br>
+              <b>반복(Replicate)</b><br>
+              동일한 처리에 대하여 실험을 2회 이상 실시하는 것이다. 반복의 횟수가 증가 함에 따라서 오차항 추정의 정밀도가 증가한다. 
+              또한 반복횟수가 증가함에 따라서 구할 수 있는 교호작용의 차수가 증가한다.<br>
+              <br>
+              ④ Generators...를 클릭한다.<br>
+              </font>
+            <font size="-1"> <br>
+            <br>
+            <ul>
+              <li>Add factors to the base design by listing their generators는 
+                생성자를 사용하여 인자를 추가하는데 사용된다. 여기서는 생성자 CD를 사용하여 새로운 인자 E를 추가하였다. 생성방법은 
+                자신이 원하는 생성자를 직접 입력하면 된다. 추가된 인자 E는 CD교호작용과 교락 된다. 그리고 동일한 실험횟수에서 
+                인자 하나가 추가되면 분해능은 떨어진다.<br>
+                <br>
+              <li>Define blocks by listing their generators는 생성자를 이용하여 블록설계를 할 
+                수 있는데 생성자 ABC를 이용하여 다음과 같은 블록을 만들었다.<br>
+                <br>
+                <b>Block &nbsp;&nbsp;&nbsp;ABC </b><br>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;-</b>&nbsp;&nbsp;&nbsp;( 
+                세 인자 A, B, C의 수준의 곱이 -1이다. 예 A
+            </ul>
+            <img src="images/FFDesign_Create2m_14.gif" width="489" height="327">
+            <ul>
+              <li>=-1, B=1, C=1) <br>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;&nbsp;+</b>&nbsp;&nbsp;&nbsp;( 
+                세 인자 A, B, C의 수준의 곱이 1이다. 예 A=-1, B=1, C=-1)<br>
+                <br>
+            </ul>
+            ⑤ Designs을 OK하고 나면 나머지 옵션 버튼들이 나타난다. 여기서 Factors…버튼을 클릭 한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_15.gif" width="392" height="253"><br>
+            <br>
+            Name 란에 인자의 명을 입력하고 Low 란에는 인자 수준의 낮은 값을 High 란에는 인자 수준의 높은 값을 입력한다. 
+            여기서는 default값인 -1과 1을 두고 OK를 누른다.<br>
+            인자의 수준값을 0과 1로 두지않고 -1과 1로 두는 이유는 균형과 직교의 특성이 있으면 쉽게 인자들을 분석할 수 있다. 
+            <br>
+            <br>
+            <br>
+            ⑥ Options…의 Fraction 부분에 Use principal fraction을 선택한다. 또한 Use fraction 
+            number를<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;이용할 수 있다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_16.gif" width="516" height="261"> 
+            <br>
+            <ul>
+              <li>Fold Design은 지정된 인자(A)에 대해 실험 수를 Fold한다. Fold는 부분 요인 배치법에서 교락된 
+                효과에 대한 검출이 필요한 경우 실험을 추가적으로 실시하여 교락된 효과를 분리시킬 수 있다. 실험 횟수가 증가되면 
+                분해능도 증가 한다. Fold Design은 모든 인자에 대하여 Fold할 경우는 Fold on all factors을 
+                이용한다. 본 예에서는 A 인자에 대해서만 Fold를 하므로 Fold just on factor를 선택하고 A 
+                인자를 입력하였다. Fold로 설계를 하면 선택된 인자(또는 전체 인자)에 대하여 그 부호를 달리하여 설계를 한다. 
+                그러므로 반복과는 구별 된다.<br>
+                <br>
+              <li>나머지 부분은 2-level factorial (default generators)과 동일하다.<br>
+            </ul>
+            </font> 
+            <p><font size="-1"><br>
+              ⑦ Results…는 Session 창에 출력되는 형태를 선택할 수 있다. <br>
+              <br>
+              <img src="images/FFDesign_Create2m_17.gif" width="528" height="324"> 
+              <br>
+            <ul>
+              <li>Printed Results에 Session 창에 출력되는 것을 선택한다.<br>
+              <b>Summary table</b> : 디자인에 대한 개략적인 정보를 제공한다.<br>
+              <b>Alias table</b> : 인자에 대한 별명(Alias)구조를 예와 같은 형태로 제공해 준다.<br>
+              예) I + ABD + ACE + BCF + DEF + ABEF + ACDF + BCDE<br>
+              <b>Data table</b> : random하게 배치되는 인자의 수준을 부호로 표시한다.<br>
+              <b>Defining relation</b> : 정의 구조에 대하여 다음의 예와 같은 형태로 표현된다.<br>
+              예) Design Generators: D = AB E = AC F = BC <br>
+              <br>
+              <li>Content of Table 란은 교호작용의 차수를 어떻게 할 것인가를 지정한다.<br>
+              만약 2로 하면 2차 교호작용이 4으로 하면 4차의 교호작용이 블록과 교락된다.<br></ul>
+              <br>
+            ⑧ OK 버튼을 클릭한다. </font><font size="-1"> <br>
+            <br>
+            <b>Session 창에 나타난 결과</b><br>
+            <br>
+            <img src="images/FFDesign_Create2m_18.gif" width="568" height="514"> 
+            </font> <br>
+            <br>
+            <font size="-1"><b><1></b> Fractional Factorial Design은 설계된 형태를 나타내 
+            준다. 인자(factor)는 5개 이고 반복(Replicate)이 1이고 중심점(Center pts)은 없으며 실험횟수(Runs)는 
+            16임을 알 수 있다. 5인자의 1/2부분요인실험의 배치로 분해능은 III이다. 주효과가 2차 교호작용과 교락 되어 있고, 
+            2차 교호작용간에도 교락 되어 있다. <br>
+            <b><2></b> folding하기전의 생성자로서 새로운 인자 E의 생성자는 CD임을 알 수 있다. 블록설계를 위한 
+            생성자는 ABC이다. fold된 인자는 A인자 이다. 이는 A의 주효과를 2차의 교호작용과 교락시키지 않기 위해서 이다. 
+            folding을 한 후의 정의 관계는 I=CDE이다.<br>
+            <b><3></b> Alias Structure는 별명관계를 나타낸다. 예를 들어 A의 별명은 ACDE이다. 만약 고차의 
+            교호작용인 ACDE를 무시할 수 있다면 주효과 A를 구할 수 있다.<br>
+            </font><br>
+            <img src="images/FFDesign_Create2m_19.gif" width="243" height="242"><br>
+            <br>
+            <font size="-1">데이터 Matrix는 실험을 실시할 때 인자들의 수준이 어떠한가를 제시해 준다. +인 경우는인자의 
+            수준이 높은 수준에서, -인 경우는 인자의 수준이 낮은 수준에서 실험을 행한다.<br>
+            <br>
+            <br>
+            <b>Worksheet에 나타난 결과 <a href="data/fraction_sp.zip">(fraction_sp.mtw)</a> 
+            </b></font><br>
+            <br>
+            <font size="-1">Worksheet에 설계된 표가 생성된다.</font> <br>
+            <br>
+            <img src="images/FFDesign_Create2m_20.gif" width="567" height="388"> 
+            <br>
+            <br>
+            <font size="-1">StdOrder는 Yate's의 표준배열 순서이고 RunOrder는 실험의 순서이다. 즉, 
+            Yates의 계산법에 의해 구해진 표준배열의 실험 순서(StdOrder)를 랜덤하게 순서를 정해서 실행(RunOrder)한다. 
+            CenterPt가 1 이면 중심점이 없다(있다는 0)는 뜻이고 Blocks는 1과 2로 블록화가 되었다.<br>
+            실험설계에서 A인자에 대하여 folding을 시켰다. Worksheet에서 보면 StdOrder의 1번과 13번이 A인자에 
+            대해서만 부호가 반대임을 알 수 있다. 나머지 2번과 14번, 3번과 15번, 4번과 16번, 5번과 9번. 6번과 10번, 
+            7번과 11번, 8번과 12번이 A인자에 대하여 folding된 결과이다. Folding으로 인하여 실험의 횟수가 8회에서 
+            16회로 증가했다. <br>
+            <br>
+            <br>
+            <b><font size="2">3. Plackett-Burman 실험 설계 <a href="data/placket_1.zip">(데이터 
+            : placket_1.mtw)</a> <br>
+            <br>
+            </font></b>프라스틱 용기를 생산하는 화학 공정에서 이 제품의 수명을 길게 하기 위해 조사된 7개의 인자 중에서 
+            주효과을 알아 보기 위하여 실험을 설계하려고 한다. 교호작용은 무시해도 좋다는 가정하에 Plackett-Burman법을 
+            사용하여 설계하고자 한다. <br>
+            <br>
+            3.1 Plackett-Burman 법을 계획한다.<br>
+            <br>
+            ① Stat > DOE > Factorial > Create Factorial Design 선택 <br>
+            <br>
+            <img src="images/FFDesign_Create2m_21.gif" width="567" height="212"> 
+            <br>
+            <br>
+            <br>
+            ② Type of Design 에서 Plackett-Burman design 선택하고 인자수를 입력한다. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Number of factors란에 7을 선택하고 Designs…를 클릭한다. 
+            <br>
+            <br>
+            <img src="images/FFDesign_Create2m_22.gif" width="501" height="282"> 
+            <br>
+            <br>
+            <b>☞ 참 고 </b><br>
+            인자별 설계를 보려면 Display Available Designs…을 클릭한다. Plackett-Burman 실험 계획시 
+            인자수와 그에 따른 실험시행 횟수(Run)은 아래에 있는 표의 Available Resolution III Plackett-Burman을 
+            보면 된다. 여기서 인자수가 7이므로 실험의 횟수는 8, 12, 16, 20, ..., 48 중에 하나를 선택할 수 있다. 
+            <br>
+            <br>
+            <img src="images/FFDesign_Create2m_23.gif" width="567" height="318"> 
+            <br>
+            <br>
+            <br>
+            ③ Number of runs 란에 8을 입력한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_24.gif" width="477" height="174"> 
+            <br>
+            <ul>
+              <li>Number of center points는 Design에 중심점을 넣어 설계할 때, Number of replicates는 
+                실험을 반복해서 할 경우에 반복 수를 지정한다. <br>
+                <b>중심점(Center point)</b><br>
+                모든 인자의 높은 수준과 낮은 수준의 중앙값을 나타낸다. 중심점을 추가 하여 실험을 하는 목적은 효과의 형태가 
+                선형인지 비선형(곡선형태)인지를 알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 
+                계량적일 경우에는 쉽게 중심 점을 추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다. 
+                <br>
+                <br>
+                <b>반복(Replicate)</b><br>
+                동일한 처리에 대하여 실험을 2회 이상 실시하는 것이다. 반복의 횟수가 증가 함에 따라서 오차항 추정의 정밀도가 
+                증가한다. 또한 반복횟수가 증가함에 따라서 구할 수 있는 교호작용의 차수가 증가한다. <br>
+            </ul>
+            <br>
+            ④ Designs을 OK하고 나면 나머지 옵션 버튼들이 나타난다. 여기서 Factors…버튼을 클릭 한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_25.gif" width="383" height="242"> 
+            <br>
+            <br>
+            Name 란에 인자의 명을 입력하고 Low 란에는 인자 수준의 낮은 값을 High 란에는 인자 수준의 높은 값을 입력한다. 
+            여기서는 default값인 -1과 1을 두고 OK를 누른다. <br>
+            <br>
+            <br>
+            ⑤ Option...은 실험의 랜덤화에 대한 것을 지정한다. <br>
+            <br>
+            <img src="images/FFDesign_Create2m_26.gif" width="516" height="201"> 
+            <br>
+            <ul>
+              <li>Randomize runs를 클릭하면 실험 순서를 랜덤하게 하며,<br>
+              <li>Base for random data generator란은 실험순서를 결정하는 역활을 한다. 실험순서를 생성할 
+                때 마다 동일한 값을 입력하면 동일한 실험순서를 얻는다.<br>
+              <li>랜덤하게 설계된 것을 Worksheet에 저장하려면 Store design in worksheet를 클릭한다.<br>
+            </ul>
+            <br>
+            ⑥ OK 버튼을 클릭한다. <br>
+            <b><br>
+            Session창에 나타난 결과 <br>
+            <br>
+            <img src="images/FFDesign_Create2m_27.gif" width="366" height="313"> 
+            <br>
+            <br>
+            </b>Plackett-Burman Design은 설계된 형태를 나타내어 준다. 인자는 7개이고 반복이 1이고 중심점은 
+            없으며 실험횟수는 8임을 알 수 있다. Plackett-Burman Design은 주효과와 교락 되어 있는 2인자 교호작용의 
+            효과를 알 수 없기 때문에 교호작용을 유의하지 않은 경우에 사용할 수 있다. 데이터 Matrix는 실험을 실시할 때 인자들의 
+            수준을 나타내 준다. +인 경우는 인자의 수준이 높은 수준에서, -인 경우는 인자의 수준이 낮은 수준에서 실험을 행한다. 
+            <br>
+            <br>
+            <br>
+            <b>Worksheet에 나타난 결과 <br>
+            <br>
+            </b>Worksheet에 설계된 표가 생성된다. <b><br>
+            <br>
+            <img src="images/FFDesign_Create2m_28.gif" width="568" height="218"> 
+            <br>
+            <br>
+            </b>StdOrder는 Yate's의 표준배열 순서이고 RunOrder는 실험의 순서이다. 즉, Yates의 계산법에 
+            의해 구해진 표준배열의 실험 순서(StdOrder)를 랜덤하게 순서를 정해서 실행(RunOrder)한다. CenterPt가 
+            1 이면 중심점이 없다(있다는 0)는 뜻이고 Blocks가 1 이면 블록화가 되지 않았다는 뜻이다.<br>
+            7인자의 수준이 각각 2이고 Plackett-Burman 실험의 실험횟수는 8이다. <b> </b></font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

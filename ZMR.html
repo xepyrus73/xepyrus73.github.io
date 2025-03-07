@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<TITLE>Z-MR 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="zmr2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> Z-MR 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;Z-MR 
+                </font></b></font></b> <b><font size="4" color="#a70105"> </font></b><b><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <p><br>
+              <BR>
+              <font size=2><b>1. Z-MR 관리도의 개요</b></font><br>
+              <br>
+              <font size="-1">일반적인 관리도에서는 프로세스 평균(μ)과 프로세스 표준편차(σ)와 같은 모수(Parameter)를 
+              추정하기 위해 충분한 데이터를 확보하지만, Short Run 공정에서 종종 프로세스의 모수(Parameter)를 추정할 
+              만큼 충분히 데이터를 가지지 못할 수 있다. 하나의 기계 또는 프로세스는 다양한 부품과 다양한 제품을 생산할 수 있다. 
+              만일 다른 제품을 많이 생산하여 데이터를 얻을지라도 각각의 제품에 대한 관리도를 따로 그리고자 할 필요가 있을 것이다. 
+              왜냐하면 동일한 평균과 표준편차를 가지지 않을 가능성이 높기 때문이다. Short Run 관리도는 이러한 문제에 대한 
+              다양한 방식의 Pooling과 Standardizing을 사용하여 해결책을 제시한다. 이 때 일반적인 가정은 각각의 
+              부품 또는 배치는 유일한 평균과 표준편차를 가지고 있다는 것인데, 만일 평균과 표준편차가 얻어진다면, 공정의 데이터는 
+              평균을 빼고 표준편차로 나누어서 표준화 할 수 있다. 표준화된 데이터는 모 평균이 0, 모 표준편차가 1인 모집단에서 
+              생성 되는 것으로 이렇게 되면 각각의 다른 부품이나 제품에 대해 타점할 수 있는데, 이때의 관리도의 중심선은 0이고 
+              관리 상한선은 ±3인 관리도가 되는 것이다.<br>
+              </font><font size="-1">Z-MR 관리도는 표준화된 개별 관측치(Z)와 Short Run 공정으로부터 
+              Moving Range(MR)를 그리는 관리도로 단기 프로세스에서 각각의 Run에 대해 충분한 데이터를 얻지 못할 
+              때 사용한다. Z-MR 관리도에서는 측정치 데이터를 표준화하는데, 표준화는 각각의 다른 Run으로부터 수집된 데이터를 
+              하나의 관리도를 통해 해석이 가능하게끔 한다. 이때 데이터로부터의 평균과 변동의 추정은 다양한 방법으로 수행할 수 
+              있다.<br>
+              <br>
+              </font><BR>
+            </p>
+            </td>
+        </tr>
+        <tr> 
+          <td  height="122"> <font size=2><b>2.MINITAB을 사용한 Z-MR 관리도의 
+            작성 <a href="data/Z_mr.zip">(데이터 : Z_mr.mtw)</a></b></font><br>
+            <br>
+            <font size="-1">화학 섬유공장에서 Short Run으로 섬유를 만들기 때문에 품질상태를 평가하기 위한 표준화 
+            관리도 기술을 적용할 필요를 느끼고 프로세스에 변동에 영향을 미치는 섬유의 탄력성을 조사했다. 3종류의 섬유에서 15개의 
+            데이터를 추출하였다. Z-MR관리도를 작성해보자.<br>
+            </font><BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/ZMR_01.gif  border=0 align=center><BR>
+            <BR>
+            <br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력 </b><br>
+            <BR>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/ZMR_02.gif   border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> <b>2.2MINITAB의 실행</b><br>
+            <BR>
+            ① Stat > Control Charts >Z-MR…<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/ZMR_03.gif   border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 '탄력성', Part에 'type'를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/ZMR_04.gif   border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> <b> 2.3 결과 해석</b> <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> Graph 창에 나타난 결과</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/ZMR_05.gif   border=0 align=center><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위의 그래프를 보면 모든 점들이 관리한계선 내에 있으므로 이 프로세스는 
+            공정에 이상이 없는 것으로 판단한다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"><BR>
+            </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<TITLE>I-MR 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="imr2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <font size="4" color="#a70105"><b> I-MR 관리도 </b></font> <br>
+            <br>
+            <center>
+              <div align="left"><b><font size=3><b><font color="#000000">Stat>Control 
+                Charts&gt;I-MR </font></b></font></b> <b><font size="4" color="#a70105"> 
+                </font></b></div>
+            </center>
+            <br>
+            <br>
+            <font size="2"><BR>
+            <b>1. I-MR 관리도의 개요</b></font><br>
+            <br>
+            <font size="-1">I-MR관리도를 X-R관리도라고도 한다. 관리도를 위해 공정으로부터 부분군을 추출할 때 한번에 
+            여러 개의 제품들을 추출할 수 없는 경우가 많다. 제품 또는 제조공정의 특성상 한번에 하나의 제품밖에 얻을 수 없는 경우도 
+            있고, 생산 속도가 너무 느려 둘 이상의 제품으로 부분군을 형성하기가 어려운 경우도 있다. 이러한 경우에는 <a href="XbarR.html">X 
+            bar-R관리도</a> 대신 부분군 크기를 n=1로 하는 I-MR관리도를 사용할 수 있다. I-MR관리도에서는 공정평균을 
+            관리하기 위해 개별측정치를 사용하고 공정의 표준편차를 관리하기 위해 인접한 두 데이터간의 범위를 사용한다. 따라서 k개의 
+            데이터를 이용하여 공정평균과 표준편차를 추정하면 <i>μ</i>의 추정 치로는 <img src=images/XbarR_01.gif  border=0 align=absmiddle>를 
+            사용하고, <img src=images/Common.gif  border=0 align=absmiddle>의 추정치로 
+            <img src=images/XbarR_05.gif  border=0 align=absmiddle>/<I>d</I><sub>2</sub> 
+            를 사용한다. 여기서 <img src=images/XbarR_05.gif  border=0 align=absmiddle> 
+            는 k-1개의 범위들의 평균이 된다. 이때 R관리도를 MR관리도라 한다. 일반적으로 이동범위(Moving Range)의 
+            길이를 2로 두지만 MINITAB에서는 임의로 이동범위의 길이를 정할 수 있다. 이 때 I관리도(혹은 X관리도) 및 MR관리도의 
+            중심선 및 관리한계선은 다음과 같이 구해진다.<br>
+            <BR>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMR_03.gif  border=0 align=center><BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMR_04.gif  border=0 align=center><BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 여기서, <I>d</I><sub>2</sub>,<I>D</I><sub>4</sub>,<I>D</I><sub>3</sub> 
+            은 n=2일 때의 값을 사용한다.<BR>
+            <BR>
+            <BR>
+            <font size="2"><br>
+            <b>2.MINITAB을 사용한 I-MR 관리도의 작성 <a href="data/I_MR.zip">(데이터 
+            : I_MR.mtw)</a></b></font><br>
+            <br>
+            장갑용 PVC를 생산하는 프로세스가 안정적인지를 판단하기 위해 PVC의 점도를 <BR>
+            관리항목으로 정하여 1일 1회에 걸쳐 한 달(30일)동안 데이터를 수집하였다.<BR>
+            I-MR관리도(X-R관리도)를 이용하여 분석하고자 한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="289"> <font size="-1"><img src=images/IMR_06.gif border=0 align=center><BR>
+            <BR>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMR_07.gif  border=0 align=center><BR>
+            <BR>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.2 MINITAB의 실행 </b><br>
+            <br>
+            ① Stat > Control Charts > I-MR <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMR_08.gif  border=0 align=center><BR>
+            <BR>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 PVC의 점도 데이터가 포함된 열(Viscosity)을 
+            선택한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMR_09.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> ③ OK를 클릭한다. <br>
+            <br>
+            <b> 2.3 결과 분석</b><br>
+            <br>
+            <b> Graph 창에 나타난 결과</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMR_10.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 모든 점들이 Individual 관리도와 MR관리도 관리한계선에 
+            안에 타점 되어 있고 특별한 패턴이 보이지 않으므로 공정이 안정상태라고 판단할 수 있다. <br>
+            <BR>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><font size="-1"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+              </font></div>
+          </td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+
+</BODY>
+</HTML>

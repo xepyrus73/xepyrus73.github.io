@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+<TITLE>C 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_pro_on.gif','images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="c2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> C 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;C 
+                </font></b></font></b> <b><font size="4" color="#a70105"> </font></b><b><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <BR>
+            <font size=3><b><font size="2">1. C 관리도의 개요</font></b></font><br>
+            <br>
+            <font size="-1">하나의 제품에 약간의 결점이 있어서 불량으로 처리되지 않고 사용 가능한 경우가 있다 예를 
+            들면 전선, 직물, 두루마리 종이 제품 등의 경우, 일정한 길이 또는 일정 면적당 약간의 흠이 있어도 실제로 사용하는 
+            데는 별 지장이 없을 수도 있을 것이나 그러한 결점의 수가 많아지면 제품의 기능이 저하되거나 가치가 감소될 것이다. 이와 
+            같은 경우 단위 제품당 결점수를 관리하기 위해 고안된 관리도가 결점수 관리도이다. 결점수 관리도에서는 단위 제품당 결점수 
+            X가 포아송 분포를 따른다고 가정한다. C 관리도는 검사단위 즉, 1회에 검사되는 양이 일정할 때 사용할 수 있는 결점수 
+            관리도이다. 검사단위당 평균 결점수를 c라 할 때 C관리도의 중심선 및 관리 한계선은 다음과 같이 될 것이다. <BR>
+            <BR>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/C1_01.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 만약 LCLc의 값이 음이 될 때는 LCLc=0으로 둔다. c 
+            값을 모를 때에는 다음과 같이 예비 샘플로부터 c 값을 추정하여 사용한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_02.gif  border=0 align=center> 
+            = (발견된 총결점수)/(총검사 단위 제품수)<BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b><font size="2">2. MINITAB을 사용한 C 
+            관리도의 작성 <a href="data/C관리도.zip">(데이터 : C관리도.mtw)</a></font></b> <br>
+            <br>
+            어떤 망간 주조 제조 업체는 처리 전에 먼저 용접하는 새로운 형식의 주조방법이 결점수에 어떠한 영향을 미치는지에 관심을 
+            갖고 있다. 과거의 경험에 의하면, 유사한 주조에 대한 결점수는 포아송(Poisson) 분포를 따른다. 하루의 작업시간동안에 
+            단지 하나의 주조를 생산할 수 있고, 따라서 이용할 수 있는 자료는 한정되어 있다. 15개의 주조에 대하여 주조당 평균 
+            7.9개의 결점이 관측되었다. 그러면 이것을 미래에 생산될 주조의 주조당 결점수의 추정값으로 사용할 수 있는가?<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_03.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_04.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 MINITAB의 실행 </b><br>
+            <br>
+            ① Stat > Control Charts > C..선택 <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_05.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable 란에 관측된 결점수 'Defect'를 입력한다. 
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_06.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <BR>
+            <b> 2.3 결과 해석 </b><br>
+            <br>
+            <b> Graph 창에 나타난 결과</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/C_07.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 관리한계를 벗어난 점이 없으며, 특별한 런(Run)이나 추세도 
+            보이지 않는다. 따라서, 주조 공정에서 결점수의 분포는 안정적이라고 결론지을 수 있다.또한 공정이 변화되지 않는다면 주조당 
+            평균 결점수는 가까운 미래에도 대략 7.9를 유지할 것이라고 결론지을 수 있다. </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

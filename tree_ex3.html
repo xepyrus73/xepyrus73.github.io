@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<TITLE>Simple Tree</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+window.onload = loadTrees;
+
+// load Tree component
+if (document.layers) {
+  document.writeln('<SCRIPT SRC="tree_n4_1.js"><\/SCRIPT>');
+} else if (document.all) {
+  document.writeln('<SCRIPT SRC="tree.js"><\/SCRIPT>');
+}
+
+// load my trees
+function loadTrees() {
+  window.mySubSubTree = new Tree();
+  mySubSubTree.addTreeItem("my subTree item A");
+  mySubSubTree.addTreeItem("my subTree item B");
+
+  window.mySubTree = new Tree();
+  mySubTree.addTreeItem(mySubSubTree);
+  mySubTree.addTreeItem("my subTree item B");
+
+  window.mySubTree2 = new Tree();
+  mySubTree2.addTreeItem("my subTree item A");
+  mySubTree2.addTreeItem("my subTree item B");
+
+  window.mySubTree3 = new Tree();
+  mySubTree3.addTreeItem("my subTree item A");
+  mySubTree3.addTreeItem("my subTree item B");
+
+  window.mySubTree4 = new Tree();
+  mySubTree4.addTreeItem("my subTree item A");
+  mySubTree4.addTreeItem("my subTree item B");
+  
+  
+  window.mySubTree5 = new Tree();
+  mySubTree5.addTreeItem("my subTree item A");
+  mySubTree5.addTreeItem("my subTree item B");
+
+  window.mySubTree6 = new Tree();
+  mySubTree6.addTreeItem("my subTree item A");
+  mySubTree6.addTreeItem("my subTree item B");
+
+  window.mySubTree7 = new Tree();
+  mySubTree7.addTreeItem("my subTree item A");
+  mySubTree7.addTreeItem("my subTree item B");
+
+  window.mySubTree8 = new Tree();
+  mySubTree8.addTreeItem("my subTree item A");
+  mySubTree8.addTreeItem("my subTree item B");
+
+  window.mySubTree9 = new Tree();
+  mySubTree9.addTreeItem("my subTree item A");
+  mySubTree9.addTreeItem("my subTree item B");
+
+  window.mySubTree9_1 = new Tree();
+  mySubTree9_1.addTreeItem("my subTree item A");
+  mySubTree9_1.addTreeItem("my subTree item B");
+
+  
+
+  window.myTree = new Tree();
+  myTree.addTreeItem(mySubTree);
+  myTree.addTreeItem(mySubTree2);
+  myTree.addTreeItem(mySubTree3);
+  myTree.addTreeItem(mySubTree4);
+  myTree.addTreeItem(mySubTree5);
+  myTree.addTreeItem(mySubTree6);
+  myTree.addTreeItem(mySubTree7);
+  myTree.addTreeItem(mySubTree8);
+  myTree.addTreeItem(mySubTree9);
+  myTree.addTreeItem(mySubTree9_1);
+
+  
+  myTree.showTree();
+}
+
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+</BODY>
+</HTML>

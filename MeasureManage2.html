@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+<TITLE>계측기 선형성</TITLE>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="1672">&nbsp;</td>
+    <td height="1672"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+      <tr>
+          <td ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="gagelinear2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <div align="left"><br>
+              <font size="4" color="#a70105"></font> <font size="4" color="#a70105"><b>계측기 
+              선형성(Gage Linearity)</b></font></div>
+            <font size="4" color="#a70105"><b></b></font><br>
+            <font size=2><b> </b></font> <br>
+            <BR>
+            <UL>
+	          <LI><A HREF=#1><font size="-1">계측관리의 개요 </font></a><font size="-1"><br>
+                <br>
+                </font>
+              <LI><font size="-1"><A HREF=GageLinear.html#1> MINITAB을 사용한 계측기 
+                선형성(Gage Linearity) 평가</a> </font>
+            </UL>
+<BR>
+            <a name="1"></a> <font size=3><b> 계측 관리</B></font><br>
+            <br><BR>
+            <font size=3><b><font size="2">1. 개요</font></B></font><br>
+            <br>
+            <font size="-1">현장으로부터 얻어지는 데이터는 어떤 형식으로든 측정을 통해 얻어진다. 이렇게 얻어진 데이터를 
+            바탕으로 여러 가지 의사결정을 하게 되는데, 만약 판단의 기초가 되는 데이터가 잘못된 것이라면 올바른 의사 결정을 할 
+            수 없다. 측정시스템 분석은 판단의 기초가 되는 데이터가 믿을 수 있는 것인지를 검증하는 과정의 하나로서, 주어진 데이터를 
+            얻게 한 측정시스템이 적정한 정확도와 정밀도를 보유하고 있는지를 분석 및 평가하는 것이다.<br>
+            데이터에 의해 관측된 변동은 크게 실제 공정의 변동과 측정에 의한 변동으로 구분된다. 이밖에도 화학 공정의 경우 시료를 
+            혼합하는 과정에서 발생된 오차나 성분분석 오차 등이 있으나 이는 보통 측정오차에 포함시켜 생각한다. <br>
+            <br>
+            </font><br>
+
+<img src=images/MeasureManage2_01.gif  border=0 align=center><BR><BR>
+
+<br><br>
+            <font size=3><b><font size="2">2.계측 관리의 대상</font></B></font><br>
+            <br><BR>
+            <font size="-1">계측 관리에서 문제 삼는 내용은 크게 측정값의 중심위치(정확도)와 측정값의 산포(정밀도)의 
+            두 가지로 대변된다. <br>
+            <br>
+            <a name="2"></a>- 정확도(Accuracy)<br>
+            <br>
+            측정치들의 평균과 참값의 일치정도를 나타내며, 측정치가 참값으로부터 치우침이 없는 가를 나타내는 척도이다. 치우침이 있는 
+            경우 계측기를 교정(Calibration) 혹은 보정해야 한다. <br>
+            </font><br>
+</td>
+      </tr>
+      <tr>
+        <td>
+<img src=images/MeasureManage2_02.gif  border=0 align=center><BR><BR>
+</td>
+      </tr>
+      <tr>
+          <td > <font size="-1">정확도에 관련된 특성에는 편의, 안정성, 선형성이 있는데 각각의 의미는 
+            다음과 같다.<br>
+            <br>
+            </font>
+            <UL>
+              <LI><font size="-1">편의(Bias) : 반복 관측치의 중심위치와 참값간의 차이 </font>
+              <LI><font size="-1">안정성(Stability) : 시간의 변화에 따른 반복 관측치의 중심위치 변화 
+                </font>
+              <LI><font size="-1">선형성(Linearity) : 측정범위 내에서의 편의의 차이 </font>
+            </UL>
+            <font size="-1">- 정밀도(Precision)<br>
+            <br>
+            같은 부품의 같은 특성을 측정할 때 이론적으로 같은 측정치가 나와야 함에도 불구하고 현실적으로 측정할 때마다 조금씩 다른 
+            결과가 나올 수 있다. 정밀도는 이와 같이 측정 과정에서 발생하는 산포를 나타내는데 이는 다시 반복성과 재현성으로 나누어진다.<br>
+            <br>
+            - 반복성(Repeatability)<br>
+            <br>
+            정밀도 중에서도 측정에 관련된 모든 조건, 즉, 작업자, 계측기 등을 동일하게 하여 측정했음에도 불구하고 나타나는 산포를 
+            나타낸다. <br>
+            <br>
+            </font> </td>
+      </tr>
+      <tr>
+        <td>
+<img src=images/MeasureManage2_03.gif  border=0 align=center><BR><BR><BR>
+</td>
+      </tr>
+      <tr>
+          <td > <font size="-1">- 재현성(Reproducibility) : 정밀도 중에서 작업자 
+            혹은 계측기를 달리 했을 때 나타나는 산포를 <br>&nbsp;&nbsp;
+            나타낸다.<br>
+            <br>
+            </font> </td>
+      </tr>
+      <tr>
+        <td>
+<img src=images/MeasureManage2_04.gif  border=0 align=center><BR><BR><BR>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          </td>
+</tr></table>
+
+</tr></table>
+</BODY>
+</HTML>

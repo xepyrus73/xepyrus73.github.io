@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>일원배치법(One-way ANOVA)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="233">&nbsp;</td>
+    <td height="233"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="162"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><b><font size="4" color="#A70105">1-Sample Z 검정의 
+              검출력과 시료수의 결정</font><font size="4"> <br>
+              <br>
+              Stat>Power and Sample Size>1-Sample Z </font></b><br>
+            </p>
+            <p> <font size="-1">Stat > Power and Sample Size > 1-Sample Z는 데이터가 
+              정규분포를 따르고 모집단의 표준편차(σ)를 알고있을 경우, 단일 모집단의 평균의 이동을 검정할 때 시료수 또는 검출력을 
+              계산한다. </font></p>
+            <p> <font size="-1"> </font> <font face="굴림체" size="2"><b>1. MINITAB을 
+              사용한 검출력과 시료수 결정 (데이터 : Power01.mtw)<br>
+              </b></font><font size="-1"> <br>
+              L제과는 새로 개정된 식료품 위생 법규에 따라 아이스크림 포장에 대하여 엄격한 관리를 하고 있다. 개정된 법규에 따르면 
+              현재 기준이 64 온스짜리 아이스크림 용기 콘테이너는 3온스 이상의 변화가 있어서는 안된다. 포장공정의 모표준편차는 
+              1온스이다. 아이스크림 포장무게에 대한 출하검사 시 검정력을 각각 0.7, 0.8, 0.9로 하려고 한다면 몇 개의 
+              표본을 수집해야 하는가?</font></p>
+            <p><font size="-1">① Stat > Power and Sample Size > 1-Sample Z 선택</font></p>
+            <p><img src="images/Power_1Z_01.gif" width="558" height="308"></p>
+            <p><font size="-1">② Differences에 3을 Power values에 0.7, 0.8, 0.9를 
+              입력하고 Sigma에 모표준편차 1.0을 입력한다. 그리고 Options subdialog box에서는 대립가설을 
+              지정하고 유의수준을 입력한다.</font></p>
+            <p align="center"><img src="images/Power_1Z_02.gif" width="511" height="547"></p>
+            <p align="left"><font size="-1">③ OK를 클릭한다.</font></p>
+            <p align="center"><img src="images/Power_1Z_03.gif" width="376" height="312"></p>
+            <p align="left"><font size="-1">MINITAB은 Target Power에 의한 시료수가 소수점으로 
+              계산이 되면 소수점 이하 숫자는 올림하여 구한다. 이 때 시료수는 모두 2개가 되며 Actual Power는 시료수가 
+              2일 때의 실제 검출력이다.</font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

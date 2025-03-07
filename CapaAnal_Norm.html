@@ -1,0 +1,148 @@
+<html>
+<title>Capability Analysis </title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=597>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="573"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td > 
+            <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="capaanal_norm2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+              <br>
+              <font size="4" color="#a70105"><b> Capability Analysis (Normal)</b></font><br>
+              <br>
+              <b><font size=3><b><font color="#000000">Stat>Quality Tools&gt;<b>Capability 
+              Analysis (Normal)</b> </font></b></font></b> <br>
+              <br>
+              <br>
+              <br>
+              <font size=3><b> <font size="2">1. 사용 방법<a href="data/Capa01.zip"> 
+              (데이터 : Capa01.mtw)</a></font></b></font><br>
+              <br>
+              <font size="-1">㈜A화학은 장갑용 PVC를 생산하는 업체로서 장갑용 PVC의 점도에 대한 공정 능력을 
+              측정하기 위하여 6개의 생산라인으로부터 각 5개의 데이터를 취하여 공정 능력을 계산하였다. 데이터는 아래와 같으며 
+              규격은 3,500±500cps이다.<br>
+              </font><br>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="176"> <img src=images/CapaAnal_Norm_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_Norm_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            <a href="Normaltest.html">정규성 검정</a> 결과 데이터가 정규분포를 따르지 않는다면, 공정능력분석 
+            결과를 신뢰할 수 <br>
+            없게 된다. 또, 부분군별로는 정규분포를 따르나 전체적으로는 정규분포를 따르지 않을 <br>
+            경우는 Cp값은 믿을 수 있으므로 공정의 잠재 능력은 알 수 있으나 실제 공정능력을 <br>
+            나타내는 Ppk는 신뢰할 수 없다. 따라서 공정능력을 제대로 평가하기 위해서는 먼저 <br>
+            정규성 검정이 선행되어야 한다.<br>
+            <br>
+            <br>
+            <br>
+            ① 정규성 검정 수행 <A HREF=NormalTest.html#2>(Stat > Basic Statistics...> 
+            Normality Test.)</A><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/CapaAnal_Norm_04.gif border=0 align=center><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 정규확률지에 타점된 데이터들이 직선에 가깝고 P-Value가 0.05보다 
+            크므로 정규분포를 따른다고 할 수 있다.<br>
+            <br>
+            <br>
+            <br>
+            ② Stat > Quality Tools > Capability Analysis(Normal) 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_Norm_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ Single column에 PVC의 점도 데이터 "Viscosity"를 
+            선택하고 Subgroup size에 부분군의 크기<br>&nbsp;&nbsp;&nbsp;
+            를 입력한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_Norm_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ④ OK를 클릭한다.<br>
+            <br>
+            <b>[ Graph 창에 나타난 결과</b> <b>]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_Norm_07.gif border=0 align=center> 
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><br>
+            <br>
+            <b> 1.3 결과 해석</b><br>
+            <br>
+            공정능력분석 결과 부분군내 변동만을 고려한 단기표준편차는 130.695이고, 장기표준편차는 166.848이다. 그리고 
+            현재의 프로세스가 도달할 수 있는 최적조건의 공정능력, 즉, 공정의 잠재능력을 의미하는 Cp는 1.28, 현재 프로세스의 
+            능력을 의미하는 Ppk (실제공정능력지수)는 0.91이며 PVC 점도에 대한 공정 불량률은 3725.63 PPM이다. 
+            <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+	
+    </tr>
+    </table>
+</body></html>
+

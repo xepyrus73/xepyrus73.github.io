@@ -1,0 +1,205 @@
+<html>
+<title>minitab</title>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+  
+<table border=0 cellpadding=0 cellspacing=0 width=591>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="578"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td  height="288"> 
+            <div align="left"><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b> 정규 확률지(Normal Probability Plot)</b></font><br>
+              <br>
+              <br>
+              <font size="-1">MINITAB을 이용하여 정규성 검정을 실행하면 검정통계량, P-Value와 함께 정규 
+              확률지에 타점된 데이터의 모양도 함께 보여준다. 여기서, 정규 확률지는 데이터의 분포가 정규분포를 따르는지 여부를 
+              시각적으로 파악할 수 있도록 해 준다.<br>
+              <br>
+              정규 확률지는 정규분포를 따르는 개별 데이터와 그 개별 데이터 이하의 값이 관측될 추정확률(경험적 분포함수)을 타점하면 
+              직선이 되도록 scale을 조정한 용지이다.<br>
+              <br>
+              정규확률지에 타점된 데이터의 모양이 직선에 가까우면 그 데이터의 분포는 정규분포를 따르는 것으로 해석할 수 있고, 
+              그 밖의 다른 형태이면 정규분포가 아닌 것으로 판정한다. 확률지에 타점된 데이터의 모양과 실제 데이터 분포 모양을 
+              비교해보면 다음과 같다.<br>
+              <br>
+              </font><br>
+              <br>
+              <font size=3><b><font size="2">가. 데이터가 정규분포를 따를 경우 : 타점된 모양이 직선에 
+              가깝다.</font></b></font> <br>
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="186"> <img src=images/Normalplot2_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>나. 우변사행 : 타점된 모양이 전체 범위 중 좌측에서 거의 
+            수직에 가깝게<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;밀집되어 형성되어 있다.</b></font> <font size="2"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="2"><img src=images/Normalplot2_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>다. 좌변사행 : 타점된 모양이 전체 범위 중 우측에서 거의 
+            수직에 가깝게<br>
+            &nbsp;&nbsp;&nbsp; 밀집되어 형성되어 있다.</b></font> <font size="2"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="2"><img src=images/Normalplot2_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>라. 쌍봉우리형 : 타점된 모양이 전체 범위중 좌 우측에서 
+            거의 수직에 가깝게 <br>
+            &nbsp;&nbsp;&nbsp;밀집되어 형성되어 있다.</b></font> 
+            <font size="2"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="2"><img src=images/Normalplot2_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>마. 급첨 : 타점된 모양이 전체 범위 중 특정 범위에 밀집되어 
+            수직에 가깝게<br>
+            &nbsp;&nbsp;&nbsp; 
+            형성되어 있다.</b></font> <font size="2"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="2"><img src=images/Normalplot2_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>바. 완첨 : 타점된 모양이 중앙 부위가 평평한 형태를 하고있다.</b></font> 
+            <font size="2"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="2"><img src=images/Normalplot2_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size=3><b> <font size="2">1. 사용 방법 <a HREF="data/Normal01.zip">(데이터 
+            : Normal01.mtw)</a></font></b></font><br>
+            <br>
+            <font size="-1">아래의 데이터는 ㈜A화학에서 생산하는 장갑용 PVC의 점도에 대한 자료이다. 이 회사 는 
+            6개의 생산라인으로부터 각 5개의 데이터를 수집하여 점도에 대한 공정능력을 측정 할 예정으로 데이터가 정규분포를 따르는지의 
+            여부를 정규확률지를 이용하여 판명하려고 한다.<br>
+            <br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/Normalplot2_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 데이터를 입력한다.<A HREF=NormalTest.html#2> (정규성 검정의 경우와 
+            동일)</a><br>
+            <br>
+            <img src="images/CapaAnal_norm_03.gif" width="154" height="266"><br>
+            <br>
+            <br>
+            <b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Graph > Probability Plot 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Normalplot2_08.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 변수를 선택하고 Distribution에서 
+            Normal(정규분포)을 선택한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Normalplot2_09.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <br>
+            <b>[ Graph 창에 나타난 결과 ]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Normalplot2_10.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.3 결과 해석</b><br>
+            <br>
+            정규확률지에 데이터가 타점된 모양이 직선에 가깝게 형성되어 있어 기어의 지름은 정규분포를 따른다고 할 수 있다. <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+      
+    </tr>
+    </table>
+</body></html>
+

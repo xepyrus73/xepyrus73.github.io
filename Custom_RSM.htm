@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>현재의 반응표면 실험을 변경하여 재 지정할 경우</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="233">&nbsp;</td>
+    <td height="233"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="162"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><b><font size="4" color="#a70105">현재의 반응표면 실험을 변경하여 
+              재 지정할 경우<br>
+              (Define Custom Response Surface Design) </font></b></p>
+            <p><font size="2"><b><font size="3">Stat > DOE > Response Surface 
+              > Define Custom Response Surface Design</font></b></font><br>
+            </p>
+            <p>&nbsp;</p>
+            <p><font size="-1">이미 실험계획이 완성되고 데이터를 수집되어 MINTAB에 입력하였다면, MINTAB을 
+              이용하여 데이터를 분석하기 위해서는 MINTAB에서 다시 실험계획을 정의해야 한다. 즉, MINTAB을 이용하여 실험계획을 
+              생성하지 않았을 때는 반드시 실험계획을 MINTAB에서 재 정의해 주어야 한다. </font><br>
+              <br>
+              <font size="-1"> <br>
+              </font> <font face="굴림체" size="2"><b>1. 현재의 실험계획을 변경하여 재지정할 경우 <a href="data/box01.zip">(데이터 
+              : Box01.mtw)</a></b></font></p>
+            <p><font size="-1">이미 Worksheet 상에 실험한 데이터가 입력되어 있는 경우 이 데이터들은 분석이 
+              가능 한 형태로 정의할 때 사용한다. <br>
+              <br>
+              ① Stat > DOE > Response Surface > Define Custom Response Surface 
+              Design…을 선택</font></p>
+            <p><img src="images/Custom_RSM_01.gif" width="560" height="210"></p>
+            <p><font size="-1">② Factors 란에 선택할 인자를 지정한다. </font></p>
+            <p><img src="images/Custom_RSM_02.gif" width="505" height="347"></p>
+            <p><font size="-1">③ Low/High...선택하여 인자의 변경 사항을 지정한다. </font></p>
+            <p><img src="images/Custom_RSM_03.gif" width="394" height="280"></p>
+            <p><font size="-1">Worksheet Data Are에서 Coded를 선택하면 수준이 MINITAB에서 
+              지정하는 코드화된 형태로 저장이 되며 Uncoded를 선택하면 사용자가 지정한 수준으로 저장이 된다. 본 예에서는 
+              사용자가 지정한 수준으로 저장하였다.</font></p>
+            <p><font size="-1">④ Designs...클릭하여 Yates의 실험순서(Standard Order), 실험순서(Run 
+              Order), 중심점(Center Points),블록(Blocks)등을 지정한다. 여기서는 설계되어 있는 열에서 직접 
+              선택한다. 새로운 실험계획을 할 경우 Order of the data를 선택한다.</font></p>
+            <p><img src="images/Custom_RSM_04.gif" width="560" height="327"></p>
+            <p><font size="-1"><b>☞ 중심점(Center point) </b><br>
+              모든 인자의 높은 수준과 낮은 수준의 중앙값을 나타낸다. 중심점을 추가 하여 실험을 하는 목적은 효과의 형태가 선형인지 
+              비선형(곡선형태)인지를 알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 계량적일 
+              경우에는 쉽게 중심점을 추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다. </font></p>
+            <p><font size="-1"><b>☞ 블록(Block)</b><br>
+              실험의 모든 관측치들은 동일한 조건에서 얻기 힘들므로 실험을 시각적 혹은 공간적으로 분할하여 그 내부에서 실험의 환경이 
+              균일하도록 만들어 놓는 것이다. 따라서 중요하지 않은 인자는 블록설계를 통해 교락 시키면 실험에 따른 오차를 분리해서 
+              구할 수 있다. </font></p>
+            <p><font size="-1">⑤ OK를 클릭한다.</font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

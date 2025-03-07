@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>로지스틱 회귀분석 (Logistic Regression)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=651>
+  <tr> 
+    <td width=27 height="89">&nbsp;</td>
+    <td height="89" width="624"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=600>
+        <tr> 
+          <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <font size="4" color="#a70105"><b><font color="#a70105">로지스틱 회귀분석 
+            (Logistic Regression)</font></b></font><br>
+            <br>
+            <br>
+            <font size="-1">종속변수가 범주형 데이터(Categorical data)일 때, 하나 혹은 그 이상의 독립변수와 
+            종속변수의 선형적인 관계를 규명하기 위한 회귀분석 방법을 말한다.<br>
+            <br>
+            <br>
+            <b><font size="2">1. 선형 회귀분석과 로지스틱 회귀분석의 차이점</font></b><br>
+            <br>
+            <img src="images/Logistic_reg_01.gif" width="505" height="100"> <br>
+            <br>
+            <br>
+            <b><font size="2">2. 범주형 데이터의 형태 및 로지스틱 회귀분석의 종류</font></b><br>
+            <br>
+            <img src="images/Logistic_reg_02.gif" width="560" height="101"> <br>
+            <br>
+            <b><font size="2">3. 로지스틱 반응함수</font></b> <br>
+            <br>
+            종속변수가 가변수인 경우에 반응함수의 모양이 아래그림과 같이<i> S</i> 형 곡선을 그리는 경우가 실제로 많이 나타난다. 
+            이 반응함수는 <i>x</i> 가 증가함에 따라 <i>E(y)</i> 의 값이 1로 서서히 수렴하는 양상을 보인다. 이런 
+            모양의 반응함수는 반응함수의 제약성<img src="images/Logistic_reg_03.gif" width="70" height="18" align="absmiddle">이 
+            저절로 만족된다. <br>
+            <br>
+            <img src="images/Logistic_reg_04.gif" width="323" height="246"> <br>
+            <br>
+            위와 같은 함수를 로지스틱 함수(logistic function)라 부르고<br>
+            <br>
+            <b></b><img src="images/Logistic_reg_05.gif" width="158" height="49"> 
+            <br>
+            <br>
+            <b></b>으로 표현된다.<br>
+            참고적으로 로지스틱 회귀분석 시 일반적으로 사용되는 회귀식은 위와 같으며, 특수한 경우에는 다른 회귀식을 사용할 수도 
+            있다. <b></b><br>
+            <br>
+            <b></b><b><font size="2"><a name="1"></a></font></b><img src="images/bin.gif" width="19" height="15"><br>
+            <br>
+            <br>
+            <br>
+            <b><font size="2">4. 이진 로지스틱 회귀분석(Binary Logistic Regression) <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/binary_logistic.zip">(데이터 : 
+            binary_logistic.mtw)</a> </font></b><br>
+            <br>
+            정찰제를 시행해오던 이동통신 단말기 대리점에서 불경기 기간에 매상고를 올리기 위하 여 할인판매를 실시 하였다. 첫 주에 
+            정가의 5%를 할인하여 주었더니 대리점에 찾아온 선착순 400명의 고객 중에서 64명이 단말기를 샀고 두 번째 주일에 
+            10%를 할인하였더니 찾아온 400명의 고객 중에서 102명이 단말기를 샀다. 이와 같은 방법으로 5주간에 걸쳐 점차적으로 
+            할인율을 높여가며 할인판매의 결과가 아래 표와 같다. <br>
+            판매율 (구매 고객 수 ×100% / 고객 수) y와 할인률 (%) x간에 로지스틱 회귀관계를 가정하고 아래 데이터를 
+            사용하여 로지스틱 회귀분석을 실행해 보자.<br>
+            <br>
+            <img src="images/Logistic_reg_06.gif" width="295" height="125"> <br>
+            <br>
+            <br>
+            4.1 데이터 입력 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet에 아래의 데이터를 입력한다. <br>
+            <br>
+            <img src="images/Logistic_reg_07.gif" width="342" height="195"><br>
+            <br>
+            <br>
+            4.2 Binary Logistic 회귀분석을 실시한다.<br>
+            <br>
+            ① Stat > Regression > Binary Logistic Regression 선택<br>
+            <br>
+            <img src="images/Logistic_reg_08.gif" width="595" height="305"> <br>
+            <br>
+            * 만약 아무 것도 지정하지 않으면 Model에 지정된 변수는 모두 Covariate로 가정한다. 주의할 점은 연속형 
+            변수는 Covariate로, 범주형 변수는 Factor로 지정해야 한다.<br>
+            <br>
+            <b>Session 창에 나타난 결과 <br>
+            <br>
+            Binary Logistic Regression: 구매한 고객수, 고객수 versus x (할인율(%)) <br>
+            <br>
+            <img src="images/Logistic_reg_09.gif" width="599" height="345"> <br>
+            <br>
+            <img src="images/Logistic_reg_10.gif" width="597" height="281"> <br>
+            <br>
+            <img src="images/Logistic_reg_11.gif" width="594" height="236"> <br>
+            <br>
+            <img src="images/Logistic_reg_12.gif" width="514" height="306"> <br>
+            <br>
+            <br>
+            </b>따라서, 위의 로지스틱 회귀분석 결과를 이용해 예를 들어, 할인율 (%) x = 6% 일 때 기대되는 판매율 y(%)은 
+            <br>
+            <br>
+            <img src="images/Logistic_reg_13.gif" width="305" height="46"> <br>
+            <br>
+            으로 대략 18%임을 알 수 있다.<br>
+            <br>
+            <br>
+            <b><font size="2"><a name="2"></a></font></b><img src="images/bin.gif" width="19" height="15"><br>
+            <br>
+            <br>
+            <br>
+            <b>5. 서수형 로지스틱 회귀분석(Ordinal Logistic Regression) <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/ordinal_logistic.zip">(데이터 
+            : ordinal_logistic.mtw)</a></b></font> <br>
+            <br>
+            <font size="-1">제조공장에서 기계의 수명시간에 미치는 인자를 공정과 평균 기계 연속가동시간으로 크게 나누어 
+            분석하였다. 기계수명시간을 2000시간 이내이면 Code1로 2000시간에서 4000시간 이내이면 Code2로 4000시간 
+            이상이면 Code3으로 변환하였다. 아래 데이터를 통하여 기계 수명시간과 그 인자들에 대한 로지스틱 회귀분석을 행하라. 
+            <br>
+            <br>
+            <img src="images/Logistic_reg_14.gif" width="476" height="478"> <br>
+            <img src="images/Logistic_reg_15.gif" width="475" height="215" align="absmiddle"> 
+            <br>
+            <br>
+            <br>
+            5.1 데이터 입력<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet 에 아래의 데이터를 입력한다. <br>
+            <br>
+            <img src="images/Logistic_reg_16.gif" width="367" height="397"> <br>
+            <br>
+            <br>
+            5.2 로지스틱 회귀분석을 실시한다. <br>
+            <br>
+            ① Stat > Regression > Ordinal Logistic Regression 선택<br>
+            <br>
+            <img src="images/Logistic_reg_17.gif" width="594" height="308"> <br>
+            <br>
+            * 만약 아무 것도 지정하지 않으면 Model에 지정된 변수는 모두 Covariate로 가정한다. 주의할 점은 연속형 
+            변수는 Covariate로, 범주형 변수는 Factor로 지정해야 한다.<br>
+            <br>
+            <br>
+            <b>Session 창에 나타난 결과 <br>
+            <br>
+            <img src="images/Logistic_reg_18.gif" width="535" height="576"> <br>
+            <img src="images/Logistic_reg_19.gif" width="539" height="104"> <br>
+            <img src="images/Logistic_reg_20.gif" width="520" height="411"> <br>
+            <br>
+            <font size="2"><a name="3"></a></font></b><img src="images/bin.gif" width="19" height="15"><br>
+            <b><br>
+            <br>
+            <br>
+            6. Nominal Logistic Regression <a href="data/nominal_logistic.zip">(데이터 
+            : nominal_logistic.mtw)</a> <br>
+            <br>
+            </b>자동차 회사의 영업부에서 고객이 선호하는 차량의 색깔을 성별과 세대에 따라 구분하 여 분석한 데이터가 다음과 같다. 
+            아래 데이터를 이용하여 성별과 세대에 따라 고객이 선호하는 차량의 색깔에 대한 로지스틱 회귀분석을 행하라. <br>
+            <br>
+            <img src="images/Logistic_reg_21.gif" width="467" height="288"> <br>
+            <br>
+            <br>
+            6.1 데이터 입력 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet 에 아래의 데이터를 입력한다. <br>
+            <br>
+            <img src="images/Logistic_reg_23.gif" width="290" height="317"> <br>
+            <br>
+            <br>
+            6.2 로지스틱 회귀분석을 실시한다. <br>
+            <br>
+            ① Stat > Regression > Ordinal Logistic Regression 선택 <br>
+            <br>
+            <img src="images/Logistic_reg_24.gif" width="600" height="297"><br>
+            <br>
+            * 만약 아무 것도 지정하지 않으면 Model에 지정된 변수는 모두 Covariate로 가정한다. 주의할 점은 연속형 
+            변수는 Covariate로, 범주형 변수는 Factor로 지정해야 한다. <br>
+            <br>
+            <b>Session 창에 나타난 결과 <br>
+            <br>
+            <img src="images/Logistic_reg_25.gif" width="626" height="170"> <br>
+            <br>
+            <img src="images/Logistic_reg_26.gif" width="545" height="607"><br>
+            <br>
+            <img src="images/Logistic_reg_27.gif" width="512" height="232"> </b></font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

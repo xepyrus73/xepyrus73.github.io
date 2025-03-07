@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>1- Sample t 검정</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="3361">&nbsp;</td>
+    <td height="3361"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153">
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">1- Sample 
+              t 검정</font></b></font><br>
+              <br>
+              <font size=3><b></b></font><font size=3><b> Stat>Basic Statistics>1-Sample 
+              t</b></font> <br>
+            </p>
+            <p> <font size="-1">일반적으로 표준편차를 정확히 아는 경우는 매우 드물다. 따라서 <a href="hypomean_z2.htm">1-Sample 
+              Z 검정</a>의 적용 범위는 상당히 제한적이다. 표준편차를 모를 때, 모평균의 검정을 위해서는 1-Sample t 
+              검정을 적용한다. 1-Sample Z 검정과 마찬가지로 데이터의 정규성 여부를 검토하여야 하며, 이는 MINITAB의 
+              <a href="normaltest.html">Normality Test</a>를 통해 확인할 수 있다. 단, 시료수가 
+              많은 경우 (보통 30개 이상), 정규성을 확인할 필요가 없다.<br>
+              1- Sample t 또한 모평균의 검정뿐 아니라 모평균의 추정을 할 수 있다. 1-Sample Z는 달리 표준편차를 
+              알지 못할 때 모평균에 대한 추정값과 신뢰구간을 구할 수 있다. <br>
+              <br>
+              <font size="2"><b><br>
+              1. MINITAB을 사용한 1-Sample t 검정 <a href="data/hypo02.zip">(데이터 : Hypo02.mtw 
+              )</a> <br>
+              <br>
+              </b><font size="-1">엔진블록과 실린더 헤드 커버간의 간격이 크면 오일의 누수(leak)가 발생하게 
+              된다. 이 간격의 규격은 0.8mm 이하여야 한다. 따라서 30개의 데이터를 랜덤하게 수집하여 간격이 0.8mm 이하인지를 
+              유의수준 5% 에서 검정하여라. <br>
+              <br>
+              <img src="images/HypoMean_1t2_01.gif" width="202" height="216"> 
+              <br>
+              <br>
+              검정 대상값이 0.8mm이고 수율이 0.8mm이하인지를 검정하는 것이므로 다음과 같이 가설을 설정한다. <br>
+              <br>
+              H<sub>0</sub> : <font face="symbol">m</font> =<font face="symbol">m</font><sub>0</sub> 
+              ( = 0.8mm)<br>
+              H<sub>1</sub> : <img src="images/HypoMean_1t2_15.gif" width="104" height="16"><br>
+              <br>
+              <br>
+              1.1 데이터의 입력 <br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+              <br>
+              <img src="images/HypoMean_1t2_02.gif" width="153" height="324"> 
+              <br>
+              <br>
+              <br>
+              1.2 1-Sample t 검정을 실시한다.<br>
+              <br>
+              ① Stat > Basic Statistics > 1-Sample t 선택<br>
+              <br>
+              <img src="images/HypoMean_1t2_03.gif" width="444" height="188"> 
+              <br>
+              <br>
+              <br>
+              ② Variables란에 간격의 데이터 열을 입력하고 Test mean란에는 검정 대상값 <font size="2"><font size="-1"><font face="symbol">m</font><sub>0</sub></font></font> 
+              를 입력한다.<br>
+              <br>
+              <img src="images/HypoMean_1t2_04.gif" width="324" height="222"> 
+              <br>
+              <br>
+              ☞ 1 Sample t -> Options <br>
+              신뢰수준 및 대립가설의 형태를 결정해 준다. 물론 신뢰구간만을 구하고자 할 때는 대립가설의 형태에 신경 쓸 필요가 
+              없다. <br>
+              <br>
+              <img src="images/HypoMean_1t2_05.gif" width="411" height="163"> 
+              <br>
+              <br>
+              ☞ 1 Sample t - Graphs<br>
+              MINITAB은 다음과 같은 세 가지 형태의 그래프를 Output과 함께 출력하므로, 원하는 그래프를 선택할 수 있다. 
+              그래프에는 평균의 신뢰구간 뿐아니라 귀무가설에서 설정한 <font size="2"><font size="-1"><font size="2"><font size="-1"><font face="symbol">m</font><sub>0</sub></font></font></font></font> 
+              대비 추정한 평균값 <img src="images/HypoMean_1t2_06.gif" width="15" height="18" align="absmiddle">의 
+              상대적 위치도 제시해 준다. <br>
+              <br>
+              <img src="images/HypoMean_1t2_07.gif" width="278" height="133"> 
+              <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 </b><br>
+              <br>
+              <img src="images/HypoMean_1t2_08.gif" width="288" height="179"> 
+              <br>
+              <br>
+              <br>
+              <b>Graph 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_1t2_09.gif" width="281" height="211"> 
+              <br>
+              <br>
+              <br>
+              </b>☞ 결과 해석<b><br>
+              <br>
+              </b>P-Value 가 0.027<0.05 이므로 H<sub>0</sub>를 기각한다. 즉, 간격이 0.8mm 이하라고 
+              말할 수 있다. 또한 Histogram에서 하단의 빨간색으로 표시된 구간은 평균의 95% 신뢰한계 (confidence 
+              bound)를 나타낸다. 즉, <img src="images/HypoMean_1t2_10.gif" width="88" height="18" align="absmiddle">를 
+              만족하는 <img src="images/HypoMean_1t2_16.gif" width="12" height="15">까지의 
+              구간을 표시해 주고 있다. Histogram에는 귀무가설 <font size="2"><font size="-1">H<sub>0</sub></font></font> 
+              에서 설정한 평균치 <font size="2"><font size="-1"><font size="2"><font size="-1"><font size="2"><font size="-1"><font face="symbol">m</font><sub>0</sub></font></font></font></font></font></font> 
+              대비 추정한 평균값 의 상대적 위치도 제시해 준다. 95% 신뢰한계가 귀무가설 <font size="2"><font size="-1">H<sub>0</sub></font></font> 
+              에서 설정한 평균치 <font size="2"><font size="-1"><font size="2"><font size="-1"><font size="2"><font size="-1"><font face="symbol">m</font><sub>0</sub></font></font></font></font></font></font> 
+              를 포함하지 않으므로, 귀무가설을 기각할 수 있다는 것을 확인할 수 있다. <br>
+              <br>
+              <br>
+              1.3 모평균의 신뢰구간 (표준편차를 알지 못할 때)<br>
+              <br>
+              위 문제에서 모평균에 대한 90% 신뢰구간을 구하도록 하자. <br>
+              <br>
+              ① Stat > Basic Statistics > 1-Sample t 선택<br>
+              ② Variables란에 간격의 데이터 열을 입력하고, 신뢰구간을 구하는 경우 Test mean 란은 공란<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; 으로 남겨둔다.<br>
+              <br>
+              <img src="images/HypoMean_1t2_11.gif" width="313" height="215"> 
+              <br>
+              <br>
+              ☞ 1 Sample t -> Options <br>
+              신뢰수준을 입력한다. 물론 신뢰구간을 구하고자 할 때는 대립가설의 형태에 신경 쓸 필요가 없다. <br>
+              <img src="images/HypoMean_1t2_12.gif" width="363" height="147"> 
+              <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. :<b> Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_1t2_13.gif" width="395" height="110"> 
+              <br>
+              <br>
+              </b>: 엔진블록과 실린더 헤드 커버간의 간격에 대한 90%신뢰구간은 ( 0.6383, 0.7863 )임을 알 수 
+              있다. 또한 위의 출력 결과에서 SE Mean 은 0.0436이다. 이 는 추정한 평균치의 표준편차로 의 식에 의해 
+              구할 수 있다. </font></font></font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

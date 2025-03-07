@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<TITLE>U 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="u2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> U 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;U 
+                </font></b></font></b> <b><font size="4" color="#a70105"> </font></b><b><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <BR>
+            <font size=2><b>1. U 관리도의 개요</b></font><br>
+            <br>
+            <font size="-1">부분군 크기가 변하는 <A name="1">p관리도</A>에서와 같이 단위 시간당 생산량이 
+            일정치 않은 공정으로부터 생산된 제품을 100% 검사하여 결점수를 관리하는 경우, 하나의 부분군을 이루는 검사 단위수(부분군 
+            크기)가 매번 변하게 된다. 또한 공정 변화의 탐지 능력(민감도)이나 경제적 요인들을 고려하여 여러 개의 검사 단위를 
+            묶어서 하나의 부분군으로 형성할 수 있다. 이 때 부분군내에서 발견되는 결점수의 검사 단위당 평균치를 관리하기 위해 U 
+            관리도가 사용된다. 즉 하나의 부분군을 이루는 검사 단위수를 k라 하고 부분군내 결점수를 Y라 할 때 U 관리도에서는 
+            u=Y/k를 관리한다. 검사 단위당 평균 결점수를 μ라 할 때 검사단위수가 k인 부분군내 결점수 Y는 평균이 kμ인 포아송(Poisson) 
+            분포를 따른다. 따라서 μ의 평균 및 분산은 각각 μ, μ/k 이므로 관리도의 중심선 및 관리한계선은 다음과 같이 구해진다. 
+            만약 부분군마다 k 값이 다를 경우에는 관리한계선도 그에 따라 변하게 된다. <br>
+            <BR>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/U_01.gif  border=0 align=center><br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> μ값을 모를 때에는 다음과 같이 예비 샘플로부터 추정한 값을 사용한다. 
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_02.gif  border=0 align=center> 
+            =(발견된 총 결점수)/(총 검사 단위수)<BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b><font size="2">2. MINITAB을 사용한 U관리도의 
+            작성 <a href="data/U관리도.zip">(데이터 : U관리도.mtw)</a></font></b> <br>
+            <br>
+            아래 데이터는 어느 PVC 바닥재의 단위 면적당 표면에 발생한 기포 불량의 갯수이다. 4일 동안 4731개의 기포 불량수 
+            조사한 결과 11,374개의 표면 흠집이 발견되었다. 따라서 단위 면적당 기포 불량의 수의 평균은 11374/4731≒2.40이다. 
+            이 값이 다음 주에도 좋은 추정값이 될 지의 여부에 대한 해답으로 U관리도를 사용하여 공정의 관리상태를 파악해보자.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_03.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <BR>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_04.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 MINITAB의 실행<br>
+            </b><br>
+            ① Stat > Control Charts > U..선택 <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_05.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable 란에 관측된 흠집 개수 'c', Subgroup 
+            in란에 표본 크기 'a'을 입력한다 <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_06.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <BR>
+            <b> 2.3 결과 해석</b> <br>
+            <br>
+            <b> Graph 창에 나타난 결과</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/U_07.gif  border=0 align=center><br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> u값은 표본 1, 6, 9에서 관리한계를 벗어난다. 따라서 단위 
+            면적당 기포 발생 개수는 시간에 따라 변한다고 볼 수 있다. 표본 9는 관리상한을 벗어났으므로 그 이유를 조사하여 시정해야 
+            할 것이며, 표본 1과 6은 공정의 향상을 말해주므로 향상의 요인이 무엇인지를 밝혀내야 할 것이다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><font size="-1"> </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

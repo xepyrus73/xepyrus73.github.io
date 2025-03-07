@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<TITLE>I-MR-R/S 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=627>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="imrrs2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> I-MR-R/S 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;I-MR-R/S 
+                </font></b></font></b> <b><font size="4" color="#a70105"> </font></b><b><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <BR>
+            <font size=3><b><font size="2">1. I-MR-R/S 관리도의 개요</font></b></font><br>
+            <br>
+            <font size="-1">I-MR-R/S관리도는 I관리도(X관리도), MR관리도, R관리도 혹은 S관리도를 하나의 
+            화면에 나타내준다. 여기서 먼저 I관리도는 공정의 평균이 관리 상태인지를 판단하고, MR관리도는 부분군 간의 변동이 관리 
+            상태인지를 판단한다. 또한 R관리도 혹은 S관리도는 부분군내의 변동이 관리 상태인지를 판단해 준다. 이 때 I관리도, 
+            MR관리도, 그리고 R관리도와 S관리도를 나타내는 중심선 및 관리한계선은 다음과 같이 구해진다. 여기서 MR관리도와 R관리도의 
+            차이점은 범위의 결정방법에 있다. MR관리도는 인접하는 두 부분군의 평균간의 범위를 사용하는 반면, R관리도의 범위는 
+            부분군내에 있는<I>X</I><sub>Max</sub> - <I>X</I><sub>Min</sub> 을 사용한다. 따라서, 
+            MR관리도는 n=2인 경우에 대해서 계수(<I>D</I><sub>4</sub>,<I>D</I><sub>3</sub> )를 
+            사용하며, R관리도는 부분군의 크기에 대한 계수를 사용한다. <br>
+            </font><BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMRRS_03.gif  border=0 align=center><br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMRRS_04.gif  border=0 align=center><br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMRRS_05.gif  border=0 align=center><br>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td height="128"> <img src=images/IMRRS_06.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td  height="146"> <font size=3><b><font size="2">2. MINITAB을 
+            사용한 관리도의 작성 <a href="data/I-MR-R_S.zip">(데이터 : I-MR-R_S.mtw)</a></font></b></font><br>
+            <br>
+            <font size="-1">어느 사출성형 업체는 자동차의 엔진블록 상단에 조립되는 실린더 헤드커버를 생산하고 있<BR>
+            다.이때 엔진블록과 실린더 헤드커버 간의 간격(Gap)이 크면 오일의 누수(leak)가 발생하게<BR>
+            된다. 부분군의 크기가 3인 데이터를 10회에 걸쳐 수집하였는데 이 부분군 간에 차이가 있는지<BR>
+            I-MR-R/S관리도를 이용하여 공정을 해석하고자 한다.<BR>
+            <br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMRRS_07.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력</b><br>
+            <BR>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다.<BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/IMRRS_08.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.2 I-MR-R/S(Between/Within) 관리도를 
+            작성한다.</b><br>
+            <BR>
+            ① Stat > Control Charts > I-MR-R/S(Between/Within)<br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMRRS_09.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② 엔진블록과 실린더 헤드커버 간의 간격(Gap)이 포함되어 있는 
+            열과 부분군의 크기가 포함되어 <br>&nbsp;&nbsp;&nbsp;
+            있는 열을 선택한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMRRS_10.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다. <BR>
+            <BR>
+            <b> 2.3 결과 해석</b><BR>
+            <BR>
+            <b> Session 창에 나타난 결과</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMRRS_11.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> Graph 창에 나타난 결과</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/IMRRS_12.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> 모든 점들이 Individual 관리도, MR관리도, 그리고 R관리도의 관리한계선에 
+            안에 타점되어 있고 특별한 패턴이 보이지 않으므로 공정이 안정상태라고 판단할 수 있다. 여기서, Individual관리도는 
+            공정의 평균이 관리 상태인지를 판단하고, MR관리도는 부분군간의 변동이 관리 상태인지를, 그리고 R관리도는 부분군내의 
+            변동이 관리 상태인지를 판단한다. <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><font size="-1"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+              </font></div>
+          </td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

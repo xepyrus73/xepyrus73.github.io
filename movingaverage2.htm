@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<TITLE>이동평균(moving average) 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="5488">&nbsp;</td>
+    <td height="5488"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="545"> <br>
+            <br>
+            <A name="1"></a> 
+            <CENTER>
+              <div align="left"><font size="4"><b><font color="#a70105">이동 평균(Moving 
+                Average) 관리도</font> </b></font> 
+                <div align="center"></div>
+                <font size="4"><b> </b></font></div>
+            </CENTER>
+            <br>
+            <BR>
+            <b><font size="-1">1. 이동평균 관리도의 개요</font></b><br>
+            <br>
+            <font size="-1">공정평균 관리를 위한 관리도의 주요한 단점의 하나는 공정평균의 미세한 이동에는 민감하지 못하는 
+            점이다. 이 점을 보완하기 위해 고안된 관리도로서 이동 평균 관리도가 있다. t 시점까지의 크기 n인 부분군들의 평균을 
+            <img src="images/mov_a_01.gif" width="86" height="20" align="absmiddle">라 
+            할 때 t 시점에서 w(이동평균의 길이)개 부분군의 이동평균은 다음과 같이 정의된다. <br>
+            <br>
+            <img src="images/mov_a_02.gif" width="216" height="21"> <br>
+            <br>
+            이때 w개 부분군의 이동평균 <img src="images/mov_a_03.gif" width="19" height="19" align="absmiddle">의 
+            분산은 단순랜덤 모형을 가정할 때 다음과 같다. <br>
+            <br>
+            <img src="images/mov_a_04.gif" width="180" height="116"> <br>
+            <br>
+            따라서 이동평균 관리도의 중심선 및 3σ 관리한계선은 다음과 같이 구해진다.<br>
+            <br>
+            <img src="images/mov_a_05.gif" width="127" height="72"><br>
+            <br>
+            여기서 중심선 μ및 표준편차 σ는 공정평균 및 표준편차의 목표치 또는 추정치를 사용하면 된다. 이동평균 관리도에서는 부분군이 
+            추출될 때마다 <img src="images/mov_a_03.gif" width="19" height="20" align="absmiddle"> 
+            를 계산하여 관리도상에 타점하고 이 점이 관리한계선 밖에 나타나면 공정이 관리상태를 벗어난 것으로 간주한다. 이동평균 
+            관리도의 민감도는 일반적으로 w값이 클수록 증대된다. 공정평균이 갑작스럽게 큰 폭으로 이동하는 경우는 이동평균 관리도가 
+            이 변화를 탐지할 능력이 <a href="xbar2.htm"><img src="images/mov_a_06.gif" width="15" height="17" align="absmiddle" border="0">관리도</a>에 
+            비해 떨어진다. 따라서 이동평균 관리도는<br>
+            <img src="images/mov_a_06.gif" width="15" height="17" align="absmiddle"> 
+            관리도와 함께 사용하면 휠씬 더 효과적이다. 두 개의 관리도를 함께 사용할 때는 어느 한쪽의 관리도에서라도 관리 한계선 
+            밖에 점이 나타나면 공정 평균이 이동한 것으로 간주 한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <b><font size="2">2. MINITAB을 사용한 이동평균 관리도의 작성 
+            <a href="data/movingaverage.zip">(데이터 : Moving Average.mtw)</a><br>
+            </font></b><font size="2"> </font> </font></td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="left"><font size="-1"><br>
+              <BR>
+              플라스틱 가공시 사용하는 첨가제 중의 하나는 제품의 투과율(%)이 중요한 특성이다. 이 특성을 관리하기 위해 16일 
+              동안 매일 하나의 제품에 대해 투과율을 측정하였다. W=3인 이동 평균 관리도를 이용하여 프로세스가 안정적인지를 판단하라<BR>
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="images/mov_a_07.gif" width="560" height="203"> 
+            </font></td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td height="19"> <font size="-1"><b> <br>
+            <br>
+            1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.</font></td>
+        </tr>
+        <tr> 
+          <td height="227"> <font size="-1"><img src="images/mov_a_08.gif" width="162" height="279"><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><b> 1.2 Moving Average관리도를 작성한다.</b></font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">① Stat > Control Charts > Moving Average…를 선택한다.<br>
+            <BR>
+            <BR>
+            <BR>
+            <img src="images/mov_a_09.gif" width="469" height="361"> </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <BR>
+            ② Single column에 투과율(%)이 포함된 열을 선택하고 Subgroup size에 부분군의 수 1을 입력한 
+            후, Length of MA에 3을 입력한다. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src="images/mov_a_10.gif" width="560" height="393"> <br>
+            <br>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Estimate] <br>
+            <br>
+            <img src="images/ewma_19.gif" width="560" height="616"><br>
+            <br>
+            [S Limits]<br>
+            <br>
+            <img src="images/ewma_20.gif" width="560" height="455"><br>
+            <br>
+            <img src="images/ewma_21.gif" width="560" height="393"><br>
+            <br>
+            <img src="images/ewma_22.gif" width="464" height="282"><br>
+            <br>
+            <img src="images/ewma_23.gif" width="494" height="357"><br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <img src="images/ewma_24.gif" width="458" height="208"> <br>
+            <br>
+            [Options]<br>
+            <br>
+            <br>
+            <img src="images/ewma_25.gif" width="554" height="356"><br>
+            <br>
+            <br>
+            ③ OK를 클릭한다. <b><br>
+            </b><br>
+            다음과 같은 그래프와 함께 지수가중 이동평균 관리도에 대한 정보를 제공하는 창이 생성된다. <br>
+            <br>
+            <img src="images/mov_a_18.gif" width="498" height="362"> <br>
+            <br>
+            <br>
+            <br>
+            위의 그래프를 보면 모든 점들이 관리한계선 내에 있으므로 이 프로세스는 공정에 이상이 없는 것으로 판단한다. 또한 이동평균의 
+            길이를 늘려서 변동에 더욱 더 민감한 이동평균 관리도를 작성할 수도 있다.<BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

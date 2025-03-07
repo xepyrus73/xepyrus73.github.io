@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>완전 요인배치(Full Factorial Design) 실험의 분석</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="1733">&nbsp;</td>
+    <td height="1733"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="1688"> 
+            <p><a href="fullfactorial2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">완전 요인배치(Full 
+              Factorial Design) 실험의 분석</font></b></font><br>
+              <br>
+              <font size=3><b></b></font><font size=3><b> </b></font>
+               <br>
+            </p>
+            <ul>
+              <LI> <font size="-1"> <a href="ffanal2.htm">완전 요인배치 실험의 분석</a> <br>
+                </font> 
+              <LI><font size="-1">그래프를 사용한 실험의 분석</font> <br>
+                <font size="-1">- <a href="ffplot2.htm">Factorial Plot(Main Effect, 
+                Interaction, Cube)</a><br>
+                - <a href="contourplot.htm">Contour/Surface Plot</a><br>
+                - <a href="overlaid.htm">Overlaid Contour Plot</a><br>
+                - <a href="resp_optimizer.htm">Response Optimizer</a> </font><br>
+                <br>
+              
+            </ul>
+            <p> <font size="3"><b>완전 요인배치법 (Full Factorial Design)</b></font><br>
+              <br>
+              <font size="2"><b>1. 실험계획(DOE : Design of Experiment)</b></font> 
+              <br>
+              <br>
+              <font size="-1">1.1 실험의 정의 <br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;출력결과의 변화에 대한 원인을 관찰할 수 있도록 공정이나 시스템의 입력변수에 
+              계획된 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;변화를 가하는 일련의 시험이다. <br>
+              </font> <br>
+              <font size="-1">1.2 실험계획의 정의<br>
+              </font> 
+            <ul>
+                <li><font size="-1">유의하고 양적으로 얼마나 큰가?<br>
+                  </font> 
+                <li><font size="-1">크게 영향을 미치지 못하는 변수들의 영향의 합은 전체적으로 얼마나 큰가?<br>
+                  </font> 
+                <li><font size="-1">측정오차는 얼마나 되는가?<br>
+                  </font> 
+                <li><font size="-1">유의한 영향을 미치는 원인들이 어떠한 조건을 가질 때 가장 바람직한 출력을 
+                  얻을 수 있는가? <br>
+                  를 파악하기 위하여 주어진 예산(비용, 시간, …)하에서 최대의 정보를 얻고자 실험방법과 분석방법을 계획하는 
+                  것이다.<br>
+                  </font> 
+              </ul>
+              <font size="-1"> 1.3 실험계획(DOE)의 종류 <br>
+              </font> 
+              <ul>
+                <li><font size="-1">시행 착오 실험(Trial and Error) <br>
+                  </font> 
+                <li><font size="-1">한번에 하나의 요인(One-Factor-at-a Time: OFAT)<br>
+                  </font> 
+                <li><font size="-1">부분 요인배치 실험(Fractional Factorials)<br>
+                  </font> 
+                <li><font size="-1">완전 요인 실험(Full Factorials)<br>
+                  </font> 
+                <li><font size="-1">기타(Others): 반응표면법(Response Surface Method), 
+                  혼합물 실험(Mixture Designs), 다구찌 실험(Taguchi Design)<br>
+                  </font> 
+              </ul>
+              <font size="-1"> 1.4 용어의 정리<br>
+              </font> 
+              <ul>
+                <li><font size="-1">반응값(Response) : 인자들의 주어진 수준에서의 결과치<br>
+                  (예: 공정에서 온도와 촉매에 따라 얻어지는 출력변수인 투과율) <br>
+                  </font> 
+                <li><font size="-1">인자(Factor) : 데이터의 산포에 영향을 준다고 생각되는 많은 원인들 
+                  중에 실험에서 직접 취급되는 원인으로 출력변수에 영향을 준다.<br>
+                  (예: 화학 공정에서 출력변수가 투과율일 때: 온도, 촉매) <br>
+                  </font> 
+                <li><font size="-1">수준(Level) : 인자의 조건 (예: 온도가 인자인 경우: 100℃, 150℃등)<br>
+                  </font> 
+                <li><font size="-1">처리(Treatment) : 수준의 조합<br>
+                  (예: 온도가 100℃일 때 A촉매를 사용) <br>
+                  </font> 
+                <li><font size="-1">반복(Replication): 각 수준의 처리 조합에서 실험을 한 번만 하는 
+                  것이 아니라 2회 이상 실험을 하는 것. <br>
+                  <br>
+                  </font> 
+              </ul>
+              <p> <b><font size="2">2. 완전 요인 배치법 (Full Factorial Design) </font><br>
+                <br>
+                </b>
+              <font size="-1">2.1 완전 요인 배치법이란? <br>
+              <br>
+              인자의 수가 n이고 각 인자의 수준수가 k인 실험계획법으로, 모든 인자간의 수준의 조합에서 실험이 이루어지는 것을 
+              일반적으로 k<sup>n</sup>요인배치법이라고 한다. <br>
+              주로 2<sup>n</sup>과3<sup>n</sup>요인실험이 많이 사용되는데 예를 들어 두 가지 인자를 A, B라하고 
+              각 인자의 수준을 A<sub>0</sub>, A<sub>1</sub>, B<sub>0</sub>, B<sub>1</sub>이라고 
+              하면 이러한 실험을 2<sup>2</sup>요인 실험이라 한다. <br>
+              k<sup>n</sup>요인 실험의 경우는 n원 배치 실험에서 각 인자의 수준수가 k인 실험과 동일하다. 즉 2<sup>2</sup>요인 
+              실험은 이원 배치법에서 수준이 각각 2인 실험인 것이다.<br>
+              완전 요인배치법은 인자들의 모든 처리조합에서 실험이 이루어지는 실험계획법이다. 2<sup>2</sup>요인 실험에서 
+              인자들의 처리조합은 모두4가지이고 이 네 가지 각각의 실험 조건에서 모두 실험이 이루어 지게 된다. 모든 인자간의 
+              수준의 조합에서 실험이 이루어 지므로 둘 이상의 인자를 동시에 분석할 수 있고 모든 인자와 교호작용의 효과를 추정할 
+              수 있다. 또한 공정이나 제품의 품질에 직접영향을 미치는 소수의 인자를 추출할 수 있다.<br>
+              <br>
+              <br>
+              2.2 완전 요인 배치법의 특징<br>
+              </font>
+            <LI><font size="-1">
+              <ul>
+                <li>인자의 모든 처리 조합이 시험된다.<br>
+                <li>주효과와 교호작용의 효과를 모두 평가할 수 있다.<br>
+                <li>정의된 실험의 영역 내의 모든 가능한 점에서 출력(반응)값을 추정할 수 있다.<br>
+                <li>실험의 오차(잔차)는 반복으로부터 구할 수 있다.<br>
+              </ul>
+              <br>
+              2.3 2<sup>2</sup>완전 요인 배치법 <br>
+              <br>
+              요인배치법의 가장 간단한 형태로 두 가지 인자 A,B에 대하여 낮은 수준을 0, 높은 수준을 1로 하여 다음과 같이 
+              A<sub>0</sub>, A<sub>1</sub>, B<sub>0</sub>, B<sub>1</sub>이라고 하면, 
+              인자의 각 수준의 조합을 처리 조합(Treatment Combination)이라 하며 a<sup>i</sup>b<sup>j</sup>으로 
+              표기한다. 처리조합 aibj는 인자 A의 i 수준과 인자 B의 j 수준의 조합을 의미하며 2<sup>2</sup> 
+              요인배치의 경우 i=0,1, j=0,1이므로 각 처 리 조합은 a<sup>0</sup>b<sup>0</sup> , 
+              a<sup>0</sup>b<sup>1</sup>, a<sup>1</sup>b<sup>0</sup>, a<sup>1</sup>b<sup>1</sup>의 
+              네 가지이다. 이 네 가지 처리조합을 간단히 표기하여 a<sup>0</sup>b<sup>0</sup> = (1), 
+              a<sup>0</sup>b<sup>1</sup> = b, a<sup>1</sup>b<sup>0</sup> = a, 
+              a<sup>1</sup>b<sup>1</sup> = ab로 나타낸다. 각 처리조합에서 r회 반복이 있는 요인 배치법에서의 
+              관측치 y<sub>ijk</sub>는 다음과 같이 쓸 수 있다. <br>
+              <br>
+              </font><font size="2"><font size="-1">y<sub>ijk </sub></font></font>=<font size="-1"> 
+              <img src="images/FullFactorial1m_01.gif" width="243" height="17" align="absmiddle"> 
+              <br>
+              <br>
+              단 y<sub>ijk</sub></font><font size="-1">는 서로 독립이고, 평균이 0, 분산이 <img src="images/FullFactorial1m_02.gif" width="16" height="14">인 
+              정규분포를 따르는 확률변수이다. <br>
+              <br>
+              <br>
+              2.4 인자의 수준의 의미<br>
+              <br>
+              <img src="images/FullFactorial1m_03.gif" width="188" height="110"> 
+              <br>
+              <br>
+              <br>
+              </font> 
+              <ul>
+                <li><font size="-1">균형 (Balanced)<br>
+                  A, B 각 인자의 높은 수준을 +1, 낮은 수준을 -1이라고 하면, 실험에서 각 변수는 고(+1)와 저(-1) 
+                  수준에서 동일한 수의 실험 횟수를 갖는다. 따라서 A수준을 모두 더하면 (-1)+(-1)+(+1)+(+1)=0이 
+                  된다.<br>
+                  이러한 속성은 변수의 각 수준이 최종 결과에 동등한 영향을 주도록 함으로써 이 설계에 대한 수학적 분석이 쉽게 
+                  이루어지도록 해 준다. <br>
+                  <br>
+                  </font> 
+                <li><font size="-1">직교 (Orthogonality)<br>
+                  인자 A, B의 플러스와 마이너스 부호를 곱한 AB난이 균형을 이루도록 배열되게끔 해주면 이것은 각 인자가 
+                  상호간에 독립적일 수 있도록 해준다. 즉, AB난을 전부 더하면, (-1)(-1)+(+1)(-1)+(-1)(+1)+(+1)(+1)=0이 
+                  된다. </font> 
+              </ul>
+          </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

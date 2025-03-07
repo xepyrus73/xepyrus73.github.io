@@ -1,0 +1,110 @@
+<html>
+<title>교호작용(Interaction) Plot</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="1916" >&nbsp;</td>
+    <td height="1916"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="interactionplot2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <b><font size="4" color="#a70105">교호작용(Interaction) Plot</font></b> 
+            <br>
+            <br>
+            <font size=3><b>Stat>ANOVA&gt;Interactions Plot</b></font> <br>
+            <br>
+            <font size="-1"> <br>
+            <br>
+            <font size="2"><br>
+            <b>1. MINITAB을 사용한 <b>Interaction Plot</b></b></font><b>의 작성 <font size="2"><a href="data/Anova03.zip"> 
+            (데이터 : Anova03.mtw)</a></font></b><br>
+            <br>
+            특정 화학 제품을 압력관(Pressure vessel)에 통과시켜 생산하고 있다. 이 제품의 여과율(Filtration 
+            rate)에 대한 공정 요인들의 영향을 평가하기 위해 공정온도 2수준, 포름알데히드 농도 2수준에서 반복 4회씩 실험을 
+            한 결과 여과율에 대한 데이터가 다음과 같다. 분산분석을 실시하려고 한다. <br>
+            <br>
+            <img src=images/AnovaTwoway_01.gif border=0 align=center> </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b><br>
+            <br>
+            1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="251"> <font size="-1"><img src=images/AnovaTwoway_02.gif border=0 align=center> 
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> <br>
+            공정온도 1수준과 포름알데히드 농도 1수준의 여과율이 높은 것을 볼 수 있다.<br>
+            <br>
+            <br>
+            <a name="2"></a><b>1.2 Interactions Plot을 그려 본다. </b><br>
+            <br>
+            ① Stat > ANOVA > Interactions Plot 선택 </font></td>
+        </tr>
+        <tr> 
+          <td height="316"> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Responses란에 '여과율'을 입력하고 Factors란에 '온도', '농도'를 
+            입력한다. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_07.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭<br>
+            <br>
+            <b> [ Graph 창에 나타난 결과 ]</b></font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaTwoway_08.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위의 Graph 창에서 점들을 잇는 선이 평행하지 않으므로 온도와 농도간에는 교호 
+            작용이 존재하는 것으로 보인다. </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+      
+  </tr>
+    </table>
+</body></html>
+

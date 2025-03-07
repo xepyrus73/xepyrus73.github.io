@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Z-MR 관리도</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=19 height="440">&nbsp;</td>
+    <td height="440" width="561"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"> 
+            <p><a href="zmr.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font size=4><b><font color="#a70105">Z-MR 관리도</font></b></font><br>
+              <br>
+              <br>
+              <font size="2"><b>1. Z-MR 관리도의 개요<br>
+              </b><font size="-1"><br>
+              </font></font><font size="-1">일반적으로 공정을 관리하기 위하여 사용하는 관리도에서는 공정의 
+              평균(μ)과 표준편차(σ)와 같은 모수를 추정하기에 충분한 데이터를 확보하기 용이한 경우도 있지만, 단기간 운용되는 
+              공정에서는 종종 충분한 데이터를 얻지 못할 수도 있다. 하나의 기계 혹은 공정은 다양한 부품과 제품을 생산할 수 있다. 
+              이 때 비록 서로 다른 제품을 많이 생산하여 그에 대한 데이터를 얻을지라도 각 제품의 품질 특성에 대한 관리도를 따로 
+              그릴 필요가 있다. 왜냐하면 각 특성이 동일한 평균과 표준편차를 가지지 않을 가능성이 높기 때문이다. 단기간 운용되는 
+              공정에 대한 관리도는 이러한 문제에 대하여, 다양한 방식의 풀링(Pooling)과 표준화(Standardizing) 
+              방법을 사용하여 해결책을 제시한다. 이 때 일반적인 가정은 각각의 부품 또는 뱃치 (Batch)는 유일한 평균과 표준편차를 
+              가지고 있다는 것인데, 만일 평균과 표준편차가 얻어진다면, 공정의 데이터에서 평균을 빼고 표준편차로 나누어서 표준화 
+              할 수 있다. 표준화된 데이터는 모평균이 0, 모표준편차가 1인 모집단에서 생성된 것으로 볼 수 있는데, 이렇게 되면 
+              각각의 다른 부품이나 제품에 대해서도 타점할 수 있다. 이 때 Z관리도의 중심선은 0이고 관리 상한선은 ±3인 관리도가 
+              되는 것이다. 그리고 MR관리도의 경우 표준편차의 추정방법과 상관없이 Z값으로 변환된 값들에 대해서 길이가 2인 이동범위를 
+              사용하여 MR관리도에 타점한다. 이때, 중심선은 1.128, 관리 상한선은 3.686, 그리고 관리 하한선은 0으로 
+              사용한다. <br>
+              Z-MR 관리도는 표준화된 개별 관측치(Z)와 단기간 운용되는 공정으로부터 구한 이동범위(MR : Moving Average)를 
+              이용하여 만드는 관리도로 단기 공정에서 각각의 런(Run)에 대해 충분한 데이터를 얻지 못할 때 사용한다. Z-MR 
+              관리도에서는 측정 데이터를 표준화하는데, 이는 각각의 다른 런(Run)으로부터 수집된 데이터를 하나의 관리도를 통해 
+              해석을 할 수 있게끔 한다. 이때 데이터로부터의 평균과 변동의 추정은 다양한 방법으로 수행할 수 있다.<br>
+              <br>
+              </font><font size="-1"> </font> <font size="2"><b>2. MINITAB을 사용한 
+              Z-MR 관리도의 작성 <a href="data/z_mr.zip">(데이터 : Z_MR.mtw)</a></b></font> 
+              <br>
+              <br>
+              <font size="-1">화학 섬유공장에서 짧은 기간 동안 생산하는 섬유에 대한 품질상태를 평가하기 위한 표준화 
+              관리도 기술을 적용할 필요를 느끼고 공정의 변동에 영향을 미치는 섬유의 탄력성을 조사했다. 데이터는 다음과 같이 3종류의 
+              섬유에서 15개를 추출하였다.<br>
+              <br>
+              <img src="images/ZMR2_01.gif" width="391" align="absmiddle" height="288"><br>
+              <br>
+              <br>
+              2.1 데이터의 입력<br>
+              <br>
+              MINITAB Worksheet에 아래와 같이 데이터를 입력한다. <br>
+              <br>
+              <img src="images/ZMR2_02.gif" width="188" align="absmiddle" height="255"><br>
+              <br>
+              </font><font size="-1"> 2.2 Z-MR 관리도를 작성한다<br>
+              <br>
+              ① Stat > Control Charts > Z-MR…를 선택한다.<br>
+              <br>
+              <img src="images/ZMR2_03.gif" width="455" align="absmiddle" height="302"> 
+              <br>
+              <br>
+              <br>
+              ② 섬유의 탄력성이 포함되어 있는 열과 섬유종류를 나타내는 열을 선택한다. <br>
+              <br>
+              <img src="images/ZMR2_04.gif" width="444" align="absmiddle" height="222"> 
+              <br>
+              <br>
+              ☞ 옵션창 설명 <br>
+              <br>
+              [Estimate] <br>
+              <br>
+              <img src="images/ZMR2_06.gif" width="275" align="absmiddle" height="273"> 
+              <br>
+              <br>
+              <br>
+              [Stamp]<br>
+              <br>
+              <img src="images/ZMR2_07.gif" width="391" align="absmiddle" height="216"> 
+              <br>
+              <br>
+              [Options] <br>
+              <br>
+              <img src="images/ZMR2_08.gif" width="521" align="absmiddle" height="206"><br>
+              <br>
+              <br>
+              ③ OK를 클릭한다.<br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;다음과 같은 그래프와 함께 Z/MR 관리도에 대한 정보를 제공하는 창이 
+              생성된다. <br>
+              <br>
+              <img src="images/ZMR2_09.gif" width="483" align="absmiddle" height="390"><br>
+              <br>
+              Z관리도와 MR관리도를 보면 모든 점들이 관리한계선 안에 타점 되어 있으며 특별한 패턴이 있는 것으로 보이지는 않는 
+              것으로 보아 이 프로세스는 안정적이라 판단한다.</font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

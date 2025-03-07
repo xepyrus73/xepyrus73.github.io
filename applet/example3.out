@@ -1,0 +1,49 @@
+/* Outline Data File - Simon Daykin                                        */
+/*-------------------------------------------------------------------------*/
+/* Format for Lines...                                                     */
+/*	Level	Icon	Hidden	Title			URL                */
+/*-------------------------------------------------------------------------*/
+/*
+ 1	2		"#1"				" "
+  2	1		"Home"		"http://www.byte-sized.com/"
+
+#Software
+ 1	2		"#2"				" "
+  2	1		"BSCOutline"	".../software/index.shtml?outline/desc"
+  2	1		"BSC3DView"	".../software/index.shtml?3dview/desc"
+  2	1		"Button Bar"	".../software/index.shtml?buttonbar/desc"
+  2	1		"Keyboard"	".../software/index.shtml?keyboard/desc"
+  2	1		"Scramble"	".../software/index.shtml?scramble/desc"
+  2	1		"BSCColPick"	".../software/index.shtml?colpick/desc"
+  2	1		"BSCSplitter"	".../software/index.shtml?splitter/desc"
+
+#Web Links
+ 1	2		"#3"				" "
+  2	1		"Fun"			".../links.shtml?Fun%20Links"
+  2	1		"Software"		".../links.shtml?Software%20Links"
+  2	1		"Web Development"	".../links.shtml?Web%20Development"
+  2	1		"Web Services"		".../links.shtml?Web%20Services"
+  2	1		"Java Links"		".../links.shtml?Java%20Links"
+  2	1		"Miscellaneous"		".../links.shtml?Miscellaneous%20Links"
+
+#Web Search
+ 1	2		"#4"		" "
+  2	1		"WebCrawler"	".../search/index.shtml?wc"
+  2	1		"Alta-Vista"	".../search/index.shtml?av"
+  2	1		"Excite"	".../search/index.shtml?ex"
+  2	1		"HotBot"	".../search/index.shtml?hb"
+  2	1		"StartingPoint"	".../search/index.shtml?sp"
+  2	1		"Lycos"		".../search/index.shtml?ly"
+  2	1		"InfoSeek"	".../search/index.shtml?is"
+  2	1		"Yahoo"		".../search/index.shtml?yh"
+
+# Guest Book
+ 1	2		"#5"		" "
+  2	1		"View"		"http://saturn.guestworld.tripod.lycos.com/wgb/wgbview.dbm?owner=sd_guest"
+  2	1		"Sign"		".../guest.shtml"
+
+# Contact
+ 1	2		"#6"		" "
+  2	1		"Webmaster"	"mailto:Webmaster@byte-sized.com"
+  2	1		"Services"	"mailto:Services@byte-sized.com"
+  2	1		"Software"	"mailto:Software@byte-sized.com"

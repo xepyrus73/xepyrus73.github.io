@@ -1,0 +1,184 @@
+<HTML>
+<HEAD>
+<TITLE>Individual 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="5867">&nbsp;</td>
+    <td height="5867"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left">
+              <p><a href="individual.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic_on.gif',1)"><img src="images/b_basic.gif" width="55" height="24" border="0" name="Image1"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro01_on.gif',1)"><img src="images/b_pro01.gif" width="55" height="24" border="0" name="Image2"></a><br>
+                <br>
+                <A name="1"></a> <font size="4"><b><font color="#a70105">Individuals 
+                관리도</font></b></font> </p>
+              <center>
+                <div align="left"><b><font size=3><b><font color="#000000">Stat>Control 
+                  Charts&gt;Individual</font></b></font></b><b>s</b></div>
+              </center>
+              
+            </div>
+            <br>
+            <br>
+            <BR>
+            <font size=3><b><font size="2">1. Individuals관리도의 개요</font></b></font><br>
+            <br>
+            <font size="-1"> X관리도라고도 한다. 제품의 품질을 관리할 목적으로 각각의 측정 값을 하나의 부분군으로 
+            취급하여 관리도를 작성한다. Individuals관리도에서는 한 개의 측정 값이 얻어지면 곧 관리도에 한 점으로 기록되므로, 
+            각각의 측정으로부터 공정의 안정상태의 판정 및 조치까지 시간적인 지연이 없는 것이 특징이다. 공정의 관리를 위해 공정으로부터 
+            부분군을 추출할 때 한번에 여러 개의 제품들을 추출할 수 없는 경우가 많다. 예를 들어, 제품 또는 제조공정의 특성상 
+            한번에 하나의 제품밖에 얻을 수 없는 경우도 있고, 생산속도가 너무 느려 둘 이상의 제품으로 부분군을 형성하기가 어려운 
+            경우도 있다. 이러한 경우에 공정평균을 관리하기 위해 Individuals관리도를 사용한다. k개의 데이터를 이용하여 
+            공정평균 <font face="Symbol">m</font>의 추정치로는 <img src="images/individual2_01.gif" width="16" height="19" align="absmiddle">를 
+            사용하고, <font face="Symbol">s</font>의 추정치로 <img src="images/individual2_02.gif" width="38" height="23" align="absmiddle">를 
+            사용한다. 여기서 <img src="images/individual2_03.gif" width="14" height="19" align="absmiddle">는 
+            k-1개의 범위들의 평균이 된다. Individuals관리도(혹은 X관리도)의 중심선 및 관리한계선은 다음과 같이 구해진다. 
+            <BR>
+            <br>
+            <br>
+            <img src="images/individual2_04.gif" width="135" height="81"><br>
+            <br>
+            <br>
+            여기서, <img src="images/individual2_05.gif" width="18" height="18" align="absmiddle">는 
+            n=2일 때의 값을 사용한다. <br>
+            <br>
+            <br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <b><font size="2">2. MINITAB을 사용한 Individuals 관리도의 작성 <a href="data/individuals.zip">(데이터 
+            : Individuals.mtw)</a><br>
+            <br>
+            </font></b><font size="2"> <font size="-1">플라스틱 가공시 사용하는 첨가제 중의 하나는 
+            제품의 투과율(%)이 중요한 특성이다. 이 특성을 관리하기 위해 16일 동안 매일 하나의 제품에 대해 투과율을 측정하였다. 
+            Individuals관리도를 이용하여 프로세스가 안정적인지를 판단하라. <br>
+            <br>
+            <img src="images/individual2_06.gif" width="343" height="83"> </font></font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> <br>
+            </b><br>
+            <b>2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            <br>
+            <img src="images/individual2_07.gif" width="173" height="419"> <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">            
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 Individuals관리도를 작성한다.</b><br>
+            <br>
+            ① Stat > Control Charts > Individuals…를 선택한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="images/individual2_08.gif" width="458" height="306"><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <br>
+            <img src="images/individual2_09.gif" width="520" height="452"><br>
+            <br>
+            <BR>
+            <BR>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Test] <br>
+            <br>
+            <br>
+            <img src="images/individual2_10.gif" width="560" height="565"><br>
+            <br>
+            <br>
+            [Estimate]<br>
+            <br>
+            <br>
+            <br>
+            <img src="images/individual2_11.gif" width="560" height="307"><br>
+            <br>
+            [S Limits]<br>
+            <br>
+            <br>
+            <img src="images/individual2_12.gif" width="560" height="451"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/individual2_13.gif" width="560" height="390"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/individual2_14.gif" width="470" height="285"><br>
+            <br>
+            <br>
+            <br>
+            <img src="images/mov_a_15.gif" width="516" height="376"><br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <br>
+            <img src="images/individual2_16.gif" width="458" height="220"> <br>
+            <br>
+            [Options] <br>
+            <br>
+            <br>
+            <img src="images/mov_a_17.gif" width="555" height="360"> </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <br>
+            ③ OK를 클릭한다.<br>
+            <br>
+            다음과 같은 그래프와 함께 I관리도에 대한 정보를 제공하는 창이 생성된다.<br>
+            <br>
+            <br>
+            <img src="images/mov_a_18.gif" width="498" height="362"><br>
+            <br>
+            <BR>
+            <b> </b><br>
+            위의 그래프를 보면 모든 점들이 관리한계선 내에 있으며 특별한 패턴이 보이지 않는 것으로 보아 공정에 이상이 없다고 판단한다. 
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font> </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table>
+</BODY>
+</HTML>

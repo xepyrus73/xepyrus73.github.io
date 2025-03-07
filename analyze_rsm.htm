@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>반응표면 실험의 분석</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=588>
+  <tr> 
+    <td width=20 height="7763">&nbsp;</td>
+    <td height="7763" width="568"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=567>
+        <tr> 
+          <td height="317"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">반응표면 
+              실험의 분석</font></b></font></p>
+            <p><font size="3"><b>Stat > DOE > Response Surface > Analyze Response 
+              Surface Design</b></font><br>
+              <br>
+              <br>
+              <font size="-1"><a href="create_rsm.htm">반응표면 실험의 설계</a>에서 중심합성법(Central 
+              Composite Design)으로 설계된 실험 배치(Central01.mtw)에 제품의 반응량에 영향을 주는3가지 
+              인자(교반속도, 반응온도, 농도)에 대하여 반응량을 최대화 할 수 있는 조건을 찾기 위해 실험을 실시하여 수집된 데이터를 
+              다음과 같이 MINITAB에 입력하였을 때 분석을 실시하여 보자. <br>
+              <br>
+              <br>
+              <b>1. MINITAB을 사용한 반응표면 실험의 분석 <a href="data/central02.zip">(데이터 
+              : Central02.mtw)</a> </b><br>
+              <br>
+              1.1 데이터의 입력 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;실험을 실시하여 MINITAB의 Worksheet에 입력한다. <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_01.gif" width="508" height="516"> <br>
+              <br>
+              <br>
+              1.2 반응표면분석을 실시한다.<br>
+              <br>
+              ① Stat > DOE > Response Surface > Analyze Response Surface Design... 
+              을 선택한다.<br>
+              <br>
+              <img src="IMAGES/analyze_rsm_02.gif" width="566" height="206"><br>
+              <br>
+              <br>
+              ② Responses 란에 '반응량' 을 입력한다.<br>
+              <br>
+              <img src="IMAGES/analyze_rsm_03.gif" width="565" height="324"><br>
+              <b><br>
+              </b>Analyze data using는 분석시 인자의 수준을 Code화한 것으로 사용할지 Uncoded화 한 것을 
+              사용할 지를 결정한다. Code는 수준의 높은 값을 +1로 하고 낮은 값을 -1로 하며 중심값을 0으로 한다. Uncoded는 
+              인자의 실제 수준을 입력한 것 이다. 본 예에서는 Analyze data using의 Uncoded units를 선택하여 
+              입력한 인자의 수준을 그대로 사용한다. <br>
+              <br>
+              <b>☞ 중심점(Center point) <br>
+              </b>모든 인자의 높은 수준과 낮은 수준의 중앙값을 나타낸다. 중심점을 추가 하여 실험을 하는 목적은 효과의 형태가 
+              선형인지 비선형(곡선형태)인지를 알아 보기 위함이다. 물론, 중심점 추가에 따라 실험횟수가 증가된다. 인자의 수준이 
+              계량적일 경우에는 쉽게 중심점을 추가할 수 있으나 인자의 수준이 정성적일 경우에는 중심점을 추가 시킬 수 없다. <br>
+              <br>
+              <b>☞ 블록(Block)</b><br>
+              실험의 모든 관측치들은 동일한 조건에서 얻기 힘들므로 실험을 시각적 혹은 공간적으로 분할하여 그 내부에서 실험의 환경이 
+              균일하도록 만들어 놓는 것이다. 따라서 중요하지 않은 인자는 블록설계를 통해 교락 시키면 실험에 따른 오차를 분리해서 
+              구할 수 있다. 예를 들면 날짜별, 공급자별, 작업자별 등을 블록으로 지정한다.<br>
+              <br>
+              <br>
+              ③ Terms...에서 Include the following terms란 중에 Full quadratic를 선택한다.<br>
+              <br>
+              <img src="IMAGES/analyze_rsm_04.gif" width="394" height="334"> <br>
+              <br>
+              <b>Linear </b>: A B C<br>
+              <b>Linear + squares</b> : A B C A*A B*B C*C<br>
+              <b>Linear + interactions</b> : A B C A*B A*C B*C <br>
+              <br>
+              모델에 블록의 효과를 반영시키고 싶으면 Include blocks in the model을 선택하여 분석한다. 분석결과 
+              불록의 효과가 유의하지 않으면 (블록의 P-Value가 유의수준 Alpha보다 크면) 블록의 효과를 오차항에 풀링(Pooling)시킨 
+              뒤에 다시 분석을 실시한다. 본 예에서는 불록이 지정하지 않고 분석을 실시한다.<br>
+              <br>
+              <br>
+              ④ Graphs... 를 클릭한다.<br>
+              <br>
+              <img src="IMAGES/analyze_rsm_05.gif" width="565" height="382"><br>
+              <br>
+              <br>
+              Residuals for Plots에서<br>
+              <font size="1">●</font> Regular : 일반적인 잔차를 구하는 방식으로 관측값과 적합값의 차이값이다.<br>
+              <font size="1">●</font> Standardized : 잔차를 표준화 시킨 잔차이다.<br>
+              <font size="1">●</font> Deleted : 적합값을 구할 때 자신의 값을 제외하고 구한 후에 관측값과의 
+              차이값을 구한다. <br>
+              <br>
+              <b>☞ 잔차에 대한 그래프 분석</b><br>
+              <br>
+              잔차를 분석하는 이유는 다음과 같다.<br>
+              <font size="1">●</font> 실험변동이 단지 우연원인에 의한 것인지를 확인하기 위함<br>
+              <font size="1">●</font> 결론에 중대한 영향을 줄 수 있는 잠재변수를 찾기 위함<br>
+              <br>
+              잔차는 정규성을 따라야 결과치가 올바로 분석된 것으로 판단할 수 있다. 즉 잔차가 정규분포를 따르면 실험변동이 랜덤하다는 
+              것을 나타낸다. <br>
+              <br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Histogram of residuals <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_06.gif" width="443" height="330"> <br>
+              <br>
+              <br>
+              Graph 창에 나타난 결과 : Normal plot of residuals <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_07.gif" width="437" height="327"> <br>
+              <br>
+              </b>잔차를 정규확률 plot을 하여 잔차들이 정규분포를 따르는지를 알아보는 방법이다. 잔차들을 타점해본 결과 대부분의 
+              점들이 일직선상에 위치 함으로 정규분포를 따른다. <br>
+              <b><br>
+              Graph 창에 나타난 결과 : Residuals versus fits <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_08.gif" width="444" height="331"> <br>
+              <br>
+              </b>잔차와 적합값에 대한 그림으로 적합값이 0 근처에 랜덤하게 타점 될수록 실험변동이 단지 우연원인에 의한 것임을 
+              나타낸다. <br>
+              <br>
+              <b><br>
+              Graph 창에 나타난 결과 : Residuals versus order <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_09.gif" width="468" height="350"> <br>
+              <br>
+              </b>데이터 순서에 따른 잔차 그림으로 잔차값들이 0을 중심으로 랜덤하게 배열되어 있다. <b><br>
+              <br>
+              </b>☞ Residuals versus the variables<br>
+              선택한 변수와 잔차에 대한 그림을 그리는데 점들이 0 근처에 랜덤하게 타점될 수록 실험 변동이 단지 우연 원인에 의한 
+              것임을 나타낸다.<br>
+              <br>
+              ☞ 만일 잔차들이 정확하게 정규분포를 따르는지를 확인하려면 Stat>Basic Statistics>Normality 
+              Test를 이용하면 된다. 이에 대한 자세한 이용방법은 Basic Statistics을 참조하십시오.<br>
+              <br>
+              잔차 분석은 결과 분석이 올바르게 분석된 것인지를 판단하는데 중요한 역할을 한다. 위의 모든 그래프를 보아 실험변동은 
+              단지 우연원인에 의한 것이다. 따라서 분석결과에 통계적 신뢰성을 확보할 수 있다.<br>
+              <br>
+              <br>
+              ⑤ Results...에서 default인 Unusual observations in addition to the 
+              above를 선택 <br>
+              <br>
+              <img src="IMAGES/analyze_rsm_10.gif" width="520" height="234"></font></p>
+            <p>
+            <font size="-1">Display of Results에서 <br>
+            <ul>
+              <li>Coefficients and ANOVA table에서는 효과와 계수에 대한 유의성을 검정하는 Coefficients표와 
+                분산분석을 실시하는 ANOVA표를 제공한다.<br>
+              <li>Unusual observations in addition to the above에서는 Coefficients 
+                and ANOVA table에서 제공하는 것과 관측값 중에 이상치를 출력한다.<br>
+              <li>Full table of fits and residuals in addition to the above에서는 
+                Unusual observations in addition to the above에서 제공하는 것과 적합값과 잔차에 
+                대한 표를 출력한다. <br>
+            </ul>
+            <br>
+            ⑥ Storage...를 클릭한다. <br>
+            <br>
+            <img src="IMAGES/analyze_rsm_11.gif" width="518" height="216"><br>
+            <br>
+            Worksheet에 저장할 결과를 지정할 수 있는데 적합값과 잔차에 대하여(Fits and Residuals), 반응치에 
+            대한 정보에 대하여(Model Information), 이상치에 대하여(Other) 필요한 사항을 Worksheet에 
+            저장하기 위한 옵션을 지정할 수 있다. <br>
+            <br>
+            <b>Fits and Residuals</b><br>
+            모델에서 적합된 값과 그 값과의 실제 값의 차이에 대한 여러가지 잔차들을 worksheet에 저장하여 사용한다. <br>
+            <br>
+            <b>Model Information</b><br>
+            모델을 구성하는 계수와 실험계획 매트릭스가 각각의 반응치에 대해 저장된다. 또한, worksheet에 적합된 모델에 대한 
+            정보를 알고 싶으면 Model terms를 지정한다. <br>
+            <br>
+            <b>Other</b><br>
+            여러 가지 이상치를 확인하기 위한 값들을 저장한다. 이상치를 구하는 구체적인 방법(Hi, Cook's distance, 
+            DFITS)은 통계적으로 상당히 어렵기 때문에 자세한 설명은 생략한다. 이 옵션을 사용할 때는 이들 방법 중에 한 두 
+            가지를 선택하여 사용할 것을 추천한다.<br>
+            <br>
+            <br>
+            ⑦ OK를 클릭한다. <br>
+            <br>
+            <b>Session 창에 나타난 결과</b> <br>
+            <br>
+            <img src="IMAGES/analyze_rsm_12.gif" width="565" height="479"><br>
+            <br>
+            유의수준을 0.1일 때, 모델에서 주효과 교반속도와 반응온도의 제곱항 그리고 교반속도*농도의 교호작용 항의 P-Value가 
+            유의수준 0.1보다 작으므로 이들 인자들이 반응량에 유의하다."Analysis of Variance for 반응량" 에서 
+            Square항 (p=0.039)과 Interaction 항(p=0.043)의 P-Value가 유의수준 0.1보다 작기 
+            때문에 반응표면에 곡면이 있음을 알려준다. Full quadratic모델의 Lack-of-fit값이 0.107로서 유의수준0.1에서 
+            모델이 적절하게 반응표면을 적합시킨다는 귀무가설을 기각시킬 수 없다. 즉 모델이 적절하게 반응표면을 적합시킨다.<br>
+            <br>
+            <font size="1">■</font> Coef는 모델의 항에 붙는 계수의 값이다.<br>
+            <font size="1">■</font> SE Coef는 표준오차에 붙는 계수로서 검정 통계량인 T값을 구할 때 사용된다.<br>
+            <font size="1">■</font> T는 계수에 대한 검정 통계량이다.<br>
+            <font size="1">■</font> P는 검정 통계량에 대한 확률값이다. 만약 P값이 유의수준 보다 적으면 유의하다. 
+            <br>
+            <font size="1">■</font> DF는 자유도 이다. <br>
+            <font size="1">■</font> Seq SS & Adj SS는 sequential sums of squares와 
+            adjusted sums of squares로 모델이 직교하고 공변량을 포함하지 않다면 두 값은 같다. Seq SS에 
+            대하여 수정을 가한 값이 Adj SS이다.<br>
+            <font size="1">■</font> Adj MS는 Main Effects와 2-Way Interactions의 
+            Adj SS를 Residual Error의 Adj SS로 나눈 값이다.<br>
+            <font size="1">■</font> F는 분산분석의 검정 통계량이다. <br>
+            <br>
+            위의 결과로부터 유의하지 않은 인자를 오차항에 풀링하고 다시 분석을 실시하면 다음과 같다.<br>
+            앞의 모든 과정은 동일하고 Terms...에서 Include the following terms란 중에 Full quadratic를 
+            선택한다.<br>
+            <br>
+            <img src="IMAGES/analyze_rsm_13.gif" width="394" height="312"> <br>
+            <br>
+            <br>
+            <b>Session 창에 나타난 결과 <br>
+            <br>
+            <img src="IMAGES/analyze_rsm_14.gif" width="568" height="414"><br>
+            <br>
+            </b>위의 결과로부터 유의한 인자는 교반속도의 일차항을 제외한 모든 항들이 유의함을 알 수 있다. 교반속도에 대한 일차항이 
+            유의하지는 않지만 본 예에서는 이 항을 포함한 예측식은 다음과 같다.<br>
+            <br>
+            반응량의 예측식:<br>
+            <br>
+            반응량 = -16.702-0.413*교반속도-0.098*반응온도-1.215*농도-0.311*교반속도*교반속도 +0.001*반응온도*반응온도+0.412*교반속도*농도 
+            <br>
+            <br>
+            블록항을 포함한 분산분석의 결과는 다음과 같다. <b><br>
+            <br>
+            <br>
+            Session창에 나타난 결과<br>
+            <br>
+            <img src="IMAGES/analyze_rsm_15.gif" width="545" height="460"> <br>
+            <br>
+            </b>유의수준을 0.1일 때, 모델에서 블록항, 교반속도와 반응온도의 제곱항 그리고 교반속도*농도의 교호작용 항의 P-Value가 
+            유의수준 0.1보다 작으므로 이들 인자들이 반응량에 유의하다. 위의 결과로부터 유의하지 않은 인자를 오차항에 풀링하고 
+            다시 분석을 실시하면 된다. </font> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

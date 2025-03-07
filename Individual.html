@@ -1,0 +1,161 @@
+<HTML>
+<HEAD>
+<TITLE>Individual 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=627>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="individual2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> Individual 
+                관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;Individual</font></b></font></b><b>s</b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <font size="2"><BR>
+            <b>1.Individual 관리도의 개요</b></font><br>
+            <br>
+            <font size="-1">Individual 관리도는 X관리도라고도 한다. 제품의 품질을 관리할 목적으로 각각의 측정 
+            값을 하나의 점으로 기입하는 관리도를 말한다. X관리도에서는 한 개의 측정 값이 얻어지면 곧 관리도에 점으로 기록되므로, 
+            각각의 측정으로부터 공정의 안정상태의 판정 및 조치까지 시간적인 지연이 없는 것이 특징이다. 관리도를 위해 공정으로부터 
+            부분군을 추출할 때 한번에 여러 개의 제품들을 추출할 수 없는 경우가 많다. 제품 또는 제조공정의 특성상 한번에 하나의 
+            제품밖에 얻을 수 없는 경우도 있고, 생산속도가 너무 느려 둘 이상의 제품으로 부분군을 형성하기가 어려운 경우도 있다. 
+            이러한 경우에 공정평균을 관리하기 위해 X관리도를 사용한다. k개의 데이터를 이용하여 공정평균을 추정하면 μ의 추정치로는 
+            <img src=images/Individual_01.gif  border=0 align=absmiddle>를 사용하고,<img src=images/Common.gif  border=0 align=absmiddle> 
+            의 추정치로 <img src=images/Individual_02.gif   border=0 align=absmiddle width="54" height="30"> 
+            를 사용한다. </font> 
+        </tr>
+        <tr> 
+          <td><font size="-1"><br>
+            여기서 <img src=images/Individual_03.gif   border=0 align=absmiddle> 
+            는 k-1개의 범위들의 평균이 된다. X관리도(혹은 Individuals관리도)의 중심선 및 관리한계선은 다음과 같이 
+            구해진다. <br>
+            <br>
+            </font></td>
+        <tr> 
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_04.gif   border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 여기서, <I>d</I><sub>2</sub>는 n=2일 때의 
+            값을 사용한다<BR>
+            <BR>
+            <font size="2"><BR>
+            <b>2.MINITAB을 사용한 Individual 관리도의 작성 <a href="data/individuals.zip">(데이터 
+            : Individuals.mtw)</a></b></font><br>
+            <BR>
+            플라스틱 가공시 사용하는 첨가제 중의 하나는 제품의 투과율(%)이 중요한 특성이다. 이 특성을 관리하기 위해 16일 동안 
+            매일 하나의 제품에 대해 투과율을 측정하였다. Individuals관리도를 이용하여 프로세스가 안정적인지를 판단하라. 
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_06.gif   border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력</b><BR>
+            <BR>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_07.gif   border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 MINITAB의 실행</b> <BR>
+            <BR>
+            ① Stat > Control Charts > Individuals<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_08.gif   border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 투과율(%)이 포함된 열을 선택한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_09.gif   border=0 align=center><BR>
+            <br>
+            </font></td>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_10.gif   border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_11.gif   border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다. <BR>
+            <BR>
+            <b> 2.3 결과 해석</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Individual_12.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위의 그래프를 보면 모든 점들이 관리한계선 내에 있으며 특별한 
+            패턴이 보이지 않는 것으로 보아 공정에 이상이 없다고 판단한다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"><BR>
+            </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

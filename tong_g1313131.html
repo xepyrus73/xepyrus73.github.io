@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+
+<TITLE>Tree</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="features.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+
+<!--
+window.onload = loadTrees;
+
+if (document.layers) {
+  document.writeln('<SCRIPT SRC="tree_n4.js"><\/SCRIPT>');
+} else if (document.all) {
+  document.writeln('<SCRIPT SRC="tree.js"><\/SCRIPT>');
+}
+
+function loadTrees() {
+
+  window.myTree = new Tree("basic Statistics");
+
+  
+  
+  
+
+  window.myTree3 = new Tree("기술통계량");
+  myTree3.addTreeItem("<a href=Descriptive_Gen.html target=center>기술통계량</a>");
+  
+
+  window.myTree4 = new Tree("데이터의 시각적 표현");
+  myTree4.addTreeItem("<a href=VisualPre.html target=center>데이터의 시각적 표현</a>");
+  
+
+
+  window.myTree5 = new Tree("정규성 검정");
+  myTree5.addTreeItem("<a href=NormalTest.html target=center>정규성검정</a>");
+  myTree5.addTreeItem("<a href=NormalPlot1.html target=center>정규확률지 도시</a>");
+  myTree5.addTreeItem("<a href=BoxCox.html target=center>Box-Cox 변환</a>");
+  
+  window.myTree6 = new Tree("STAT");
+  
+  myTree6.addTreeItem(myTree0);
+
+
+  window.myTree2 = new Tree("공정능력분석");
+  myTree2.addTreeItem("<a href=CapaAnal.html target=center>공정능력 분석(정규분포)</a>");
+  myTree2.addTreeItem("<a href=            target=center>공정능력 분석(비정규분포)</a>");
+  
+  window.myTree7 = new Tree("계측관리");
+  myTree7.addTreeItem("<a href=MeasureManage1.html target=center>Gage R&amp;R</a>");
+  myTree7.addTreeItem("<a href=MeasureManage2.html target=center>Gage 선형성</a>");
+  
+  window.myTree0 = new Tree("검출력과 시료수");
+  myTree0.addTreeItem("<a href=          target=center>검출력과 시료수</a>");
+  
+  
+  window.myTree2_3 = new Tree("통계적 가설검정");
+  myTree2_3.addTreeItem("<a href=HypoTest1.html target=center>모평균의 검정</a>");
+  myTree2_3.addTreeItem("<a href=HypoTest2.html target=center>모분산의 검정</a>");
+  myTree2_3.addTreeItem("<a href=HypoTest3.html target=center>모비율의 검정</a>");
+  myTree2_3.addTreeItem("<a href=BoxPlot.html target=center>그래프 비교</a>");
+  myTree2_3.addTreeItem("<a href=HypoTest4.html target=center>카이제곱검정</a>");
+  
+  window.myTree2_4 = new Tree("상관분석");
+  myTree2_4.addTreeItem("<a href=CorrAnal.html target=center>상관분석</a>");
+  
+  
+  window.myTree2_5 = new Tree("회귀분석");
+  myTree2_5.addTreeItem("<a href=Regression.html target=center>단순 회귀분석</a>");
+  myTree2_5.addTreeItem("<a href=            target=center>중 회귀분석</a>");
+  myTree2_5.addTreeItem("<a href=            target=center>최선회귀모형 선택</a>");
+  myTree2_5.addTreeItem("<a href=            target=center>Logistic 회귀분석</a>");
+  
+  
+  window.myTree2_6 = new Tree("분산분석");
+  myTree2_6.addTreeItem("<a href=Anova1.html target=center>일원배치법</a>");
+  myTree2_6.addTreeItem("<a href=Anova2.html target=center>이원배치법</a>");
+  myTree2_6.addTreeItem("<a href=Anova3.html target=center>일반분산분석</a>");
+  myTree2_6.addTreeItem("<a href=           target=center>Nested</a>");
+  myTree2_6.addTreeItem("<a href=           target=center>시료수의 결정</a>");
+  
+  window.myTree2_2 = new Tree("분산그래프");
+  myTree2_2.addTreeItem("<a href=Q_Tools.html target=center>분석그래프</a>");
+  
+  
+  window.myTree2_8 = new Tree("완전요인배치법");
+  myTree2_8.addTreeItem("<a href=            target=center>완전요인배치법의 설계</a>");
+  myTree2_8.addTreeItem("<a href=            target=center>완전요인배치법의 분석</a>");
+  
+  window.myTree2_9 = new Tree("부분요인배치법");
+  myTree2_9.addTreeItem("<a href=            target=center>부분요인배치법의 설계</a>");
+  myTree2_9.addTreeItem("<a href=            target=center>부분요인배치법의 분석</a>");
+  
+  window.myTree2_10 = new Tree("반응표면분석");
+  myTree2_10.addTreeItem("<a href=            target=center>반응표면 실험의 설계</a>");
+  myTree2_10.addTreeItem("<a href=            target=center>반응표면 실험의 분석</a>");
+  
+  window.myTree2_11 = new Tree("혼합물 실험법");
+  myTree2_11.addTreeItem("<a href=             target=center>혼합물 실험의 설계</a>");
+  myTree2_11.addTreeItem("<a href=            target=center>혼합물 실험의 분석</a>");
+  
+  window.myTree2_12 = new Tree("관리도");
+  myTree2_12.addTreeItem("<a href=Quan_control.html target=center>계량형 관리도</a>");
+  myTree2_12.addTreeItem("<a href=Qual_control.html target=center>계수형 관리도</a>");
+  myTree2_12.addTreeItem("<a href=                  target=center>기타 관리도</a>");
+  
+ 
+
+  window.myTree8 = new Tree("");
+
+  myTree8.addTreeItem(myTree3);
+  myTree8.addTreeItem(myTree4);
+  myTree8.addTreeItem(myTree5);
+  myTree8.addTreeItem(myTree2);
+  myTree8.addTreeItem(myTree7);
+  //myTree8.addTreeItem(myTree0);
+  //myTree8.addTreeItem(myTree2_3);
+  //myTree8.addTreeItem(myTree2_4);
+  //myTree8.addTreeItem(myTree2_5);
+  //myTree8.addTreeItem(myTree2_6);
+  //myTree8.addTreeItem(myTree2_2);
+  //myTree8.addTreeItem(myTree2_8);
+  //myTree8.addTreeItem(myTree2_9);
+  //myTree8.addTreeItem(myTree2_10);
+  //myTree8.addTreeItem(myTree2_11);
+  //myTree8.addTreeItem(myTree2_12);
+ 
+  
+
+  myTree8.showTree(myTree8, 5, 35);
+}
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY background="images/l_back01.gif">
+
+</BODY>
+</HTML>

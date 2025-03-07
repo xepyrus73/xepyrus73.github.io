@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+<TITLE> 런 차트 </TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"><b> 
+              <div align="left"><font size="4" color="#a70105"><b><font size="4" color="#a70105"><b></b></font></b></font> 
+                런 차트(Run Chart)</div>
+              </b></font> 
+              <div align="left"><br>
+                <b><font size=3><b><font color="#000000">Stat>Quality Tools&gt;Run 
+                chart </font></b></font></b> <b><font size="4" color="#a70105"> 
+                </font></b> </div>
+            </center>
+            <div align="left"><br>
+              <br>
+              <BR>
+              <font size=3><b><font size="2">1. 런 차트(Run chart)란?</font></b></font><br>
+              <br>
+              <font size="-1">수집한 공정데이터를 관리도처럼 그래프에 타점하여 공정의 이상징후를 감지할 수 있으며 데이터가 
+              정상 패턴인지, 혼합(Mixture), 군집(Cluster), 순환(Oscillation), 경향(Trend) 등의 
+              이상 패턴을 가지고 있는 지를 판단하기 위한 검정을 실시한다. <br>
+              <BR>
+              <BR>
+              <BR>
+              <b>1.1. 런(Run)이란?</b><br>
+              <br>
+              동일한 종류에 속하는 연속된 점들을 말한다. 관리도상의 점들을 중심선 위쪽의 점들과 아래쪽의 점들로 구분할 때 중심선 
+              위쪽에서 연속되는 점들을 중심선 위쪽 런이라 하고, 아래쪽에서 연속되는 점들을 중심선 아래쪽 런이라 한다. 또한 연속 
+              증가하는 점들을 상승 런이라 하고, 감소하는 점들을 하강 런이라 한다. 관리도 상에서 위쪽 런, 아래쪽 런, 상승 
+              런, 하강 런을 분석하여 이상상태 여부를 검정할 수 있다. <br>
+              <br>
+              <BR>
+              <b>1.2. 런 차트의 작성 및 런 검정 </b><br>
+              <br>
+              측정값을 그래프에 타점한다. 부분군이 1보다 크면 부분군의 평균 또는 중앙값을 타점 하고 이를 선으로 연결한다. 런 
+              차트의 중심선은 데이터의 평균(Mean) 또는 중앙값 (Median) 중 선택이 가능하다. 위쪽 런과 아래쪽 런, 
+              상승 런과 하강 런을 대상으로 런 검정을 실시하여 혼합, 군집, 경향, 순환 등의 네 가지 패턴에 대하여 검정한다. 
+              <br>
+              <br>
+              a)혼합(Mixture) - 두 개의 품질 수준을 갖는 데이터 집단이 섞여 있는 것을 뜻하며 중심선 근처에 점들이 
+              없으면 공정에 혼합 경향이 있다고 생각할 수 있다. <BR>
+              <BR>
+              b)군집(Cluster) - 점들이 특정 영역에 집단으로 뭉쳐있는 경우이다. 이것은 공정에 특별원인이 작용했거나 샘플이 
+              어느 집단에서 편중되어 추출되었다고 추측할 수 있다. <BR>
+              <BR>
+              c)경향(Trend) - 점들이 계속 위쪽으로 상승하거나 아래쪽으로 하강하는 형태를 띈다. 이런 변동은 기계의 마모나 
+              작업자의 교대조 등의 요인에 기인하며 공정이 곧 '관리되지 않는 상태'가 될 가능성이 높다. <BR>
+              <BR>
+              d)순환(Oscillation) - 점들이 상승과 하강을 계속 반복하는 경우에 나타난다. 공정이 안정되지 않고 동요하는 
+              경 향을 보이는 것이다. <br>
+              <BR>
+              <BR>
+              다음은 유의수준 5%일 때 위의 네 가지 패턴에 대한 판단기준이다. <BR>
+              <BR>
+              - Approx P-Value for Clustering < 0.05(유의수준) 이면 군집 <BR>
+              <BR>
+              - Approx P-Value for Mixture < 0.05이면 혼합 <BR>
+              <BR>
+              - Approx P-Value for Trends < 0.05이면 경향 <BR>
+              <BR>
+              - Approx P-Value for Oscillation < 0.05이면 순환 <BR>
+              - 모든 P-Value > 0.05 이면 데이터는 랜덤하다. 즉 공정은 관리상태에 있다고 판단할 수 있다.<BR>
+              <br>
+              <BR>
+              <BR>
+              <b><font size="2">2. 사용 방법 <a href="data/Analgraph01.zip">(데이터 : 
+              Analgraph01.mtw)</a></font></b> <br>
+              <br>
+              어느 사출성형 업체는 자동차의 엔진블록 상단에 조립되는 실린더 헤드커버를 생산하고 있다. 엔진블록과 실린더 헤드커버 
+              간의 간격이 크면 오일의 누수(leak)가 발생하게 된다. 이 간격에 대한 데이터를 부분군의 크기가 3으로 10회에 
+              걸쳐 수집하였다. 간격 데이터가 특정 패턴을 보이는지 알기 위해 런 차트를 작성하고 런 검정을 실시하라 (유의수준 
+              5%). </font><br>
+              <BR>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/Runchart_01.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <BR>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Runchart_02.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 런 차트를 작성한다. </b><br>
+            <br>
+            ① Stat > Quality Tools > Run Chart 선택 <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Runchart_03.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Single columns에 Gap를 입력하고 Subgroup 
+            size에 3을 입력한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Runchart_04.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③OK를 클릭한다.<br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> [ Graph 창에 나타난 결과 ]</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Runchart_05.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위 결과에서 군집(Clustering), 혼합(Mixtures), 
+            경향(Trends), 순환(Oscillation)에 대한 P-value가 모두 0.05이상이므로 '간격 데이터는 특정 
+            패턴을 보이지 않고 랜덤하다'라는 결론을 내릴 수 있다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><font size="-1"> </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

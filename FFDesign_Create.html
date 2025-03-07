@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<TITLE> 완전 요인배치 실험의 설계 </TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+.unnamed1 {  }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY onload= BGCOLOR=&quot;#FFFFFF&quot;;MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif') topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="create_factorial.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font><b></b>
+<div align="left"> 
+              <b><font size="4" color="#a70105"> 완전 요인배치 실험의 설계</font></b><b><br>
+                <br>
+              </b></div>
+               
+            </CENTER>
+            <CENTER>
+              <b> 
+              <div align="left"><font size=3> Stat>DOE>Factorial>Create Factorial 
+                Design </font></div>
+              </b> 
+            </CENTER>
+            <br>
+            <br>
+            <BR>
+            <font size=3><b> <font size="2">1. MINITAB을 사용한 실험의 설계</font></b></font><br>
+            <br>
+            <font size="-1">어떤 제품의 특성 중에서 투과율에 영향을 미치는 인자가 A, B, C, D라고 생각되었다. 
+            수준 수가 모두 2인 2<sup>4</sup> 완전 요인 배치법을 계획하고자 한다. <br>
+            <BR>
+            <BR>
+            <b>1.1MINITAB의 실행</b><br>
+            <br>
+            ① Stat > DOE > Factorial > Create Factorial Design 선택 <BR>
+            </font><BR>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/FFDesign_Create_01.gif  border=0 align=center width="560"><br>
+            <BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Type of Design에서 2-level factorial 
+            (default generators)을 선택하고 인자 수를 입력하는<br>
+            &nbsp;&nbsp;&nbsp; Number of factors 란에 4을 선택하고 Designs…을 클릭한다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_02.gif  border=0 align=center><BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 인자별 가능한 설계를 보려면 Display Available Designs…을 
+            클릭한다.<br>
+            <BR>
+            <b>☞ 참고 </b><BR>
+            <BR>
+            인자별 실험수(Run)와 분해능(Resolution: 실험의 정밀도)을 볼 수 있다.<BR>
+            <BR>
+            여기서는 인자가 4이고 실험수가 16이므로 Full Factorial이다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_03.gif  border=0 align=center><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 그림 내에서 같은 로마 숫자는 동일한 분해능을 나타낸다<BR>
+            <BR>
+            분해능이 높은 순서는 로마숫자가 높은 순서이다. ( Full > Ⅶ > Ⅵ > Ⅴ > Ⅳ > Ⅲ) <BR>
+            <BR>
+            <BR>
+            ③ 2<sup>4</sup> 완전요인( Full factorial ) 배치의 실행 수는 16이다. <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_04.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ④ Designs을 OK 하고 나면 나머지 옵션 버튼들이 나타난다. 
+            여기서 Factors…버튼을 클릭 한다. <BR>
+            <BR>
+            Name 란에 인자의 명을 입력하고 Low 란에는 인자 수준의 하한값을 High 란에는 인자 수준의 상한값을 입력한다. 
+            여기서는 default값인 -1과 1을 두고 OK를 누른다. <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_05.gif  border=0 align=center><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 인자의 수준값을 0과 1로 두지않고 -1과 1로 두는 이유는 균형과 
+            직교의 특성이 있으면 쉽게 인자들을 분석할 수 있다. (자세한 내용은 <a href =FullFactorial1.html#2>'인자의 
+            수준의 의미'</a>를 참조) <BR>
+            <BR>
+            <BR>
+            <BR>
+            ⑤ OK 버튼을 클릭한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_06.gif  border=0 align=center><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> Options…은 부분 요인 배치법(Fractional Factorial 
+            Design)을 사용할 때와 실험을 랜덤하게 계획할 때 사용하는데 default는 랜덤이 설정되어 있다. <BR>
+            <BR>
+            Results…는 Session 창에 출력되는 형태를 선택할 수 있다.<BR>
+            <BR>
+            <b> 1.2 결과</b><BR>
+            <BR>
+            Worksheet에 설계 배치가 생성된다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/FFDesign_Create_07.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> StdOrder는 실험 배치를 표시하는 일반적인 순서이고 RunOrder는 
+            랜덤하게 배열된 실험 순서를 나타낸다. 4인자의 수준이 각각 2이고 완전요인배치의 실험횟수는16 이다.<br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+
+</tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

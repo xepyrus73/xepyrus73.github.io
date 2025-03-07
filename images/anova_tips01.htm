@@ -1,0 +1,72 @@
+<html> 
+<title>교호작용이 유의한 경우 최적화</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="1753">&nbsp;</td>
+    <td height="1753"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="1676"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a> 
+              <br>
+              <br>
+              <a name="1"></a><font size=4><b><font color="#a70105">교호작용이 유의한 
+              경우 최적화</font></b></font><font color="#a70105"><br>
+              </font><br>
+              <br>
+              <font size="-1">실험 데이터에 대한 분산분석 후, 교호작용이 유의한 경우 인자의 최적 수준을 결정할 때 
+              교호작용을 고려해서 결정하여야 한다. 교호작용이 유의함에도 불구하고 유의한 인자의 최적 수준을 다른 유의 인자의 수준과는 
+              독립적으로 결정하게 되면 왜곡된 최적수준을 얻기 때문이다. 특히, 주효과가 유의하지 않음에도 불구하고 교호작용이 유의하게 
+              나타나는 경우에는 각 인자의 최적수준 결정에 주의를 요한다. 아래는 <img src="images/anova_tips01_01.gif" width="19" height="21" align="absmiddle">완전 
+              요인 배치 실험에서 2인자 교호작용이 유의한 경우 각 인자의 최적수준을 결정하는 방법을 정리한 것이다.<br>
+              </font><font size="-1"><br>
+              <br>
+              <b><font size="2">(1) A, B 두 인자 모두 유의하지 않은 데, A*B는 유의한 경우</font><font size="+2"> 
+              </font></b><br>
+              <br>
+              <img src="images/anova_tips01_02.gif" width="309" height="276"> 
+              </font></p>
+            <p><font size="-1"><br>
+              y가 작으면 작을 수록 좋은 경우 (클수록 좋은 경우도 마찬가지), A의 수준을 고정시키고 B의 최적수준을 결정하려면 
+              A가 1수준일 때 B의 최적은 2수준, A가 2수준일 때 B의 최적은 1수준 B의 수준을 고정시키고 A의 최적수준을 
+              결정하려면 B가 1수준일 때 A의 최적은 2수준, B가 2수준일 때 A의 최적은 1수준 즉, 어떤 인자의 수준을 고정시키고 
+              나머지 인자의 최적수준을 결정하는 경우 최적 수준 조합은 A1B2, A2B1이 된다. 그런데, A, B 두 인자 모두 
+              유의하지 않게 되면, A1B2나 A2B1에서의 y값은 그다지 차이를 보이지 않을 것이다. 따라서, 이 경우에는 cost나 
+              용의성 (수준변경)등을 고려해 둘 중 어느 한 인자의 수준을 미리 정해놓고 나머지 인자의 최적 수준을 정하는 것이 
+              합리적이다. </font><font size="-1"><br>
+              </font></p>
+            <p><img src="images/anova_tips01_03.gif" width="506" height="531"><br>
+            </p>
+            <p><font size="-1">위의 네 가지 그림은 모두 B와 A*B만 유의하고, A는 유의하지 않은 경우이다. 이런 
+              경우, 먼저 유의한 B인자의 최적수준을 결정한 후, B의 최적수준 하에서 A의 최적수준을 결정하는 것이 바람직하다.</font></p>
+            <p><img src="images/anova_tips01_04.gif" width="512" height="556"></p>
+            <p><font size="-1">위의 네 가지 그림도 모두 B와 A*B만 유의하고, A는 유의하지 않은 경우이다 (단 
+              차이가 크면 A도 유의할 수 있다.). 이런 경우, 먼저 유의한 B인자의 최적수준을 결정한 후, B의 최적수준 하에서 
+              A의 최적수준을 결정하는 것이 바람직하다.</font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+
+
+</html>

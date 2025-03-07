@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>I-MR 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="4857">&nbsp;</td>
+    <td height="4857"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left">
+              <p><a href="imr.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic_on.gif',1)"><img src="images/b_basic.gif" width="55" height="24" border="0" name="Image1"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro01_on.gif',1)"><img src="images/b_pro01.gif" width="55" height="24" border="0" name="Image2"></a><br>
+                <br>
+                <A name="1"></a> <font size="4" color="#a70105"><b>I-MR 관리도</b></font> 
+              </p>
+              <p><b><font size=3><b><font color="#000000">Stat>Control Charts&gt;I-MR</font></b></font></b><br>
+                <br>
+                <br>
+                <BR>
+                <font size=3><b><font size="2">1. I-MR관리도의 개요</font></b></font><br>
+                <br>
+                <font size="-1"> I-MR관리도를 X-R관리도라고도 한다. 관리도 분석을 위해 공정으로부터 부분군을 
+                추출할 때 한번에 여러 개의 제품들을 추출할 수 없는 경우가 있다. 제품 또는 제조공정의 특성상 한번에 하나의 
+                제품밖에 얻을 수 없는 경우도 있고, 생산속도가 너무 느려 둘 이상의 제품으로 부분군을 형성하기가 어려운 경우도 
+                있다. 이러한 경우에는 <a href="XbarR2.htm">Xbar-R관리도</a> 대신 부분군 크기를 n=1로 
+                하는 I-MR관리도를 사용할 수 있다. I-MR관리도에서는 공정평균을 관리하기 위해 개별측정치를 사용하고 공정의 
+                표준편차를 관리하기 위해 인접한 두 데이터간의 범위를 사용한다. 따라서 k개의 데이터를 이용하여 공정평균과 표준편차를 
+                추정하면 m의 추정치로는 <img src="images/imr2_01.gif" width="15" height="18" align="absmiddle">를 
+                사용하고, s의 추정치로 <img src="images/imr2_02.gif" width="39" height="24" align="absmiddle">를 
+                사용한다. 여기서 <img src="images/imr2_03.gif" width="15" height="19" align="absmiddle">는 
+                k-1개의 범위들의 평균이 된다. 이때 R관리도를 MR관리도라 한다. 일반적으로 이동범위(Moving Range)를 
+                2로 두지만 MINITAB에서는 임의로 이동범위를 정할 수 있다. 이 때 I관리도(혹은 X관리도) 및 MR관리도의 
+                중심선 및 관리한계선은 다음과 같이 구해진다. <BR>
+                <br>
+                <img src="images/imr2_04.gif" width="140" height="175"> <br>
+                <br>
+                </font> </p>
+            </div>
+            </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1">여기서, <img src="images/imr2_05.gif" width="72" height="23" align="absmiddle">은 
+            n=2일 때의 값을 사용한다. </font><BR>
+            <BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="2"><b>2. MINITAB을 사용한 I-MR 관리도의 작성 <a href="data/i_mr.zip">(데이터 
+            : I_MR.mtw)</a></b></font><font size="-1"><br>
+            <br>
+            장갑용 PVC를 생산하는 프로세스가 안정적인지를 판단하기 위해 PVC의 점도를 관리항목으로 정하여 1일 1회에 걸쳐 한달(30일) 
+            동안 데이터를 수집하였다. I-MR관리도(X-R관리도)를 이용하여 분석하라. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imr2_06.gif" width="221" height="201"><br>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imr2_07.gif" width="123" height="440"><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 2.2 I-MR관리도를 작성한다.</b><br>
+            <br>
+            ① Stat > Control Charts > I-MR…을 선택한다.<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imr2_08.gif" width="459" height="283"><br>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 PVC의 점도 데이터가 포함된 열을 선택한다. 
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src="images/imr2_09.gif" width="560" height="370"><br>
+            <BR>
+            <BR>
+            ☞ 옵션창 설명 <br>
+            <br>
+            [Test] <br>
+            <br>
+            <img src="images/imr2_10.gif" width="560" height="520"> <br>
+            <br>
+            [Estimate]<br>
+            <br>
+            <img src="images/imr2_11.gif" width="560" height="311"><br>
+            <br>
+            <br>
+            [Stamp]<br>
+            <br>
+            <img src="images/imr2_12.gif" width="398" height="225"><br>
+            <br>
+            <img src="images/imr2_13.gif" width="545" height="386"> <br>
+            <br>
+            <br>
+            <br>
+            <img src="images/imr2_14.gif" width="527" height="493"><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1">
+            <br>
+            ③ OK를 클릭한다.<br>
+            <br>
+            다음과 같은 그래프와 함께 I-MR관리도에 대한 정보를 제공하는 창이 생성된다. <br>
+            <br>
+            <img src="images/imr2_15.gif" width="478" height="342"><br>
+            <BR>
+            <b> </b><br>
+            모든 점들이 Individual 관리도와 MR관리도 관리한계선 안에 타점 되어 있고 특별한 패턴이 보이지 않으므로 이 
+            프로세스는 안정상태라고 판단할 수 있다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table></BODY>
+</HTML>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Interval Plot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="174">&nbsp;</td>
+    <td height="174"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b>Interval Plot</b></font><font size="4" color="#a70105"><b><br>
+            </b></font> <br>
+            <font size="-1">Interval Plot은 각 그룹간 평균과 평균을 중심으로 신뢰구간과 표준오차를 표시하여 
+            준다. 이 를 통해 집단간 중심 위치의 비교, 산포의 비교를 시각적으로 할 수 있다. <br>
+            <br>
+            </font><br>
+            <b><font size="2">1. MINITAB의 실행 <a href="data/anova01.zip">(데이터 : 
+            Anova01.mtw)</a> <br>
+            <br>
+            </font></b><font size="-1">① Stat > ANOVA > Interval Plot 선택 <br>
+            <br>
+            <img src="images/IntervalPlot2_01.gif" width="481" height="295"> <br>
+            <br>
+            <br>
+            ② Y variable 란에 '연비'와 Group variable란에 '자동차'를 입력 <br>
+            <br>
+            <img src="images/IntervalPlot2_02.gif" width="514" height="301"> <br>
+            <br>
+            <b><1></b> Y variable 란에는 반응값이 있는 변수를 지정하고 Group variable란에는 비교하고자 
+            하는 그룹이 있는 변수를 지정한다. 본 예에서는 인자의 수준별 비교를 실시한다. <br>
+            <b><2></b> Interval Plot에 표시할 구간의 종류를 지정하는 것으로 Standard error는 표준오차를 
+            가지고 Multiple에 지정한 만큼의 표준오차의 배수로 구간을 정한다. 예를 들어 Multiple에 2.0을 입력하면 
+            구간은 -2 Sigma에서 +2 Sigma가 된다. Confidence interval은 Level에 직접 신뢰수준을 
+            입력하여 신뢰구간을 구한다. 예를 들어 Level에 95.0을 입력 하면 95%의 신뢰 구간을 구해준다. <br>
+            <b><3></b> Interval Plot에 그려지는 Plot의 표시 방법을 지정한다. 평균점을 어떤 형태(Symbol 
+            or Bar)로 표시할 지와 Plot의 선의 형태를 지정한다. <br>
+            ☞ Pool error across groups는 합동 오차(Pooled error)를 적용할 지의 여부를 결정하게 되는데 
+            합동 오차란 모든 그룹을 대표할 수 있는 표준오차를 추정한 값이다. 본 예에서는 각 수준별 표준오차를 이용하여 신뢰구간을 
+            구한다.<br>
+            <b><4></b> Interval Plot에 있어서 X축과 Y축의 명을 지정하고 제목(Title)을 지정하는데 사용된다.<br>
+            <br>
+            <br>
+            ③ Symbol...을 클릭한다.<br>
+            <br>
+            <img src="images/IntervalPlot2_03.gif" width="404" height="251"> <br>
+            <br>
+            평균을 나타내는 Symbol에 대한 속성을 지정하는데 형태는 Plus Circle로 하고 색은 붉은색이고 크기는 1로 
+            지정한다. 원하는 형태로 다양하게 바꿀 수 있다. <br>
+            <br>
+            <br>
+            ④ Interval Line...을 클릭한다. <br>
+            <br>
+            <img src="images/IntervalPlot2_04.gif" width="402" height="250"> <br>
+            <br>
+            구간을 나타내는 선에 대한 속성을 지정하는데 선의 형태는 점선(Dot)이고 색은 파랑색이며 크기는 1로 지정한다. 원하는 
+            형태로 다양하게 바꿀 수 있다. <br>
+            <br>
+            <br>
+            ⑤ OK 버튼을 클릭한다. <br>
+            <br>
+            <b>Graph 창에 나타난 결과 <br>
+            <br>
+            <img src="images/IntervalPlot2_05.gif" width="529" height="341"> <br>
+            <br>
+            </b>위에서 보는 바와 같이 Interval Plot을 통해 각 수준 별 평균 값을 비교할 수 있다. 이 예제에서는 
+            자동차 B와 E의 연비가 자동차 A와 C에 비해 낮음을 알 수 있다. 또한 자동차 C와 D의 신뢰 구간이 넓으므로 데이터의 
+            산포가 커 보인다. </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

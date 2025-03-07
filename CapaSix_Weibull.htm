@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Capability Sixpack(Weibull)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="233">&nbsp;</td>
+    <td height="233"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="162"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <a name="1"></a><font color="#a70105"><b><font size="4">Capability 
+              Sixpack(Weibull)</font></b></font></p>
+            <p><font size="3"><b>Stat > Quality Tools > Capability Sixpack(Weibull)</b></font><br>
+              <br>
+              <br>
+              <font size="-1">MINITAB에서는 주어진 데이터의 분포가 Weibull 분포를 따를 경우, 공정능력분석을 
+              위해 <a href="capaanal_weibull.htm">Capability Analysis(Weibull)</a>, 
+              Capability Sixpack(Weibull)을 제공한다. Capability Sixpack(Weibull)은 
+              관리도, 최근 20개 부분군에 대한 Dot Plot, 히스토그램, Weibull확률지, Capability Plot을 
+              한꺼번에 도시하여 공정의 관리상태 여부, 공정능력의 부족 여부를 한 눈에 파악할 수 있도록 해준다. 이하, Capability 
+              Sixpack(Weibull)의 사용방법을 예를 통하여 알아본다.<br>
+              <br>
+              <br>
+              </font> <font face="굴림체" size="2"><b>1. </b></font><font size="-1">	
+              <b>MINITAB을 사용한 Weibull 분포 공정능력분석 <a href="data/capa02.zip">(데이터 
+              : Capa02.mtw)</a> </b></font></p>
+            <p><font size="-1">아래 데이터는 ㈜L타일에서 생산하는 실내 바닥면 시공 타일의 뒤틀림의 정도를 측정한 
+              것이다. 하루에 10개씩 10일 동안 데이터를 수집하여 공정능력을 분석하였다. 규격은 8이하이다.</font></p>
+            <p><img src="images/CapaSix_Weibull_01.gif" width="557" height="189"></p>
+            <p><font size="-1">1.1 데이터의 입력 </font></p>
+            <p><font size="-1">MINITAB Worksheet에 아래와 같이 데이터를 입력한다. </font></p>
+            <p align="center"><img src="images/CapaSix_Weibull_02.gif" width="220" height="303"></p>
+            <p align="left"><font size="-1">1.2 공정능력분석 </font></p>
+            <p align="left"><font size="-1">① Stat > Quality Tools > Capability 
+              Sixpack(Weibull)...을 선택한다. </font></p>
+            <p align="left"><img src="images/CapaSix_Weibull_03.gif" width="560" height="332"></p>
+            <p align="left"><font size="-1">② Single column에 타일의 뒤틀림에 대한 데이터 "Warping"를 
+              선택하고, 부분군 크기과 규격을 입력한다.</font></p>
+            <p align="left"><img src="images/CapaSix_Weibull_04.gif" width="534" height="264"><br>
+              <br>
+              <img src="images/CapaSix_Weibull_06.gif" width="533" height="306"><br>
+            </p>
+            <p align="left"><font size="-1">Options.. subdialog box에서는 와이블 분포의 
+              형태를 결정하는 형상모수와 폭을 변하도록 하는 척도모수를 지정한다. 형상모수 m=1이면 와이블 분포는 Exponential 
+              분포가 되며, m=2이면 Rayleigh 분포가 된다. 여기서는 형상모수와 척도모수 모두 데이터로부터 추정된 값을 
+              사용한다. Historical Value는 모수값을 과거 데이터로부터 알고 있을 경우 사용한다. Break out 
+              data for last...에서는 출력되는 Run chart에 표시되는 부분군의 수를 지정하는데 마지막 부분군부터 
+              지정한 수만큼의 부분군까지 표시된다. 여기서는 총10개의 부분군으로 형성되어 있기 때문에 10을지정한다</font></p>
+            <p align="left"><font size="-1">③ OK를 클릭한다.</font></p>
+            <p align="center"><img src="images/CapaSix_Weibull_05.gif" width="473" height="351"></p>
+            <p align="left"><font size="-1">Capability Sixpack(Weibull)에서는 공정능력에 
+              대한 그래픽 정보를 제공한다. Xbar, R관리도 및 Run chart는 공정이 관리상태 하에 있는지를 판정하기 위해 
+              사용된다. Xbar 관리도(①)와 R관리도(②) 모두 관리한계선을 벗어나는 점이 없이 모든 점들이 관리한계선 내에 
+              랜덤하게 분포되어 공정이 안정상태에 있다고 할 수 있다. 또, Run chart(③)에서도 점들이 부분군 순으로 수평으로 
+              랜덤하게 산포되어있으며 어떤 경향이나 주기 등을 발견할 수 없다 </font></p>
+            <p align="left"><font size="-1">Capability Histrogram(④)에서 실제 데이터의 
+              분포를 나타내는 히스토그램과 적색으로 도시된 이론적인 와이블 분포 곡선 간에 심각한 차이를 보이지 않고, 와이블 확률 
+              plot(⑤)에서도 데이터들이 근사적으로 직선의 형태로 분포되어 있다. 따라서, 데이터는 와이블 분포를 따른다고 할 
+              수 있고 이에 의거한 공정능력분석 결과는 올바르다고 하겠다. 현재 공정은 안정되어 있지만 공정능력지수가 Ppk = 
+              0.77로서 공정능력 판정 가이드라인 1.33보다 작기 때문에 산포를 감소시키는 노력을 기울여야 한다. </font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

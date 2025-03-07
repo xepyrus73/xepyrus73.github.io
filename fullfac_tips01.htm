@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>반복이 없는 경우 요인 배치법 실험 결과의 해석</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=602>
+  <tr> 
+    <td width=20 height="4114">&nbsp;</td>
+    <td height="4114" width="572"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="4050"> 
+            <p><br>
+              <br>
+              <a name="1"></a><font size=4><b><font color="#a70105">반복이 없는 경우 
+              요인 배치법 실험 결과의 해석</font></b></font><font color="#a70105"> </font> 
+              <br>
+              <br>
+              <br>
+              <font size="-1">일반적으로 반복이 없는 <a href="fullfactorial2.html">요인배치법</a>을 
+              통해 실험을 한 경우 이에 대해 Unreplicated factorial이라 부른다. 반복 (각 수준조합에서의 반복) 
+              없게 되면 오차항의 효과를 추정할 수 없어, 오차항에 대한 제곱합을 계산할 수 없으며, 따라서 각 요인과 교호작용에 
+              대한 유의성 검정 (F 검정 이용)을 실시할 수가 없게 된다. 이러한 Unreplicated factorial 실험 
+              데이타의 분석법에 대한 하나의 대안은 고차의 교호작용을 무시하고 이들에 대한 제곱합을 오차항의 제곱합으로 두는 것이다 
+              (따라서, 사실 "반복이 없으면 최고차의 교호작용과 오차항의 효과가 교락"되는 것은 아니고, "최고차의 교호작용을 
+              무시하고 이를 오차항의 효과로 본다"는 것이 정확한 표현이다.). 즉, 고차의 교호작용 들을 오차항에 풀링(Pooling)하는 
+              방법을 통해 오차항의 제곱합을 계산하고, 분산분석을 실시하게 된다. 그런데, 실제 고차의 교호작용이 기술적으로 보아 
+              유의하다고 판단되면 풀링에 의한 오차항 제곱합 계산이 적절하지 못한 분석방법이 된다. 따라서, 이러한 경우에는 분산분석보다는 
+              다른 방법에 의해 유의한 요인과 교호작용을 검출하는 것이 합리적이다. 가장 일반적으로 사용되는 방법은 Daniel이 
+              제시한 "효과의 정규 확률지 도시"이다. <br>
+              <br>
+              <b><font size="2">1. 상황 </font></b></font><br>
+              <br>
+              <font size="-1">특정 화학 제품이 압력관 (Pressure vessel)에 의해 생산되고 있다. 이러한 
+              제품의 여과율 (Filtration rate)에 대한 여러 공정 요인들의 영향을 평가하기 위해, Pilot plant에 
+              대해 요인배치에 의한 실험을 계획하고 있다. 실험에 고려하고 있는 요인은 온도 (A), 압력 (B), 포름알데히드 
+              (Formaldehyde)의 농도 (C), 교반율 (Stirring rate) (D)의 네가지 이며, 각각 2수준씩 
+              2^4 요인배치에 의한 실험을 실시하고자 한다. 반복은 없으며, 목표는 여과율을 가장 크게 하는 공정조건을 찾는 것이다. 
+              </font><br>
+              <br>
+              <br>
+              <b><font size="2">2. MINITAB 결과 분석 </font></b><br>
+              <font size="-1">먼저, MINITAB을 이용하여, 2<sup>4</sup>요인배치 실험을 생성하면 다음과 
+              같다. <br>
+              <br>
+              <b><font size="2"> &nbsp;(1) 실험계획 생성 </font></b></font><br>
+              <br>
+              <font size="-1">① Stat>DOE>Create Factorial Design…을 선택</font><br>
+              <br>
+              <img src="images/fullfac_tips01_01.gif" width="494" height="334"> 
+              <br>
+              <br>
+              <font size="-1">③ Full factorial을 선택하고 OK 버튼을 클릭한다. <br>
+              <br>
+              <img src="images/fullfac_tips01_02.gif" width="380" height="257"> 
+              <br>
+              <br>
+              ④ OK 버튼을 누르면 요인배치 실험계획이 MINITAB worksheet에 출력된다. <br>
+              <br>
+              <br>
+              (2) 데이터 입력 및 효과의 정규 확률지 도시<br>
+              <br>
+              ① Worksheet의 실험조합에 대해 각각의 실험순서 (랜덤한 순서)대로 실험을 실시한 후 얻어진 실험 데이터를 
+              Worksheet에 입력 <a href="data/fullfac_tips01.zip">(데이터 : fullfac_tips01.mtw) 
+              <br>
+              <br>
+              </a>② 효과의 정규 확률지 도시 <br>
+              Stat>DOE>Analyze Factorial Design…을 선택한다.<br>
+              <img src="images/fullfac_tips01_03.gif" width="517" height="294"> 
+              <br>
+              <br>
+              위의 효과에 대한 정규 확률지 도시 결과를 통해 유의한 인자를 찾는 방법은 직선에서 많이 벗어나 있는 점을 찾은 후, 
+              그 점에 해당하는 인자나 교호작용을 읽으면 된다 (실제 MINITAB에서는 벗어난 점에 대해서만 해당 인자나 교호작용을 
+              표시해 준다.). <br>
+              <br>
+              <img src="images/fullfac_tips01_04.gif" width="469" height="332"> 
+              <br>
+              <br>
+              <br>
+              그림에서는 A, C, D, AC, AD만이 유의한 것으로 판단된다. 이들에 대한 주효과와 교호작용 도시를 실행해 보면…..<br>
+              <br>
+              ③ 유의한 인자나 교호작용의 주효과 및 교호작용 도시<br>
+              Stat>DOE>Factorial Plot…을 선택<br>
+              <br>
+              <img src="images/fullfac_tips01_05.gif" width="349" height="248"><br>
+              <br>
+              <img src="images/fullfac_tips01_06.gif" width="349" height="248"> 
+              <br>
+              <br>
+              A, C, D 모두 유의해 보이며 특히 A (온도)가 여과율에 큰 영향을 미침을 알 수 있다. 역시, AC, AD만 
+              유의함을 알 수 있다. 유의한 인자 A, C, D에 대해 최적 조건을 결정하고 그 때의 여과율 값 (최적의 여과율 
+              값)을 추정하기 위해, Cube plot을 이용하면... <br>
+              <br>
+              <br>
+              ④ A, C, D의 최적 조건 및 최적의 여과율 추정<br>
+              Stat>DOE>Factorial Plot…을 선택<br>
+              <br>
+              <img src="images/fullfac_tips01_07.gif" width="501" height="330"> 
+              <br>
+              <br>
+              <img src="images/fullfac_tips01_08.gif" width="455" height="338"> 
+              <br>
+              <br>
+              최적 조건은 A는 2수준, C는 1수준, D는 2수준이며, 이 때의 최적 여과율 추정값은 102.0이 된다.<br>
+              <br>
+              <br>
+              (3) 분산분석 실시<br>
+              <br>
+              (1) ~ (2)까지 분석을 실시한 후, 통계적인 검정이 필요한 경우 유의하지 않은 인자 (B, B와 관련된 교호작용등) 
+              를 오차항에 풀링하여, 분산분석을 실시할 수 있다.<br>
+              Stat>DOE>Analyze Factorial Design 을 실행한 후, "Terms" 버튼을 클릭하여... <br>
+              <br>
+              <br>
+              <img src="images/fullfac_tips01_10.gif" width="468" height="283"> 
+              <br>
+              <br>
+              <img src="images/fullfac_tips01_11.gif" width="587" height="463"> 
+              </font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

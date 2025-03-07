@@ -1,0 +1,147 @@
+<html>
+<title>1-Sample Z 검정</title>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="1676" >&nbsp;</td>
+    <td height="1676"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td >
+            <center>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> 
+                <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="hypomean_z2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></p>
+                <p> 1-Sample Z 검정</p>
+                </font></b> <font size="3"><b>Stat&gt; Basic Statistics&gt; 1 
+                Sample Z</b></font><br>
+                <br>
+              </div>
+               
+            </center>
+            <br>
+            <font size="-1">표준편차를 알고 있을 때의 모평균에 관한 검정이다. 데이터의 정규성 여부를 검토하여야 하며, 
+            이는 MINITAB의 <A HREF=NormalTest.html#1>Normality Test</a>를 통해 확인할 수 
+            있다. 단, 시료수가 많은 경우 (보통 30개 이상), 정규성을 확인할 필요가 없다. <br>
+            </font><br>
+            <br>
+            <font size=3><b><font size="2">1. MINITAB을 사용한 Z 검정 </font></b></font><font size="2"><A HREF="data/Hypo01.zip"><b>(데이터 
+            : Hypo01.mtw)</b></a></font> <br> <br>
+            <font size="-1">염료 제품의 수율을 향상시키기 위하여 노력해 온 프로젝트 팀은 그 성과로 수율이 73% 이상의 
+            결과를 가져왔다고 이야기하고 있다. 로트로부터 8개의 샘플을 취하여 다음과 같은 데이터를 얻었다.<br>
+            <br>
+            70.7 74.7 69.0 65.2 71.1 86.0 73.2 86.8<br>
+            <br>
+            수율이 73%이상이라고 할 수 있는지를 유의수준 5%에서 검정하고자 한다. 단, 기존의 데이터에 의해 표준편차는 7%라는 
+            것을 알고 있다. 검정 대상값이 73%이고 수율이 73%이상이라고 할 수 있는지를 검정하는 것이므로 다음과 같이 가설을 
+            설정한다.<br>
+            <br>
+            <I>H</I><sub>0</sub> : <I>u</I> =<I>u</I><sub>0</sub> ( = 73%)<br>
+            <I>H</I><sub>1</sub>: <I>u</I> > <I>u</I><sub>0</sub> ( = 73%)<br>
+            <br>
+            <br>
+            <br>
+            <b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다. </font><br>
+          </td>
+        </tr>
+        <tr> 
+          <td height="235"> <img src=images/HypoMean_Z_03.gif border=0 align=center><br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Basic Statistics > 1-Sample Z 선택 </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <img src=images/HypoMean_Z_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variables란에 제품 수율의 데이터 열을 입력하고 Sigma란에 
+            표준편차를 입력한다.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Test mean란에는 검정 대상값 μ<sub>0</sub>를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/HypoMean_Z_05.gif border=0 align=center><br>
+            <br>
+            <img src=images/HypoMean_Z_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            <font size="-1">③ OK 버튼을 클릭한다<br>
+            <br>
+            <b>[ Session 창에 나타난 결과 ]</b><br>
+            <br>
+            <img src=images/HypoMean_Z_07.gif border=0 align=center></font><br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > 
+            <p><font size=2><b> <font size="-1">1.3 결과 해석</font></b></font><font size="-1"><br>
+              <br>
+              P-Value 가 0.261>0.05 이므로 <I>H</I><sub>0</sub> 를 기각할 수 없다. 즉, 제품의 
+              수율이 73%보다 크다고 말할 수 없다. </font> </p>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div></td>
+        </tr>
+        <tr> 
+          <td> 
+      </table>     
+
+      
+    </tr>
+    </table>
+</body></html>
+

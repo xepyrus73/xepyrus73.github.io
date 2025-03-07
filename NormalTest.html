@@ -1,0 +1,154 @@
+<HTML>
+<HEAD>
+<TITLE> 정규성 검정</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20 height="2252">&nbsp;</td>
+    <td height="2252"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> <font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><br>
+            <br>
+            <center>
+              <font size="4" color="#a70105"><b> 
+              <div align="left"><font color="#000000"> <font color="#a70105">정규성 
+                검정(Normality Test)</font></font></div>
+              </b></font> 
+            </center>
+            <br>
+            <font size=2><b> </b></font><font size=3><b>Stat>Basic Statistics>Normality 
+            Test<br>
+            </b></font><font size=2><b><br>
+            <font size=3><b></b></font><font size=3><b> </b></font></b></font> 
+            <br>
+            <font size="-1"><br>
+            볼트의 외경, 자동차 엔진 피스톤의 직경, 화학제품의 순도, 베어링의 직경 등 산업 현장에서 얻어지는 많은 데이터는 정규분포를 
+            따른다는 가정 하에 통계적인 분석을 하고 있다. 예로서, <a href="CapaAnal.html">공정능력분석</a>, 
+            <a href="Anova1.html">분산분석</a>, t-분포에 의한 <a href="Hypotest1.html">모평균 
+            검정</a> 및 추정, 카이제곱 분포에 의한 <a href="Hypotest2.html">모분산 검정</a> 및 추정, 
+            F-분포에 의한 모분산 검정 및 추정 등 자주 사용되는 많은 통계적 분석에서 데이터의 분포가 정규분포임을 전제로 하고 
+            있다. 대부분의 연속형 데이터는 정규성의 가정을 충족하기 때문에 전술한 통계적 분석 결과가 그릇된 결론을 이끌어내지는 
+            않는다. 그러나 정규성 가정의 충족이 보다 엄격하게 요구될 경우에는 데이터를 분석하기 전에 정규성 가정의 충족 여부를 
+            확인할 필요가 있다. 정규성 검정은 연속형 데이터의 분포가 정규분포를 따르는지의 여부를 통계적으로 검정하는 것이다.<br>
+            <br>
+            모평균에 대한 추정 및 검정이나 분산분석 등에서는 데이터가 정규분포가 아니라 하더라도 표본 평균의 분포는 중심극한정리에 
+            의해 정규분포에 근사하게 되므로 분석 결과가 크게 잘못되지는 않는다. 그러나 공정능력분석과 같은 분석도구를 사용하고자 
+            할 때에는 데이터의 분포가 정규분포 또는 근사적으로 정규분포를 따를 경우에만 의미를 가지게 되므로 반드시 정규성 검정을 
+            먼저 시행해야 한다.<br>
+            <br>
+            정규성 검정에서 귀무가설은 "주어진 데이터가 정규분포를 따른다"이며, MINITAB에서는 이 귀무가설의 사실 여부를 통계적으로 
+            검정하는 방법으로서 다음 세가지 옵션을 제공하고 있다.<br>
+            <br>
+            ① Anderson Darling : ECDF(경험적 누적분포함수)에 기초한 검정법<br>
+            ② Ryan-Joiner : 상관관계에 기초한 검정법<br>
+            ③ Kolmogorov-Smirnov : ECDF(경험적 누적분포함수)에 기초한 검정법<br>
+            <br>
+            Anderson Darling과 Ryan-Joiner 검정은 데이터의 비정규성을 검출하기 위한 검정력이 비슷하고 Kolmogorov-Smirnov 
+            검정은 Anderson Darling과 Ryan-Joiner 검정보다 작은 검정력을 가진다. MINITAB에서는 Default 
+            옵션으로 Anderson Darling 검정을 채택하고 있다. <br>
+            <br>
+            검정 결과 P-Value가 유의수준 <i><font face="Symbol">a</font></i>보다 작으면 귀무가설을 
+            기각하고 데이터는 정규분포를 따르지 않는 것으로 간주한다. 여기서 <i><font face="Symbol">a</font></i>의 
+            값은 관례적으로 0.05가 많이 사용되며, 사용자에 따라 경제적인 문제나 위험 등을 고려하여 달리 정할 수도 있다.<br>
+            <br>
+            <br>
+            <a name="2"></a><b><font size="2">1. MINITAB을 사용한 정규성 검정 <a HREF="data/Normal01.zip">(데이터 
+            : Normal01.mtw)</a></font></b><br>
+            <br>
+            아래의 데이터는 ㈜A화학에서 생산하는 장갑용 PVC의 점도에 대한 자료이다. 이 회사는 6개의 생산라인으로부터 각 5개의 
+            데이터를 수집하여 점도에 대한 공정능력을 측정할 예정으로 데이터가 정규분포를 따르는지의 여부를 판명하려고 한다. </font><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/NormalTest_01.gif  border=0 align=center><br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size=2><b><font size="-1">1.1 데이터의 입력</font></b> 
+            </font><font size="-1"><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            </font><br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/NormalTest_02.gif  border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size=2><b><font size="-1">1.2 MINITAB의 실행</font></b> 
+            <font size="-1"><br>
+            <br>
+            ① Stat > Basic Statistics.> Normality Test... 선택 <br>
+            <br>
+            </font> </font></td>
+        </tr>
+        <tr> 
+          <td> <img src=images/NormalTest_03.gif  border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 변수를 선택한다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/NormalTest_04.gif  border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③OK를 클릭한다.<br>
+            <br>
+            <b>[ Graph 창에 나타난 결과</b> <b>]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/NormalTest_05.gif  border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.3 결과 해석</b> <br>
+            <br>
+            그림은 데이터와 경험적 분포함수를 정규확률지에 타점한 모양이며, 우측 하단에는 검정 통계량에 대한 P-Value를 보여주고 
+            있다. 여기서는 확률지에 타점된 점들이 직선에 가깝고 P-Value가 0.05(관례적으로 사용되는 유의수준의 값)보다 
+            크므로 정규분포를 따른다고 할 수 있다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+    
+  </tr>
+    </table>
+
+</BODY>
+</HTML>

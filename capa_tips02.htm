@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>공정능력 분석 시 표준편차의 계산</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=586>
+  <tr> 
+    <td width=26 height="1467">&nbsp;</td>
+    <td height="1467" width="560"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=561>
+  <tr> 
+    <td height="1417"> 
+            <p><br>
+              <br>
+        <a name="1"></a><font size="4"><b><font color="#a70105">공정능력 분석 시 표준편차의 
+        계산</font></b></font><font color="#a70105"><br>
+        <br>
+        </font><br>
+              <font size="-1">주어진 연속형 데이터에 대한 MINITAB을 통한 <a href="capaanal.html">공정 
+              능력 분석</a>을 수행하는 경우, 군내 변동과 전체 변동에 대해 측도로 계산되는 표준편차 값은 일반적으로 계산되는 
+              표준편차 값과는 그 계산과정이 다르다. 공정 능력 분석 시 사용되는 표준편차 값들은 일반적인 방법으로 계산한 표준편차 
+              값을 어떤 보정치로 나누어 준 값을 사용하게 된다. 이들 보정치가 필요한 이유는 샘플 표준편차가 모 표준편차에 대한 
+              불편 추정량 (Unbiased estimator)이 아니기 때문이며, 이들 보정치를 사용함으로써 모 표준편차에 대한 
+              불편 추정치를 계산할 수 있게 된다. 불편 추정량에 대해 간략히 살펴보면 다음과 같다. 모수 θ의 분포함수 <img src="images/capa_tips02_01.gif" width="48" height="17" align="absmiddle">를 
+              따르는 모집단으로부터 얻어진 표본치 <img src="images/capa_tips02_02.gif" width="91" height="19" align="absmiddle">는,</font> 
+              <font size="-1"><img src="images/capa_tips02_01.gif" width="48" height="17" align="absmiddle">를 
+              따르고 서로 독립인 확률변수 <img src="images/capa_tips02_02.gif" width="91" height="19" align="absmiddle">의 
+              실현치라고 가정하면, 이 표본치로부터 적절한 일가함수 <img src="images/capa_tips02_03.gif" width="140" height="19" align="absmiddle">(이들도 
+              확률변수임)를 이용하여 모집단 분포 함수의 모수 θ를 <img src="images/capa_tips02_04.gif" width="132" height="23" align="absmiddle">로 
+              추정할 때, <img src="images/capa_tips02_03.gif" width="140" height="19" align="absmiddle">를 
+              추정량, 그 실현치 <img src="images/capa_tips02_04.gif" width="132" height="23" align="absmiddle">를 
+              추정치라 한다. 물론, 여기서는 모집단 분포형을 가정할 수 있을 경우이다. </font><br>
+        <br>
+        <img src="images/capa_tips02_05.gif" width="428" height="343"><br>
+        <br>
+        <font size="-1">모수 θ의 추정량 <img src="images/capa_tips02_03.gif" width="140" height="19" align="absmiddle">가 
+        좋은 추정량이기 위해서는 우선 표본이 가지고 있는 정보를 남김없이 포함한 통계량 (충분성)인 것, 더구나 Y는 확률변수이기 때문에 
+        특정의 확률분포를 따르지만, 그 분포의 치우침이 0 (불편성)으로 산포도 보다 작은 것 (최소 분산성 / 유효성, 여기서는 설명 
+        생략.)이 요망되어 진다. 즉, 불편 추정량이란 치우침이 없는 추정량을 말하며, <br>
+        <br>
+        </font> <img src="images/capa_tips02_06.gif" width="249" height="19"><br>
+        <br>
+        <font size="-1">일 때, <img src="images/capa_tips02_03.gif" width="140" height="19" align="absmiddle">을 
+        불편 추정량 (Unbiased estimator)라 한다. </font><br>
+        <br>
+        <font size="-1">예를 들어, </font></p>
+      <p><font size="-1">예1) 표본평균 <img src="images/capa_tips02_07.gif" width="20" height="18" align="absmiddle">는 
+        모평균 <font face="Symbol">m</font>의 불편 추정량 </font><br>
+        <br>
+        <font size="-1">예2) 메디안 <img src="images/capa_tips02_08.gif" width="18" height="19" align="absmiddle">는 
+        정규 모집단의 모평균 <font face="Symbol">m</font>의 불편 추정량 </font><br>
+        <br>
+        <font size="-1">예3) <font face="Symbol">m</font>가 미지일 때, 불편분산 <img src="images/capa_tips02_09.gif" width="152" height="48" align="absmiddle">는 
+        모분산 <img src="images/capa_tips02_10.gif" width="18" height="18" align="absmiddle">의 
+        불편 추정량 </font><br>
+        <br>
+        <font size="-1">예4) <font face="Symbol">m</font>가 미지일 때, <img src="images/capa_tips02_11.gif" width="106" height="45" align="absmiddle">는 
+        모 표준편차 <font face="Symbol">s</font>의 불편 추정량 </font><br>
+        <img src="images/capa_tips02_12.gif" width="158" height="62"> <br>
+        <font size="-1">이라 할 수 있다. <br>
+        쉽게 불편 추정량을 설명하자면, 어떤 공정에서 생산되는 사출물의 중량에 대한 모평균을 구하기 위해, 하루에 100개씩의 사출물을 
+        표본 추출하여 이들 중량에 대한 표본평균을 구하고, 이런 과정을 무수히 반복하여 계산된 많은 수의 표본 평균 값들을 평균하면 
+        그 값이 사출물 중량의 모평균 값이 될 것이라는 의미이다. </font><br>
+        <font size="-1">실제 MINITAB 출력 화면상에서 계산되는 표준편차의 수식을 살펴보면 다음과 같다. </font><br>
+        <br>
+        <img src="images/capa_tips02_13.gif" width="515" height="236"> <br>
+        <br>
+        <br>
+        <br>
+        <font size="-1">단,</font> <img src="images/capa_tips02_14.gif" width="169" height="46" align="absmiddle"><br>
+        <br>
+        <font size="-1">즉, 공정능력 분석 시 단기 (군내) 및 장기 (전체) 변동으로 계산되는 표준편차 값들은 일반적인 
+        표준편차 계산식으로 계산된 값에 시료수 등을 고려한 특정한 보정 계수 <img src="images/capa_tips02_15.gif" width="39" height="17" align="absmiddle">로 
+        나누어준 값임을 명심해야 한다. </font></p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="2"> <br>
+      <hr size=1 color=#C0BDD6 width=90% align=center>
+      <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+        <br>
+      </div>
+      <br>
+    </td>
+  </tr>
+</table></table>
+</body>
+</html>

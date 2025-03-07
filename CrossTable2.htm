@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Cross Tabulation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=710>
+  <tr> 
+    <td width=20 height="4414" >&nbsp;</td>
+    <td height="4414" width="690"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=691>
+        <tr> 
+          <td height="4468"><a href="crosstable.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a> 
+            <br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">Cross Tabulation</font></b></font><br>
+            <br>
+            <font size=3><b></b></font><font size=3><b> Stat>Tables>Cross Tabulations</b></font> 
+            <br>
+            <br>
+            <br>
+            <b><font size="3">원시 데이터(Raw data)를 분할표(돗수데이터)로 변환</font></b><br>
+            <br>
+            <font size="-1">MINITAB의 Stat>Tables>Cross Tabulations를 이용하여 원시 데이터를 
+            카이제곱 검정에서 사용하는 r<font face="Arial, Helvetica, sans-serif">x</font>c 
+            분할표(Contingency Table)로 손쉽게 정리할 수 있다. 계산결과는 Session 창에 출력된다.<br>
+            </font> 
+            <p><font size="2"><b>1. MINITAB 사용 방법 <a href="data/Hypo07.zip">(데이터 
+              : Hypo07.mtw)</a></b></font></p>
+            <p><font size="-1">어느 공장에서 A, B, C 3 대의 기계로 생산된 제품을 기계별로 각각 100개씩 
+              샘플을 뽑아 양/불량을 검사한 결과를 담은 원시 데이터(Raw data)를 분할표로 정리한 결과가 다음 표와 같다. 
+              원래의 데이터로부터 MINITAB의 Stat>Tables>Cross Tabulations를 이용하여 r<font face="Arial, Helvetica, sans-serif">x</font>c 
+              분할표를 작성하라.<br>
+              <br>
+              <img src="images/CrossTable2_01.gif" width="487" height="121"> <br>
+              <br>
+              1.1 데이터의 입력 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet에 아래의 데이터를 입력한다. <br>
+              <br>
+              <img src="images/CrossTable2_02.gif" width="131" height="228"> <br>
+              <br>
+              <br>
+              1.2 MINITAB의 실행<br>
+              <br>
+              ① Stat>Tables>Cross Tabulations 선택 <br>
+              <br>
+              <img src="images/CrossTable2_03.gif" width="425" height="238"> <br>
+              <br>
+              <br>
+              ② Classification variables 란에 '기계'와 '판정결과'를 입력한다. Display의 Counts를 
+              체크한다.<br>
+              <br>
+              <img src="images/CrossTable2_04.gif" width="504" height="288"> <br>
+              <br>
+              <br>
+              [Summaries] 설명<br>
+              <br>
+              <img src="images/CrossTable2_05.gif" width="536" height="302"> </font></p>
+            <p align="left"><font size="-1">☞ Cross Tabulations -> Summaries -> 
+              Proportion equal to:<br>
+              분할표의 각 셀 중 특정 값의 비율을 갖는 셀을 출력하고자 할 때 선택한다. 우측 빈 칸에 원하는 비율을 입력한다.<br>
+              <br>
+              ☞ Cross Tabulations -> Summaries -> Proportion between ~ and ~:<br>
+              분할표의 각 셀 중 특정 범위의 비율을 갖는 셀을 출력하고자 할 때 선택한다. 우측 빈 칸 중 첫 번째에 비율의 하한, 
+              우측에 상한을 기입한다.<br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/CrossTable2_06.gif" width="277" height="257"> <br>
+              <br>
+              </b>원시 데이터로부터 카이제곱 검정에서 사용하는 데이터 구조인 3´2 분할표를 생성했다. <br>
+              <br>
+              <br>
+              <br>
+              <b><font size="3"> Cross Tabulation을 사용한 동일성 검정 <a href="data/Hypo07.zip">(데이터 
+              : Hypo07.mtw)</a> <br>
+              <br>
+              </font></b>어느 공장에서 A, B, C 3 대의 기계로 생산된 제품을 기계별로 각각 100개씩 샘플을 뽑아 
+              양/불량을 검사한 결과를 담은 현장 데이터를 분할표로 정리한 표이다. 이 데이터로부터 직접 기계별로 불량률이 서로 
+              다르다고 할 수 있는지 <font face="symbol">a</font>=0.05로 검정하라. <br>
+              <br>
+              <img src="images/CrossTable2_07.gif" width="486" height="120"> <br>
+              <br>
+              귀무가설 H<sub>0</sub> : 기계 A, B, C의 불량률은 모두 동일하다.<br>
+              대립가설 H<sub>1</sub> : H<sub>0</sub>가 아니다.<br>
+              <br>
+              <br>
+              1.1 데이터의 입력<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet에 아래의 데이터를 입력한다. <br>
+              <br>
+              <img src="images/CrossTable2_08.gif" width="199" height="349"> <br>
+              <br>
+              <br>
+              1.2 MINITAB의 실행<br>
+              <br>
+              ① Stat > Tables > Cross Tabulations 선택<br>
+              <br>
+              <img src="images/CrossTable2_09.gif" width="501" height="280"> <br>
+              <br>
+              <br>
+              ② Classification variables 란에 '기계'와 '판정결과'를 입력한다. Chi-Square analysis를 
+              체크<br>
+              &nbsp;&nbsp;&nbsp; 하고 돗수와 기대돗수를 표시하기 위해 Above and expected count를 
+              체크한다. <br>
+              <br>
+              <img src="images/CrossTable2_10.gif" width="540" height="370"> <br>
+              <br>
+              ☞ Cross Tabulations -> Chi-Square analysis <br>
+              다음과 같은 출력물을 표시하고자 할 때 선택한다.<br>
+              Show count: 각 속성의 관측도수를 표시한다.<br>
+              Above and expected count: 각 속성의 관측도수와 기대도수를 표시한다.<br>
+              Above and std.residual: 각 속성의 관측도수, 기대도수, 그리고 표준잔차를 표시한다.<br>
+              <br>
+              ☞ Cross Tabulations -> Frequencies are in<br>
+              워크시트에 입력된 데이터가 원시 데이터(Raw data)가 아닌 돗수 데이터일 때 선택한다. 물론 돗수 데이터를 포함하고 
+              있는 열을 지정한다.<br>
+              <br>
+              ☞ Cross Tabulations -> Options<br>
+              다음과 같은 Options 메뉴가 있다.<br>
+              <br>
+              <img src="images/CrossTable2_11.gif" width="680" height="288"><br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다. <br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/CrossTable2_12.gif" width="382" height="309"> <br>
+              <br>
+              </b>관측돗수와 귀무가설 하에서 기대돗수가 계산되었으며 카이제곱 통계량은 3.116이다. 그리고 P-Value가 
+              0.211이므로 H<sub>0</sub>를 기각할 수 없다. 즉, 기계별로 불량률이 다르다고 할 수 없다. </font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td height="2"> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+<title>General Linear Model</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+<td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="anovaglm2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <center>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> General Linear 
+                Model<br>
+                <br>
+                </font><font size=3><b>Stat>ANOVA&gt;General Linear Model</b></font><font size="4" color="#a70105"> 
+                </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <font size="-1">General Linear Model은 다수의 인자로 이루어진 여러 모형(모수모형, 혼합모형 
+            등)을 분석할 수 있으며 균형 설계(Balanced Design) 데이터와 불균형 설계(Unbalanced Design) 
+            데이터를 모두 분석할 수 있다. 또 ANOVA와 회귀분석을 결합한 분산분석으로 회귀분석의 독립변수에 해당하는 인자를 공변량(Covariate)으로 
+            지정하여 측정값의 총변동을 공변량의 1차 효과, 2차 효과 등 고차원 효과로 분해하는 등 좀더 심도있는 분석을 수행한다. 
+            <br>
+            General Linear Model을 적용하기 위해서는 데이터의 정규성 및 등분산성을 확인하여야 하며, 이를 검정하기 
+            위해서는 MINITAB의 <A HREF=NormalTest.html>Normality Test </a>와 <a href="equal_var.htm">Test 
+            for Equal variances</a>를 활용한다. Test for Equal variances는 과정에서 설명한다.<br>
+            <br>
+            <br>
+            <br>
+            <b><font size="2">1. MINITAB을 사용한 General Linear Model <a href="data/Anova05.zip">(데이터 : Anova05.mtw)</a></font></b><br>
+            <br>
+            난연 ABS의 주요 품질특성인 Break Energy의 품질 균일화를 개선하기 위하여 90HR, MIXING TIME, 
+            VACUUM 세 가지 인자를 가지고 실험을 실시한 결과가 다음과 같다. 이 측정결과는 인자의 각 수준조합에서 데이터의 
+            갯수가 같지 않으므로 불균형 설계 데이터 이다. 이 때 분산분석을 하려고 한다.<br>
+            </font><br>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/AnovaGLM_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaGLM_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.2 분산분석을 실시한다.</b><br>
+            <br>
+            ① Stat > ANOVA > General Linear Model <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/AnovaGLM_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Responses란에 Response를 입력한다. Model란에 
+            '90HR' | 'M/TIME' | VACUUM을 입력<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;한다. '90HR' | 'M/TIME' | VACUUM은 인자 '90HR', 'M/TIME', VACUUM 으로 이루어진 
+            모든<br>&nbsp;&nbsp;&nbsp;
+            인자조합을 의미한다. 즉 '90HR' 'M/TIME' 'VACUUM' '90HR'<sup>*</sup>'M/TIME' 
+            '90HR'<sup>*</sup>'M/TIME' <br>&nbsp;&nbsp;
+            'M/TIME'<sup>*</sup> VACUUM '90HR'<sup>*</sup>'M/TIME'<sup>*</sup>VACUUM 
+            을 입력한 것과 같다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/AnovaGLM_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <br>
+            <b> [ Session 창에 나타난 결과 ]</b></font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/AnovaGLM_05.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 유의수준 5%에서 M/TIME는 Break Energy에 유의한 
+            영향을 미치고 있고 나머지 주효과와 교호작용은 P-Value가 0.05이상이므로 유의하지 않다는 결론을 내릴 수 있다. 
+            <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+      
+    </tr>
+    </table>
+</body></html>
+

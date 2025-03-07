@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Paired t 검정 (대응 비교)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="210">&nbsp;</td>
+    <td height="210"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"><a href="hypomean_pair.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+            <br>
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">Paired t 검정 (대응 비교)</font></b></font><br>
+            <br>
+            <font size=3><b></b></font><font size=3><b> Stat>Basic Statistics>Paired 
+            t</b></font> <br>
+            <br>
+            <br>
+            <font size="-1">데이터가 동질적인 쌍의 형태를 띌 때 두 집단의 평균 비교를 위해 사용하며 통계학적인 용어로는 
+            대응 비교라 한다. 즉, 실험단위를 동질적인 쌍으로 묶은 다음, 각 쌍에서 랜덤하게 두 방법을 적용하고, 각 쌍에서 얻은 
+            관측값의 차(D = X<sub>1</sub>-X<sub>2</sub> )를 이용하여 두 모평균을 비교하는 방법을 대응비교라고 
+            한다. 대응비교를 수행하기 위해서는 두 집단 데이터간의 차에 대한 정규성 여부를 검토하여야 하며, 이는 MINITAB의 
+            <a href="normaltest.html">Normality Test</a>를 통해 확인할 수 있다. 단, 시료수가 
+            많은 경우 (보통 30개 이상), 정규성을 확인할 필요가 없다. <br>
+            Paired t 를 사용하여 대응 있는 모평균 차의 신뢰구간을 구할 수 있다.<br>
+            <br>
+            ♠ 참고 : <a href="hypomean_2t2.htm">2-Sample t 검정</a>법과 Paired t 검정법의 
+            비교<br>
+            예) 동양식 교육법과 서양식 교육법의 비교<br>
+            <br>
+            방법1) 8명을 임의로 선정해 동양식 및 서양식 교육을 모두 받게 한 후, 각각의 이 해도를 측정하였다. 데이터의 형태는 
+            다음과 같다. <br>
+            <br>
+            <img src="images/HypoMean_Pair2_01.gif" width="425" height="178"> 
+            <br>
+            <br>
+            <br>
+            </font> <font size="-1">방법2) 16명의 임의의 그룹으로 나눈 후, 각각 동양식 및 서양식 교육을 
+            받게 한 후, 이해도를 측정하였다. 데이터의 형태는 다음과 같다. <br>
+            <br>
+            <img src="images/HypoMean_Pair2_02.gif" width="425" height="328"> 
+            <br>
+            <br>
+            - 두 가지 데이터 수집 방법의 차이점 <br>
+            방법 1 : 한 사람이 동양식 및 서양식 교육을 모두 받았다. 데이터가 쌍의 형태를 띄 고 있다. 이 경우 Paired 
+            t 검정법을 적용하며 데이터 분석시 D = X<sub>i</sub>-Y<sub>i</sub> 를 이용한다. <br>
+            <br>
+            방법 2 : 동양식 및 서양식 교육을 받은 대상자가 서로 다르다. 즉 데이터가 서로 독 립이다. 이 경우 <a href="hypomean_2t2.htm">2 
+            Sample t 검정</a>을 적용한다. 개인의 능력차로 인해 실제로 차이가 없음에도 차이가 있다고 판단할 가능성이 있다. 
+            <br>
+            <br>
+            <b>1. MINITAB을 사용한 대응 비교 <a href="data/Hypo04.zip">(데이터 : Hypo04.mtw)</a> 
+            </b><br>
+            <br>
+            어떤 화학제품 안에 들어 있는 X 성분의 양을 두 가지 측정방법에 의하여 측정한 데이터는 다음과 같다.<br>
+            <br>
+            <img src="images/HypoMean_Pair2_03.gif" width="449" height="62"><br>
+            <br>
+            각 데이터는 정규분포에 따르며 모표준편차는 모른다고 할 때 두 가지 측정방법에 차가 있다고 할 수 있는지를 유의수준 5%를 
+            사용하여 검정하고자 한다.<br>
+            <br>
+            <img src="images/HypoMean_Pair2_04.gif" width="68" height="16" align="absmiddle">라고 
+            하면 다음과 같이 가설을 설정할 수 있다. <br>
+            <br>
+            H<sub>0</sub> : <img src="images/HypoMean_Pair2_14.gif" width="33" height="12" align="absmiddle"><br>
+            H<sub>1</sub> : <img src="images/HypoMean_Pair2_15.gif" width="34" height="14" align="absmiddle"><br>
+            <br>
+            1.1 데이터의 입력<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            </font> 
+            <p><img src="images/HypoMean_Pair2_05.gif" width="168" height="204"><br>
+              <br>
+              <br>
+              <font size="-1">1.2 MINITAB의 실행</font> <br>
+              <br>
+              <font size="-1">① Stat > Basic Statistics > Paired t 선택 <br>
+              <br>
+              <img src="images/HypoMean_Pair2_06.gif" width="373" height="227"> 
+              <br>
+              <br>
+              ② 두 가지 측정 방법의 데이터 열을 입력한다.<br>
+              <br>
+              <img src="images/HypoMean_Pair2_07.gif" width="276" height="205"> 
+              <br>
+              <br>
+              ☞ 참고: 위에서 First sample에 방법 2를, 그리고 Second sample에 방법 1을 입력 하면 <img src="images/HypoMean_Pair2_16.gif" width="69" height="18" align="absmiddle">이 
+              된다. 따라서 가설검정 결과에 다소의 차이가 있으며, 신뢰구간은 부호가 바뀌어 나타나게 된다. 따라서 데이터 입력 
+              시 주의를 요한다. </font></p>
+            <p><font size="-1">☞ Paired t - Options </font><br>
+              <font size="-1">신뢰수준, Test mean, 그리고 대립가설의 형태를 결정해 준다. 물론 신뢰구간만을 
+              구하 고자 할 때는 대립가설의 형태에 신경 쓸 필요가 없다. <br>
+              <br>
+              <img src="images/HypoMean_Pair2_08.gif" width="449" height="170"> 
+              <br>
+              <br>
+              ☞ Paired t - Graphs<br>
+              MINITAB은 다음과 같은 세 가지 형태의 그래프를 Output과 함께 출력하므로, 원하는 그래프를 선택할 수 있다. 
+              그래프에는 평균의 신뢰구간 뿐 아니라 귀무가설에서 설정한 <font face="symbol">m</font><sub>0</sub> 
+              대비 추정한 평균치의 차 <img src="images/HypoMean_Pair2_09.gif" width="54" height="20" align="absmiddle">의 
+              상대적 위치도 제시해 준다. <br>
+              <br>
+              <img src="images/HypoMean_Pair2_10.gif" width="390" height="126"> 
+              <br>
+              <br>
+              <br>
+              ③ OK 버튼을 클릭한다.<br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/HypoMean_Pair2_11.gif" width="422" height="157"> 
+              <br>
+              <br>
+              Graph 창에 나타난 결과<br>
+              <br>
+              <img src="images/HypoMean_Pair2_12.gif" width="338" height="251"> 
+              <br>
+              <br>
+              <br>
+              </b>1.3 결과 해석 <br>
+              <br>
+              P-Value가 0.011 < 0.05 이므로 유의수준 5%에서 H<sub>0</sub> 를 기각한다. 즉, 방법1과 
+              방법2 사이에 차이가 있다고 말할 수 있다. <font face="symbol">m</font><sub>1</sub> 
+              - <font face="symbol">m</font><sub>2</sub> 의 95% 신뢰구간은 (-0.3111, 
+              - 0.0564)이다. Dotplot에서 하단의 빨간색으로 표시된 구간은 <font face="symbol">m</font><sub>1</sub> 
+              - <font face="symbol">m</font><sub>2</sub>의 95% 신뢰구간을 나타낸다. 또한 귀무가설 
+              H<sub>0</sub>에서 설정한 평균치의 차 0 대비 추정한 평균값 <img src="images/HypoMean_Pair2_09.gif" width="54" height="20" align="absmiddle">의 
+              상대적 위치 (위의 그림에서 <img src="images/HypoMean_Pair2_13.gif" width="16" height="19" align="absmiddle">로 
+              표시된 값)도 제시해 준다. <br>
+              그림에서 보듯이 <font face="symbol">m</font><sub>1</sub> - <font face="symbol">m</font><sub>2</sub> 
+              의 95% 신뢰구간이 H<sub>0</sub> 에서 설정한 평균치의 차 0을 포함하지 않으므로 귀무가설을 기각할 수 
+              있음을 확인할 수 있다. </font> </p>
+          </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

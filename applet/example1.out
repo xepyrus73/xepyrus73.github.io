@@ -1,0 +1,43 @@
+/* Outline Data File - Simon Daykin                                        */
+/* This file contains the data for the outline help system.                */
+/*-------------------------------------------------------------------------*/
+/* Format for Lines...                                                     */
+/*	Level	Icon	Hidden	Title			URL                */
+/*-------------------------------------------------------------------------*/
+1      1      "Desktop"		" "
+ 2     2       "My Computer"      " "
+  3    7       "3½ Floppy (A:)"	"blank.htm"
+  3    3        "Windows (C:)"		" "
+   4   4         "My Documents"	" "
+    5  8         "Document 1"	"blank.htm"
+    5  8         "Document 2"	"blank.htm"
+   4   4         "Program Files"	" "
+    5  4          "Accessories"	" "
+     6	 9          "Document 1"	"blank.htm"
+     6 	9          "Document 2"	"blank.htm"
+    5  	4          "Common Files"	" "
+     6 	10          "Document 1"	"blank.htm"
+     6 	10          "Document 2"	"blank.htm"
+    5  	4          "Direct X"	" "
+     6 	11          "Document 1"	"blank.htm"
+     6 	11          "Document 2"	"blank.htm"
+   4   	4         "Temp"		" "
+    5 	8          "~doc1.tmp"		"blank.htm"
+   4   	4         "Windows"		"blank.htm"
+   4   	9        "Autoexec.bat"	"blank.htm"
+   4   	9        "config.sys"		"blank.htm"
+  3    5        "Data (D:)"	" "
+   4   8        "Welcome.doc"	"blank.htm"
+   4   8        "Bye.doc"		"blank.htm"
+  3    12       "CD-ROM (E:)"		"blank.htm"
+  3    13       "Data on 'Bob's PC' (F:)"	"blank.htm"
+  3    14       "Printers"	"blank.htm"
+  3    15       "Control Pannel"	"blank.htm"
+  3    16       "Scheduled Tasks"	"blank.htm"
+ 2     6       "Network Neighborhood"      " "
+  3    17         "Entire Network"	"blank.htm"
+  3    18         "Simon's PC"	"blank.htm"
+  3    18         "Bob's PC"	"blank.htm"
+
+ 2     19       "Recycle Bin"      "blank.htm"
+

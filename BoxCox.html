@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<TITLE>Box-Cox 변환</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=604>
+  <tr>
+    <td width=20 height="2208">&nbsp;</td>
+    <td height="2208" width="584"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="97" ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"><b> 
+              <div align="left"><font size="4" color="#a70105"><b></b></font> Box-Cox 변환</div>
+              </b></font> 
+            </CENTER>
+          
+              <br>
+              <BR>
+              <font size="-1">데이터가 정규분포를 따르지 않음에도 불구하고, 정규성을 전제로 하는 통계적 분석도구를 
+              사용하고자 할 때에는 원 데이터를 적절하게 변환하여 근사적으로라도 정규분포를 따르도록 해야 올바른 분석을 할 수 있다. 
+              Box-Cox 변환은 데이터가 정규분포를 따르지 않을 때, 특히 한쪽 꼬리가 긴 치우친 형태의 분포를 따르는 데이터를 
+              정규분포로 변환하고자 할 때 사용할 수 있는 도구이다. 주의할 사항으로 정규분포를 따르지 않는 모든 데이터를 Box-Cox 
+              변환을 이용하여 정규분포로 변환할 수 있는 것은 아니다. 다만, 현장에서 접하는 데이터는 정규분포가 아니라도 Box-Cox 
+              변환을 이용하여 정규분포로 변환될 수 있을 경우가 많다.<br>
+              <br>
+              Box-Cox 변환은 원 데이터를 X, 변환된 데이터를 Y로 나타낼 때, 다음과 같은 식을 사용하여 변환한다.<br>
+              <br>
+              </font> 
+     
+            </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/BoxCox_01.gif  border=0 align=center><BR>
+            <BR>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1">MINITAB에서는 Box-Cox 변환을 통하여 원 데이터를 정규분포에 
+            가장 가깝게 해 주는 최적값과 신뢰구간을 구해 주고, 변환의 효율성을 그래프로 도시해 준다.<br>
+            <br>
+            <br>
+            <br>
+            <a name="2"></a><b><font size="2">1. MINITAB을 사용한 Box-Cox 변환 <a href="data/Normal02.zip">(데이터 
+            : Normal02.mtw)</a></font></b><br>
+            <br>
+            아래 데이터는 ㈜L타일에서 생산하는 실내 바닥면 시공 타일의 뒤틀림의 정도를 측정한 것으로 하루에 10개씩 10일 동안 
+            데이터를 수집하였다. 그러나 데이터가 와이블(Weibull) 분포를 따르고 있어 공정능력분석을 실시하기 전에 Box-Cox 
+            변환을 하였다. <br>
+            <br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/BoxCox_02.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            <b>1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다<br>
+            <br>
+            <img src=images/BoxCox_03.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Control Charts > Box-Cox Transformation.. 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/BoxCox_04.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Single column에 변수를 선택하고 Subgroup 
+            size에 부분군 크기를 입력한다. 또, 변환된 데이터<br>&nbsp;&nbsp;&nbsp;
+            를 저장할 column을 Store transformed data in 난에 지정해 준다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/BoxCox_05.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td height="375"> <font size="-1"><img src=images/BoxCox_06.gif  border=0 align=center><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.3 결과 해석</b><br>
+            <br>
+            Box-Cox Plot은 본 예제에서 추정된 λ는 0.449이고, λ의 참값은 0.392와 0.506 사이의 어떤 값임을 
+            보여주고 있다. Worksheet의 지정된 Column C3에는 변환된 결과 데이터가 들어 있다. <br>
+            <br>
+            <img src=images/BoxCox_07.gif  border=0 align=center> <br>
+            <br>
+            </font> 
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+    </tr>
+    </table>
+</BODY>
+</HTML>

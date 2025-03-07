@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>비정규분포일 때의 공정능력 분석</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="846">&nbsp;</td>
+    <td height="846"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="855"> 
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+              <br>
+              <b><font size="4" color="#a70105">비정규분포일 때의 공정능력 분석</font></b><br>
+              <br>
+              <br>
+              <font size=3><b> </b></font> <br>
+              <font size="2"><font size="1">●</font> <a href="#1">공정능력분석의 개요</a><br>
+              <font size="1">●</font> <a href="capaanal_weibull.htm">Capability 
+              Analysis (Weibull)</a> <br>
+              <font size="1">●</font> <a href="capasix_weibull.htm">Capability 
+              Sixpack (Weibull)</a><br>
+              <font size="1">●</font> <a href="capaanal_bino.htm">Capability Analysis 
+              (Binomial)</a><br>
+              <font size="1">●</font> <a href="capaanal_poisson.htm">Capability 
+              Analysis (Poisson)</a> </font><font size="-1"><br>
+              <br>
+              <br>
+              </font> <font face="굴림체" size="2"><b><a name="1"></a>1. 공정능력분석의 
+              개요</b></font><font size="-1"><br>
+              <br>
+              모든 연속형 품질특성은 목표 값과의 편차가 작을수록 좋다. 공정능력이란 공정이 목표 값과의 편차가 작은 균일한 품질의 
+              제품을 생산할 수 있는 능력을 의미한다. 따라서, 공정능력은 공정으로부터 얻어진 품질 데이터의 산포의 크기로 평가할 
+              수 있으며, 규격의 폭에 비해 산포가 작을수록 공정능력이 뛰어난 공정이라 할 수 있다. 공정능력은 히스토그램에 규격을 
+              기입함으로써 대략적으로 평가할 수도 있으며, 공정능력지수를 구하여 보다 엄밀하고 객관적으로 분석할 수도 있다. 공정능력을 
+              분석할 때, 단기 혹은 장기에 걸쳐 수집된 데이터를 바탕으로 분석할 수 있는데, 전자를 단기 공정능력, 후자를 장기 
+              공정능력이라고 한다. 단기 공정능력은 순수 우연 요인에 의한 변동만 존재하는 상대적으로 짧은 기간, 즉, 몇 일 이나 
+              몇 주 동안의 단기 잡음 변수의 영향을 고려한 공정능력을 말한다. 장기 공정능력은 장비의 마모나 계절 효과 등과 같이 
+              원인을 규명할 수 있는 여러 가지 요인에 의한 변동이 혼재하는 상대적으로 긴 기간, 즉, 몇 주나 몇 달 동안의 장기 
+              잡음변수의 영향을 고려한 공정능력을 말한다. <br>
+              <br>
+              <br>
+              <b><font size="2"> 2. 공정능력지수 (Capability Analysis Index)</font></b><br>
+              <br>
+              공정능력지수는 공정이 얼마나 균일한 품질의 제품을 만들 수 있는가 하는 능력, 즉, 공정능력을 정량화하여 평가할 수 
+              있도록 한 측도이다. 공정능력지수는 규격에 대한 산포의 상대적인 크기를 기초로 계산된다. MINITAB에서는 주어진 
+              데이터가 Weibull분포를 따를 경우, 평균과 표준편차 대신 형상 모수와 척도 모수의 최우 추정치를 바탕으로 장기 
+              공정능력지수 Pp, Ppl, Ppu, Ppk를 구해 준다. 여기서 Pp는 공정평균이 치우치지 않았을 경우의 공정능력, 
+              Ppl과 Ppu는 규격상한 혹은 규격하한을 기준으로 평가한 공정능력을 나타내고, Ppk는 Ppl과 Ppu 중 작은 
+              값을 나타낸다. 만약 단기 공정능력지수를 함께 구하고자 한다면 <a href="capaanal_norm2.htm">Capability 
+              Analysis(Normal)</a>을 이용하되 Box Cox변환을 Option으로 선택하여 분석하면 된다. 현재 
+              공정의 능력 평가를 위해서는 Ppk를 사용하며 능력에 대한 판정 기준은 다음 표와 같다. </font></p>
+            <p><img src="images/CapaAnal3_01.gif" width="538" height="183"></p>
+            <p><font size="-1">MINITAB에서는 주어진 데이터의 분포가 Weibull 분포를 따를 경우, 공정능력분석을 
+              위해 <a href="capaanal_weibull.htm">Capability Analysis(Weibull)</a>, 
+              <a href="capasix_weibull.htm">Capability Sixpack(Weibull)</a>을 제공한다. 
+              Capability Analysis(Weibull)는 히스토그램을 Weibull 분포곡선과 함께 도시해 주고 데이터의 
+              평균, Weibull 분포의 형상모수와 척도모수, 장기공정능력지수, 관측된 PPM, 장기 예상 PPM 등을 함께 나타내 
+              준다. 이하 Capability Analysis(Weibull)의 사용방법에 대해 예를 통하여 설명한다. <br>
+              <br>
+              모든 연속형 품질특성은 목표 값과의 편차가 작을수록 좋다. 공정능력이란 공정이 목표 값과의 편차가 작은 균일한 품질의 
+              제품을 생산할 수 있는 능력을 의미한다. 따라서, 공정능력은 공정으로부터 얻어진 품질 데이터의 산포의 크기로 평가할 
+              수 있으며, 규격의 폭에 비해 산포가 작을수록 공정능력이 뛰어난 공정이라 할 수 있다. 공정능력은 히스토그램에 규격을 
+              기입함으로써 대략적으로 평가할 수도 있으며, 공정능력지수를 구하여 보다 엄밀하고 객관적으로 분석할 수도 있다. 공정능력을 
+              분석할 때, 단기 혹은 장기에 걸쳐 수집된 데이터를 바탕으로 분석할 수 있는데, 전자를 단기 공정능력, 후자를 장기 
+              공정능력이라고 한다. 단기 공정능력은 순수 우연 요인에 의한 변동만 존재하는 상대적으로 짧은 기간, 즉, 몇 일 이나 
+              몇 주 동안의 단기 잡음 변수의 영향을 고려한 공정능력을 말한다. 장기 공정능력은 장비의 마모나 계절 효과 등과 같이 
+              원인을 규명할 수 있는 여러 가지 요인에 의한 변동이 혼재하는 상대적으로 긴 기간, 즉, 몇 주나 몇 달 동안의 장기 
+              잡음변수의 영향을 고려한 공정능력을 말한다. </font> </p>
+          </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

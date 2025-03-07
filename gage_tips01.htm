@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Gage R&R 분석 시 표준편차의 입력</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=611>
+  <tr> 
+    <td width=23 height="1369">&nbsp;</td>
+    <td height="1369" width="588"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"> 
+            <p><br>
+              <br>
+              <font color="#a70105"><a name="1"></a><font size=4><b>Gage R&R 분석 
+              시 표준편차의 입력</b></font></font><br>
+              <br>
+              <br>
+              <font size="-1">MINITAB을 통한 <a href="measuremanage1m.htm">Gage R&R</a> 
+              분석 시, 입력 화면 중, "Historical sigma"의 입력란에 입력 시켜야 할 값은 Gage R&R 분석 
+              결과로 계산되는 전체 측정 데이터의 표준편차와는 무관함을 명심해야 한다. "Historical sigma" 입력 창의 
+              역할은 과거 또는 Gage R&R 을 위한 측정과는 별도로 공정의 산포를 측정하기 위해 획득된 데이터의 표준편차를 
+              입력하여 아래의 %Process를 계산하고자 함이다. <br>
+              <img src="images/gage_tips01_01.gif" width="189" height="61"> <br>
+              이러한 %Process의 계산 목적은 계측에 의한 산포 (R&R)의 상대적인 크기를 평가하기 위해, 그 비교 기준이 
+              해당 공정의 산포가 되는 것이 합리적이기 때문이다. 일반적으로 Gage R&R study를 위해 추출되는 표본들은 
+              생산 공정의 변동을 충분히 반영하지 못할 수 있으므로, 만약 사전에 또는 별도의 공정 관측을 통해 공정의 산포를 제대로 
+              반영한 표준편차를 알고 있다면, 계측 데이터의 표준편차를 이용하는 %StudyVar 보다는 %Process를 이용하는 
+              것이 좋다. 식에서 알 수 있듯이 %Process는 %StudyVar와 달리 5.15를 곱하지 않고 6을 곱하기 때문에 
+              "Historical sigma"에 Gage R&R 데이터의 표준편차를 입력하게 되면, %StudyVar와 %Process는 
+              동일한 값이 계산되지는 않지만, 이런 경우 진정한 %Process값을 얻었다고는 할 수 없다.<br>
+              <br>
+              <br>
+              (1) 상황<br>
+              <br>
+              LSL = 4.5, USL = 5.5이고, 공정의 산포 (표준편차)가 0.15정도로 알려진 생산공정으로부터 5개의 
+              부품을 표본으로 추출하여 측정 시스템을 평가하려고 한다. 그러나 표본이 공정의 산포를 제대로 반영하지 못하고 평균 
+              근처에 있는 부품들 (예를 들어, 부품 특성치의 참값이 4.9, 4.95, 5, 5.05, 5.1)로 구성되었다고 
+              가정하자. 측정 작업자 중 2명을 선발하여 Gage R&R 연구를 수행하였다. 2명의 평가자가 5개의 부품을 3회 
+              반복 측정하여 아래 도표와 같이 계측 데이터를 얻었다<br>
+              <a href="data/Gage_tips01.zip">(데이터 : Gage_tips01.mtw). </a><br>
+              <br>
+              <img src="images/gage_tips01_02.gif" width="590" height="91"> <br>
+              <br>
+              (2) MINITAB 분석 결과<br>
+              <br>
+              <img src="images/gage_tips01_03.gif" width="492" height="256"> <br>
+              <br>
+              <br>
+              ANOVA방법을 사용하여, Gage R&R을 평가하면 다음과 같다.<br>
+              <br>
+              <img src="images/gage_tips01_04.gif" width="528" height="423"> <br>
+              <br>
+              분석 결과, %StudyVar는 21.45%로 현 계측 시스템이 부분적으로 적절하다고 판단 내리게 되는 반면 %Tolerance와 
+              %Process는 각각 8.96, 11.60%로 우수한 계측 시스템이라고 판정을 내리게 된다. 이는 평균에 가까운 
+              좋은 부품만을 계측 시스템 평가에 사용함으로써, 부품 간 변동량 값이 과소 추정되어 %StudyVar가 좋지 못한 
+              값으로 계산되기 때문이다. 따라서, 우선 Gage R&R 연구에 사용될 표본을 취할 때에는 생산 공정 변동이 반영되도록 
+              주의를 기울여야 하고, 만일 연구에 사용된 부품이 생산공정 변동을 나타낸다는 확신이 없을 때에는 %StudyVar보다는 
+              %Process를 사용하여 계측 시스템을 평가하는 것이 합리적이라 할 수 있겠다. </font></p>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

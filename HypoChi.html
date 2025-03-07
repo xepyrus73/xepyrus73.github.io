@@ -1,0 +1,235 @@
+<html>
+<title>카이제곱(Chi-Square) 검정</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+<td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td > 
+            <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="hypochi2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font> 
+              <br>
+              <br>
+              <a name= "1"></a><font size="4" color="#a70105"><b>카이제곱(Chi-Square) 
+              검정</b></font><br>
+              <br>
+              <b><font size="3">Stat&gt;Tables&gt;Chi-Square Test</font></b> <br>
+              <br>
+              <font size="2"><br>
+              <b> <font size="3"> 독립성 검정(Test for Independence)</font></b></font> 
+              <br>
+              <br>
+              <font size="-1">예를 들어 근속년수과 직업만족도 간의 관계 또는 성별에 따른 부서선호도의 관련성을 알기 
+              위해 실시하는 검정이다. 두 요인 간에 관련성이 있는지 또는 없는지, 즉 서로 독립인지 아닌지를 검정한다. 가설은 
+              다음과 같다.<br>
+              <br>
+              귀무가설 H<sub>0</sub> : 요인 A, B가 서로 독립이다.<br>
+              대립가설 H<sub>1</sub> : H<sub>0</sub>가 아니다.<br>
+              <br>
+              유의수준이 5%일 경우 계산된 P-value가 0.05이하이면 귀무가설을 기각한다. 즉 두 요인 A와 B는 서로 독립이 
+              아니라는 결론을 내린다.<br>
+              </font><br>
+              <br>
+              <br>
+              <font size=2><b> 1. MINITAB을 사용한 독립성 검정 <a href="data/Hypo06.zip">(데이터 
+              : Hypo06.mtw)</a></b></font><br>
+              <br>
+              <font size="-1">회사 내의 성별과 부서 선호도 간의 관련성을 조사하기 위하여 100명을 임의로 추출 하여 
+              다음의 데이터를 얻었다. 그러면 이 자료를 이용하여 성별과 부서 선호도가 서로 영향을 미치고 있는지 <I><font face="Symbol">a</font></I><font face="Arial, Helvetica, sans-serif"> 
+              </font>= 0.05로 검정하라.<br>
+              <br>
+              </font> </div>
+          </td>
+        </tr>
+        <tr> 
+          <td> <img src=images/HypoChi_01.gif border=0 align=center><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 귀무가설 H<sub>0</sub> : 성별과 부서 선호도는 서로 
+            영향을 미치지 않는다. 즉, 서로 독립이다.<br>
+            대립가설 H<sub>1</sub> : H<sub>0</sub>가 아니다.<br>
+            <br>
+            <br>
+            <br>
+            <b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Tables > Cross Tabulations 선택 <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Columns containing the table 란에 '남'과 
+            '여'를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK버튼을 클릭한다.<br>
+            <br>
+            <b>[ Session 창에 나타난 결과 ]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_05.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 관측돗수와 귀무가설 하에서 기대돗수가 계산되었으며 카이제곱 통계량은 
+            2.262이다. 그리고 P-Value가 0.323이므로 H<sub>0</sub>를 기각할 수 없다. 즉, 성별은 부서 
+            선호도에 영향을 미치지 않는다고 말할 수 있다.<br>
+            <br>
+            <br>
+            <br>
+            <a name="2"></a> <b><font size="3"> 동일성 검정(Test for Homogeneity)</font></b></font> 
+            <font size="-1"><br>
+            <br>
+            같은 제품을 생산하는 여러 대의 기계의 불량률이 동일할까? 등과 같이 여러 모집단 간의 분포가 동일한 지를 검정하고자 
+            한다.<br>
+            <br>
+            귀무가설 H<sub>0</sub> : 각 모집단간 분포가 동일하다.<br>
+            대립가설 H<sub>1</sub> : H<sub>0</sub>가 아니다.<br>
+            <br>
+            동일성 검정의 자료구조는 <A HREF=#1>독립성 검정</a>의 자료구조와 형태가 동일하며 검정 결과도 역시 같다. 
+            그러므로 MINITAB에서 동일성 검정은 독립성 검정과 동일한 메뉴를 사용한다. 따라서 유의수준이 5%일 경우 P-value가 
+            0.05이하이면 귀무가설을 기각한다. 즉 모집단 간의 확률분포가 다르다는 결론을 내린다. <br>
+            <br>
+            <br>
+            <br>
+            <b> <font size="2">1. MINITAB의 Cross Tabulation을 사용한 동일성 검정 <a href="data/Hypo07.zip">(데이터 
+            : Hypo07.mtw)</a></font></b><br>
+            <br>
+            어느 공장에서 A, B, C 3 대의 기계로 생산된 제품을 기계별로 각각 100개씩 샘플을 뽑아 양/불량을 검사한 결과를 
+            담은 현장 데이터(Raw Data)를 분할표로 정리한 결과가 다음 표이다. 이 현장 데이터로부터 직접 기계별로 불량률이 
+            서로 다르다고 할 수 있는지 <I><font face="Symbol">a</font></I> 
+            = 0.05로 검정하고자 한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_06.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 귀무가설 H<sub>0</sub> : 기계 A, B, C의 불량률은 
+            모두 동일하다.<br>
+            대립가설 H<sub>1</sub> : H<sub>0</sub>가 아니다.<br>
+            <br>
+            <br>
+            <br>
+            <b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래의 데이터를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Tables > Cross Tabulations 선택<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_08.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Classification variables 란에 '기계'와 
+            '판정결과'를 입력한다. Chi-Square analysis를 체크<br>&nbsp;&nbsp;&nbsp;
+            하고 돗수와 기대돗수를 표시하기 위해 Above and expected count를 체크한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_09.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK버튼을 클릭한다.<br>
+            <br>
+            <b>[ Session 창에 나타난 결과 ]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/HypoChi_10.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 관측돗수와 귀무가설 하에서 기대돗수가 계산되었으며 카이제곱 통계량은 
+            3.116이다. 그리고 P-Value가 0.211이므로 H<sub>0</sub>를 기각할 수 없다. 즉, 기계별로 불량률이 
+            다르다고 할 수 없다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+
+
+      
+    </tr>
+    </table>
+</body></html>
+

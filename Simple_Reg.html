@@ -1,0 +1,222 @@
+<html>
+<title>단순 선형 회귀</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+  
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+<td width=20>&nbsp;</td><td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="linear_reg.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <font size="4" color="#a70105"><a name="1"></a></font> <font size="4" color="#a70105"><b>단순 
+            선형 회귀(Simple Linear Regression)</b></font><b> <br>
+            <br>
+            <font size=3><b>Stat>Regression&gt;Regression<br>
+            </b></font></b><br>
+            <br>
+            <font size=2><b>1. MINITAB을 사용한 단순 선형 회귀분석 <a href="data/Reg01.zip">(데이터 
+            : Reg01.mtw)</a></b></font><br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 농약 원제를 생산하는 어느 화학 회사는 고품질의 제품을 요구하는 
+            해외 신규시장을 개척하기 위해 제품의 순도를 높이기로 하였다. 제품의 순도와 관련된 인자 중 원재료의 합성 공정의 반응시간이 
+            순도에 끼치는 영향의 정도를 파악하기 위해 단순 회귀분석을 실시하였다. 회귀분석을 적용하기 위해서는 데이터 (또는 잔차)의 
+            정규성 및 등분산성, 독립성등을 확인하여야 하며, 이는 중급과정에서 설명한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Simple_Reg_01.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.1 데이터의 입력</b><br>
+            <br>
+            MINITAB worksheet에 아래의 데이터를 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Simple_Reg_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat > Regression > Regression 선택 </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/Simple_Reg_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Response 란에 제품순도 데이터 'Purity', Predictors 
+            란에 반응시간 데이터 'R_Time'을 <br>
+            &nbsp;&nbsp;&nbsp;선택하여 입력한다. </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/Simple_Reg_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK 버튼을 클릭한다. <br>
+            <br>
+            <b>[ Session 창에 나타난 결과 ]</b></font> </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <br>
+            <img src=images/Simple_Reg_05.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1">위 결과에서 순도와 반응시간 간의 회귀식은 <FONT  COLOR="blue">Purity 
+            = 101 - 0.589 R_time</FONT> 이다. 즉,&szlig;<sub>0</sub> = 101, &szlig;<sub>1</sub> 
+            = -0.589 이다.<br>
+            <br>
+            </font><br>
+            <br>
+            <a name="2"></a><font size="-1"> ④ Stat > Regression > Fitted Line 
+            Plot 을 선택한다. <a href="data/Reg01.zip">(데이터 : Reg01.mtw)</a><br>
+            </font> </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <img src=images/Simple_Reg_06.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ⑤ Response (Y )에 제품순도 데이터 'Purity', 
+            Predictor (X)에 반응시간 'R_time'을 입력. <br>
+            &nbsp;&nbsp;&nbsp; Type of Regression Model은 'Linear'로 선택한다.<br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/Simple_Reg_07.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ⑥ OK를 클릭한다.<br>
+            <br>
+            <b> [ Graph 창에 나타난 결과 ]</b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><br>
+            <img src=images/Simple_Reg_08.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위 그림의 데이터들을 보면 직선이 반응시간과 순도간의 관계를 잘 
+            표현하고 있다고 할 수 있다. 따라서 선형 회귀식이 잘 들어 맞음을 알 수 있다.<br>
+            <br>
+            <br>
+            <br>
+            <b>1.3 결과 해석</b><br>
+            <br>
+            <b>[ 기울기는 0이 아니라고 할 수 있는가? ]</b><br>
+            <br>
+            Session 창에 나오는 결과 중 아래 내용은 모델의 모수에 대한 검정 결과 이다. 회귀직선의 식에서 &szlig;<sub>0</sub> 
+            와 &szlig;<sub>1</sub>는 각각 상수 항 (constant)과 기울기를 나타내며, 이 중 우리는 반응시간의 
+            계수인 &szlig;<sub>1</sub>이 0의 값을 갖지 않는 지의 여부를 알아야 한다. &szlig;<sub>1</sub>이 
+            0이라는 것은 직선식의 기울기가 0 이여서 제품의 순도는 반응시간과 전혀 관계가 없다는 것을 의미한다. 모델에서 &szlig;<sub>1</sub>이 
+            0이 아닌 지의 여부를 검정하기 위해 모평균의 검정을 하는데 사용되는 <a href="HypoMean_1t.html">t 
+            검정</a>을 사용한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td><font size="-1"><br>
+            <img src=images/Simple_Reg_09.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> Coef : 계수 (coefficient)<br>
+            StDev : 표준편차 (Standard Deviation)<br>
+            T : 주어진 데이터를 t 통계량을 사용해 계산된 값<br>
+            P : 유의확률 (P-Value)<br>
+            <br>
+            P-Value는 t 값을 사용해 얻어진 유의 확률로서 이 값이 작으면 <img src=images/Simple_Reg_10.gif border=0 align=center>값이 
+            0이라고 하기 어렵다고 판단할 수 있다. 일반적으로 P-Value가 0.05 (때로는 0.01) 보다 작을 경우, <img src=images/Simple_Reg_10.gif border=0 align=center>은 
+            0이 아니라고 해석한다. 위 예의 경우는 반응시간의 P-Value가 0.041로서 0.05보다 작아 <img src=images/Simple_Reg_10.gif border=0 align=center>은 
+            0 이라고 할 수 없다. 따라서 반응시간은 제품의 순도에 유의한 (Significant) 인자라고 해석할 수 있다.<br>
+            <br>
+            <br>
+            <b> [R-Square의 해석 ]</b><br>
+            <br>
+            R-Square (R<sup>2</sup>) 는 결정계수라고 불리며, y 변수의 데이터가 가지고 있는 전체 변동 (산포) 
+            중에서 x와 y간의 회귀 모델로 설명할 수 있는 변동(산포)이 차지하는 비율을 의미한다. 즉, 회귀모형을 통해 y 값의 
+            변화를 x 값의 변화는 얼마나 잘 설명할 수 있는 가를 나타낸다.<br>
+            <br>
+            R-Square는 아래와 같은 식으로 표현할 수 있다. <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/Simple_Reg_11.gif border=0 align=center><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> SS (Sum of Square) : 제곱의 합, 변동을 정량화하는 
+            방법 중 하나<br>
+            <br>
+            앞의 예에서 R-Sq =53% (또는 0.53) 라는 의미는 제품의 순도가 가지고 있는 전체 변동 중 53%는 반응시간과의 
+            선형 회귀식으로 설명할 수 있고, 나머지 47%는 반응시간으로는 설명할 수 없는 변동이라는 것을 의미한다. 따라서 반응시간 
+            이외에 다른 요인을 찾아 내어 제품의 순도가 가지고 있는 변동을 설명할 수 있어야 한다.<br>
+            R-Square는 0에서 1사이의 값을 가질 수 있으며, R-Square 값이 클수록 두 변수간의 관계가 깊다는 것을 
+            의미한다. R-Square가 1일 때는 모든 데이터가 회귀선 상에 놓여 있는 상태로서 회귀식이 y의 전체 변동을 완전히 
+            설명하고 있는 상태를 의미하게 되며 R-Square가 0일 때는 x와 y간에 전혀 관계가 없는 상태를 의미하게 된다.<br>
+            일반적으로 R-Square가 80% 이상이면 해당 회귀 직선이 매우 적절하다고 판단할 수 있다.<br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"><font size="-1"> 
+              </font></div>
+            </td>
+        </tr>
+      </table>
+	  
+	  </tr>
+    </table>
+</body></html>
+

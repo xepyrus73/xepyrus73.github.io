@@ -1,0 +1,116 @@
+<html>
+<title>Capability Analysis</title>
+
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+<body  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+<td>
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> 
+            <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="capaanal_bw2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+              <br>
+              <font size="4" color="#a70105"><b> Capability Analysis (Between/Within)</b></font><br>
+              <br>
+              <b><font size=3><b><font color="#000000">Stat>Quality Tools&gt;<b>Capability 
+              Analysis (Between/Within)</b> </font></b></font></b> <br>
+              <br>
+              <br>
+              <font size=3><b> <font size="2">1. 사용 방법 <a href="data/Capa01.zip">(데이터 
+              : Capa01.mtw)</a></font></b></font><br>
+              <br>
+              <font size="-1">㈜A화학은 장갑용 PVC를 생산하는 업체로서 장갑용 PVC의 점도에 대한 공정능력을 측정하기 
+              위하여 6개의 생산라인으로부터 각 5개의 데이터를 취하여 라인내 및 라인 간의 변동을 함께 고려하여 공정능력을 분석하려고 
+              한다. 데이터는 아래와 같으며 규격 은 3,500±500cps이다.<br>
+              </font><br>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="164"> <img src=images/CapaAnal_BW_02.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b> 1.1 데이터의 입력 </b><br>
+            <br>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다.<br>
+            <br>
+            <img src="images/CapaAnal_norm_03.gif" width="154" height="266"><br>
+            <br>
+            <br>
+            <b> 1.2 MINITAB의 실행</b><br>
+            <br>
+            ① Stat> Quality Tools> Capability Analysis(Between/Within)<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_BW_03.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Single Column에 PVC의 점도 데이터 "Viscosity"를 
+            선택하고 Subgroup size에 부분군의 크<br>&nbsp;&nbsp;&nbsp;
+            기를 기입하고 규격을 입력한다.<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_BW_04.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다.<br>
+            <br>
+            <br>
+            <br>
+            <b>[ Graph 창에 나타난 결과 ]</b><br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/CapaAnal_BW_05.gif border=0 align=center><br>
+            <br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>1.3 결과 해석</b><br>
+            <br>
+            부분 군내 및 군간 변동을 합하여 구한 표준편차 StDev(Total)를 이용하여 구한 공정 능력지수는 Cp = 1.11, 
+            전체적인 공정능력은 Ppk = 0.91이다. 만약, 부분 군간 표준편차(Between)의 값이 0에 가까우면 공정이 매우 
+            안정되어 있거나, 부분 군이 합리적으로 형성되지 않았음을 의미한다. 따라서 현실적으로 이와 같은 상황이 발생하면 도시된 
+            히스토그램의 검토와 함께 부분 군 형성이 합리적으로 되었는지를 일차적으로 점검해야 한다. 부분 군간 표준편차(Between)의 
+            값이 0이 되면, 계산 상으로는 단기 표준편차(Within)가 전체 표준편차(Overall)보다 크게 된다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"></div>
+            <font size="-1"> </font></td>
+        </tr>
+      </table>
+	   
+    </tr>
+    </table>
+</body></html>
+

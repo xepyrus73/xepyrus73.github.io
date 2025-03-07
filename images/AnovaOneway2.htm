@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>일원배치법</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="JavaScript" src="/javascrip/test.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/b_basic_on.gif','images/b_pro01_on.gif')">
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr> 
+    <td width=20 height="2511">&nbsp;</td>
+    <td height="2511"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td height="153"> 
+            <div align="left"> 
+              <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
+                <BR>
+                <font size="4" color="#a70105"><b> <font color="#a70105">일원배치법</font></b></font> 
+                <br>
+                <br>
+                <font size=3><b> Stat>ANOVA>One-way ANOVA </b></font><br>
+                <br>
+                <font size="-1">하나의 인자가 측정값에 어떤 영향을 미치는가를 조사하는 방법이다. 인자의 수준이 k개이면 
+                각 수준을 적용한 측정값을 얻어서 수준 별 평균이 서로 동일한지 여부를 검정한다. 이것은 여러 모집단의 평균을 
+                비교하는 것과 같다. 모집단 k의 평균을 mk라 하면 일원배치법에서 검정하는 가설은 다음과 같다.<font size="2"><b><br>
+                <br>
+                </b><font size="-1">가설<br>
+                <br>
+                </font></font>H<sub>0</sub> : <font face="Symbol">m</font><sub>1</sub> 
+                = <font face="Symbol">m</font><sub>2</sub> = ...= <font face="Symbol">m</font><sub>k</sub><br>
+                H<sub>1</sub> : 적어도 하나의 평균이 다르다.</font> 
+              <font size="-1"><font size="2"><b> <br>
+              <br>
+              </b>분산분석 결과 유의수준이 0.05일 때 해당 항목에 대한 P-value가 0.05보다 작으면 귀무가설을 기각하고 
+              적어도 하나의 평균이 다르다는 결론을 내린다. <br>
+              일원배치법을 적용하기 위해서는 데이터의 정규성 및 등분산성을 확인하여야 하며, 이를 검정하기 위해서는 MINITAB의 
+              <a href="Normality%20Test.html">Normality Test</a> 와 <a href="Equal%20_var.htm">Test 
+              for Equal variances</a>를 활용한다.<br>
+              <b><br>
+              <br>
+              1. MINITAB을 사용한 일원배치법 <a href="data/Anova01.zip">(데이터 : Anova01.mtw)</a></b></font><br>
+              <br>
+              같은 등급의 서로 다른 5가지 소형 자동차(A, B, C, D, E)의 연비(리터당 평균 주행거리)를 비교하기 위해 
+              소형 자동차들의 연비를 측정한 결과 다음 데이터를 얻었다. 자동차별로 연비에 차이가 있다고 할 수 있는가 분석하라.<br>
+              <br>
+              <img src="images/AnovaOneway2_01.gif" width="469" height="123"> 
+              <br>
+              <br>
+              가설<br>
+              <br>
+              H<sub>0</sub> : <font face="Symbol">m</font><sub>A</sub> = <font face="Symbol">m</font><sub>B</sub> 
+              = <font face="Symbol">m</font><sub>C</sub> = <font face="Symbol">m</font><sub>D</sub> 
+              = <font face="Symbol">m</font><sub>E</sub> <br>
+              H<sub>1</sub> : 적어도 하나의 평균이 다르다. <br>
+              <br>
+              <br>
+              1.1 데이터의 입력<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Worksheet에 아래의 데이터를 입력한다.<br>
+              <br>
+              <img src="images/AnovaOneway2_02.gif" width="188" height="421"><br>
+              <br>
+              <br>
+              1.2 <a href="egual_var.htm">등분산성의 검정</a><br>
+              <br>
+              <br>
+              1.3 <a href="intervalplot2.htm">Interval Plot을 그려본다. <br>
+              </a><br>
+              <br>
+              1.4 <a href="maineffect2.htm">Main Effects Plot을 그려 본다.</a><br>
+              <br>
+              <br>
+              1.5 일원배치 분산분석을 실시한다.<br>
+              <br>
+              ① Stat > ANOVA > One-way 선택<br>
+              <br>
+              <img src="images/AnovaOneway2_03.gif" width="544" height="307"> 
+              <br>
+              <br>
+              <br>
+              ② Response란에 '연비'와 Factor란에 '자동차'를 입력한다.<br>
+              <br>
+              <img src="images/AnovaOneway2_04.gif" width="409" height="366"><br>
+              <br>
+              Store residuals를 선택하면 Worksheet 잔차가 저장된다. 또한 Store fits를 지정하면 적합값을 
+              저장한다.<br>
+              <br>
+              <br>
+              ③ Comparisons...클릭한다. <br>
+              <br>
+              <img src="images/AnovaOneway2_05.gif" width="426" height="336"> 
+              <br>
+              <br>
+              수준별 평균간의 차이를 비교하기 위하여 다중비교를 한다. 다중비교에서 신뢰구간이 0을 포함하고 있으면 수준별 평균의 
+              차이가 없다고 할 수 있다. 여기서는 individual error rate 사용하는 Fisher's 방법을 사용하여 
+              모든 수준별 차이를 비교한다.<br>
+              평균을 어떻게 비교하는지, Individual error rate를 쓰는지 Family error rate를 쓰는지에 
+              따라서 방법이 달라진다. 네 가지 방법은 다음과 같다. <br>
+              <ul>
+                <li><b>Tukey's </b>: 모든 수준별 평균의 차이를 비교한다. Family error rate를 지정한다.<br>
+                <li><b>Fisher's</b> : 모든 수준별 평균의 차이를 비교한다. Individual error rate를 
+                  지정한다.<br>
+                <li><b>Dunnett's</b> : 특정한 수준을 정해 놓고 평균의 차이를 비교한다. Family error 
+                  rate를 지정한다. 특히, 여기서는 Control group level란에 특정한 수준을 지정한다.<br>
+                <li><b>Hsu's MCB</b> : 최상의 수준과 최상이 아닌 수준간의 평균을 비교한다. Family error 
+                  rate를 지정한다. 특히, 여기서는 Largest is best나 Smallest is best를 선택하여 
+                  최상의 수준이 평균이 클수록 좋은지 적을수록 좋은지를 결정한다. 
+              </ul>
+              ■ 참고<br>
+              <ul>
+                <li>Family error rate : 수준별 평균들간의 실제 차이를 포함하지 않는 신뢰구간이 하나이상 얻어질 
+                  최대 확률이다.<br>
+                <li>Individual error rate : 주어진 신뢰구간이 그룹평균내의 실제 차이를 포함하지 않을 확률이다. 
+                  <br>
+              </ul>
+              <br>
+              ④ Graphs...버튼을 클릭한다.<br>
+              <br>
+              <img src="images/AnovaOneway2_06.gif" width="523" height="336"> 
+              <br>
+              <br>
+              여기서는 데이터에 대한 두 가지(Dotplot, Boxplot)형태의 Plot을 선택할 수 있는데 여기서는 Boxplot을 
+              이용하여 모든 잔차 Plot을 실시한다. <br>
+              <br>
+              <br>
+              <b>◆ 잔차에 대한 그래프 분석 <br>
+              <br>
+              </b>잔차를 분석하는 이유는 다음과 같다. <br>
+              <ul>
+                <li>실험변동이 단지 우연원인에 의한 것인지를 확인하기 위함<br>
+                <li>결론에 중대한 영향을 줄 수 있는 잠재변수를 찾기 위함 
+              </ul>
+              잔차는 정규성을 따라야 결과치가 올바로 분석된 것으로 판단할 수 있다. 즉 잔차가 정 규분포를 따르면 실험변동이 랜덤하다는 
+              것을 나타낸다. <br>
+              <br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Histogram of residuals </b><br>
+              <br>
+              <img src="images/AnovaOneway2_07.gif" width="337" height="250"> 
+              <br>
+              <br>
+              잔차의 히스토그램으로 전반적인 잔차의 형태를 나타내는데 잔차의 형태가 정규분포를 따름을 알 수 있다.<br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Normal plot of residuals <br>
+              <br>
+              <img src="images/AnovaOneway2_08.gif" width="340" height="253"> 
+              <br>
+              <br>
+              </b>잔차를 정규확률 plot을 하여 잔차들이 정규분포를 따르는지를 알아보는 방법이다. 잔차들을 타점해본 결과 대부분의 
+              점들이 일직선상에 위치 함으로 정규분포를 따른다. <br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Residuals versus fits <br>
+              <br>
+              <img src="images/AnovaOneway2_09.gif" width="348" height="257"> 
+              <br>
+              <br>
+              </b>잔차와 적합값에 대한 그림으로 적합값이 0 근처에 랜덤하게 타점 될수록 실험변동이 단지 우연원인에 의한 것임을 
+              나타낸다. <br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Residuals versus order</b> <br>
+              <br>
+              <img src="images/AnovaOneway2_10.gif" width="347" height="259"> 
+              <br>
+              <br>
+              데이터 순서에 따른 잔차 그림으로 잔차 값들이 0을 중심으로 랜덤하게 배열되어 있다.<br>
+              <br>
+              ☞ 기타 : Residuals versus the variables <br>
+              선택한 변수와 잔차에 대한 그림을 그리는데 점들이 0 근처에 랜덤하게 타점 될수록 실험변동이 단지 우연 원인에 의한 
+              것임을 나타낸다.<br>
+              <br>
+              잔차분석은 결과 분석이 올바르게 분석된 것인지를 판단하는데 중요한 역할을 한다. 위의 모든 그래프를 보아 실험변동은 
+              단지 우연원인에 의한 것이다. 따라서 분석결과에 통계적 신뢰성을 확보할 수 있다.<br>
+              <br>
+              ⑤ OK 버튼을 클릭한다.<br>
+              <br>
+              <b>Session 창에 나타난 결과 <br>
+              <br>
+              <img src="images/AnovaOneway2_11.gif" width="561" height="299"><br>
+              <br>
+              </b>DF : 자유도 (Degree of Freedom)<b> <br>
+              </b>SS : 제곱합 (Square of Sum)<b><br>
+              </b>MS : 평균 제곱합 (Mean of Square) <br>
+              F : 검정 통계량의 값, 즉 F = 자동차의 MS / Error의 MS<br>
+              P : P-value(유의확률)<br>
+              Pooled StDev는 각 수준별로 표준편차가 동일하므로 이 들을 대표할 수 있는 표준편차를 추정한 값이다. 본 
+              예에서는 각 수준별 신뢰구간의 길이가 동일함을 알 수 있다. 이는 각 수준별 신뢰구간 추정에 있어 동일한 표준편차를 
+              사용했기 때문이다. <br>
+              <br>
+              위 결과에서 자동차 인자에 대한 P-value가 0.001이므로 유의수준 5%에서 귀무가설을 기각한다. 즉, 5종류의 
+              자동차 간의 연비는 차이가 있다는 결론을 내린다. 각 수준의 연비에 대한 모평균의 신뢰구간이 나와 있다. 예를 들어 
+              수준이 A인 자동차의 평균은 17.28이고 표준편차는 0.726이다. 95%신뢰구간은 (16.4, 18.1)임을 알 
+              수 있다. <br>
+              <br>
+              <img src="images/AnovaOneway2_12.gif" width="477" height="346"> 
+              <br>
+              <br>
+              (A, C), (A, D), (B, E), (C, D)의 차이에 대한 신뢰구간은 0을 포함하고 있으므로 유의하지 않다고 
+              할 수 있다. 나머지는 유의 하다고 할 수 있다. 예를 들어 A와 B의 차에 대한 95% 신뢰구간은 ( 0.7986, 
+              3.5611 )이다.<br>
+              <br>
+              <b>Graph 창에 나타난 결과 : Boxplot</b> <br>
+              <br>
+              <img src="images/AnovaOneway2_13.gif" width="494" height="367"> 
+              <br>
+              <br>
+              위의 다중비교와 비슷한 결과를 볼 수 있다. 예로 B요인과 E요인은 비슷한 연비를 가진다.<br>
+              <br>
+              <b>Session 창에 나타난 결과 : 분산분석표</b> <br>
+              <br>
+              <img src="images/AnovaOneway2_14.gif" width="392" height="134"> 
+              <br>
+              <br>
+              DF는 자유도(Degree of Freedom)를 나타낸다. 자동차의 자유도는 4, 오차항(Error)의 자유도는 
+              18이며 총 자유도는 자동차와 오차항의 자유도를 더한 4+18=22가 된다.<br>
+              SS는 제곱합(Sum of Square)을 나타내며 이는 측정값의 변동을 나타내는 값이다. 자동차의 변동은 27.323, 
+              오차항의 변동은 17.284이며 총변동은 27.323+17.284=44.606이 된다.<br>
+              <br>
+              MS(Mean Square)는 평균제곱을 나타내며 이는 제곱합을 자유도로 나눈 값이다. 따라서 자동차의 평균제곱은 
+              27.323/4=6.831이고 오차항의 평균제곱은 17.284/18=0.960이 된다. F는 F-통계량이며 자동차의 
+              평균제곱을 오차항의 자유도로 나눈 값이다. 여기서 F-통계량은 6.831/0.960=7.11이 된다. 이 값은 자유도가 
+              (자동차의 자유도 4, 오차항의 자유도 18)인 F 분포를 따르며 P-value를 계산하는데 사용된다. 우리는 이 
+              예제에서 0.001의 P-value를 얻었다. 또한 다중비교와 Box plot으로 그러한 원인이 (A, C), (A, 
+              D), (B, E), (C, D)간에는 유의한 차가 없어도 이를 제외한 나머지들이 유의한 차가 있기 때문이라는 것을 
+              알았다. 물론 잔차 분석을 통하여 이러한 모델이 문제가 있다고 할 수 없다는 것도 확인하였다. </font> </div>
+            </td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+          <br>
+          </td>
+        </tr>
+      </table>
+  </tr>
+</table>
+</body>
+</html>

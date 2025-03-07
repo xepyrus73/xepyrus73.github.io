@@ -1,0 +1,169 @@
+<HTML>
+<HEAD>
+<TITLE>이동 범위(Moving Range) 관리도</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+
+<script language="JavaScript" src="test.js"></script>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('images/b_basic01_on.gif','images/b_pro_on.gif')">
+<table border=0 cellpadding=0 cellspacing=0 width=601>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="581"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td ><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="MovingRange2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font><br>
+            <br>
+            <CENTER>
+              <font size="4" color="#a70105"></font>
+              <div align="left"> <b><font size="4" color="#a70105"> 이동 범위(Moving 
+                Range) 관리도<br>
+                <br>
+                </font><font size=3><b><font color="#000000">Stat>Control Charts&gt;Moving 
+                Range </font></b></font></b> <b><font size="4" color="#a70105"> 
+                </font></b><b><font size="4" color="#a70105"> </font></b></div>
+               
+            </CENTER>
+            <br>
+            <br>
+            <font size="2"><BR>
+            <b>1.이동 범위(Moving Range) 관리도의 개요</b></font><br>
+            <br>
+            <BR>
+            <font size="-1">관리도를 위해 공정으로부터 부분군을 추출할 때 한번에 여러 개의 제품들을 추출할 수 없는 
+            경우가 많다. 제품 또는 제조공정의 특성상 한번에 하나의 제품밖에 얻을 수 없는 경우도 있고, 생산속도가 너무 느려 둘 
+            이상의 제품으로 부분군을 형성하기가 어려운 경우도 있다. 이러한 경우에는 공정의 표준편차를 관리하기 위해 인접한 두 데이터간의 
+            범위를 사용한다. 따라서 k개의 데이터를 이용하여 공정평균과 표준편차를 추정하면 μ의 추정치로는 <img src=images/MovingRange_01.gif  border=0 align=absmiddle> 
+            를 사용하고, <img src=images/Common.gif  border=0 align=absmiddle>의 추정치로 
+            <img src=images/MovingRange_02.gif  border=0 align=absmiddle> 를 사용한다. 
+            여기서 <img src=images/Common.gif  border=0 align=absmiddle> 는 k-1개의 
+            범위들의 평균이 된다. </font></TD>
+        </TR>
+        <TR> 
+          <TD ><font size="-1"><BR>
+            이때 R관리도를 MR관리도라 한다. 일반적으로 이동범위(Moving Range)의 길이를 2로 두지만 MINITAB에서는 
+            임의로 이동범위의 길이를 정할 수 있다. MR관리도의 중심선 및 관리한계선은 다음과 같이 구해진다. <br>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_04.gif  border=0 align=center><BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td >
+            <p><font size="-1"> 여기서, <I>D</I><sub>4</sub>, <I>D</I><sub>3</sub>는 
+              n=2일 때의 값을 사용한다<BR>
+              <BR>
+              <BR>
+              <font size="2"><br>
+              <b>2. MINITAB을 사용한 이동 범위 관리도의 작성 <a href="data/Moving Range.zip">(데이터 
+              : Moving Range.mtw)</a></b></font></font></p>
+              <BR>
+              <font size="-1">
+              플라스틱 가공시 사용하는 첨가제 중의 하나는 제품의 투과율(%)이 중요한 특성이다. 이 특성을 관리하기 위해 16일 
+              동안 매일 하나의 제품에 대해 투과율을 측정하였다. Moving Range관리도를 이용하여 프로세스가 안정적인지를 
+              판단하라.</font> <BR>
+              <BR>
+              </font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_06.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"><b>2.1 데이터의 입력</b><br>
+            <br>
+            MINITAB Worksheet에 아래와 같이 데이터를 입력한다<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_07.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td > <font size="-1"> <b>2.2 MINITAB의 실행 </b><br>
+            <BR>
+            ① Stat > Control Charts > Moving Range<BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_08.gif  border=0 align=center><BR>
+            <BR>
+            <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ② Variable에 투과율(%)이 포함된 열을 선택한다. <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_09.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> [Tests] <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_10.gif  border=0 align=center><br>
+            <br>
+            <BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> ③ OK를 클릭한다. <br>
+            <BR>
+            <b> 2.3 결과 해석</b><BR>
+            <BR>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"><img src=images/MovingRange_11.gif  border=0 align=center><BR>
+            <BR>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td ><font size="-1"> 위의 그래프를 보면 모든 점들이 관리한계선 내에 있으므로 이 프로세스는 
+            공정에 이상이 없는 것으로 판단한다. <br>
+            <br>
+            </font>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="images/copy.gif" width="271" height="26"> 
+            </div>
+            <font size="-1"><BR>
+            </font></td>
+        </tr>
+      </table>
+    </tr>
+</table>
+
+
+
+
+</BODY>
+</HTML>

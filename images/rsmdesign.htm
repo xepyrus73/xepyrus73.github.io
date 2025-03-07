@@ -1,0 +1,211 @@
+<HTML>
+<HEAD>
+<TITLE>반응표면(Response Surface) 실험의 설계</TITLE>
+<style><!--
+.leading200 { line-height: 200% }
+.leading180 { line-height: 180% }
+.leading150 { line-height: 150% }
+.leading100 { line-height: 100% }
+-->
+</style>
+</HEAD>
+<BODY  topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 BGCOLOR="#FFFFFF" onLoad="">
+<table border=0 cellpadding=0 cellspacing=0 width=580>
+  <tr>
+    <td width=20>&nbsp;</td>
+    <td width="560"> 
+      <table border=0 cellpadding=0 cellspacing=0 width=560>
+        <tr> 
+          <td> <font size="4" color="#a70105"><b><br>
+            <br>
+            <A name="1"></a> 반응표면(Response Surface) 실험의 설계<br>
+            </b></font><br>
+              <br>
+              <br>
+            <font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">반응표면 
+            실험의 개요<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">반응표면 
+            실험의 생성<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">현재의 
+            반응표면 실험을 변경하여 재 지정할 경우<br>
+            <br>
+            <br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <b><font size="3">반응표면 실험의 개요</font></b><br>
+            </font></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td> 
+            </td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> <br>
+            <br>
+            <b><font size="2">1. 반응표면(Response Surface) 실험이란?</font></b><br>
+            <br>
+            하나 또는 그 이상의 반응변수와 이에 영향을 주는 설명변수(실험변수, 인자) 또는 인자의 조합과의 관계를 규명하는데 사용하는 
+            실험계획 방법이다. 반응표면 분석의 목적은 반응변수를 최적화할 수 있는 인자의 조건을 찾는데 있다. 예를 들어 어떤 화학반응에 
+            있어서 그 반응량이 온도와 시간에 따라 변화한다고 하면, 온도와 시간은 설명 변수(인자)이고, 반응량이 반응변수가 된다. 
+            여기서, 온도와 시간의 변화에 따라 어떤 반응표면(Response Surface)을 갖게 되며 어떠한 값에서 반응량이 
+            최적화될 것인가를 찾아낸다. <br>
+            <br>
+            <br>
+            <b><font size="2">2. 반응표면 실험의 적용</font></b></font></td>
+        </tr>
+        <tr> 
+          <td> <font size="-1"> <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">최적의 
+            반응을 나타내는 인자의 조건을 찾아내고자 한다.<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">작업조건 
+            또는 공정 규격을 만족하는 인자의 조건을 알아내고자 한다. <br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">인자(설명 
+            변수)들과 반응변수 간의 관계를 모델화하여 인자에 따라 반응변수의 값이 어떻게 달라지는가를 알아내고자 한다. <br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">가장 
+            적은 수의 실험으로 가장 좋은 정도를 주는 실험계획법이 무언인가를 알아본다.<br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">현재 
+            조건에서의 품질수준 보다 개선된 품질을 생산할 수 있는 새로운 조건을 확인하고자 한다. <br>
+            <br>
+            <br>
+            <b><font size="2">3. 반응표면 모형</font></b><br>
+            <br>
+            <br>
+            설명변수 <img src="images/rsmdesign_01.gif" width="137" height="30" align="absmiddle">와 
+            반응변수 <img src="images/rsmdesign_02.gif" width="19" height="20" align="absmiddle">간의 
+            미지의 함수를 <img src="images/rsmdesign_03.gif" width="22" height="25" align="absmiddle">로 
+            나타내면 <img src="images/rsmdesign_04.gif" width="221" height="29" align="absmiddle">가 
+            된다. 실제로 이와 같은 반응함수는 알려져 있는 경우가 거의 없다. K 개의 독립변수에 대한 중회귀 모형(Multiple 
+            Regression Model)이 반응함수로 가장 많이 사용된다. 설명변수를 다음과 같이 선형변환을 시켜서 새로운 설명변수를 
+            정의하고,<br>
+            <br>
+            <br>
+            <img src="images/rsmdesign_05.gif" width="323" height="52"><br>
+            <br>
+            <br>
+            중심 <img src="images/rsmdesign_06.gif" width="329" height="29" align="absmiddle">은 
+            실험자가 생각하는 흥미영역의 한 가운데에 위치 한다고 하자.<br>
+            <img src="images/rsmdesign_07.gif" width="242" height="28" align="absmiddle">는 
+            의 값이 -1에서 1사이에 위치하게 정한다. <br>
+            <br>
+            <br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">1차 
+            회귀 모형일 경우 새로이 정의된 설명변수에 의해 다음과 같이 표현된다. <br>
+            <br>
+            <img src="images/rsmdesign_08.gif" width="427" height="27" align="absmiddle"> 
+            이고 서로 독립<br>
+            <br>
+            <br>
+            <img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12">2차 
+            회귀 모형일 경우 반응표면이 곡면으로 표현될 것이라고 믿어진다면 그 표면은 다음과 같이 표현된다. <br>
+            <br>
+            <br>
+            <img src="images/rsmdesign_09.gif" width="448" height="39"><br>
+            <font size="2"><b><br>
+            4. 반응표면 실험계획의 종류 <br>
+            <br>
+            </b>① 반응표면의 추정식이 1차 회귀 모형일 때 흔히 사용되는 실험계획 <b><br>
+            <br>
+            </b></font><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font><font size="2">2수준 
+            완전요인 배치법(또는 2수준 부분요인 배치법)<b><br>
+            </b></font><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font><font size="2">심플렉스 
+            계획법(Simplex Method)<b><br>
+            <br>
+            </b>② 반응표면의 추정식이 2차 회귀 모형일 때 흔히 사용되는 실험계획<b><br>
+            <br>
+            </b></font><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font><font size="2">중심합성법(Central 
+            Composite Design) <b><br>
+            </b></font><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font><font size="2">Box 
+            - Behnken 법 <br>
+            <br>
+            <b>5. 최적 반응조건(정상점)의 결정</b><br>
+            <br>
+            5.1 정상점이란?<br>
+            <br>
+            <img src="images/rsmdesign_10.gif" width="506" height="81"><br>
+            <br>
+            <br>
+            <img src="images/rsmdesign_11.gif" width="520" height="184"> <br>
+            <br>
+            <img src="images/rsmdesign_12.gif" width="545" height="130"><br>
+            <b><br>
+            5.2 정상점의 의미<br>
+            <br>
+            </b></font><font size="-1"></font><font size="2">이 정상점은 적합된 2차 반응표면에서 
+            다음의 세가지 중 하나가 된다. <br>
+            </font><font size="-1"><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font></font><font size="2"><img src="images/rsmdesign_13_01.gif" width="16" height="28" align="absmiddle">이 
+            최대가 되는</font><font size="-1"><font size="2"><img src="images/rsmdesign_13_02.gif" width="18" height="18" align="absmiddle"></font></font><font size="2"> 
+            의 점 <br>
+            </font><font size="-1"><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font></font><font size="-1"><font size="2"><img src="images/rsmdesign_13_01.gif" width="16" height="28" align="absmiddle"></font></font><font size="2">이 
+            최소가 되는</font><font size="-1"><font size="2"><img src="images/rsmdesign_13_02.gif" width="18" height="18" align="absmiddle"></font></font><font size="2"> 
+            의 점 <br>
+            </font><font size="-1"><font size="-1"><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font></font></font><font size="-1"><font size="2"><img src="images/rsmdesign_13_01.gif" width="16" height="28" align="absmiddle"></font></font><font size="2">이 
+            최대도 아니고 최소도 아닌 </font><font size="-1"><font size="2"><img src="images/rsmdesign_13_02.gif" width="18" height="19" align="absmiddle"></font></font><font size="2">의 
+            안부점(Saddle Point )<br>
+            <br>
+            <img src="images/rsmdesign_15.gif" width="476" height="59"> <br>
+            <br>
+            <b>6. 반응표면 실험의 설계 <br>
+            </b><br>
+            6.1 중심합성법(Central Composite)<br>
+            <br>
+            2k 요인실험점 과 Cube 점, 축점(Axial point), 별점 (Star point),중심점(Center point) 
+            등으로 구성되어 있다. <br>
+            <br>
+            <img src="images/rsmdesign_16.gif" width="276" height="190"> <br>
+            <br>
+            6.2 Box-Behnken법<br>
+            <br>
+            아래의 그림은 3인자에 대한 Box-Behnken법의 예이다. 그림에서 각 점은 실험이 수행되는 실험점이다. <br>
+            <br>
+            <img src="images/rsmdesign_17.gif" width="226" height="189"> <br>
+            <br>
+            </font><font size="-1"><font size="-1"><font size="-1"><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font></font></font></font><font size="2">중심합성법 
+            보다 적은 실험점을 가지고 있다. <br>
+            </font><font size="-1"><font size="-1"><font size="-1"><font size="-1"><img src="%BB%F5%20%C6%FA%B4%F5/IMAGES/Point.gif" width="11" height="12"></font></font></font></font><font size="2">축점에서는 
+            실험이 이루어지지 않는다. <br>
+            <br>
+            공정의 운영조건을 알고 있을 때 운영조건 안에서 유용하게 실험할 수 있다. </font></font></td>
+        </tr>
+        <tr> 
+          <td ></td>
+        </tr>
+        <tr> 
+          <td> </td>
+        </tr>
+        <tr> 
+          <td><font size="-1"> </font></td>
+        </tr>
+        <tr> 
+          <td> <br>
+            <hr size=1 color=#C0BDD6 width=90% align=center>
+            <div align="center"><img src="%BB%F5%20%C6%FA%B4%F5/images/copy.gif" width="271" height="26"> 
+              <br>
+            </div>
+            <font size="-1"></font><br>
+          </td>
+        </tr>
+      </table>
+
+
+
+
+
+</table>
+<br>
+</BODY>
+</HTML>
