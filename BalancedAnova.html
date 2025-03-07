@@ -1,4 +1,7 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+</head>
 <title>Balanced ANOVA</title>
 
 <style><!--
@@ -29,28 +32,28 @@
             </center>
             <br>
             <br>
-            <font size="-1">Balanced ANOVA´Â ´Ù¼öÀÇ ÀÎÀÚ¿¡ ´ëÇÏ¿© °¾ ÁÖÈ¿°ú ¹× ±³È£ÀÛ¿ë µîÀ» ºÐ¼®ÇÑ´Ù. 
-            ¸ð¼ö¸ðÇü, È¥ÇÕ¸ðÇü µîÀ» ºÐ¼®ÇÒ ¼ö ÀÖÀ¸¸ç ÀûÀýÇÑ ±¸Á¶½ÄÀ» ÀÔ·ÂÇÏ¿© ¿©·¯ ÇüÅÂÀÇ ½ÇÇè¸ðÇüÀ» ºÐ¼®ÇÒ ¼ö ÀÖ´Ù. ¶Ç °¢ Ã³¸® 
-            ¼öÁØÀÇ Á¶ÇÕ¿¡¼­ ¾ò¾îÁø ÃøÁ¤°ªÀÇ °³¼ö°¡ ¸ðµÎ °°Àº µ¥ÀÌÅÍÀÎ ±ÕÇü¼³°è(Balanced Design) µ¥ÀÌÅÍ¸¦ ºÐ¼®ÇÑ´Ù. 
-            ºÒ±ÕÇü¼³°è (Unbalanced Design) µ¥ÀÌÅÍ´Â <A HREF=AnovaGLM.html>General Linear 
-            Model</a>¿¡¼­ ºÐ¼®ÇÑ´Ù. <br>
+            <font size="-1">Balanced ANOVA Ù¼ Ú¿ Ï¿  È¿  È£Û¿  Ð¼Ñ´. 
+            , È¥Õ¸  Ð¼     Ô·Ï¿    Ð¼  Ö´.   Ã³ 
+             Õ¿       (Balanced Design) Í¸ Ð¼Ñ´. 
+            Ò± (Unbalanced Design) Í´ <A HREF=AnovaGLM.html>General Linear 
+            Model</a> Ð¼Ñ´. <br>
             <br>
-            µ¥ÀÌÅÍ ±¸Á¶ÀÇ MINITAB Ç¥Çö : ÀÎÀÚ°¡ A, B, C ¼¼ °³ÀÏ °æ¿ì AÀÇ È¿°ú, BÀÇ È¿°ú, CÀÇ È¿°ú, A¿Í BÀÇ 
-            ±³È£ÀÛ¿ë, A¿Í B¿Í CÀÇ ±³È£ÀÛ¿ëÀ» ºÐ¼®ÇÏ·Á¸é MINITABÀÇ ´ëÈ­»óÀÚÀÇ Model¶õ¿¡ 'A B C A<sup>*</sup>B 
-            A<sup>*</sup>B<sup>*</sup>C '·Î ÀÔ·ÂÇÑ´Ù. ¸¸ÀÏ AÀÇ È¿°ú, BÀÇ È¿°ú, CÀÇ È¿°ú, A¿Í BÀÇ 
-            ±³È£ÀÛ¿ë ¸¸À» ºÐ¼®ÇÏ·Á¸é Model¶õ¿¡ 'A B C A<sup>*</sup>B'¸¦ ÀÔ·ÂÇÑ´Ù.<br>
+              MINITAB Ç¥ : Ú° A, B, C    A È¿, B È¿, C È¿, A B 
+            È£Û¿, A B C È£Û¿ Ð¼Ï· MINITAB È­ Model 'A B C A<sup>*</sup>B 
+            A<sup>*</sup>B<sup>*</sup>C ' Ô·Ñ´.  A È¿, B È¿, C È¿, A B 
+            È£Û¿  Ð¼Ï· Model 'A B C A<sup>*</sup>B' Ô·Ñ´.<br>
             <br>
-            Balanced ANOVA¸¦ Àû¿ëÇÏ±â À§ÇØ¼­´Â µ¥ÀÌÅÍÀÇ Á¤±Ô¼º ¹× µîºÐ»ê¼ºÀ» È®ÀÎÇÏ¿©¾ß ÇÏ¸ç, ÀÌ¸¦ °ËÁ¤ÇÏ±â À§ÇØ¼­´Â 
-            MINITABÀÇ<A HREF=NormalTest.html> Normality Test</a> ¿Í <a href="equal_var.htm">Test 
-            for Equal variances</a>¸¦ È°¿ëÇÑ´Ù. Test for Equal variances´Â °úÁ¤¿¡¼­ ¼³¸íÇÑ´Ù.<br>
+            Balanced ANOVA Ï± Ø¼  Ô¼  Ð»ê¼º È®Ï¿ Ï¸, Ì¸ Ï± Ø¼ 
+            MINITAB<A HREF=NormalTest.html> Normality Test</a>  <a href="equal_var.htm">Test 
+            for Equal variances</a> È°Ñ´. Test for Equal variances  Ñ´.<br>
             <br>
             <br>
             </font><br>
-            <font size=3><b><font size="2">1. MINITABÀ» »ç¿ëÇÑ Balanced ANOVA <a href="data/Anova04.zip">(µ¥ÀÌÅÍ : Anova04.mtw)</a></font></b></font><br>
+            <font size=3><b><font size="2">1. MINITAB  Balanced ANOVA <a href="data/Anova04.zip">( : Anova04.mtw)</a></font></b></font><br>
             <br>
-            <font size="-1">ÇÃ¶ó½ºÆ½ °¡°ø½Ã »ç¿ëµÇ´Â Ã·°¡Á¦ ÁßÀÇ ÇÏ³ª´Â Á¦Ç°ÀÇ Åõ°úÀ²ÀÌ Áß¿äÇÑ Æ¯¼ºÀÌ´Ù. Åõ°úÀ²À» ³ôÀÌ±â 
-            À§ÇØ 3ÀÎÀÚ 2¼öÁØÀÇ ½ÇÇèÀ» ¹Ýº¹ 2È¸¾¿ ½Ç½ÃÇÏ¿´´Ù. ½ÇÇè¿¡¼­ °í·ÁÇÑ ÀÎÀÚ´Â HH ´ç·®(0.9, 1.5) 2¼öÁØ, ¼öºÐ 
-            ÇÔ·® (1%, 17%) 2¼öÁØ, È²»ê ´ç·®(1.3, 1.8) 2¼öÁØÀÌ¸ç ÆíÀÇ»ó ÀÎÀÚ ³»ÀÇ °¢ ¼öÁØÀ» -1°ú 1·Î Ç¥½ÃÇß´Ù.<br>
+            <font size="-1">Ã¶Æ½  Ç´ Ã·  Ï³ Ç°  ß¿ Æ¯Ì´.  Ì± 
+             3 2  Ýº 2È¸ Ç½Ï¿. è¿¡  Ú´ HH ç·®(0.9, 1.5) 2,  
+            Ô· (1%, 17%) 2, È² ç·®(1.3, 1.8) 2Ì¸ Ç»     -1 1 Ç¥ß´.<br>
             <br>
             </font> </td>
         </tr>
@@ -62,9 +65,9 @@
           </td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â</b><br>
+          <td > <font size="-1"><b>1.1  Ô·</b><br>
             <br>
-            MINITAB worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+            MINITAB worksheet Æ· Í¸ Ô·Ñ´. <br>
             </font></td>
         </tr>
         <tr> 
@@ -76,9 +79,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.2 ºÐ»êºÐ¼®À» ½Ç½ÃÇÑ´Ù.</b><br>
+          <td > <font size="-1"><b>1.2 Ð»Ð¼ Ç½Ñ´.</b><br>
             <br>
-            ¨ç Stat > ANOVA > Balanced ANOVA<br>
+             Stat > ANOVA > Balanced ANOVA<br>
             </font></td>
         </tr>
         <tr> 
@@ -90,10 +93,10 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨è Responses¶õ¿¡ 'Åõ°úÀ²(%)'À» ÀÔ·ÂÇÑ´Ù. ¸ðµç ÀÎÀÚ¿¡ 
-            ´ëÇÑ ÁÖÈ¿°ú¿Í ±³È£ÀÛ¿ëÀ» ºÐ¼®ÇÏ¹Ç·Î Model¶õ¿¡ 'HH´ç·®' 'È²»ê´ç·®' '¼öºÐÇÔ·®' 'HH´ç·®'<sup>*</sup>'È²»ê´ç·®' 
-            'HH´ç·®'<sup>*</sup> '¼öºÐÇÔ·®' 'È²»ê´ç·®'<sup>*</sup>'¼öºÐÇÔ·®' 'HH´ç·®'<sup>*</sup>'È²»ê´ç·®'<sup>*</sup>'¼öºÐÇÔ·®'À» 
-            ÀÔ·ÂÇÑ´Ù.<br>
+          <td ><font size="-1">  Responses '(%)' Ô·Ñ´.  Ú¿ 
+             È¿ È£Û¿ Ð¼Ï¹Ç· Model 'HHç·®' 'È²ç·®' 'Ô·' 'HHç·®'<sup>*</sup>'È²ç·®' 
+            'HHç·®'<sup>*</sup> 'Ô·' 'È²ç·®'<sup>*</sup>'Ô·' 'HHç·®'<sup>*</sup>'È²ç·®'<sup>*</sup>'Ô·' 
+            Ô·Ñ´.<br>
             <br>
             </font></td>
         </tr>
@@ -105,9 +108,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨é OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù. <br>
+          <td ><font size="-1">  OK Æ° Å¬Ñ´. <br>
             <br>
-            <b> [ Session Ã¢¿¡ ³ªÅ¸³­ °á°ú ]</b></font> </td>
+            <b> [ Session Ã¢ Å¸  ]</b></font> </td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -119,8 +122,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> À¯ÀÇ¼öÁØ 5%¿¡¼­ °ËÁ¤ÇÏ¸é À§ °á°ú¿¡¼­ ¸ðµç ¿äÀÎ¿¡ ´ëÇÑ P-Value°¡ 
-            0.05ÀÌ»óÀÌ¹Ç·Î ¸ðµç ÁÖÈ¿°ú ¹× ±³È£ÀÛ¿ëÀº À¯ÀÇÇÏÁö ¾Ê´Ù´Â °á·ÐÀ» ³»¸± ¼ö ÀÖ´Ù. <br>
+          <td ><font size="-1"> Ç¼ 5% Ï¸    Î¿  P-Value 
+            0.05Ì»Ì¹Ç·  È¿  È£Û¿  Ê´Ù´    Ö´. <br>
             <br>
             </font>
             <hr size=1 color=#C0BDD6 width=90% align=center>

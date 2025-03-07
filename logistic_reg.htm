@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>·ÎÁö½ºÆ½ È¸±ÍºÐ¼® (Logistic Regression)</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+<title>Æ½ È¸ÍºÐ¼ (Logistic Regression)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script language="JavaScript" src="test.js"></script>
 </head>
@@ -21,77 +23,77 @@
         <tr> 
           <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
             <br>
-            <font size="4" color="#a70105"><b><font color="#a70105">·ÎÁö½ºÆ½ È¸±ÍºÐ¼® 
+            <font size="4" color="#a70105"><b><font color="#a70105">Æ½ È¸ÍºÐ¼ 
             (Logistic Regression)</font></b></font><br>
             <br>
             <br>
-            <font size="-1">Á¾¼Óº¯¼ö°¡ ¹üÁÖÇü µ¥ÀÌÅÍ(Categorical data)ÀÏ ¶§, ÇÏ³ª È¤Àº ±× ÀÌ»óÀÇ µ¶¸³º¯¼ö¿Í 
-            Á¾¼Óº¯¼öÀÇ ¼±ÇüÀûÀÎ °ü°è¸¦ ±Ô¸íÇÏ±â À§ÇÑ È¸±ÍºÐ¼® ¹æ¹ýÀ» ¸»ÇÑ´Ù.<br>
+            <font size="-1">Óº  (Categorical data) , Ï³ È¤  Ì»  
+            Óº  è¸¦ Ô¸Ï±  È¸ÍºÐ¼  Ñ´.<br>
             <br>
             <br>
-            <b><font size="2">1. ¼±Çü È¸±ÍºÐ¼®°ú ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®ÀÇ Â÷ÀÌÁ¡</font></b><br>
+            <b><font size="2">1.  È¸ÍºÐ¼ Æ½ È¸ÍºÐ¼ </font></b><br>
             <br>
             <img src="images/Logistic_reg_01.gif" width="505" height="100"> <br>
             <br>
             <br>
-            <b><font size="2">2. ¹üÁÖÇü µ¥ÀÌÅÍÀÇ ÇüÅÂ ¹× ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®ÀÇ Á¾·ù</font></b><br>
+            <b><font size="2">2.     Æ½ È¸ÍºÐ¼ </font></b><br>
             <br>
             <img src="images/Logistic_reg_02.gif" width="560" height="101"> <br>
             <br>
-            <b><font size="2">3. ·ÎÁö½ºÆ½ ¹ÝÀÀÇÔ¼ö</font></b> <br>
+            <b><font size="2">3. Æ½ Ô¼</font></b> <br>
             <br>
-            Á¾¼Óº¯¼ö°¡ °¡º¯¼öÀÎ °æ¿ì¿¡ ¹ÝÀÀÇÔ¼öÀÇ ¸ð¾çÀÌ ¾Æ·¡±×¸²°ú °°ÀÌ<i> S</i> Çü °î¼±À» ±×¸®´Â °æ¿ì°¡ ½ÇÁ¦·Î ¸¹ÀÌ ³ªÅ¸³­´Ù. 
-            ÀÌ ¹ÝÀÀÇÔ¼ö´Â <i>x</i> °¡ Áõ°¡ÇÔ¿¡ µû¶ó <i>E(y)</i> ÀÇ °ªÀÌ 1·Î ¼­¼­È÷ ¼ö·ÅÇÏ´Â ¾ç»óÀ» º¸ÀÎ´Ù. ÀÌ·± 
-            ¸ð¾çÀÇ ¹ÝÀÀÇÔ¼ö´Â ¹ÝÀÀÇÔ¼öÀÇ Á¦¾à¼º<img src="images/Logistic_reg_03.gif" width="70" height="18" align="absmiddle">ÀÌ 
-            ÀúÀý·Î ¸¸Á·µÈ´Ù. <br>
+            Óº  ì¿¡ Ô¼  Æ·×¸ <i> S</i>  î¼± ×¸ ì°¡   Å¸. 
+             Ô¼ <i>x</i>  Ô¿  <i>E(y)</i>   1  Ï´  Î´. Ì· 
+             Ô¼ Ô¼ à¼º<img src="images/Logistic_reg_03.gif" width="70" height="18" align="absmiddle"> 
+             È´. <br>
             <br>
             <img src="images/Logistic_reg_04.gif" width="323" height="246"> <br>
             <br>
-            À§¿Í °°Àº ÇÔ¼ö¸¦ ·ÎÁö½ºÆ½ ÇÔ¼ö(logistic function)¶ó ºÎ¸£°í<br>
+              Ô¼ Æ½ Ô¼(logistic function) Î¸<br>
             <br>
             <b></b><img src="images/Logistic_reg_05.gif" width="158" height="49"> 
             <br>
             <br>
-            <b></b>À¸·Î Ç¥ÇöµÈ´Ù.<br>
-            Âü°íÀûÀ¸·Î ·ÎÁö½ºÆ½ È¸±ÍºÐ¼® ½Ã ÀÏ¹ÝÀûÀ¸·Î »ç¿ëµÇ´Â È¸±Í½ÄÀº À§¿Í °°À¸¸ç, Æ¯¼öÇÑ °æ¿ì¿¡´Â ´Ù¸¥ È¸±Í½ÄÀ» »ç¿ëÇÒ ¼öµµ 
-            ÀÖ´Ù. <b></b><br>
+            <b></b> Ç¥È´.<br>
+             Æ½ È¸ÍºÐ¼  Ï¹ Ç´ È¸Í½  , Æ¯ ì¿¡ Ù¸ È¸Í½   
+            Ö´. <b></b><br>
             <br>
             <b></b><b><font size="2"><a name="1"></a></font></b><img src="images/bin.gif" width="19" height="15"><br>
             <br>
             <br>
             <br>
-            <b><font size="2">4. ÀÌÁø ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®(Binary Logistic Regression) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/binary_logistic.zip">(µ¥ÀÌÅÍ : 
+            <b><font size="2">4.  Æ½ È¸ÍºÐ¼(Binary Logistic Regression) <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/binary_logistic.zip">( : 
             binary_logistic.mtw)</a> </font></b><br>
             <br>
-            Á¤ÂûÁ¦¸¦ ½ÃÇàÇØ¿À´ø ÀÌµ¿Åë½Å ´Ü¸»±â ´ë¸®Á¡¿¡¼­ ºÒ°æ±â ±â°£¿¡ ¸Å»ó°í¸¦ ¿Ã¸®±â À§ÇÏ ¿© ÇÒÀÎÆÇ¸Å¸¦ ½Ç½Ã ÇÏ¿´´Ù. Ã¹ ÁÖ¿¡ 
-            Á¤°¡ÀÇ 5%¸¦ ÇÒÀÎÇÏ¿© ÁÖ¾ú´õ´Ï ´ë¸®Á¡¿¡ Ã£¾Æ¿Â ¼±Âø¼ø 400¸íÀÇ °í°´ Áß¿¡¼­ 64¸íÀÌ ´Ü¸»±â¸¦ »ò°í µÎ ¹øÂ° ÁÖÀÏ¿¡ 
-            10%¸¦ ÇÒÀÎÇÏ¿´´õ´Ï Ã£¾Æ¿Â 400¸íÀÇ °í°´ Áß¿¡¼­ 102¸íÀÌ ´Ü¸»±â¸¦ »ò´Ù. ÀÌ¿Í °°Àº ¹æ¹ýÀ¸·Î 5ÁÖ°£¿¡ °ÉÃÄ Á¡Â÷ÀûÀ¸·Î 
-            ÇÒÀÎÀ²À» ³ô¿©°¡¸ç ÇÒÀÎÆÇ¸ÅÀÇ °á°ú°¡ ¾Æ·¡ Ç¥¿Í °°´Ù. <br>
-            ÆÇ¸ÅÀ² (±¸¸Å °í°´ ¼ö ¡¿100% / °í°´ ¼ö) y¿Í ÇÒÀÎ·ü (%) x°£¿¡ ·ÎÁö½ºÆ½ È¸±Í°ü°è¸¦ °¡Á¤ÇÏ°í ¾Æ·¡ µ¥ÀÌÅÍ¸¦ 
-            »ç¿ëÇÏ¿© ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®À» ½ÇÇàÇØ º¸ÀÚ.<br>
+             Ø¿ Ìµ Ü¸ ë¸® Ò° â°£ Å» Ã¸   Ç¸Å¸ Ç½ Ï¿. Ã¹ Ö¿ 
+             5% Ï¿ Ö¾ ë¸® Ã£Æ¿  400  ß¿ 64 Ü¸â¸¦   Â° Ï¿ 
+            10% Ï¿ Ã£Æ¿ 400  ß¿ 102 Ü¸â¸¦ . Ì¿   5Ö°   
+              Ç¸  Æ· Ç¥ . <br>
+            Ç¸ (   100% /  ) y Î· (%) x Æ½ È¸Í°è¸¦ Ï° Æ· Í¸ 
+            Ï¿ Æ½ È¸ÍºÐ¼  .<br>
             <br>
             <img src="images/Logistic_reg_06.gif" width="295" height="125"> <br>
             <br>
             <br>
-            4.1 µ¥ÀÌÅÍ ÀÔ·Â <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+            4.1  Ô· <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet Æ· Í¸ Ô·Ñ´. <br>
             <br>
             <img src="images/Logistic_reg_07.gif" width="342" height="195"><br>
             <br>
             <br>
-            4.2 Binary Logistic È¸±ÍºÐ¼®À» ½Ç½ÃÇÑ´Ù.<br>
+            4.2 Binary Logistic È¸ÍºÐ¼ Ç½Ñ´.<br>
             <br>
-            ¨ç Stat > Regression > Binary Logistic Regression ¼±ÅÃ<br>
+             Stat > Regression > Binary Logistic Regression <br>
             <br>
             <img src="images/Logistic_reg_08.gif" width="595" height="305"> <br>
             <br>
-            * ¸¸¾à ¾Æ¹« °Íµµ ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é Model¿¡ ÁöÁ¤µÈ º¯¼ö´Â ¸ðµÎ Covariate·Î °¡Á¤ÇÑ´Ù. ÁÖÀÇÇÒ Á¡Àº ¿¬¼ÓÇü 
-            º¯¼ö´Â Covariate·Î, ¹üÁÖÇü º¯¼ö´Â Factor·Î ÁöÁ¤ÇØ¾ß ÇÑ´Ù.<br>
+            *  Æ¹ Íµ   Model    Covariate Ñ´.    
+             Covariate,   Factor Ø¾ Ñ´.<br>
             <br>
-            <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+            <b>Session Ã¢ Å¸  <br>
             <br>
-            Binary Logistic Regression: ±¸¸ÅÇÑ °í°´¼ö, °í°´¼ö versus x (ÇÒÀÎÀ²(%)) <br>
+            Binary Logistic Regression:  ,  versus x ((%)) <br>
             <br>
             <img src="images/Logistic_reg_09.gif" width="599" height="345"> <br>
             <br>
@@ -102,25 +104,25 @@
             <img src="images/Logistic_reg_12.gif" width="514" height="306"> <br>
             <br>
             <br>
-            </b>µû¶ó¼­, À§ÀÇ ·ÎÁö½ºÆ½ È¸±ÍºÐ¼® °á°ú¸¦ ÀÌ¿ëÇØ ¿¹¸¦ µé¾î, ÇÒÀÎÀ² (%) x = 6% ÀÏ ¶§ ±â´ëµÇ´Â ÆÇ¸ÅÀ² y(%)Àº 
+            </b>,  Æ½ È¸ÍºÐ¼  Ì¿  ,  (%) x = 6%   Ç´ Ç¸ y(%) 
             <br>
             <br>
             <img src="images/Logistic_reg_13.gif" width="305" height="46"> <br>
             <br>
-            À¸·Î ´ë·« 18%ÀÓÀ» ¾Ë ¼ö ÀÖ´Ù.<br>
+             ë·« 18%   Ö´.<br>
             <br>
             <br>
             <b><font size="2"><a name="2"></a></font></b><img src="images/bin.gif" width="19" height="15"><br>
             <br>
             <br>
             <br>
-            <b>5. ¼­¼öÇü ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®(Ordinal Logistic Regression) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/ordinal_logistic.zip">(µ¥ÀÌÅÍ 
+            <b>5.  Æ½ È¸ÍºÐ¼(Ordinal Logistic Regression) <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="data/ordinal_logistic.zip">( 
             : ordinal_logistic.mtw)</a></b></font> <br>
             <br>
-            <font size="-1">Á¦Á¶°øÀå¿¡¼­ ±â°èÀÇ ¼ö¸í½Ã°£¿¡ ¹ÌÄ¡´Â ÀÎÀÚ¸¦ °øÁ¤°ú Æò±Õ ±â°è ¿¬¼Ó°¡µ¿½Ã°£À¸·Î Å©°Ô ³ª´©¾î 
-            ºÐ¼®ÇÏ¿´´Ù. ±â°è¼ö¸í½Ã°£À» 2000½Ã°£ ÀÌ³»ÀÌ¸é Code1·Î 2000½Ã°£¿¡¼­ 4000½Ã°£ ÀÌ³»ÀÌ¸é Code2·Î 4000½Ã°£ 
-            ÀÌ»óÀÌ¸é Code3À¸·Î º¯È¯ÇÏ¿´´Ù. ¾Æ·¡ µ¥ÀÌÅÍ¸¦ ÅëÇÏ¿© ±â°è ¼ö¸í½Ã°£°ú ±× ÀÎÀÚµé¿¡ ´ëÇÑ ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®À» ÇàÇÏ¶ó. 
+            <font size="-1">å¿¡  Ã° Ä¡ Ú¸    Ó°Ã° Å©  
+            Ð¼Ï¿. Ã° 2000Ã° Ì³Ì¸ Code1 2000Ã° 4000Ã° Ì³Ì¸ Code2 4000Ã° 
+            Ì»Ì¸ Code3 È¯Ï¿. Æ· Í¸ Ï¿  Ã°  Úµé¿¡  Æ½ È¸ÍºÐ¼ Ï¶. 
             <br>
             <br>
             <img src="images/Logistic_reg_14.gif" width="476" height="478"> <br>
@@ -128,23 +130,23 @@
             <br>
             <br>
             <br>
-            5.1 µ¥ÀÌÅÍ ÀÔ·Â<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet ¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+            5.1  Ô·<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet  Æ· Í¸ Ô·Ñ´. <br>
             <br>
             <img src="images/Logistic_reg_16.gif" width="367" height="397"> <br>
             <br>
             <br>
-            5.2 ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®À» ½Ç½ÃÇÑ´Ù. <br>
+            5.2 Æ½ È¸ÍºÐ¼ Ç½Ñ´. <br>
             <br>
-            ¨ç Stat > Regression > Ordinal Logistic Regression ¼±ÅÃ<br>
+             Stat > Regression > Ordinal Logistic Regression <br>
             <br>
             <img src="images/Logistic_reg_17.gif" width="594" height="308"> <br>
             <br>
-            * ¸¸¾à ¾Æ¹« °Íµµ ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é Model¿¡ ÁöÁ¤µÈ º¯¼ö´Â ¸ðµÎ Covariate·Î °¡Á¤ÇÑ´Ù. ÁÖÀÇÇÒ Á¡Àº ¿¬¼ÓÇü 
-            º¯¼ö´Â Covariate·Î, ¹üÁÖÇü º¯¼ö´Â Factor·Î ÁöÁ¤ÇØ¾ß ÇÑ´Ù.<br>
+            *  Æ¹ Íµ   Model    Covariate Ñ´.    
+             Covariate,   Factor Ø¾ Ñ´.<br>
             <br>
             <br>
-            <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+            <b>Session Ã¢ Å¸  <br>
             <br>
             <img src="images/Logistic_reg_18.gif" width="535" height="576"> <br>
             <img src="images/Logistic_reg_19.gif" width="539" height="104"> <br>
@@ -154,31 +156,31 @@
             <b><br>
             <br>
             <br>
-            6. Nominal Logistic Regression <a href="data/nominal_logistic.zip">(µ¥ÀÌÅÍ 
+            6. Nominal Logistic Regression <a href="data/nominal_logistic.zip">( 
             : nominal_logistic.mtw)</a> <br>
             <br>
-            </b>ÀÚµ¿Â÷ È¸»çÀÇ ¿µ¾÷ºÎ¿¡¼­ °í°´ÀÌ ¼±È£ÇÏ´Â Â÷·®ÀÇ »ö±òÀ» ¼ºº°°ú ¼¼´ë¿¡ µû¶ó ±¸ºÐÇÏ ¿© ºÐ¼®ÇÑ µ¥ÀÌÅÍ°¡ ´ÙÀ½°ú °°´Ù. 
-            ¾Æ·¡ µ¥ÀÌÅÍ¸¦ ÀÌ¿ëÇÏ¿© ¼ºº°°ú ¼¼´ë¿¡ µû¶ó °í°´ÀÌ ¼±È£ÇÏ´Â Â÷·®ÀÇ »ö±ò¿¡ ´ëÇÑ ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®À» ÇàÇÏ¶ó. <br>
+            </b>Úµ È¸ Î¿  È£Ï´    ë¿¡    Ð¼ Í°  . 
+            Æ· Í¸ Ì¿Ï¿  ë¿¡   È£Ï´    Æ½ È¸ÍºÐ¼ Ï¶. <br>
             <br>
             <img src="images/Logistic_reg_21.gif" width="467" height="288"> <br>
             <br>
             <br>
-            6.1 µ¥ÀÌÅÍ ÀÔ·Â <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet ¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+            6.1  Ô· <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet  Æ· Í¸ Ô·Ñ´. <br>
             <br>
             <img src="images/Logistic_reg_23.gif" width="290" height="317"> <br>
             <br>
             <br>
-            6.2 ·ÎÁö½ºÆ½ È¸±ÍºÐ¼®À» ½Ç½ÃÇÑ´Ù. <br>
+            6.2 Æ½ È¸ÍºÐ¼ Ç½Ñ´. <br>
             <br>
-            ¨ç Stat > Regression > Ordinal Logistic Regression ¼±ÅÃ <br>
+             Stat > Regression > Ordinal Logistic Regression  <br>
             <br>
             <img src="images/Logistic_reg_24.gif" width="600" height="297"><br>
             <br>
-            * ¸¸¾à ¾Æ¹« °Íµµ ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é Model¿¡ ÁöÁ¤µÈ º¯¼ö´Â ¸ðµÎ Covariate·Î °¡Á¤ÇÑ´Ù. ÁÖÀÇÇÒ Á¡Àº ¿¬¼ÓÇü 
-            º¯¼ö´Â Covariate·Î, ¹üÁÖÇü º¯¼ö´Â Factor·Î ÁöÁ¤ÇØ¾ß ÇÑ´Ù. <br>
+            *  Æ¹ Íµ   Model    Covariate Ñ´.    
+             Covariate,   Factor Ø¾ Ñ´. <br>
             <br>
-            <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+            <b>Session Ã¢ Å¸  <br>
             <br>
             <img src="images/Logistic_reg_25.gif" width="626" height="170"> <br>
             <br>

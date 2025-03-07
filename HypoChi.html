@@ -1,5 +1,8 @@
 <html>
-<title>Ä«ÀÌÁ¦°ö(Chi-Square) °ËÁ¤</title>
+<head>
+    <meta charset="UTF-8">
+</head>
+<title>Ä«(Chi-Square) </title>
 
 <style><!--
 .leading200 { line-height: 200% }
@@ -21,33 +24,33 @@
             <div align="left"><font size="4" color="#a70105"><b><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/b_basic01_on.gif',1)"><img src="images/b_basic01.gif" width="55" height="24" border="0" name="Image1"></a><a href="hypochi2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/b_pro_on.gif',1)"><img src="images/b_pro.gif" width="55" height="24" border="0" name="Image2"></a></b></font> 
               <br>
               <br>
-              <a name= "1"></a><font size="4" color="#a70105"><b>Ä«ÀÌÁ¦°ö(Chi-Square) 
-              °ËÁ¤</b></font><br>
+              <a name= "1"></a><font size="4" color="#a70105"><b>Ä«(Chi-Square) 
+              </b></font><br>
               <br>
               <b><font size="3">Stat&gt;Tables&gt;Chi-Square Test</font></b> <br>
               <br>
               <font size="2"><br>
-              <b> <font size="3"> µ¶¸³¼º °ËÁ¤(Test for Independence)</font></b></font> 
+              <b> <font size="3">  (Test for Independence)</font></b></font> 
               <br>
               <br>
-              <font size="-1">¿¹¸¦ µé¾î ±Ù¼Ó³â¼ö°ú Á÷¾÷¸¸Á·µµ °£ÀÇ °ü°è ¶Ç´Â ¼ºº°¿¡ µû¸¥ ºÎ¼­¼±È£µµÀÇ °ü·Ã¼ºÀ» ¾Ë±â 
-              À§ÇØ ½Ç½ÃÇÏ´Â °ËÁ¤ÀÌ´Ù. µÎ ¿äÀÎ °£¿¡ °ü·Ã¼ºÀÌ ÀÖ´ÂÁö ¶Ç´Â ¾ø´ÂÁö, Áï ¼­·Î µ¶¸³ÀÎÁö ¾Æ´ÑÁö¸¦ °ËÁ¤ÇÑ´Ù. °¡¼³Àº 
-              ´ÙÀ½°ú °°´Ù.<br>
+              <font size="-1">  Ù¼Ó³    Ç´   Î¼È£ Ã¼ Ë± 
+               Ç½Ï´ Ì´.    Ã¼ Ö´ Ç´ ,    Æ´ Ñ´.  
+               .<br>
               <br>
-              ±Í¹«°¡¼³ H<sub>0</sub> : ¿äÀÎ A, B°¡ ¼­·Î µ¶¸³ÀÌ´Ù.<br>
-              ´ë¸³°¡¼³ H<sub>1</sub> : H<sub>0</sub>°¡ ¾Æ´Ï´Ù.<br>
+              Í¹ H<sub>0</sub> :  A, B  Ì´.<br>
+              ë¸³ H<sub>1</sub> : H<sub>0</sub> Æ´Ï´.<br>
               <br>
-              À¯ÀÇ¼öÁØÀÌ 5%ÀÏ °æ¿ì °è»êµÈ P-value°¡ 0.05ÀÌÇÏÀÌ¸é ±Í¹«°¡¼³À» ±â°¢ÇÑ´Ù. Áï µÎ ¿äÀÎ A¿Í B´Â ¼­·Î µ¶¸³ÀÌ 
-              ¾Æ´Ï¶ó´Â °á·ÐÀ» ³»¸°´Ù.<br>
+              Ç¼ 5%   P-value 0.05Ì¸ Í¹ â°¢Ñ´.    A B   
+              Æ´Ï¶  .<br>
               </font><br>
               <br>
               <br>
-              <font size=2><b> 1. MINITABÀ» »ç¿ëÇÑ µ¶¸³¼º °ËÁ¤ <a href="data/Hypo06.zip">(µ¥ÀÌÅÍ 
+              <font size=2><b> 1. MINITAB    <a href="data/Hypo06.zip">( 
               : Hypo06.mtw)</a></b></font><br>
               <br>
-              <font size="-1">È¸»ç ³»ÀÇ ¼ºº°°ú ºÎ¼­ ¼±È£µµ °£ÀÇ °ü·Ã¼ºÀ» Á¶»çÇÏ±â À§ÇÏ¿© 100¸íÀ» ÀÓÀÇ·Î ÃßÃâ ÇÏ¿© 
-              ´ÙÀ½ÀÇ µ¥ÀÌÅÍ¸¦ ¾ò¾ú´Ù. ±×·¯¸é ÀÌ ÀÚ·á¸¦ ÀÌ¿ëÇÏ¿© ¼ºº°°ú ºÎ¼­ ¼±È£µµ°¡ ¼­·Î ¿µÇâÀ» ¹ÌÄ¡°í ÀÖ´ÂÁö <I><font face="Symbol">a</font></I><font face="Arial, Helvetica, sans-serif"> 
-              </font>= 0.05·Î °ËÁ¤ÇÏ¶ó.<br>
+              <font size="-1">È¸   Î¼ È£  Ã¼ Ï± Ï¿ 100 Ç·  Ï¿ 
+               Í¸ . ×·  Ú·á¸¦ Ì¿Ï¿  Î¼ È£   Ä¡ Ö´ <I><font face="Symbol">a</font></I><font face="Arial, Helvetica, sans-serif"> 
+              </font>= 0.05 Ï¶.<br>
               <br>
               </font> </div>
           </td>
@@ -58,15 +61,15 @@
           </td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ±Í¹«°¡¼³ H<sub>0</sub> : ¼ºº°°ú ºÎ¼­ ¼±È£µµ´Â ¼­·Î 
-            ¿µÇâÀ» ¹ÌÄ¡Áö ¾Ê´Â´Ù. Áï, ¼­·Î µ¶¸³ÀÌ´Ù.<br>
-            ´ë¸³°¡¼³ H<sub>1</sub> : H<sub>0</sub>°¡ ¾Æ´Ï´Ù.<br>
+          <td ><font size="-1"> Í¹ H<sub>0</sub> :  Î¼ È£  
+             Ä¡ Ê´Â´. ,  Ì´.<br>
+            ë¸³ H<sub>1</sub> : H<sub>0</sub> Æ´Ï´.<br>
             <br>
             <br>
             <br>
-            <b> 1.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â </b><br>
+            <b> 1.1  Ô· </b><br>
             <br>
-            MINITAB Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù<br>
+            MINITAB Worksheet Æ· Í¸ Ô·Ñ´<br>
             <br>
             </font></td>
         </tr>
@@ -78,9 +81,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b> 1.2 MINITABÀÇ ½ÇÇà</b><br>
+          <td > <font size="-1"><b> 1.2 MINITAB </b><br>
             <br>
-            ¨ç Stat > Tables > Cross Tabulations ¼±ÅÃ <br>
+             Stat > Tables > Cross Tabulations  <br>
             <br>
             </font></td>
         </tr>
@@ -92,8 +95,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨è Columns containing the table ¶õ¿¡ '³²'°ú 
-            '¿©'¸¦ ÀÔ·ÂÇÑ´Ù.<br>
+          <td ><font size="-1">  Columns containing the table  '' 
+            '' Ô·Ñ´.<br>
             <br>
             </font></td>
         </tr>
@@ -105,9 +108,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨é OK¹öÆ°À» Å¬¸¯ÇÑ´Ù.<br>
+          <td ><font size="-1">  OKÆ° Å¬Ñ´.<br>
             <br>
-            <b>[ Session Ã¢¿¡ ³ªÅ¸³­ °á°ú ]</b><br>
+            <b>[ Session Ã¢ Å¸  ]</b><br>
             <br>
             </font></td>
         </tr>
@@ -117,34 +120,34 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> °üÃøµ¾¼ö¿Í ±Í¹«°¡¼³ ÇÏ¿¡¼­ ±â´ëµ¾¼ö°¡ °è»êµÇ¾úÀ¸¸ç Ä«ÀÌÁ¦°ö Åë°è·®Àº 
-            2.262ÀÌ´Ù. ±×¸®°í P-Value°¡ 0.323ÀÌ¹Ç·Î H<sub>0</sub>¸¦ ±â°¢ÇÒ ¼ö ¾ø´Ù. Áï, ¼ºº°Àº ºÎ¼­ 
-            ¼±È£µµ¿¡ ¿µÇâÀ» ¹ÌÄ¡Áö ¾Ê´Â´Ù°í ¸»ÇÒ ¼ö ÀÖ´Ù.<br>
+          <td ><font size="-1">  Í¹ Ï¿ ëµ¾ Ç¾ Ä« è·® 
+            2.262Ì´. ×¸ P-Value 0.323Ì¹Ç· H<sub>0</sub> â°¢  . ,  Î¼ 
+            È£  Ä¡ Ê´Â´Ù°   Ö´.<br>
             <br>
             <br>
             <br>
-            <a name="2"></a> <b><font size="3"> µ¿ÀÏ¼º °ËÁ¤(Test for Homogeneity)</font></b></font> 
+            <a name="2"></a> <b><font size="3"> Ï¼ (Test for Homogeneity)</font></b></font> 
             <font size="-1"><br>
             <br>
-            °°Àº Á¦Ç°À» »ý»êÇÏ´Â ¿©·¯ ´ëÀÇ ±â°èÀÇ ºÒ·®·üÀÌ µ¿ÀÏÇÒ±î? µî°ú °°ÀÌ ¿©·¯ ¸ðÁý´Ü °£ÀÇ ºÐÆ÷°¡ µ¿ÀÏÇÑ Áö¸¦ °ËÁ¤ÇÏ°íÀÚ 
-            ÇÑ´Ù.<br>
+             Ç° Ï´    Ò· Ò±?         Ï° 
+            Ñ´.<br>
             <br>
-            ±Í¹«°¡¼³ H<sub>0</sub> : °¢ ¸ðÁý´Ü°£ ºÐÆ÷°¡ µ¿ÀÏÇÏ´Ù.<br>
-            ´ë¸³°¡¼³ H<sub>1</sub> : H<sub>0</sub>°¡ ¾Æ´Ï´Ù.<br>
+            Í¹ H<sub>0</sub> :  Ü°  Ï´.<br>
+            ë¸³ H<sub>1</sub> : H<sub>0</sub> Æ´Ï´.<br>
             <br>
-            µ¿ÀÏ¼º °ËÁ¤ÀÇ ÀÚ·á±¸Á¶´Â <A HREF=#1>µ¶¸³¼º °ËÁ¤</a>ÀÇ ÀÚ·á±¸Á¶¿Í ÇüÅÂ°¡ µ¿ÀÏÇÏ¸ç °ËÁ¤ °á°úµµ ¿ª½Ã °°´Ù. 
-            ±×·¯¹Ç·Î MINITAB¿¡¼­ µ¿ÀÏ¼º °ËÁ¤Àº µ¶¸³¼º °ËÁ¤°ú µ¿ÀÏÇÑ ¸Þ´º¸¦ »ç¿ëÇÑ´Ù. µû¶ó¼­ À¯ÀÇ¼öÁØÀÌ 5%ÀÏ °æ¿ì P-value°¡ 
-            0.05ÀÌÇÏÀÌ¸é ±Í¹«°¡¼³À» ±â°¢ÇÑ´Ù. Áï ¸ðÁý´Ü °£ÀÇ È®·üºÐÆ÷°¡ ´Ù¸£´Ù´Â °á·ÐÀ» ³»¸°´Ù. <br>
+            Ï¼  Ú·á±¸ <A HREF=#1> </a> Ú·á±¸ Â° Ï¸    . 
+            ×·Ç· MINITAB Ï¼     Þ´ Ñ´.  Ç¼ 5%  P-value 
+            0.05Ì¸ Í¹ â°¢Ñ´.    È® Ù¸Ù´  . <br>
             <br>
             <br>
             <br>
-            <b> <font size="2">1. MINITABÀÇ Cross TabulationÀ» »ç¿ëÇÑ µ¿ÀÏ¼º °ËÁ¤ <a href="data/Hypo07.zip">(µ¥ÀÌÅÍ 
+            <b> <font size="2">1. MINITAB Cross Tabulation  Ï¼  <a href="data/Hypo07.zip">( 
             : Hypo07.mtw)</a></font></b><br>
             <br>
-            ¾î´À °øÀå¿¡¼­ A, B, C 3 ´ëÀÇ ±â°è·Î »ý»êµÈ Á¦Ç°À» ±â°èº°·Î °¢°¢ 100°³¾¿ »ùÇÃÀ» »Ì¾Æ ¾ç/ºÒ·®À» °Ë»çÇÑ °á°ú¸¦ 
-            ´ãÀº ÇöÀå µ¥ÀÌÅÍ(Raw Data)¸¦ ºÐÇÒÇ¥·Î Á¤¸®ÇÑ °á°ú°¡ ´ÙÀ½ Ç¥ÀÌ´Ù. ÀÌ ÇöÀå µ¥ÀÌÅÍ·ÎºÎÅÍ Á÷Á¢ ±â°èº°·Î ºÒ·®·üÀÌ 
-            ¼­·Î ´Ù¸£´Ù°í ÇÒ ¼ö ÀÖ´ÂÁö <I><font face="Symbol">a</font></I> 
-            = 0.05·Î °ËÁ¤ÇÏ°íÀÚ ÇÑ´Ù.<br>
+             å¿¡ A, B, C 3    Ç° èº°  100  Ì¾ /Ò· Ë»  
+              (Raw Data) Ç¥    Ç¥Ì´.   Í·Îº  èº° Ò· 
+             Ù¸Ù°   Ö´ <I><font face="Symbol">a</font></I> 
+            = 0.05 Ï° Ñ´.<br>
             <br>
             </font></td>
         </tr>
@@ -154,15 +157,15 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ±Í¹«°¡¼³ H<sub>0</sub> : ±â°è A, B, CÀÇ ºÒ·®·üÀº 
-            ¸ðµÎ µ¿ÀÏÇÏ´Ù.<br>
-            ´ë¸³°¡¼³ H<sub>1</sub> : H<sub>0</sub>°¡ ¾Æ´Ï´Ù.<br>
+          <td ><font size="-1"> Í¹ H<sub>0</sub> :  A, B, C Ò· 
+             Ï´.<br>
+            ë¸³ H<sub>1</sub> : H<sub>0</sub> Æ´Ï´.<br>
             <br>
             <br>
             <br>
-            <b> 1.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â </b><br>
+            <b> 1.1  Ô· </b><br>
             <br>
-            MINITAB Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù.<br>
+            MINITAB Worksheet Æ· Í¸ Ô·Ñ´.<br>
             <br>
             </font></td>
         </tr>
@@ -174,9 +177,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b> 1.2 MINITABÀÇ ½ÇÇà</b><br>
+          <td > <font size="-1"><b> 1.2 MINITAB </b><br>
             <br>
-            ¨ç Stat > Tables > Cross Tabulations ¼±ÅÃ<br>
+             Stat > Tables > Cross Tabulations <br>
             <br>
             </font></td>
         </tr>
@@ -188,9 +191,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨è Classification variables ¶õ¿¡ '±â°è'¿Í 
-            'ÆÇÁ¤°á°ú'¸¦ ÀÔ·ÂÇÑ´Ù. Chi-Square analysis¸¦ Ã¼Å©<br>&nbsp;&nbsp;&nbsp;
-            ÇÏ°í µ¾¼ö¿Í ±â´ëµ¾¼ö¸¦ Ç¥½ÃÇÏ±â À§ÇØ Above and expected count¸¦ Ã¼Å©ÇÑ´Ù.<br>
+          <td ><font size="-1">  Classification variables  '' 
+            '' Ô·Ñ´. Chi-Square analysis Ã¼Å©<br>&nbsp;&nbsp;&nbsp;
+            Ï°  ëµ¾ Ç¥Ï±  Above and expected count Ã¼Å©Ñ´.<br>
             <br>
             </font></td>
         </tr>
@@ -202,9 +205,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨é OK¹öÆ°À» Å¬¸¯ÇÑ´Ù.<br>
+          <td ><font size="-1">  OKÆ° Å¬Ñ´.<br>
             <br>
-            <b>[ Session Ã¢¿¡ ³ªÅ¸³­ °á°ú ]</b><br>
+            <b>[ Session Ã¢ Å¸  ]</b><br>
             <br>
             </font></td>
         </tr>
@@ -214,9 +217,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> °üÃøµ¾¼ö¿Í ±Í¹«°¡¼³ ÇÏ¿¡¼­ ±â´ëµ¾¼ö°¡ °è»êµÇ¾úÀ¸¸ç Ä«ÀÌÁ¦°ö Åë°è·®Àº 
-            3.116ÀÌ´Ù. ±×¸®°í P-Value°¡ 0.211ÀÌ¹Ç·Î H<sub>0</sub>¸¦ ±â°¢ÇÒ ¼ö ¾ø´Ù. Áï, ±â°èº°·Î ºÒ·®·üÀÌ 
-            ´Ù¸£´Ù°í ÇÒ ¼ö ¾ø´Ù. <br>
+          <td ><font size="-1">  Í¹ Ï¿ ëµ¾ Ç¾ Ä« è·® 
+            3.116Ì´. ×¸ P-Value 0.211Ì¹Ç· H<sub>0</sub> â°¢  . , èº° Ò· 
+            Ù¸Ù°   . <br>
             <br>
             </font>
             <hr size=1 color=#C0BDD6 width=90% align=center>

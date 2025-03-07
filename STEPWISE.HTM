@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>´Ü°èº° È¸±ÍºÐ¼® (Stepwise Regression)</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+<title>Ü°èº° È¸ÍºÐ¼ (Stepwise Regression)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script language="JavaScript" src="test.js"></script>
 </head>
@@ -21,110 +23,110 @@
         <tr> 
           <td height="153"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
             <br>
-            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">´Ü°èº° È¸±ÍºÐ¼® (Stepwise 
+            <a name="1"></a><font size="4" color="#a70105"><b><font color="#a70105">Ü°èº° È¸ÍºÐ¼ (Stepwise 
             Regression)</font></b></font><br>
             <br>
             <font size=3><b></b></font><font size=3><b> Stat>Regression>Stepwise</b></font> 
             <br>
             <br>
             <br>
-            <font size="-1">Á¾¼Óº¯¼ö y ¿Í ÀÌ º¯¼ö¿¡ ¿µÇâÀ» ¹ÌÄ¥ ¼ö ÀÖ´Â ¸¹Àº µ¶¸³ º¯¼ö x<sub>1</sub>,x<sub>2</sub>,¡¤¡¤¡¤,x<sub>k</sub> 
-            µéÀº ºñ·Ï °³°³ÀÇ ¼³¸í·ÂÀÌ °­ÇÏ´õ¶óµµ ´ëºÎºÐÀÇ º¯¼öµé »çÀÌ¿¡¼­´Â Á¤º¸°¡ Áßº¹µÇ¾î ³ªÅ¸³ª±â ¶§¹®¿¡ ºÒÇÊ¿äÇÑ º¯¼ö°¡ Æ÷ÇÔµÇ¸é 
-            ¿ÀÈ÷·Á °è¼öÀÇ ÀÇ¹Ì¸¦ ÆÄ¾ÇÇÏ±â°¡ ¾î·Æ´Ù. µû¶ó¼­ Á¾¼Óº¯¼ö y ÀÇ º¯È­¸¦ È¸±Í¹æÁ¤½ÄÀ¸·Î Ç¥ÇöÇÏ¿© ¼³¸íÇØ ÁÖ±â À§ÇÏ¿© ÇÊ¿äÇÑ 
-            µ¶¸³º¯¼öµéÀ» ¾î¶»°Ô ¼±ÅÃÇÏ¿© ÁÙ °ÍÀÎ°¡ ÇÏ´Â ¹®Á¦°¡ ´ëµÎµÈ´Ù. ÀÌ¸¦ º¯¼ö ¼±ÅÃÀÇ ¹®Á¦¶ó ÇÑ´Ù. <br>
-            ´Ü°èº° È¸±ÍºÐ¼®ÀÌ¶õ À¯¿ëÇÑ µ¶¸³º¯¼öµéÀÇ Á¶ÇÕÀ» Ã£±â À§ÇØ º¯¼öµé¿¡ ´ëÇØ È¸±ÍºÐ¼® ½Ã º¯¼ö¸¦ Á¦°Å ¶Ç´Â Ãß°¡ÇÏ¿© ÀýÂ÷¸¦ 
-            ¼öÇàÇÏ´Â °ÍÀ» ¸»ÇÑ´Ù. <br>
+            <font size="-1">Óº y     Ä¥  Ö´    x<sub>1</sub>,x<sub>2</sub>,,x<sub>k</sub> 
+                Ï´ Îº  Ì¿  ßºÇ¾ Å¸  Ê¿  ÔµÇ¸ 
+              Ç¹Ì¸ Ä¾Ï±â°¡ Æ´.  Óº y  È­ È¸Í¹ Ç¥Ï¿  Ö± Ï¿ Ê¿ 
+             î¶» Ï¿  Î° Ï´  ÎµÈ´. Ì¸    Ñ´. <br>
+            Ü°èº° È¸ÍºÐ¼Ì¶    Ã£  é¿¡  È¸ÍºÐ¼    Ç´ ß°Ï¿  
+            Ï´  Ñ´. <br>
             <br>
             <br>
-            <b><font size="2">1. º¯¼ö ¼±ÅÃÀÇ ³× °¡Áö ¹æ¹ý <br>
+            <b><font size="2">1.      <br>
             <br>
-            ¡á ¸ðµç °¡´ÉÇÑ È¸±Í (All Possible Regression)<br>
-            </font></b><font size="2">¸ðµç °¡´ÉÇÑ º¯¼öµéÀÇ Á¶ÇÕÀ» È¸±ÍºÐ¼®ÇÏ¿© º¸´Â °ÍÀÌ´Ù. ¸¸¾à k°³ÀÇ µ¶¸³º¯¼ö°¡ 
-            ÀÖ ´Â °æ¿ì ÇÏ³ªµµ Æ÷ÇÔÇÏÁö ¾ÊÀº ¸ðÇü¿¡¼­ºÎÅÍ k°³ ¸ðµÎ¸¦ Æ÷ÇÔÇÏ´Â ¸ðÇü±îÁö 2<sup>k</sup>°¡ÁöÀÇ ¸ðµç °¡´ÉÇÑ °æ¿ìÀÇ ¼ö¸¦ »ý°¢ÇÏ´Â 
-            ¹æ¹ýÀÌ´Ù. </font><b><font size="2"><br>
+               È¸ (All Possible Regression)<br>
+            </font></b><font size="2">    È¸ÍºÐ¼Ï¿  Ì´.  k  
+               Ï³    k Î¸ Ï´  2<sup>k</sup>     Ï´ 
+            Ì´. </font><b><font size="2"><br>
             </font></b></font> 
-            <p><font size="-1"><b><font size="2">¡á </font> µÚ·ÎºÎÅÍ Á¦°ÅÇÏ´Â ¹æ¹ý (Backward 
+            <p><font size="-1"><b><font size="2"> </font> Ú·Îº Ï´  (Backward 
               Elimination Method)</b><br>
-              k°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ °¡Àå ÀÛ°Ô ¿µÇâÀ» ÁÖ¸®¶ó°í ¿©°ÜÁö´Â º¯¼öºÎÅÍ ÇÏ³ª¾¿ Á¦°Å ÇÏ¿© ´õ ÀÌ»ó Á¦°ÅÇÒ º¯¼ö°¡ ¾ø´Ù°í 
-              ÆÇ´ÜµÉ ¶§ º¯¼öÀÇ Á¦°Å¸¦ Áß´ÜÇÏ´Â ¹æ¹ýÀÌ´Ù. <br>
+              k   ß¿  Û°  Ö¸   Ï³  Ï¿  Ì»   Ù° 
+              Ç´Üµ   Å¸ ß´Ï´ Ì´. <br>
               <br>
-              <b><font size="2">¡á </font></b> <b>¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ý ( Forward Selection 
+              <b><font size="2"> </font></b> <b>Îº Ï´  ( Forward Selection 
               Method )</b><br>
-              k°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ °¡Àå Áß¿äÇÏ´Ù°í ÆÇ´ÜµÇ´Â º¯¼öºÎÅÍ ÇÏ³ª¾¿ °ñ¶ó ÁÖ¾î °¡¸é ¼­ ´õ ÀÌ»ó Áß¿äÇÑ º¯¼ö°¡ ¾ø´Ù°í 
-              ÆÇ´Ü µÉ ¶§¿¡ Áß´ÜÇÏ¿© ÁÖ°í, ÀÌ¹Ì ¼±ÅÃµÈ º¯¼öµé¸¸ À» Áß¿äÇÑ º¯¼öµé·Î °£ÁÖÇÏ¿© ÁÖ´Â ¹æ¹ýÀÌ´Ù. <br>
+              k   ß¿  ß¿Ï´Ù° Ç´ÜµÇ´  Ï³  Ö¾    Ì» ß¿  Ù° 
+              Ç´   ß´Ï¿ Ö°, Ì¹ Ãµ é¸¸  ß¿  Ï¿ Ö´ Ì´. <br>
               <br>
-              <b><font size="2">¡á </font>´Ü°èº° È¸±Í¹æ¹ý ( Stepwise Regression Method 
+              <b><font size="2"> </font>Ü°èº° È¸Í¹ ( Stepwise Regression Method 
               )</b><br>
-              ¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ýÀ» °³¼±ÇÑ °ÍÀ¸·Î, Áß¿äÇÑ º¯¼ö¸¦ ÇÏ³ª¾¿ Ãß°¡ ¼±ÅÃÇÏ¿© ³ª °¡¸é¼­ ¹Ì¸® µé¾î°£ º¯¼ö°¡ »õ·Î¿î 
-              º¯¼ö°¡ µé¾î°¡¸é¼­ Áß¿ä¼ºÀ» »ó½ÇÇÏ¿© ¹ÛÀ¸·Î ³ª¿À °Ô µÇ´Â°¡¸¦ ¸Å ´Ü°èº°·Î °ËÅäÇÏ´Â ¼±ÅÃ ¹æ¹ýÀÌ´Ù. <br>
+              Îº Ï´   , ß¿  Ï³ ß° Ï¿  é¼­ Ì¸ î°£  Î¿ 
+               î°¡é¼­ ß¿ä¼º Ï¿    Ç´Â°  Ü°èº° Ï´  Ì´. <br>
               <br>
               <br>
-              <b><font size="2">2. MINITABÀ» »ç¿ëÇÑ ´Ü°èº° È¸±ÍºÐ¼® <a href="data/stepwise.zip">(µ¥ÀÌÅÍ 
+              <b><font size="2">2. MINITAB  Ü°èº° È¸ÍºÐ¼ <a href="data/stepwise.zip">( 
               : stepwise.mtw)</a></font></b> <br>
               <br>
-              ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ °®°í µÚ·ÎºÎÅÍ Á¦°ÅÇÏ´Â ¹æ¹ý, ¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ý, ´Ü°èº° È¸±Í¹æ¹ýÀ¸·Î ÃÖÀûÈ¸±Í¹æÁ¤½ÄÀ» ¼±ÅÃÇÏ°í 
-              °¢°¢ ºñ±³ ºÐ¼®ÇÏ¶ó.<br>
+              Æ· Í¸  Ú·Îº Ï´ , Îº Ï´ , Ü°èº° È¸Í¹ È¸Í¹ Ï° 
+                Ð¼Ï¶.<br>
               <br>
               <img src="images/Stepwise_01.gif" width="404" height="256"> <br>
               <br>
               <br>
-              2.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+              2.1  Ô· <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet Æ· Í¸ Ô·Ñ´. <br>
               <br>
               <img src="images/Stepwise_02.gif" width="301" height="275"> <br>
               <br>
               <br>
-              <b> µÚ·ÎºÎÅÍ Á¦°ÅÇÏ´Â ¹æ¹ý (Backward Elimination Method) </b><br>
+              <b> Ú·Îº Ï´  (Backward Elimination Method) </b><br>
               <br>
-              k°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ °¡Àå ÀÛ°Ô ¿µÇâÀ» ÁÖ¸®¶ó°í ¿©°ÜÁö´Â º¯¼öºÎÅÍ ÇÏ³ª¾¿ Á¦ °ÅÇÏ¿© ´õ ÀÌ»ó Á¦°ÅÇÒ º¯¼ö°¡ ¾ø´Ù°í 
-              ÆÇ´ÜµÉ ¶§ º¯¼öÀÇ Á¦°Å¸¦ Áß´ÜÇÏ´Â ¹æ¹ýÀÌ´Ù. <br>
+              k   ß¿  Û°  Ö¸   Ï³  Ï¿  Ì»   Ù° 
+              Ç´Üµ   Å¸ ß´Ï´ Ì´. <br>
               <br>
-              ¨ç Stat>Regression>Stepwise ¼±ÅÃ <br>
+               Stat>Regression>Stepwise  <br>
               <br>
               <img src="images/Stepwise_03.gif" width="543" height="264"> <br>
               <br>
-              ¢Ñ Stepwise -> Methods<br>
-              : Stepwise Regression, Forward Selection, Backward Elimination ¹æ¹ýµé 
-              Áß ÇÏ³ª¸¦ ¼±ÅÃÇÒ ¼ö ÀÖÀ¸¸ç <font face="symbol">a</font> °ªÀ» ¼±ÅÃÇÑ´Ù. <br>
+               Stepwise -> Methods<br>
+              : Stepwise Regression, Forward Selection, Backward Elimination  
+               Ï³    <font face="symbol">a</font>  Ñ´. <br>
               <br>
               <img src="images/Stepwise_04.gif" width="556" height="241"><br>
               <br>
-              ¢Ñ Stepwise -> Options<br>
-              : º¯¼ö¸¦ Á¦°ÅÇÏ°Å³ª ¶Ç´Â ¼±ÅÃÇÏ´Â ´Ü°èµéÀÇ ÁøÇà È½¼ö¸¦ Á¤ÇÒ ¼ö ÀÖ´Ù. ¶ÇÇÑ ¸ðÇü¿¡ Æ÷ÇÔµÉ µ¶¸³º¯¼öÀÇ ¼öµµ ÁöÁ¤ÇÒ 
-              ¼ö ÀÖ´Ù. <br>
+               Stepwise -> Options<br>
+              :  Ï°Å³ Ç´ Ï´ Ü°  È½   Ö´.   Ôµ    
+               Ö´. <br>
               <br>
               <img src="images/Stepwise_05.gif" width="560" height="207"><br>
               <br>
               <br>
-              ¨è OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù. <br>
+               OK Æ° Å¬Ñ´. <br>
               <br>
-              <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+              <b>Session Ã¢ Å¸  <br>
               <br>
               <img src="images/Stepwise_06.gif" width="600" height="532"><br>
               <br>
-              </b>¢Ñ °á°ú ºÐ¼® <br>
+              </b>  Ð¼ <br>
               <br>
-              <b><font size="2">¡á</font></b> ´Ü°è 1Àº 4°³ÀÇ ¼³¸í º¯¼öµé ¸ðµÎ Æ÷ÇÔµÇ¸ç ´Ü°è 2¿¡¼­ P-Value°¡ 
-              °¡Àå Å« x3°¡ °¡Àå ÀÛ°Ô ¿µÇâÀ» <br>
-              &nbsp;&nbsp;&nbsp;ÁÖ¸®¶ó°í ¿©°ÜÁö¹Ç·Î Á¦°ÅÇÏ°í, ´Ü°è 3¿¡¼­´Â x4°¡ Á¦°ÅµÇ¸ç ÃÖÁ¾ÀûÀ¸·Î x1, x2 
-              ¸ðµÎ P-Value °¡ <br>
-              &nbsp;&nbsp;&nbsp; ¿µ¿¡ °¡±î¿î Áï, È¸±Í¿¡ À¯ÀÇÇÑ ¿µÇâÀ» ¹ÌÄ¡¹Ç·Î ´õ ÀÌ»ó Á¦°Å ½ÃÅ³ º¯¼ö°¡ ¾ø´Ù°í 
-              ÆÇ´ÜµÇ¾îÁø´Ù. <br>
+              <b><font size="2"></font></b> Ü° 1 4    ÔµÇ¸ Ü° 2 P-Value 
+               Å« x3  Û°  <br>
+              &nbsp;&nbsp;&nbsp;Ö¸ Ç· Ï°, Ü° 3 x4 ÅµÇ¸  x1, x2 
+               P-Value  <br>
+              &nbsp;&nbsp;&nbsp;   , È¸Í¿   Ä¡Ç·  Ì»  Å³  Ù° 
+              Ç´ÜµÇ¾. <br>
               <br>
-              <b><font size="2">¡á</font></b> ¾ÕÀÇ ºÐ¼® °á°ú¿¡ ÀÇÇØ ¼±ÅÃ µÈ È¸±Í ¹æÁ¤½ÄÀº<br>
+              <b><font size="2"></font></b>  Ð¼     È¸ <br>
               <img src="images/Stepwise_07.gif" width="185" height="25"> <br>
               <br>
-              <b><font size="2">¡á </font></b>°áÁ¤°è¼ö R<sup>2</sup> = 0.9787 ·Î ÃÑ º¯µ¿ 
-              Áß¿¡¼­ 97.87%°¡ È¸±ÍÁ÷¼±¿¡ ÀÇÇÏ¿© ¼³¸íµÇ°í ÀÖ´Ù.<br>
+              <b><font size="2"> </font></b> R<sup>2</sup> = 0.9787    
+              ß¿ 97.87% È¸ Ï¿ Ç° Ö´.<br>
               <br>
               <br>
-              <b><font size="2"> ¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ý ( Forward Selection Method ) <br>
+              <b><font size="2"> Îº Ï´  ( Forward Selection Method ) <br>
               <br>
-              </font></b>k°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ °¡Àå Áß¿äÇÏ´Ù°í ÆÇ´ÜµÇ´Â º¯¼öºÎÅÍ ÇÏ³ª¾¿ °ñ¶ó ÁÖ¾î °¡ ¸é¼­ ´õ ÀÌ»ó 
-              Áß¿äÇÑ º¯¼ö°¡ ¾ø´Ù°í ÆÇ´Ü µÉ ¶§¿¡ Áß´ÜÇÏ¿© ÁÖ°í, ÀÌ¹Ì ¼±ÅÃµÈ º¯¼ö µé¸¸À» Áß¿äÇÑ º¯¼öµé·Î Ã¤ÅÃÇÏ´Â ¹æ¹ýÀÌ´Ù. <br>
+              </font></b>k   ß¿  ß¿Ï´Ù° Ç´ÜµÇ´  Ï³  Ö¾  é¼­  Ì» 
+              ß¿  Ù° Ç´   ß´Ï¿ Ö°, Ì¹ Ãµ  é¸¸ ß¿  Ã¤Ï´ Ì´. <br>
               <b><font size="2"><br>
-              </font></b><font size="2"> <font size="-1">¨ç Stat>Regression>Stepwise 
-              ¼±ÅÃÇÑ´Ù. <br>
+              </font></b><font size="2"> <font size="-1"> Stat>Regression>Stepwise 
+              Ñ´. <br>
               <br>
               <img src="images/Stepwise_08.gif" width="556" height="301"> <br>
               <br>
@@ -133,36 +135,36 @@
               <br>
               <img src="images/Stepwise_09.gif" width="532" height="266"> <br>
               <br>
-              ¢Ñ Stepwise -> Options : º¯¼ö¸¦ Á¦°ÅÇÏ°Å³ª ¶Ç´Â ¼±ÅÃÇÏ´Â ´Ü°èµéÀÇ ÁøÇà È½¼ö¸¦ Á¦ÇÑÇÏ°Å³ª Á¤ÇÒ ¼ö 
-              ÀÖ´Ù. <br>
+               Stepwise -> Options :  Ï°Å³ Ç´ Ï´ Ü°  È½ Ï°Å³   
+              Ö´. <br>
               <br>
               <img src="images/Stepwise_10.gif" width="536" height="212"> <br>
               <br>
               <br>
-              ¨é OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù.<br>
+               OK Æ° Å¬Ñ´.<br>
               <br>
-              <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+              <b>Session Ã¢ Å¸  <br>
               <br>
               <img src="images/Stepwise_11.gif" width="568" height="424"> <br>
               <br>
-              </b>¢Ñ °á°ú ºÐ¼®<b> <br>
-              </b><b><font size="2">¡á</font></b> 4°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ ´Ü°è 1¿¡¼­ P-Value°¡ 
-              °¡Àå ÀÛÀº x4°¡ °¡Àå Å©°Ô ¿µÇâÀ» ÁÖ¸®¶ó°í ¿©°ÜÁö ¹Ç·Î ¼±ÅÃµÇ°í, ´Ü°è 2¿¡¼­´Â x1ÀÌ ¼±ÅÃµÇ¸ç ±× ´ÙÀ½ ´Ü°è¸¦ 
-              ÁøÇàÇÏ¸é ´õ ÀÌ»ó À¯ÀÇÇÑ ¿µÇâÀ» ¹ÌÄ¡´Â º¯¼ö°¡ ¾ø´Ù°í ÆÇ´ÜµÇ¾îÁö¹Ç·Î ¼±ÅÃ ÀýÂ÷´Â ¿©±â¼­ ³¡³­´Ù. <br>
+              </b>  Ð¼<b> <br>
+              </b><b><font size="2"></font></b> 4   ß¿ Ü° 1 P-Value 
+                x4  Å©  Ö¸  Ç· ÃµÇ°, Ü° 2 x1 ÃµÇ¸   Ü°è¸¦ 
+              Ï¸  Ì»   Ä¡  Ù° Ç´ÜµÇ¾Ç·   â¼­ . <br>
               <br>
-              <b><font size="2">¡á</font></b> ¾ÕÀÇ ºÐ¼® °á°ú¿¡ ÀÇÇØ ¼±ÅÃ µÈ È¸±Í ¹æÁ¤½ÄÀº<br>
+              <b><font size="2"></font></b>  Ð¼     È¸ <br>
               <img src="images/Stepwise_16.gif" width="191" height="28"> <br>
               <br>
-              <b><font size="2">¡á</font></b> °áÁ¤°è¼ö R<sup>2</sup> = 0.9725 ·Î ÃÑ º¯µ¿ 
-              Áß¿¡¼­ 97.25%°¡ È¸±ÍÁ÷¼±¿¡ ÀÇÇÏ¿© ¼³¸íµÇ°í ÀÖ´Ù. <br>
+              <b><font size="2"></font></b>  R<sup>2</sup> = 0.9725    
+              ß¿ 97.25% È¸ Ï¿ Ç° Ö´. <br>
               <br>
               <b><br>
-              ´Ù. Stepwise (Forward and Backward) </b><br>
+              . Stepwise (Forward and Backward) </b><br>
               <br>
-              ¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ýÀ» °³¼±ÇÑ °ÍÀ¸·Î, Áß¿äÇÑ º¯¼ö¸¦ ÇÏ³ª¾¿ Ãß°¡ ¼±ÅÃÇÏ¿© ³ª°¡¸é¼­ ¹Ì¸® µé¾î°£ º¯¼ö°¡ »õ·Î¿î 
-              º¯¼ö°¡ µé¾î°¡¸é¼­ Áß¿ä¼ºÀ» »ó½ÇÇÏ¿© ¹ÛÀ¸·Î ³ª¿À°Ô µÇ´Â°¡¸¦ ¸Å ´Ü°èº°·Î °ËÅäÇÏ´Â ¼±ÅÃ ¹æ¹ýÀÌ´Ù. <br>
+              Îº Ï´   , ß¿  Ï³ ß° Ï¿ é¼­ Ì¸ î°£  Î¿ 
+               î°¡é¼­ ß¿ä¼º Ï¿   Ç´Â°  Ü°èº° Ï´  Ì´. <br>
               <br>
-              ¨ç Stat>Regression>Stepwise ¼±ÅÃÇÑ´Ù.<br>
+               Stat>Regression>Stepwise Ñ´.<br>
               <br>
               <img src="images/Stepwise_12.gif" width="589" height="287"><br>
               <br>
@@ -176,52 +178,52 @@
               <img src="images/Stepwise_14.gif" width="558" height="204"> <br>
               <br>
               <br>
-              <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú </b><br>
+              <b>Session Ã¢ Å¸  </b><br>
               <br>
               <img src="images/Stepwise_15.gif" width="592" height="496"><br>
               <br>
-              ¢Ñ °á°ú ºÐ¼®<br>
+                Ð¼<br>
               <br>
-              <font size="2"><font size="-1"><b><font size="2">¡á</font></b></font></font> 
-              4°³ÀÇ ¼³¸í º¯¼öµé Áß¿¡¼­ ´Ü°è 1¿¡¼­ P-Value°¡ °¡Àå ÀÛÀº x4°¡ °¡Àå Å©°Ô ¿µÇâÀ» ÁÖ¸®¶ó°í ¿©°ÜÁö<br>
-              &nbsp;&nbsp;&nbsp; ¹Ç·Î ¼±ÅÃµÇ°í, ´Ü°è 2¿¡¼­´Â x1ÀÌ ¼±ÅÃµÇ¸ç 3´Ü°è¿¡¼­´Â x2 ÀÇ Ãß°¡ ¼±ÅÃÀº 
-              À¯ÀÇÇÏ³ª ÀÌ¹Ì µé¾î°¡<br>
-              &nbsp;&nbsp;&nbsp; ÀÖ´Â x1, x4 º¯¼öÀÇ À¯ÀÇ¼º °ËÁ¤¿¡¼­ x4 ´Â À¯ÀÇÇÏÁö ¾Ê¾Æ¼­ Á¦°Å ½ÃÅ°°Ô µÇ¸ç 
-              x1Àº À¯ÀÇÇÑ ¿µÇâÀ» <br>
-              &nbsp;&nbsp;&nbsp; ¹ÌÄ¡¹Ç·Î ±×´ë·Î ³²°Ô µÈ´Ù. ÃÖÁ¾ÀûÀ¸ ·Î x1°ú x2 µÎ °³ÀÇ ¼³¸í º¯¼ö°¡ ¼±ÅÃµÈ´Ù. 
+              <font size="2"><font size="-1"><b><font size="2"></font></b></font></font> 
+              4   ß¿ Ü° 1 P-Value   x4  Å©  Ö¸ <br>
+              &nbsp;&nbsp;&nbsp; Ç· ÃµÇ°, Ü° 2 x1 ÃµÇ¸ 3Ü°è¿¡ x2  ß°  
+              Ï³ Ì¹ î°¡<br>
+              &nbsp;&nbsp;&nbsp; Ö´ x1, x4  Ç¼  x4   Ê¾Æ¼  Å° Ç¸ 
+              x1   <br>
+              &nbsp;&nbsp;&nbsp; Ä¡Ç· ×´  È´.   x1 x2     ÃµÈ´. 
               <br>
               <br>
-              <font size="2"><font size="-1"><b><font size="2">¡á</font></b></font></font> 
-              ¾ÕÀÇ ºÐ¼® °á°ú¿¡ ÀÇÇØ ¼±ÅÃ µÈ È¸±Í ¹æÁ¤½ÄÀº<br>
+              <font size="2"><font size="-1"><b><font size="2"></font></b></font></font> 
+               Ð¼     È¸ <br>
               <img src="images/Stepwise_07.gif" width="185" height="25"> <br>
               <br>
-              <font size="2"><font size="-1"><b><font size="2">¡á</font></b></font></font> 
-              °áÁ¤°è¼ö R<sup>2</sup> = 0.9787 ·Î ÃÑ º¯µ¿ Áß¿¡¼­ 97.87%°¡ È¸±ÍÁ÷¼±¿¡ ÀÇÇÏ¿© ¼³¸íµÇ°í ÀÖ´Ù.<br>
+              <font size="2"><font size="-1"><b><font size="2"></font></b></font></font> 
+               R<sup>2</sup> = 0.9787    ß¿ 97.87% È¸ Ï¿ Ç° Ö´.<br>
               <br>
               <br>
-              <b>¡Ø Âü°í</b><br>
+              <b> </b><br>
               <br>
               <br>
-              <font size="2"><font size="-1"><b><font size="2">¡á</font></b></font></font> 
-              STEPWISE ¼¼ °¡Áö ¹æ¹ýÀÇ ºñ±³ <br>
+              <font size="2"><font size="-1"><b><font size="2"></font></b></font></font> 
+              STEPWISE     <br>
               <br>
-              <b>Backward elimination ¹æ¹ý</b><br>
-              °è»ê·®ÀÌ ÀÛÀº(µ¶¸³º¯¼ö°¡ k °³ ÀÖÀ» °æ¿ì °è»êÇÏ¿©¾ß ÇÒ È¸±Í¹æÁ¤½ÄÀÇ ÃÖ´ë¼ö´Â k ) ÀåÁ¡Àº ÀÖÀ¸³ª "ÃÖÀû"È¸±Í ¸ðÇüÀÌ 
-              ¹Ýµå½Ã µÉ ¼ö ÀÖ´Ù´Â º¸ÀåÀº ÇÒ ¼ö ¾øÀ¸¸ç, ºñ±³Àû ÁÁÀº ¸ðÇüÀ» ¼±ÅÃÇÏ´Â °ÍÀ¸·Î ¸¸Á·ÇÒ °æ¿ì¿¡´Â ÀÌ ¹æ¹ýÀº ¹Ù¶÷Á÷ÇÏ´Ù. 
+              <b>Backward elimination </b><br>
+              ê·® ( k    Ï¿  È¸Í¹ Ö´ k )   ""È¸  
+              Ýµ   Ö´Ù´    ,    Ï´   ì¿¡   Ù¶Ï´. 
               <br>
               <br>
-              <b>Forward selection ¹æ¹ý</b><br>
-              ÃÖ´ë k(k+1)/2 °³ÀÇ È¸±Í¹æÁ¤½ÄÀ» ÀûÇÕ½ÃÅ°´Â ºñ±³Àû ÀûÀº °è»ê·®À» °¡Áú ¼ö ÀÖÀ¸³ª Backward elimination 
-              ¹æ¹ý°ú ¸¶Âù°¡Áö·Î ÀÌ ¹æ¹ý¿¡ ÀÇÇÏ¿© ¾òÀº È¸±Í¹æÁ¤½ÄÀÌ "ÃÖÀû" ÀÌ¶ó´Â º¸ÀåÀ» ÇÒ ¼ö ¾ø´Ù. ¿Ö³ÄÇÏ¸é Ã³À½¿¡ µé¾î°£ 
-              º¯¼ö´Â ´ÙÀ½¿¡ ¾î¶² º¯¼ö°¡ ¼± ÅÃµÇµçÁö°£¿¡ ´Ù½Ã Á¦°ÅµÇÁö ¾Ê±â ¶§¹®ÀÌ´Ù. <br>
+              <b>Forward selection </b><br>
+              Ö´ k(k+1)/2  È¸Í¹ Õ½Å°   ê·®    Backward elimination 
+                  Ï¿  È¸Í¹ "" Ì¶    . Ö³Ï¸ Ã³ î°£ 
+                î¶²   ÃµÇµ Ù½ Åµ Ê± Ì´. <br>
               <br>
-              <b>Stepwise Regression(Backward and Forward) ¹æ¹ý</b><br>
-              ¾ÕÀ¸·ÎºÎÅÍ ¼±ÅÃÇÏ´Â ¹æ¹ýÀ» º¸¿ÏÇÑ °ÍÀ¸·Î, Áß¿äÇÑ º¯¼ö¸¦ ÇÏ³ª¾¿ Ãß°¡ ¼±ÅÃÇÏ¿© ³ª °¡¸é¼­ ¹Ì¸® µé¾î°£ º¯¼ö°¡ »õ·Î¿î 
-              º¯¼ö°¡ µé¾î°¡¸é¼­ Áß¿ä¼ºÀ» »ó½ÇÇÏ¿© ¹ÛÀ¸·Î ³ª¿À °Ô µÇ´Â°¡¸¦ ¸Å ´Ü°è º°·Î °ËÅäÇÏ´Â ¼±ÅÃ ¹æ¹ýÀÌ´Ù. À§¿Í °°Àº ÀýÂ÷¸¦ 
-              °è¼Ó ¹â¾Æ°¡¸ç »õ·ÎÀÌ ¼±ÅÃµÈ º¯¼ö°¡ À¯ÀÇÇÏÁö ¾ÊÀ» ¶§±îÁö ¼±ÅÃÀýÂ÷°¡ °è¼ÓµÇ¸ç, »õ·ÎÀÌ µé¾î¿Â º¯¼ö°¡ À¯ÀÇÇÑ °æ¿ì¿¡ 
-              ¾Õ¿¡¼­ µé¾î¿Â º¯¼öµéÀÌ °è¼Ó À¯ÀÇÇÏ°Ô ³²¾ÆÀÖ´Â°¡¸¦ °ËÅäÇÏ¿© ÁÖ´Â °ÍÀÌ Æ¯»öÀÌ¶ó°í ÇÏ°Ú´Ù. ÀÌ ¹æ¹ý¿¡¼­ °í·ÁÇÏ´Â È¸±Í¹æÁ¤½ÄÀÇ 
-              ¼öµµ ¸ðµç °¡´ÉÇÑ È¸±Í ¹æÁ¤½ÄÀÇ ¼ö 2<sup>k</sup> ¿¡ ºñÇØ Àû°í ¾ÕÀÇ ¹æ¹ýµéÀÇ ´ÜÁ¡À» º¸¿ÏÇÑ ¹æ¹ýÀÌ±â ¶§¹®¿¡ 
-              ¹Ù¶÷Á÷ÇÑ ¹æ¹ýÀÌ¶ó°í ÃßÃµÇÒ ¼ö ÀÖ´Ù. </font></font></font></p>
+              <b>Stepwise Regression(Backward and Forward) </b><br>
+              Îº Ï´   , ß¿  Ï³ ß° Ï¿  é¼­ Ì¸ î°£  Î¿ 
+               î°¡é¼­ ß¿ä¼º Ï¿    Ç´Â°  Ü°  Ï´  Ì´.    
+               Æ°  Ãµ      ÓµÇ¸,     ì¿¡ 
+              Õ¿    Ï° Ö´Â° Ï¿ Ö´  Æ¯Ì¶ Ï°Ú´.   Ï´ È¸Í¹ 
+                 È¸   2<sup>k</sup>        Ì±  
+              Ù¶ Ì¶ Ãµ  Ö´. </font></font></font></p>
             
           </td>
         </tr>

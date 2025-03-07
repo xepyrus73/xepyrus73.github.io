@@ -1,5 +1,8 @@
 <html>
-<title>´Ü¼ø ¼±Çü È¸±ÍºÐ¼®</title>
+<head>
+    <meta charset="UTF-8">
+</head>
+<title>Ü¼  È¸ÍºÐ¼</title>
 <style><!--
 .leading200 { line-height: 200% }
 .leading180 { line-height: 180% }
@@ -21,7 +24,7 @@
             </font>
             <center>
               <font size="4" color="#a70105"></font><div align="left">
-              <b><font size="4" color="#a70105"> ´Ü¼ø ¼±Çü È¸±ÍºÐ¼®(Simple Linear 
+              <b><font size="4" color="#a70105"> Ü¼  È¸ÍºÐ¼(Simple Linear 
                 Regression)</font></b></div>
                
             </CENTER>
@@ -29,49 +32,49 @@
             <br>
             <br>
             <UL>
-              <LI><A HREF=#1><font size="-1">È¸±ÍºÐ¼®ÀÇ °³¿ä</font></a><font size="-1"> 
+              <LI><A HREF=#1><font size="-1">È¸ÍºÐ¼ </font></a><font size="-1"> 
                 <br>
                 </font><BR>
-              <LI><font size="-1">MINITABÀ» »ç¿ëÇÑ È¸±ÍºÐ¼® <br>
+              <LI><font size="-1">MINITAB  È¸ÍºÐ¼ <br>
                 </font><BR>
-                <font size="-1"><A HREF=Simple_reg.html#1>1. ´Ü¼ø È¸±ÍºÐ¼®</a> </font><br>
+                <font size="-1"><A HREF=Simple_reg.html#1>1. Ü¼ È¸ÍºÐ¼</a> </font><br>
                 <BR>
                 <font size="-1"><A HREF=fittedline.html>2. Fitted Line Plot</a></font><br>
                 <br>
             </ul> 
             <br>
-            <a name="1"></a><font size=3 ><b> È¸±ÍºÐ¼® (Regression Analysis)</b></font><br>
+            <a name="1"></a><font size=3 ><b> È¸ÍºÐ¼ (Regression Analysis)</b></font><br>
             <br><br>
-            <font size=3><b><font size="2">1. È¸±ÍºÐ¼®ÀÌ¶õ?</font></b></font><font size="2"><br>
+            <font size=3><b><font size="2">1. È¸ÍºÐ¼Ì¶?</font></b></font><font size="2"><br>
             </font><br>
-            <font size="-1">¿ì¸®´Â ÈçÈ÷ ±¤°í ºñ¿ë (x)°ú ¸ÅÃâ¾× (y)°£¿¡´Â ¾î¶°ÇÑ °ü°è°¡ ÀÖ´ÂÁö, È­ÇÐ °øÁ¤ÀÇ ¹ÝÀÀ¿Âµµ 
-            (x<sub>1</sub>)¿Í ½Ã°£ (x<sub>2</sub>)Àº ¼öÀ² (y)¿¡ ¾î¶°ÇÑ ¿µÇâÀ» ¹ÌÄ¡´ÂÁö ¾Ë°í ½Í¾îÇÑ´Ù. 
-            ¶Ç´Â ÀÌ·¯ÇÑ º¯¼ö (x, y)°£ÀÇ °ü°è¸¦ ³ªÅ¸³»ÁÖ´Â ½ÄÀ» ¼³Á¤ÇÏ°í ÀÌ ½ÄÀ» ÅëÇØ Æ¯Á¤ °á°ú (¿¹ : 10¿ù ±¤°íºñ¿ëÀ» 
-            1¾ïÀ¸·Î Ã¥Á¤ÇÏ¸é 10¿ù ÇÑ´Þ µ¿¾ÈÀÇ ¸ÅÃâ¾×Àº ¾ó¸¶·Î µÉ °ÍÀÎ°¡?)¸¦ ¿¹ÃøÇÏ°íÀÚ ÇÏ´Â °æ¿ìµµ ÀÖ´Ù. È¸±ÍºÐ¼®¿¡¼­´Â y 
-            = f(x<sub>1</sub>, x<sub>2</sub>, ¡¦,x<sub>k</sub>)¿Í °°Àº ¼öÇÐÀû ½Ä (¸ðµ¨ÀÌ¶ó°íµµ 
-            ÇÑ´Ù)À» ÀÌ¿ëÇÏ¿© º¯¼ö°£ÀÇ °ü°è¸¦ Á¤·®ÀûÀ¸·Î Ç¥ÇöÇØ ÁÖ°íÀÚ ÇÑ´Ù. <br>
-            ÀÌ·¯ÇÑ È¸±ÍºÐ¼®Àº ¸ÕÀú, x¿Í y¿¡ ´ëÇØ µ¥ÀÌÅÍ¸¦ ¼öÁý ¶Ç´Â °üÃøÇÏ°í, ÃÖ¼ÒÁ¦°ö¹ý(Least squares method) 
-            ÀÌ¶ó´Â ¹æ¹ýÀ» ÅëÇØ ¼öÁý ¶Ç´Â °üÃøµÈ µ¥ÀÌÅÍ¿¡ Àß µé¾î ¸Â´Â ½ÄÀ» Ã£¾Æ³½´Ù.<br>
-            Æ¯È÷, È¸±ÍºÐ¼®Àº °ü·ÃµÈ º¯¼öµéÀÌ ¸ðµÎ ¿¬¼ÓÇü µ¥ÀÌÅÍÀÏ¶§ °¡Áú ¶§ ÀûÀýÈ÷ »ç¿ëµÉ ¼ö ÀÖ´Ù.<br>
+            <font size="-1">ì¸®    (x)  (y) î¶° è°¡ Ö´, È­  Âµ 
+            (x<sub>1</sub>) Ã° (x<sub>2</sub>)  (y) î¶°  Ä¡ Ë° Í¾Ñ´. 
+            Ç´ Ì·  (x, y) è¸¦ Å¸Ö´  Ï°    Æ¯  ( : 10  
+            1 Ã¥Ï¸ 10 Ñ´   ó¸¶·  Î°?) Ï° Ï´ ìµµ Ö´. È¸ÍºÐ¼ y 
+            = f(x<sub>1</sub>, x<sub>2</sub>, ,x<sub>k</sub>)    (Ì¶ 
+            Ñ´) Ì¿Ï¿  è¸¦  Ç¥ Ö° Ñ´. <br>
+            Ì· È¸ÍºÐ¼ , x y  Í¸  Ç´ Ï°, Ö¼(Least squares method) 
+            Ì¶    Ç´  Í¿   Â´  Ã£Æ³.<br>
+            Æ¯, È¸ÍºÐ¼ Ãµ    Ï¶      Ö´.<br>
             <br>
             </font><br>
-            <font size=3><b><font size="2">2. ´Ü¼ø ¼±Çü È¸±Í (Simple Linear Regression)</font></b></font><br>
+            <font size=3><b><font size="2">2. Ü¼  È¸ (Simple Linear Regression)</font></b></font><br>
             <br>
-            <img src=images/Regression_02.gif border=0 align=absmiddle> <font size="-1">y´Â 
-            ¹ÝÀÀ(response) º¯¼ö ¶Ç´Â Á¾¼Ó(dependent) º¯¼ö¶ó°í ºÎ¸¥´Ù. x<sub>1</sub>Àº ¿¹Ãø(predictor) 
-            º¯¼ö ¶Ç´Â µ¶¸³(independent) º¯¼ö¶ó°í ºÎ¸¥´Ù. <img src=images/Regression_03.gif border=0 align=absmiddle>¿Í 
-            <img src=images/Regression_04.gif border=0 align=absmiddle>Àº µ¥ÀÌÅÍ¸¦ 
-            °¡Áö°í ¾Ë¾Æ³»¾ß ÇÒ ¸ð¼ö(Parameter)·Î¼­, <img src=images/Regression_03.gif border=0 align=absmiddle>Àº 
-            »ó¼öÇ×(constant, x=0ÀÏ ¶§ÀÇ y°ª), <img src=images/Regression_04.gif border=0 align=absmiddle>Àº 
-            ±â¿ï±â(slope, x°¡ 1´ÜÀ§ º¯ÇÒ ¶§ y °¡ º¯ÇÏ´Â ºñÀ²)¿¡ ÇØ´çÇÑ´Ù. <img src=images/Regression_05.gif border=0 align=absmiddle> 
-            ¿ÀÂ÷(error)¶ó°í ÇÏ¸ç, ½ÇÁ¦ °üÃøµÈ y¿Í È¸±Í½Ä¿¡ ÀÇÇØ °è»êµÇ´Â y¿ÍÀÇ Â÷ÀÌ¸¦ ³ªÅ¸³½´Ù.<br>
+            <img src=images/Regression_02.gif border=0 align=absmiddle> <font size="-1">y 
+            (response)  Ç´ (dependent)  Î¸. x<sub>1</sub> (predictor) 
+             Ç´ (independent)  Î¸. <img src=images/Regression_03.gif border=0 align=absmiddle> 
+            <img src=images/Regression_04.gif border=0 align=absmiddle> Í¸ 
+             Ë¾Æ³  (Parameter)Î¼, <img src=images/Regression_03.gif border=0 align=absmiddle> 
+            (constant, x=0  y), <img src=images/Regression_04.gif border=0 align=absmiddle> 
+            (slope, x 1   y  Ï´ ) Ø´Ñ´. <img src=images/Regression_05.gif border=0 align=absmiddle> 
+            (error) Ï¸,   y È¸Í½Ä¿  Ç´ y Ì¸ Å¸.<br>
             <br>
             </font><br>
-            <font size=3><b><font size="2">3. È¸±ÍºÐ¼®¿¡¼­ ÁÖ·Î ´Ù·ç¾îÁö´Â Áú¹®µé</font></b></font><br>
+            <font size=3><b><font size="2">3. È¸ÍºÐ¼ Ö· Ù· </font></b></font><br>
              <br>
-            <font size="-1">- x´Â y¿¡ ¾ó¸¶³ª ¸¹Àº ¿µÇâÀ» ÁÖ´Â°¡?<br>
-            - ¿ì¸®°¡ ¼ö¸³ÇÑ È¸±Í ¸ðµ¨Àº ¾ó¸¶³ª Á¤È®ÇÑ°¡?<br>
-            - Æ¯Á¤ÇÑ x°ª¿¡ ´ëÇØ y °ªÀº ¾ó¸¶·Î ¿¹ÃøµÉ ¼ö ÀÖÀ»±î?<br>
+            <font size="-1">- x y ó¸¶³   Ö´Â°?<br>
+            - ì¸®  È¸  ó¸¶³ È®Ñ°?<br>
+            - Æ¯ x  y  ó¸¶·   ?<br>
             <br>
             </font>
             <hr size=1 color=#C0BDD6 width=90% align=center>

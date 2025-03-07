@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
 <title>General Linear Model</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script language="JavaScript" src="test.js"></script>
@@ -27,262 +29,262 @@
                 Linear Model</font></b></font> </p>
               <p><font size="3"><b>Stat&gt;ANOVA&gt;General Linear Model</b></font><br>
                 <br>
-                <font size="-1">General Linear ModelÀº ´Ù¼öÀÇ ÀÎÀÚ·Î ÀÌ·ç¾îÁø ¿©·¯ ¸ğÇü(¸ğ¼ö¸ğÇü, 
-                È¥ÇÕ¸ğÇü µî)À» ºĞ¼®ÇÒ ¼ö ÀÖÀ¸¸ç ±ÕÇü¼³°è µ¥ÀÌÅÍ¿Í ºÒ±ÕÇü¼³°è µ¥ÀÌÅÍ¸¦ ¸ğµÎ ºĞ¼®ÇÒ ¼ö ÀÖ´Ù. ¶ÇÇÑ, ANOVA¿Í 
-                È¸±ÍºĞ¼®À» °áÇÕÇÑ ºĞ»êºĞ¼®À¸·Î È¸±ÍºĞ¼®ÀÇ µ¶¸³º¯¼ö¿¡ ÇØ´çÇÏ´Â ÀÎÀÚ¸¦ °øº¯·®(Covariate)À¸·Î ÁöÁ¤ÇÏ¿© ÃøÁ¤°ªÀÇ 
-                ÃÑº¯µ¿À» °øº¯·®ÀÇ 1Â÷ È¿°ú, 2Â÷ È¿°ú µî °íÂ÷¿ø È¿°ú·Î ºĞÇØÇÏ´Â µî Á»´õ ½ÉµµÀÖ´Â ºĞ¼®À» ¼öÇàÇÒ ¼ö ÀÖ´Ù.<br>
+                <font size="-1">General Linear Model Ù¼ Ú· Ì·  (, 
+                È¥Õ¸ ) Ğ¼    Í¿ Ò± Í¸  Ğ¼  Ö´. , ANOVA 
+                È¸ÍºĞ¼  Ğ»Ğ¼ È¸ÍºĞ¼  Ø´Ï´ Ú¸ (Covariate) Ï¿  
+                Ñº  1 È¿, 2 È¿   È¿ Ï´   ÉµÖ´ Ğ¼   Ö´.<br>
                 <br>
                 <font size="2"><b><br>
-                1. MINITABÀ» »ç¿ëÇÑ General Linear Model <a href="data/Anova06.zip">(µ¥ÀÌÅÍ 
+                1. MINITAB  General Linear Model <a href="data/Anova06.zip">( 
                 : Anova06.mtw)</a></b></font><br>
                 <br>
-                Æ¯Á¤ È­ÇĞ Á¦Ç°À» ¾Ğ·Â°ü(Pressure vessel)¿¡ Åë°ú½ÃÄÑ »ı»êÇÏ°í ÀÖ´Ù. ÀÌ Á¦Ç°ÀÇ ¿©°úÀ²(Filtration 
-                rate)¿¡ ´ëÇÑ °øÁ¤ ¿äÀÎµéÀÇ ¿µÇâÀ» Æò°¡ÇÏ±â À§ÇØ °øÁ¤¿Âµµ 2¼öÁØ, Æ÷¸§¾Ëµ¥È÷µå ³óµµ 3¼öÁØ¿¡¼­ ¹İº¹ 3È¸¾¿ 
-                ½ÇÇèÀ» ÇÑ °á°ú ¿©°úÀ²¿¡ ´ëÇÑ µ¥ÀÌÅÍ°¡ ´ÙÀ½°ú °°´Ù. ºĞ»êºĞ¼®À» ½Ç½ÃÇÏ·Á°í ÇÑ´Ù.<br>
+                Æ¯ È­ Ç° Ğ·Â°(Pressure vessel)  Ï° Ö´.  Ç° (Filtration 
+                rate)   Îµ  Ï±  Âµ 2, Ëµ  3Ø¿ İº 3È¸ 
+                     Í°  . Ğ»Ğ¼ Ç½Ï· Ñ´.<br>
                 <br>
                 <img src="images/AnovaGLM2_01.gif" width="378" height="193"><br>
                 <br>
                 <br>
-                1.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù.<br>
+                1.1  Ô·<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Worksheet Æ· Í¸ Ô·Ñ´.<br>
                 <br>
                 <img src="images/AnovaGLM2_02.gif" width="261" height="403"><br>
                 <br>
                 <br>
-                1.2 <a href="equal_var.htm">µîºĞ»ê¼ºÀ» °ËÁ¤ÇÑ´Ù.</a><br>
+                1.2 <a href="equal_var.htm">Ğ»ê¼º Ñ´.</a><br>
                 <br>
                 <br>
-                1.3 <a href="normaltest.html">Á¤±Ô¼ºÀ» °ËÁ¤ÇÑ´Ù.</a> <br>
+                1.3 <a href="normaltest.html">Ô¼ Ñ´.</a> <br>
                 <br>
                 <br>
-                1.4 <a href="intervalplot2.htm">Interval PlotÀ» ±×·Áº»´Ù.</a><br>
+                1.4 <a href="intervalplot2.htm">Interval Plot ×·.</a><br>
                 <br>
                 <br>
-                1.5 <a href="maineffect2.htm">Main Effects PlotÀ» ±×·Á º»´Ù.</a><br>
+                1.5 <a href="maineffect2.htm">Main Effects Plot ×· .</a><br>
                 <br>
                 <br>
-                1.6 <a href="interactionplot2.htm">Interactions PlotÀ» ±×·Á º»´Ù.</a><br>
+                1.6 <a href="interactionplot2.htm">Interactions Plot ×· .</a><br>
                 <br>
                 <br>
-                1.7 ºĞ»êºĞ¼®À» ½Ç½ÃÇÑ´Ù.<br>
+                1.7 Ğ»Ğ¼ Ç½Ñ´.<br>
                 <br>
-                ¨ç Stat > ANOVA > General Linear Model...<br>
+                 Stat > ANOVA > General Linear Model...<br>
                 <br>
                 <img src="images/AnovaGLM2_03.gif" width="515" height="301"><br>
                 <br>
                 <br>
                 <br>
-                ¨è Responses¶õ¿¡ '¿©°úÀ²'À» ÀÔ·ÂÇÑ´Ù. ±³È£ÀÛ¿ëÀº Interaction plot¿¡¼­ º° ÀÇ¹Ì°¡ <br>
-                &nbsp;&nbsp;&nbsp;¾ø¾úÀ¸¹Ç·Î ¸ğµç ÀÎÀÚ¿¡ ´ëÇÑ ÁÖÈ¿°ú¸¸ ºĞ¼®ÇÏ¹Ç·Î Model¶õ¿¡ '¿Âµµ' ¿Í <br>
-                &nbsp;&nbsp;'³óµµ'¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+                 Responses '' Ô·Ñ´. È£Û¿ Interaction plot  Ç¹Ì° <br>
+                &nbsp;&nbsp;&nbsp;Ç·  Ú¿  È¿ Ğ¼Ï¹Ç· Model 'Âµ'  <br>
+                &nbsp;&nbsp;'' Ô·Ñ´. <br>
                 <br>
                 <img src="images/AnovaGLM2_05.gif" width="487" height="343"> <br>
                 <br>
-                Model¶õ¿¡´Â ºĞ¼®ÇÏ°íÀÚ ÇÏ´Â ¸ğµ¨ÀÇ ÇüÅÂ¸¦ ³ªÅ¸³»´Âµ¥ Ç×(Term)À» »ç¿ëÇÑ´Ù. °¢ ÁÖÈ¿°ú¿¡ ´ëÇØ¼­´Â ÀÎÀÚ 
-                ¸íÀÌ ±× ÁÖÈ¿°úÀÇ Ç×ÀÌ µÇ°í ±³È£ÀÛ¿ëÀÇ °æ¿ì ÀÎÀÚÀÇ °öÀ¸·Î ³ªÅ¸³»´Â °ÍÀÌ ±³È£ÀÛ¿ëÀÇ Ç×ÀÌ µÈ´Ù. ¿¹¸¦ µé¾î ÀÎÀÚ 
-                A¿Í BÀÇ ¼öÁØÀÌ ´ëÀÀµÇ¾î ½ÇÇèÀÌ ÀÏ¾î³­´Ù¸é Åë°èÀû ¸ğµ¨Àº ´ÙÀ½°ú °°´Ù. <br>
+                Model Ğ¼Ï° Ï´  Â¸ Å¸Âµ (Term) Ñ´.  È¿ Ø¼  
+                  È¿  Ç° È£Û¿    Å¸  È£Û¿  È´.    
+                A B  Ç¾  Ï¾î³­Ù¸    . <br>
                 <img src="images/AnovaGLM2_06.gif" width="295" height="32"><br>
                 <br>
-                ¿©±â¼­ ¸ğµ¨¿¡ ´ëÇÑ Ç×(Term)Àº A, B, A*B°¡ µÉ °ÍÀÌ´Ù. ´Ù¸£°Ô Ç¥ÇöÇÏ¸é A | B·Î Ç¥ÇöÇÒ ¼öµµ ÀÖ´Ù. 
-                ÀÌ °ÍÀº A¿Í B»çÀÌ¿¡ ÀÖ´Â ¸ğµç ±³È£ÀÛ¿ëÀ» Æ÷ÇÔÇÑ´Ù´Â °ÍÀÌ´Ù. <br>
-                Random factor ¶õÀº ÀÎÀÚ Áß¿¡¼­ º¯·®ÀÎÀÚ°¡ ÀÖÀ» °æ¿ì¿¡ ÀÔ·ÂÇÏ´Â °ÍÀÌ´Ù.<br>
+                â¼­ ğµ¨¿  (Term) A, B, A*B  Ì´. Ù¸ Ç¥Ï¸ A | B Ç¥  Ö´. 
+                  A BÌ¿ Ö´  È£Û¿ Ñ´Ù´ Ì´. <br>
+                Random factor   ß¿ Ú°  ì¿¡ Ô·Ï´ Ì´.<br>
                 <br>
                 <br>
-                ¨é Covariates...¸¦ Å¬¸¯ÇÑ´Ù.<br>
+                 Covariates... Å¬Ñ´.<br>
                 <br>
                 <img src="images/AnovaGLM2_07.gif" width="525" height="314"> <br>
                 <br>
-                ½ÇÇè°á°ú ºĞ¼® ½Ã ÀÎÀÚ°¡ °øº¯·®(Covariate)ÀÏ °æ¿ì ÁöÁ¤ÇÏ¿© ºĞ¼®ÇÒ ¶§ »ç¿ëÇÏ´Â ¿É¼ÇÀÌ´Ù. º» ¿¹¿¡¼­´Â 
-                °øº¯·®ÀÌ ¾ø´Ù. <br>
+                 Ğ¼  Ú° (Covariate)  Ï¿ Ğ¼  Ï´ É¼Ì´.   
+                 . <br>
                 <br>
-                ¡á °øº¯·® (Covariate) <br>
-                &nbsp;&nbsp;&nbsp;ÅëÁ¦µÇÁö¾Ê´Â Á¤·®ÀûÀÎ º¯¼öÀÌ´Ù. ºñ·Ï, ÅëÁ¦´Â µÇÁö ¾ÊÁö¸¸ ¿ÀÂ÷ºĞ»êÀ» ÁÙÀÌ±â À§ÇØ 
-                ¸ğµ¨¿¡ &nbsp;&nbsp;&nbsp;Æ÷ÇÔ½ÃÅ²´Ù.<br>
+                  (Covariate) <br>
+                &nbsp;&nbsp;&nbsp;Ê´  Ì´. ,    Ğ» Ì±  
+                ğµ¨¿ &nbsp;&nbsp;&nbsp;Ô½Å².<br>
                 <br>
                 <br>
-                ¨ê Options...¸¦ Å¬¸¯ÇÑ´Ù.<br>
+                 Options... Å¬Ñ´.<br>
                 <br>
                 <img src="images/AnovaGLM2_08.gif" width="563" height="264"><br>
                 <br>
-                Do a weighted fit, using weights in¶õÀº °¡Áß°ªÀ¸·Î »ç¿ëÇÒ º¯¼ö ¿­ ÀÖÀ» ¶§ ÁöÁ¤ÇÑ´Ù. 
-                ±×·¯¸é ¸ğµ¨ÀÇ °¢ Ç×(term)¿¡ °¡Áß°ªÀ» ÁÖ¾î ÀûÇÕ°ªÀ» ±¸ÇØÁØ´Ù. <br>
+                Do a weighted fit, using weights in ß°      Ñ´. 
+                ×·   (term) ß° Ö¾ Õ° Ø´. <br>
                 <br>
-                Sum of Squares¿¡¼­<br>
-                Sequential(Type I)ÀÇ °æ¿ì ´Ü°èÀû È¸±ÍºĞ¼®À» ÇÏ´Â ¹æ¹ıÀ¸·Î Model ¹®¿¡ ÁöÁ¤µÈ ¼ø¼­´ë·Î ÀÎÀÚ°¡ 
-                ¸ğµ¨¿¡ ÇÏ³ª¾¿ Ãß°¡ µÇ¸é¼­ È¸±ÍºĞ¼®ÀÌ ½Ç½ÃµÈ´Ù. <br>
-                Adjusted(Type III)ÀÇ °æ¿ì µ¿½Ã¿¡ È¸±ÍºĞ¼®À» ÇÏ´Â ¹æ¹ıÀ¸·Î ÇÑ ÀÎÀÚÀÇ È¿°ú°¡ °ËÁõµÉ ¶§ ´Ù¸¥ ¸ğµç 
-                ÀÎÀÚÀÇ È¿°ú¿Í Áßº¹µÈ ºÎºĞÀº Á¦°ÅµÈ »óÅÂ¿¡¼­ °ËÁõµÈ´Ù. <br>
+                Sum of Squares<br>
+                Sequential(Type I)  Ü° È¸ÍºĞ¼ Ï´  Model    Ú° 
+                ğµ¨¿ Ï³ ß° Ç¸é¼­ È¸ÍºĞ¼ Ç½ÃµÈ´. <br>
+                Adjusted(Type III)  Ã¿ È¸ÍºĞ¼ Ï´    È¿   Ù¸  
+                 È¿ ßº Îº Åµ Â¿ È´. <br>
                 <br>
                 <br>
-                ¨ë Comparisons...¸¦ Å¬¸¯ÇÑ´Ù.<br>
+                 Comparisons... Å¬Ñ´.<br>
                 <br>
                 <img src="images/AnovaGLM2_09.gif" width="565" height="290"><br>
                 <br>
-                ´ÙÁßºñ±³¸¦ ÇÏ´Âµ¥ ÀÖ¾î¼­ Pairwise comparisons¸¦ ¼±ÅÃÇÏ¸é °¢ ¼öÁØº°·Î ºñ±³¸¦ ÇÏ·Á°í ÇÑ´Ù. Comparisons 
-                with a controlÀ» ¼±ÅÃÇÏ¸é Æ¯Á¤ÇÑ ÀÎÀÚÀÇ ¼öÁØÀ» Á¤ÇÏ°í 2¼öÁØ°ú ºñ±³ÇÒ ¶§ ¼±ÅÃÇÑ´Ù. Comparisons 
-                with a controlÀ» ¼±ÅÃÇÏ¸é ´ÙÁß ºñ±³ÀÇ ¹æ¹ı Áß DunnetÀ» ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù. <br>
-                TermÀº ´ÙÁßºñ±³¸¦ ÇÏ´Â Ç×À» ÁöÁ¤ÇÑ´Ù. º» ¿¹¿¡¼­´Â '¿Âµµ'¿¡ ´ëÇØ¼­¸¸ ÇÏ±â·Î ÇÏ°í ±× ¹æ¹ıÀ¸·Î´Â Tukey¸¦ 
-                ¼±ÅÃÇß´Ù. <br>
+                ßºñ±³¸ Ï´Âµ Ö¾î¼­ Pairwise comparisons Ï¸  Øº ñ±³¸ Ï· Ñ´. Comparisons 
+                with a control Ï¸ Æ¯   Ï° 2Ø°   Ñ´. Comparisons 
+                with a control Ï¸     Dunnet   Ö´. <br>
+                Term ßºñ±³¸ Ï´  Ñ´.   'Âµ' Ø¼ Ï± Ï°  Î´ Tukey 
+                ß´. <br>
                 </font> </p>
             </div>
             <ul>
-              <li><font size="-1"><b>Tukey's</b> : ¸ğµç ¼öÁØº° Æò±ÕÀÇ Â÷ÀÌ¸¦ ºñ±³ÇÑ´Ù. <br>
+              <li><font size="-1"><b>Tukey's</b> :  Øº  Ì¸ Ñ´. <br>
                 </font> 
-              <li><b><font size="-1">Dunnett's</font></b><font size="-1"> : Æ¯Á¤ÇÑ 
-                ¼öÁØÀ» Á¤ÇØ ³õ°í Æò±ÕÀÇ Â÷ÀÌ¸¦ ºñ±³ÇÑ´Ù.<br>
+              <li><b><font size="-1">Dunnett's</font></b><font size="-1"> : Æ¯ 
+                    Ì¸ Ñ´.<br>
                 </font> 
-              <li><font size="-1"><b>Bonferron</b>i: È®·üÇÑ°è¸¦ ÀÌ¿ëÇÏ¿© Æò±ÕÀÇ Â÷ÀÌ¸¦ ºñ±³ÇÑ´Ù. 
-                ÀÌ ¹æ¹ıÀº ´Ù¸¥ ¹æ¹ı¿¡ ºñÇØ °¡Àå º¸¼öÀûÀÌ´Ù. ¿©±â¼­ º¸¼öÀûÀÌ¶õ ÀÇ¹Ì´Â ½ÇÁ¦ ¿À·ù À²ÀÌ ÁÖ¾îÁø ¿À·ù À²ÀÌ º¸´Ù 
-                Ç×»ó ÀÛÀ½À» ÀÇ¹ÌÇÑ´Ù.<br>
+              <li><font size="-1"><b>Bonferron</b>i: È®Ñ°è¸¦ Ì¿Ï¿  Ì¸ Ñ´. 
+                  Ù¸    Ì´. â¼­ Ì¶ Ç¹Ì´    Ö¾    
+                ×»  Ç¹Ñ´.<br>
                 </font>
                
-              <li><font size="-1"><b>Sidak</b>: È®·üÇÑ°è¸¦ ÀÌ¿ëÇÏ¿© Æò±ÕÀÇ Â÷ÀÌ¸¦ ºñ±³ÇÑ´Ù.</font>
+              <li><font size="-1"><b>Sidak</b>: È®Ñ°è¸¦ Ì¿Ï¿  Ì¸ Ñ´.</font>
             </ul>
                 <br>
                 <br>
-            <font size="-1">Alternative´Â ´ë¸³°¡¼³À» ³ªÅ¸³½´Ù. ´ë¸³°¡¼³Àº "ÀÛ´Ù", "´Ù¸£´Ù", "Å©´Ù"ÀÇ 
-            ¼¼°¡Áö ÇüÅÂ·Î ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.<br>
+            <font size="-1">Alternative ë¸³ Å¸. ë¸³ "Û´", "Ù¸", "Å©" 
+             Â·   Ö´.<br>
             <br>
-            Confidence interval, with confidence level ¶õÀº ½Å·Ú±¸°£À» ±¸ÇÒ ½Å·Ú¼öÁØÀ» ¾ó¸¶·Î ÇÒÁö¸¦ 
-            ÁöÁ¤ÇÑ´Ù. º» ¿¹¿¡¼­´Â 95%·Î ÇÏ±â À§ÇÏ¿© 95.0À» ÀÔ·ÂÇÑ´Ù. ¶ÇÇÑ Test¸¦ ¼±ÅÃÇÏ¿© ´ÙÁß ºñ±³ °¡¼³ °ËÁ¤ °á°ú¸¦ 
-            Ãâ·ÂÇÑ´Ù.<br>
+            Confidence interval, with confidence level  Å·Ú±  Å·Ú¼ ó¸¶·  
+            Ñ´.   95% Ï± Ï¿ 95.0 Ô·Ñ´.  Test Ï¿      
+            Ñ´.<br>
             <br>
             <br>
-            ¨ì Graphs...¸¦ Å¬¸¯ÇÑ´Ù.<br>
+             Graphs... Å¬Ñ´.<br>
             <br>
             <img src="images/AnovaGLM2_10.gif" width="524" height="363"><br>
             <br>
-            ÀÜÂ÷ ºĞ¼®À» À§ÇÑ ±×·¡ÇÁ¸¦ ¼±ÅÃÇÑ´Ù. <br>
+             Ğ¼  ×· Ñ´. <br>
             <br>
-            Residuals for Plots¿¡¼­<br>
-            Regular : ÀÏ¹İÀûÀÎ ÀÜÂ÷¸¦ ±¸ÇÏ´Â ¹æ½ÄÀ¸·Î °üÃø°ª°ú ÀûÇÕ°ªÀÇ Â÷ÀÌ°ªÀÌ´Ù.<br>
-            Standardized : ÀÜÂ÷¸¦ Ç¥ÁØÈ­ ½ÃÅ² ÀÜÂ÷ÀÌ´Ù.<br>
-            Deleted : ÀûÇÕ°ªÀ» ±¸ÇÒ ¶§ ÀÚ½ÅÀÇ °ªÀ» Á¦¿ÜÇÏ°í ±¸ÇÑ ÈÄ¿¡ °üÃø°ª°úÀÇ Â÷ÀÌ°ªÀ» ±¸ÇÑ´Ù.<br>
+            Residuals for Plots<br>
+            Regular : Ï¹  Ï´   Õ° Ì°Ì´.<br>
+            Standardized :  Ç¥È­ Å² Ì´.<br>
+            Deleted : Õ°   Ú½  Ï°  Ä¿  Ì° Ñ´.<br>
             <br>
             <br>
-            <b>¡ß ÀÜÂ÷¿¡ ´ëÇÑ ±×·¡ÇÁ ºĞ¼®</b><br>
+            <b>   ×· Ğ¼</b><br>
             <br>
-            ÀÜÂ÷¸¦ ºĞ¼®ÇÏ´Â ÀÌÀ¯´Â ´ÙÀ½°ú °°´Ù.<br>
+             Ğ¼Ï´   .<br>
             </font> 
             <ul>
-              <li><font size="-1">½ÇÇèº¯µ¿ÀÌ ´ÜÁö ¿ì¿¬¿øÀÎ¿¡ ÀÇÇÑ °ÍÀÎÁö¸¦ È®ÀÎÇÏ±â À§ÇÔ</font> 
-              <li><font size="-1">°á·Ğ¿¡ Áß´ëÇÑ ¿µÇâÀ» ÁÙ ¼ö ÀÖ´Â ÀáÀçº¯¼ö¸¦ Ã£±â À§ÇÔ </font>
+              <li><font size="-1">èº¯  ì¿¬Î¿   È®Ï± </font> 
+              <li><font size="-1">Ğ¿ ß´    Ö´ çº¯ Ã£  </font>
             </ul>
-            <p><font size="-1">ÀÜÂ÷´Â Á¤±Ô¼ºÀ» µû¶ó¾ß °á°úÄ¡°¡ ¿Ã¹Ù·Î ºĞ¼®µÈ °ÍÀ¸·Î ÆÇ´ÜÇÒ ¼ö ÀÖ´Ù. Áï ÀÜÂ÷°¡ Á¤±ÔºĞÆ÷¸¦ 
-              µû¸£¸é ½ÇÇèº¯µ¿ÀÌ ·£´ıÇÏ´Ù´Â °ÍÀ» ³ªÅ¸³½´Ù.<br>
+            <p><font size="-1"> Ô¼  Ä¡ Ã¹Ù· Ğ¼  Ç´  Ö´.   Ôº 
+               èº¯ Ï´Ù´  Å¸.<br>
               <br>
               <br>
-              <b>Graph Ã¢¿¡ ³ªÅ¸³­ °á°ú : Histogram of residuals</b><br>
+              <b>Graph Ã¢ Å¸  : Histogram of residuals</b><br>
               <br>
               <img src="images/AnovaGLM2_11.gif" width="342" height="255"><br>
               <br>
-              ÀÜÂ÷ÀÇ È÷½ºÅä±×·¥À¸·Î Àü¹İÀûÀÎ ÀÜÂ÷ÀÇ ÇüÅÂ¸¦ ³ªÅ¸³»´Âµ¥ ÀÜÂ÷ÀÇ ÇüÅÂ°¡ Á¤±ÔºĞÆ÷¸¦ µû¸§À» ¾Ë ¼ö ÀÖ´Ù.<br>
+               ×·   Â¸ Å¸Âµ  Â° Ôº    Ö´.<br>
               <br>
               <b><br>
-              Graph Ã¢¿¡ ³ªÅ¸³­ °á°ú : Normal plot of residuals</b><br>
+              Graph Ã¢ Å¸  : Normal plot of residuals</b><br>
               <br>
               <img src="images/AnovaGLM2_12.gif" width="358" height="267"> <br>
               <br>
-              ÀÜÂ÷¸¦ Á¤±ÔÈ®·ü plotÀ» ÇÏ¿© ÀÜÂ÷µéÀÌ Á¤±ÔºĞÆ÷¸¦ µû¸£´ÂÁö¸¦ ¾Ë¾Æº¸´Â ¹æ¹ıÀÌ´Ù. ÀÜÂ÷µéÀ» Å¸Á¡ÇØº» °á°ú ´ëºÎºĞÀÇ 
-              Á¡µéÀÌ ÀÏÁ÷¼±»ó¿¡ À§Ä¡ ÇÔÀ¸·Î Á¤±ÔºĞÆ÷¸¦ µû¸¥´Ù.<br>
+               È® plot Ï¿  Ôº  Ë¾Æº Ì´.  Å¸Øº  Îº 
+                Ä¡  Ôº .<br>
               <b><br>
               <br>
-              Graph Ã¢¿¡ ³ªÅ¸³­ °á°ú : Residuals versus fits</b><br>
+              Graph Ã¢ Å¸  : Residuals versus fits</b><br>
               <br>
               <img src="images/AnovaGLM2_13.gif" width="344" height="257"> <br>
               <br>
-              :ÀÜÂ÷¿Í ÀûÇÕ°ª¿¡ ´ëÇÑ ±×¸²À¸·Î ÀûÇÕ°ªÀÌ 0 ±ÙÃ³¿¡ ·£´ıÇÏ°Ô Å¸Á¡ µÉ¼ö·Ï ½ÇÇèº¯µ¿ÀÌ ´ÜÁö ¿ì¿¬¿øÀÎ¿¡ ÀÇÇÑ °ÍÀÓÀ» ³ªÅ¸³½´Ù.<br>
+              : Õ°  ×¸ Õ° 0 Ã³ Ï° Å¸ É¼ èº¯  ì¿¬Î¿   Å¸.<br>
               <br>
               <b><br>
-              Graph Ã¢¿¡ ³ªÅ¸³­ °á°ú : Residuals versus order</b><br>
+              Graph Ã¢ Å¸  : Residuals versus order</b><br>
               <br>
               <img src="images/AnovaGLM2_14.gif" width="356" height="266"> <br>
               <br>
-              µ¥ÀÌÅÍ ¼ø¼­¿¡ µû¸¥ ÀÜÂ÷ ±×¸²À¸·Î ÀÜÂ÷°ªµéÀÌ 0À» Áß½ÉÀ¸·Î ·£´ıÇÏ°Ô ¹è¿­µÇ¾î ÀÖ´Ù.<br>
+                  ×¸  0 ß½ Ï° è¿­Ç¾ Ö´.<br>
               <br>
-              <b>¢Ñ ±âÅ¸ : Residuals versus the variables</b><br>
-              ¼±ÅÃÇÑ º¯¼ö¿Í ÀÜÂ÷¿¡ ´ëÇÑ ±×¸²À» ±×¸®´Âµ¥ Á¡µéÀÌ 0 ±ÙÃ³¿¡ ·£´ıÇÏ°Ô Å¸Á¡µÉ ¼ö·Ï ½ÇÇèº¯µ¿ÀÌ ´ÜÁö ¿ì¿¬ ¿øÀÎ¿¡ ÀÇÇÑ 
-              °ÍÀÓÀ» ³ªÅ¸³½´Ù.<br>
+              <b> Å¸ : Residuals versus the variables</b><br>
+                  ×¸ ×¸Âµ  0 Ã³ Ï° Å¸  èº¯  ì¿¬ Î¿  
+               Å¸.<br>
               <br>
-              ÀÜÂ÷ ºĞ¼®Àº °á°úºĞ¼®ÀÌ ¿Ã¹Ù¸£°Ô ºĞ¼®µÈ °ÍÀÎÁö¸¦ ÆÇ´ÜÇÏ´Âµ¥ Áß¿äÇÑ ¿ªÇÒÀ» ÇÑ´Ù. À§ÀÇ ¸ğµç ±×·¡ÇÁ¸¦ º¸¾Æ ½ÇÇèº¯µ¿Àº 
-              ´ÜÁö ¿ì¿¬¿øÀÎ¿¡ ÀÇÇÑ °ÍÀÌ´Ù. µû¶ó¼­ ºĞ¼®°á°ú¿¡ Åë°èÀû ½Å·Ú¼ºÀ» È®º¸ÇÒ ¼ö ÀÖ´Ù.<br>
+               Ğ¼ Ğ¼ Ã¹Ù¸ Ğ¼  Ç´Ï´Âµ ß¿  Ñ´.   ×·  èº¯ 
+               ì¿¬Î¿  Ì´.  Ğ¼  Å·Ú¼ È®  Ö´.<br>
               <br>
               <br>
-              ¨í Results...À» Å¬¸¯ÇÑ´Ù. <br>
+               Results... Å¬Ñ´. <br>
               <br>
               <img src="images/AnovaGLM2_15.gif" width="516" height="346"> <br>
               <br>
-              Display of Result¿¡¼­´Â ¼±ÅÃÇÑ ºÎºĞ¿¡ ´ëÇÏ¿© SessionÃ¢¿¡ Ãâ·ÂÇÑ´Ù.<br>
-              Analysis of variance table : ºĞ»êºĞ¼®Ç¥<br>
-              Coefficient for covariate terms : °øº¯·®¿¡ ´ëÇÑ °è¼ö¸¦ Ãâ·ÂÇÑ´Ù.<br>
-              Table of unusual observations : ÀÌ»óÄ¡°¡ ÀÖÀ» °æ¿ì Ãâ·ÂÇÑ´Ù.<br>
-              Coefficients for all terms : ¸ğµç Ç×ÀÇ °è¼ö¸¦ Ãâ·ÂÇÑ´Ù.<br>
+              Display of Result  ÎºĞ¿ Ï¿ SessionÃ¢ Ñ´.<br>
+              Analysis of variance table : Ğ»Ğ¼Ç¥<br>
+              Coefficient for covariate terms :    Ñ´.<br>
+              Table of unusual observations : Ì»Ä¡   Ñ´.<br>
+              Coefficients for all terms :    Ñ´.<br>
               <br>
-              Display expected mean squares and variance component¸¦ ¼±ÅÃÇÏ¸é SessionÃ¢¿¡ 
-              ºĞ»ê¼ººĞ°ú Æò±ÕÁ¦°öÀÇ ±â´ë°ªÀ» Ãâ·ÂÇÑ´Ù. <br>
+              Display expected mean squares and variance component Ï¸ SessionÃ¢ 
+              Ğ»ê¼ºĞ°  ë°ª Ñ´. <br>
               <br>
-              °¢ Ç×(term)¿¡ ´ëÇÑ ÃÖ¼Ò Á¦°ö Æò±Õ°ªÀ» ±¸ÇÏ°í ½ÍÀ¸¸é Display least squares means corresponding 
-              to the termsÇ×¿¡ Ç×(term)À» ÀÔ·ÂÇÏ¸é µÈ´Ù. º» ¿¹¿¡¼­´Â "C1 ¿Âµµ","C2 ³óµµ"ÀÌ´Ù. <br>
+               (term)  Ö¼  Õ° Ï°  Display least squares means corresponding 
+              to the terms×¿ (term) Ô·Ï¸ È´.   "C1 Âµ","C2 "Ì´. <br>
               <br>
-              ¨î Storage...¸¦ Å¬¸¯ÇÑ´Ù.<br>
+               Storage... Å¬Ñ´.<br>
               <br>
               <img src="images/AnovaGLM2_16.gif" width="546" height="176"> <br>
               <br>
-              Worksheet¿¡ ÀúÀåÇÒ °á°ú¸¦ ÁöÁ¤ÇÒ ¼ö ÀÖ´Âµ¥ <br>
-              Diagnostic Measures :ÀÜÂ÷(Residuals, Standardized residuals, Deleted 
-              t residuals), ÀÌ»óÄ¡¿¡ ´ëÇÏ¿©(Hi, Cook's distance, DFITS)¿¡ ´ëÇÏ¿© Ãâ·ÂÇÑ´Ù. ÀÌ»óÄ¡¸¦ 
-              ±¸ÇÏ´Â ±¸Ã¼ÀûÀÎ ¹æ¹ı(Hi, Cook's distance, DFITS)Àº Åë°èÀûÀ¸·Î »ó´çÈ÷ ¾î·Æ±â ¶§¹®¿¡ ÀÚ¼¼ÇÑ ¼³¸íÀº 
-              »ı·«ÇÑ´Ù. ÀÌ ¿É¼ÇÀ» »ç¿ëÇÒ ¶§´Â ÀÌµé ¹æ¹ı Áß¿¡ ÇÑ µÎ °¡Áö¸¦ ¼±ÅÃÇÏ¿© »ç¿ëÇÒ °ÍÀ» ÃßÃµÇÑ´Ù.<br>
-              Characteristics of Estimated Equation: ¸ğµ¨À» ±¸¼ºÇÏ´Â °è¼ö(Coefficients), 
-              ÀûÇÕ°ª(Fits)°ú ½ÇÇè°èÈ¹ ¸ÅÆ®¸¯½º(Design matrix)°¡ °¢°¢ÀÇ ¹İÀÀÄ¡¿¡ ´ëÇØ ÀúÀåµÈ´Ù. <br>
+              Worksheet     Ö´Âµ <br>
+              Diagnostic Measures :(Residuals, Standardized residuals, Deleted 
+              t residuals), Ì»Ä¡ Ï¿(Hi, Cook's distance, DFITS) Ï¿ Ñ´. Ì»Ä¡ 
+              Ï´ Ã¼ (Hi, Cook's distance, DFITS)   Æ±  Ú¼  
+              Ñ´.  É¼   Ìµ  ß¿    Ï¿   ÃµÑ´.<br>
+              Characteristics of Estimated Equation:  Ï´ (Coefficients), 
+              Õ°(Fits) È¹ Æ®(Design matrix)  Ä¡  È´. <br>
               <br>
               <br>
-              ¨î Factorial Plot...À» Å¬¸¯ÇÑ´Ù.<br>
+               Factorial Plot... Å¬Ñ´.<br>
               <br>
               <img src="images/AnovaGLM2_17.gif" width="566" height="332"><br>
               <br>
-              ÁÖÈ¿°ú Plot°ú ±³È£ÀÛ¿ë PlotÀ» ±×¸®´Â ¿É¼ÇÀ¸·Î ±¸ÇÏ°íÀÚ ÇÏ´Â ¿äÀÎÀ» ÀÔ·ÂÇÑ´Ù.<br>
-              Display full interaction plot matrix¸¦ ÁöÁ¤ÇÏ¿© ±³È£ÀÛ¿ë plotÀÌ ¸ÅÆ®¸¯½º ÇüÅÂ·Î ³ª¿À°Ô 
-              ÇÑ´Ù. Minimum for Y(response) scale ¿Í Maximum for Y(response) scaleÀº 
-              ¹İÀÀ°ªÀÇ ÃÖ¼Ò, ÃÖ´ë Ã´µµ¸¦ Á¤ÇØÁØ´Ù. ¶ÇÇÑ, Title¶õ¿¡´Â PlotÀÇ Á¦¸ñÀ» ÀÔ·ÂÇÒ ¼ö°¡ ÀÖ´Ù. <br>
-              °á°ú¹°¿¡ ´ëÇØ¼­´Â ÀÌ¹Ì Main Effects plot°ú Interactions Plot¿¡¼­ Á¦½ÃÇÏ¿´À¸¹Ç·Î ÂüÁ¶ÇÏ±â 
-              ¹Ù¶õ´Ù.(µ¿ÀÏÇÑ °á°ú¹°À» ¾òÀ» ¼ö ÀÖ´Ù. Áï General Linear Model¿¡¼­µµ Main Effects plot°ú 
-              Interactions PlotÀ» Factorial plot ¿É¼ÇÀ» ÁöÁ¤ÇÏ¿© ¾òÀ» ¼ö ÀÖ´Ù.) <br>
+              È¿ Plot È£Û¿ Plot ×¸ É¼ Ï° Ï´  Ô·Ñ´.<br>
+              Display full interaction plot matrix Ï¿ È£Û¿ plot Æ® Â·  
+              Ñ´. Minimum for Y(response) scale  Maximum for Y(response) scale 
+               Ö¼, Ö´ Ã´ Ø´. , Title Plot  Ô·  Ö´. <br>
+               Ø¼ Ì¹ Main Effects plot Interactions Plot Ï¿Ç· Ï± 
+              Ù¶.(    Ö´.  General Linear Model Main Effects plot 
+              Interactions Plot Factorial plot É¼ Ï¿   Ö´.) <br>
               <br>
               <br>
-              ¨ï OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù.<br>
+               OK Æ° Å¬Ñ´.<br>
               <br>
-              <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú : ºĞ»êºĞ¼®Ç¥</b><br>
+              <b>Session Ã¢ Å¸  : Ğ»Ğ¼Ç¥</b><br>
               <br>
               <img src="images/AnovaGLM2_18.gif" width="486" height="397"> <br>
               <br>
-              DF : ÀÚÀ¯µµ (Degree of Freedom) <br>
-              SS : Á¦°öÇÕ (Square of Sum)<br>
-              MS : Æò±Õ Á¦°öÇÕ (Mean of Square)<br>
-              F : °ËÁ¤ Åë°è·®ÀÇ °ª<br>
-              P : P-value(À¯ÀÇÈ®·ü)<br>
+              DF :  (Degree of Freedom) <br>
+              SS :  (Square of Sum)<br>
+              MS :   (Mean of Square)<br>
+              F :  è·® <br>
+              P : P-value(È®)<br>
               <br>
-              À§ °á°ú¿¡¼­ ¿Âµµ ÀÎÀÚ¿¡ ´ëÇÑ P-value°¡ 0.000ÀÌ¹Ç·Î À¯ÀÇ¼öÁØ 5%¿¡¼­ ¿ÂµµÀÇ ¼öÁØÀÇ º¯È­¿¡ µû¶ó Â÷ÀÌ°¡ 
-              ¾ø´Ù¶ó´Â ±Í¹«°¡¼³À» ±â°¢ÇÑ´Ù. Áï, ¿Âµµ¿¡ ÀÇÇØ ¿©°úÀ²ÀÌ Â÷ÀÌ°¡ ÀÖ´Ù´Â °á·ĞÀ» ³»¸°´Ù.<br>
-              Unusual Observations for ¿©°úÀ²Àº ÀÌ»óÄ¡ÀÇ °ªÀ» Ãâ·ÂÇØÁØ´Ù. º» ¿¹¿¡¼­´Â 18¹øÂ°ÀÇ °üÃøÄ¡°¡ ½ÇÁ¦°ª(8.9)°ú 
-              ÀûÇÕ°ª(19.2444)ÀÌ Å« Â÷ÀÌ°¡ ³²À» ¾Ë ¼ö ÀÖ´Ù. <br>
+                Âµ Ú¿  P-value 0.000Ì¹Ç· Ç¼ 5% Âµ  È­  Ì° 
+              Ù¶ Í¹ â°¢Ñ´. , Âµ   Ì° Ö´Ù´  .<br>
+              Unusual Observations for  Ì»Ä¡  Ø´.   18Â° Ä¡ (8.9) 
+              Õ°(19.2444) Å« Ì°    Ö´. <br>
               <br>
               <img src="images/AnovaGLM2_19.gif" width="473" height="478"> <br>
               <br>
-              <b><1></b> °¢ Ç×(term)¿¡ ´ëÇÑ Æò±ÕÁ¦°ö(MS)¿¡ ´ëÇÑ ±â´ë°ªÀ» ³ªÅ¸³½´Ù. ¿¹¸¦ µé¾î ¿ÂµµÀÇ MSÀÇ ±â´ë°ªÀº 
-              (3) + Q[1]ÀÌ´Ù. ¿©±â¼­ (3)Àº Error¸¦ ³ªÅ¸³»°í, Q[1]= ¿ÂµµÀÇ ºĞ»êÀÌ´Ù. <br>
-              <b><2></b> ºĞ»ê¼ººĞÀÇ °æ¿ì º¯·®ÀÎÀÚ°¡ ¾øÀ¸¹Ç·Î ¸ğµÎ ¿ÀÂ÷Ç×(Error Term)À¸·Î ³ª´©¾î F°ªÀ» ±¸ÇÑ´Ù. 
-              ¿¹¸¦ µé¾î ¿ÂµµÀÇ °æ¿ì Error termÀÌ 3ÀÓÀ» ¾Ë ¼ö ÀÖ´Ù. ÀÌ´Â ¿ÂµµÀÇ MS¸¦ 3¿¡ ÇØ´çÇÏ´Â ErrorÀÇ MS·Î 
-              ³ª´©¾î F°ªÀ» ±¸ÇÑ´Ù´Â ÀÇ¹ÌÀÌ´Ù. Áï F = ¿Âµµ MS / ErrorÀÇ MSÀÌ´Ù. <br>
-              <b><3></b> ¿Âµµ°¡ 100µµ ÀÏ ¶§ ¿©°úÀ²ÀÌ 20.056À¸·Î ¿Âµµ°¡ 50ÀÏ ¶§ º¸´Ù ´õ ³ô´Ù.<br>
+              <b><1></b>  (term)  (MS)  ë°ª Å¸.   Âµ MS ë°ª 
+              (3) + Q[1]Ì´. â¼­ (3) Error Å¸, Q[1]= Âµ Ğ»Ì´. <br>
+              <b><2></b> Ğ»ê¼º  Ú° Ç·  (Error Term)  F Ñ´. 
+                Âµ  Error term 3   Ö´. Ì´ Âµ MS 3 Ø´Ï´ Error MS 
+               F Ñ´Ù´ Ç¹Ì´.  F = Âµ MS / Error MSÌ´. <br>
+              <b><3></b> Âµ 100    20.056 Âµ 50    .<br>
               <b><br>
-              Session Ã¢¿¡ ³ªÅ¸³­ °á°ú : ´ÙÁß ºñ±³</b><br>
+              Session Ã¢ Å¸  :  </b><br>
               <br>
               <img src="images/AnovaGLM2_20.gif" width="562" height="251"><br>
               <br>
-              ¿Âµµ¿¡ ´ëÇÑ °¢ ¼öÁØ( 50µµ¿Í 100µµ)ÀÇ Â÷ÀÌ°¡ ÀÖ´ÂÁö¸¦ ¾Ë¾Æº»´Ù. µÎ ¼öÁØÀÇ Æò±ÕÀÇ Â÷ÀÌ(Difference 
-              of Mean)¿¡ ´ëÇÑ 95%½Å·Ú±¸°£Àº (6.432 16.68)·Î 0À» Æ÷ÇÔÇÏÁö ¾ÊÀ¸¹Ç·Î À¯ÀÇÇÏ´Ù. Test°á°ú P-Value°¡ 
-              0.0003À¸·Î À¯ÀÇ¼öÁØ 0.05¿¡¼­ À¯ÀÇÇÔÀ» ¾Ë ¼ö ÀÖ´Ù. </font> </p>
+              Âµ   ( 50 100) Ì° Ö´ Ë¾Æº.    (Difference 
+              of Mean)  95%Å·Ú± (6.432 16.68) 0  Ç· Ï´. Test P-Value 
+              0.0003 Ç¼ 0.05    Ö´. </font> </p>
             </td>
         </tr>
         <tr> 

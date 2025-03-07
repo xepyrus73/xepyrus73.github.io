@@ -1,4 +1,7 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+</head>
 <title>General Linear Model</title>
 
 <style><!--
@@ -30,22 +33,22 @@
             </CENTER>
             <br>
             <br>
-            <font size="-1">General Linear ModelÀº ´Ù¼öÀÇ ÀÎÀÚ·Î ÀÌ·ç¾îÁø ¿©·¯ ¸ðÇü(¸ð¼ö¸ðÇü, È¥ÇÕ¸ðÇü 
-            µî)À» ºÐ¼®ÇÒ ¼ö ÀÖÀ¸¸ç ±ÕÇü ¼³°è(Balanced Design) µ¥ÀÌÅÍ¿Í ºÒ±ÕÇü ¼³°è(Unbalanced Design) 
-            µ¥ÀÌÅÍ¸¦ ¸ðµÎ ºÐ¼®ÇÒ ¼ö ÀÖ´Ù. ¶Ç ANOVA¿Í È¸±ÍºÐ¼®À» °áÇÕÇÑ ºÐ»êºÐ¼®À¸·Î È¸±ÍºÐ¼®ÀÇ µ¶¸³º¯¼ö¿¡ ÇØ´çÇÏ´Â ÀÎÀÚ¸¦ °øº¯·®(Covariate)À¸·Î 
-            ÁöÁ¤ÇÏ¿© ÃøÁ¤°ªÀÇ ÃÑº¯µ¿À» °øº¯·®ÀÇ 1Â÷ È¿°ú, 2Â÷ È¿°ú µî °íÂ÷¿ø È¿°ú·Î ºÐÇØÇÏ´Â µî Á»´õ ½ÉµµÀÖ´Â ºÐ¼®À» ¼öÇàÇÑ´Ù. 
+            <font size="-1">General Linear Model Ù¼ Ú· Ì·  (, È¥Õ¸ 
+            ) Ð¼    (Balanced Design) Í¿ Ò± (Unbalanced Design) 
+            Í¸  Ð¼  Ö´.  ANOVA È¸ÍºÐ¼  Ð»Ð¼ È¸ÍºÐ¼  Ø´Ï´ Ú¸ (Covariate) 
+            Ï¿  Ñº  1 È¿, 2 È¿   È¿ Ï´   ÉµÖ´ Ð¼ Ñ´. 
             <br>
-            General Linear ModelÀ» Àû¿ëÇÏ±â À§ÇØ¼­´Â µ¥ÀÌÅÍÀÇ Á¤±Ô¼º ¹× µîºÐ»ê¼ºÀ» È®ÀÎÇÏ¿©¾ß ÇÏ¸ç, ÀÌ¸¦ °ËÁ¤ÇÏ±â 
-            À§ÇØ¼­´Â MINITABÀÇ <A HREF=NormalTest.html>Normality Test </a>¿Í <a href="equal_var.htm">Test 
-            for Equal variances</a>¸¦ È°¿ëÇÑ´Ù. Test for Equal variances´Â °úÁ¤¿¡¼­ ¼³¸íÇÑ´Ù.<br>
+            General Linear Model Ï± Ø¼  Ô¼  Ð»ê¼º È®Ï¿ Ï¸, Ì¸ Ï± 
+            Ø¼ MINITAB <A HREF=NormalTest.html>Normality Test </a> <a href="equal_var.htm">Test 
+            for Equal variances</a> È°Ñ´. Test for Equal variances  Ñ´.<br>
             <br>
             <br>
             <br>
-            <b><font size="2">1. MINITABÀ» »ç¿ëÇÑ General Linear Model <a href="data/Anova05.zip">(µ¥ÀÌÅÍ : Anova05.mtw)</a></font></b><br>
+            <b><font size="2">1. MINITAB  General Linear Model <a href="data/Anova05.zip">( : Anova05.mtw)</a></font></b><br>
             <br>
-            ³­¿¬ ABSÀÇ ÁÖ¿ä Ç°ÁúÆ¯¼ºÀÎ Break EnergyÀÇ Ç°Áú ±ÕÀÏÈ­¸¦ °³¼±ÇÏ±â À§ÇÏ¿© 90HR, MIXING TIME, 
-            VACUUM ¼¼ °¡Áö ÀÎÀÚ¸¦ °¡Áö°í ½ÇÇèÀ» ½Ç½ÃÇÑ °á°ú°¡ ´ÙÀ½°ú °°´Ù. ÀÌ ÃøÁ¤°á°ú´Â ÀÎÀÚÀÇ °¢ ¼öÁØÁ¶ÇÕ¿¡¼­ µ¥ÀÌÅÍÀÇ 
-            °¹¼ö°¡ °°Áö ¾ÊÀ¸¹Ç·Î ºÒ±ÕÇü ¼³°è µ¥ÀÌÅÍ ÀÌ´Ù. ÀÌ ¶§ ºÐ»êºÐ¼®À» ÇÏ·Á°í ÇÑ´Ù.<br>
+             ABS Ö¿ Ç°Æ¯ Break Energy Ç° È­ Ï± Ï¿ 90HR, MIXING TIME, 
+            VACUUM   Ú¸   Ç½   .     Õ¿  
+              Ç· Ò±   Ì´.   Ð»Ð¼ Ï· Ñ´.<br>
             </font><br>
           </td>
         </tr>
@@ -57,9 +60,9 @@
           </td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â</b><br>
+          <td > <font size="-1"><b>1.1  Ô·</b><br>
             <br>
-            MINITAB worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+            MINITAB worksheet Æ· Í¸ Ô·Ñ´. <br>
             </font></td>
         </tr>
         <tr> 
@@ -71,9 +74,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.2 ºÐ»êºÐ¼®À» ½Ç½ÃÇÑ´Ù.</b><br>
+          <td > <font size="-1"><b>1.2 Ð»Ð¼ Ç½Ñ´.</b><br>
             <br>
-            ¨ç Stat > ANOVA > General Linear Model <br>
+             Stat > ANOVA > General Linear Model <br>
             </font></td>
         </tr>
         <tr> 
@@ -85,14 +88,14 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨è Responses¶õ¿¡ Response¸¦ ÀÔ·ÂÇÑ´Ù. Model¶õ¿¡ 
-            '90HR' | 'M/TIME' | VACUUMÀ» ÀÔ·Â<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;ÇÑ´Ù. '90HR' | 'M/TIME' | VACUUMÀº ÀÎÀÚ '90HR', 'M/TIME', VACUUM À¸·Î ÀÌ·ç¾îÁø 
-            ¸ðµç<br>&nbsp;&nbsp;&nbsp;
-            ÀÎÀÚÁ¶ÇÕÀ» ÀÇ¹ÌÇÑ´Ù. Áï '90HR' 'M/TIME' 'VACUUM' '90HR'<sup>*</sup>'M/TIME' 
+          <td ><font size="-1">  Responses Response Ô·Ñ´. Model 
+            '90HR' | 'M/TIME' | VACUUM Ô·<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Ñ´. '90HR' | 'M/TIME' | VACUUM  '90HR', 'M/TIME', VACUUM  Ì· 
+            <br>&nbsp;&nbsp;&nbsp;
+             Ç¹Ñ´.  '90HR' 'M/TIME' 'VACUUM' '90HR'<sup>*</sup>'M/TIME' 
             '90HR'<sup>*</sup>'M/TIME' <br>&nbsp;&nbsp;
             'M/TIME'<sup>*</sup> VACUUM '90HR'<sup>*</sup>'M/TIME'<sup>*</sup>VACUUM 
-            À» ÀÔ·ÂÇÑ °Í°ú °°´Ù.<br>
+             Ô· Í° .<br>
             <br>
             </font></td>
         </tr>
@@ -104,10 +107,10 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ¨é OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù. <br>
+          <td ><font size="-1">  OK Æ° Å¬Ñ´. <br>
             <br>
             <br>
-            <b> [ Session Ã¢¿¡ ³ªÅ¸³­ °á°ú ]</b></font> </td>
+            <b> [ Session Ã¢ Å¸  ]</b></font> </td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -117,8 +120,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> À¯ÀÇ¼öÁØ 5%¿¡¼­ M/TIME´Â Break Energy¿¡ À¯ÀÇÇÑ 
-            ¿µÇâÀ» ¹ÌÄ¡°í ÀÖ°í ³ª¸ÓÁö ÁÖÈ¿°ú¿Í ±³È£ÀÛ¿ëÀº P-Value°¡ 0.05ÀÌ»óÀÌ¹Ç·Î À¯ÀÇÇÏÁö ¾Ê´Ù´Â °á·ÐÀ» ³»¸± ¼ö ÀÖ´Ù. 
+          <td ><font size="-1"> Ç¼ 5% M/TIME Break Energy  
+             Ä¡ Ö°  È¿ È£Û¿ P-Value 0.05Ì»Ì¹Ç·  Ê´Ù´    Ö´. 
             <br>
             <br>
             </font>

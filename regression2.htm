@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>´Ü¼ø È¸±ÍºÐ¼® (Simple Linear Regression)</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+<title>Ü¼ È¸ÍºÐ¼ (Simple Linear Regression)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script language="JavaScript" src="test.js"></script>
 </head>
@@ -22,58 +24,58 @@
           <td height="7773"> 
             <p><a href="regression.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="regression2.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
               <br>
-              <font size="4" color="#a70105"><b><font color="#a70105">´Ü¼ø È¸±ÍºÐ¼® 
+              <font size="4" color="#a70105"><b><font color="#a70105">Ü¼ È¸ÍºÐ¼ 
               (Simple Linear Regression)</font></b></font><br>
               <br>
               <font size=3><b></b></font><font size=3><b> Stat>Regression>Regression<br>
               <br>
               <br>
-              </b></font><font size=3><b> <font size="2">1. ´Ü¼ø È¸±Í¸ðÇü </font></b></font> 
+              </b></font><font size=3><b> <font size="2">1. Ü¼ È¸Í¸ </font></b></font> 
               <br>
               <br>
-              <font size="-1">y¿Í x°¡ °¢°¢ ÇÏ³ªÀÎ °æ¿ì, ÀÌ¸¦ ´Ü¼ø È¸±Í¶ó ÇÏ¸ç, ´ÙÀ½°ú °°Àº ¸ðµ¨À» »ç¿ëÇÑ´Ù.<br>
+              <font size="-1">y x  Ï³ , Ì¸ Ü¼ È¸Í¶ Ï¸,    Ñ´.<br>
               <br>
               <img src="images/Regression2_01.gif" width="145" height="18"> <br>
               <br>
-              y´Â ¹ÝÀÀ(response) º¯¼ö ¶Ç´Â Á¾¼Ó(dependent) º¯¼ö¶ó°í ºÎ¸¥´Ù.<br>
-              x<sub>1</sub>Àº ¿¹Ãø(predictor) º¯¼ö ¶Ç´Â µ¶¸³(independent) º¯¼ö¶ó°í ºÎ¸¥´Ù.<br>
-              ¥â<sub>0</sub> ¿Í ¥â<sub>1</sub>Àº µ¥ÀÌÅÍ¸¦ °¡Áö°í ¾Ë¾Æ³»¾ß ÇÒ ¸ð¼ö(parameter)·Î¼­, 
+              y (response)  Ç´ (dependent)  Î¸.<br>
+              x<sub>1</sub> (predictor)  Ç´ (independent)  Î¸.<br>
+              <sub>0</sub>  <sub>1</sub> Í¸  Ë¾Æ³  (parameter)Î¼, 
               <br>
-              ¥â<sub>0</sub>Àº »ó¼öÇ×(constant, x=0ÀÏ ¶§ÀÇ y°ª), <br>
-              ¥â<sub>1</sub>Àº ±â¿ï±â(slope, x°¡ 1´ÜÀ§ º¯ÇÒ ¶§ y°¡ º¯ÇÏ´Â ºñÀ²)¿¡ ÇØ´çÇÑ´Ù.<br>
-              ¥å´Â ¿ÀÂ÷(error)¶ó°í ÇÏ¸ç, ½ÇÁ¦ °üÃøµÈ y¿Í È¸±Í½Ä¿¡ ÀÇÇØ °è»êµÇ´Â y¿ÍÀÇ Â÷ÀÌ¸¦ ³ªÅ¸³½´Ù.<br>
+              <sub>0</sub> (constant, x=0  y), <br>
+              <sub>1</sub> (slope, x 1   y Ï´ ) Ø´Ñ´.<br>
+               (error) Ï¸,   y È¸Í½Ä¿  Ç´ y Ì¸ Å¸.<br>
               <br>
               <br>
-              <b><font size="2">2. MINITABÀ» »ç¿ëÇÑ ´Ü¼ø È¸±ÍºÐ¼® <a href="data/reg01.zip">(µ¥ÀÌÅÍ 
+              <b><font size="2">2. MINITAB  Ü¼ È¸ÍºÐ¼ <a href="data/reg01.zip">( 
               : Reg01.mtw)</a></font></b> </font> </p>
-            <p><font size="-1">³ó¾à ¿øÁ¦¸¦ »ý»êÇÏ´Â ¾î´À È­ÇÐ È¸»ç´Â °íÇ°ÁúÀÇ Á¦Ç°À» ¿ä±¸ÇÏ´Â ÇØ¿Ü ½Å±Ô½ÃÀåÀ» °³Ã´ÇÏ±â 
-              À§ÇØ Á¦Ç°ÀÇ ¼øµµ¸¦ ³ôÀÌ±â·Î ÇÏ¿´´Ù. Á¦Ç°ÀÇ ¼øµµ¿Í °ü·ÃµÈ ÀÎÀÚ Áß ¿øÀç·áÀÇ ÇÕ ¼º°øÁ¤ÀÇ ¹ÝÀÀ½Ã°£ÀÌ ¼øµµ¿¡ ³¢Ä¡´Â 
-              ¿µÇâÀÇ Á¤µµ¸¦ ÆÄ¾ÇÇÏ±â À§ÇØ ´Ü¼ø È¸±ÍºÐ¼®À» ½Ç½Ã ÇÏ¿´´Ù. È¸±ÍºÐ¼®À» Àû¿ëÇÏ±â À§ÇØ¼­´Â µ¥ÀÌÅÍ (¶Ç´Â ÀÜÂ÷)ÀÇ Á¤±Ô¼º 
-              ¹× µîºÐ»ê¼º, µ¶¸³¼º µîÀ» È®ÀÎÇÏ¿©¾ß ÇÏ¸ç, ÀÌ´Â MINITABÀÇ ÀÜÂ÷ ºÐ¼® ±â´ÉÀ» ÀÌ¿ëÇÏ¸é µÈ´Ù. <br>
+            <p><font size="-1">  Ï´  È­ È¸ Ç° Ç° ä±¸Ï´ Ø¿ Å±Ô½ Ã´Ï± 
+               Ç°  Ì± Ï¿. Ç°  Ãµ      Ã°  Ä¡ 
+                Ä¾Ï±  Ü¼ È¸ÍºÐ¼ Ç½ Ï¿. È¸ÍºÐ¼ Ï± Ø¼  (Ç´ ) Ô¼ 
+               Ð»ê¼º,   È®Ï¿ Ï¸, Ì´ MINITAB  Ð¼  Ì¿Ï¸ È´. <br>
               <br>
               <img src="images/Regression2_02.gif" width="496" height="59"> <br>
               <br>
-              2.1 µ¥ÀÌÅÍÀÇ ÀÔ·Â <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet¿¡ ¾Æ·¡ÀÇ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÑ´Ù. <br>
+              2.1  Ô· <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;MINITAB Worksheet Æ· Í¸ Ô·Ñ´. <br>
               <br>
               <img src="images/Regression2_03.gif" width="229" height="248"><br>
               <br>
               <br>
-              2.2 È¸±Í Á÷¼±½ÄÀ» ±¸ÇÑ´Ù. <br>
+              2.2 È¸  Ñ´. <br>
               <br>
-              ¨ç Stat > Regression > Regression ¼±ÅÃ<br>
+               Stat > Regression > Regression <br>
               <br>
               <img src="images/Regression2_04.gif" width="531" height="236"> <br>
               </font> </p>
-            <p><font size="-1">¨è Response ¶õ¿¡ Á¦Ç°¼øµµ µ¥ÀÌÅÍ 'Purity', Predictors ¶õ¿¡ 
-              ¹ÝÀÀ½Ã°£ µ¥ÀÌÅÍ 'R_Time'À» <br>
-              &nbsp;&nbsp;&nbsp;&nbsp; ¼±ÅÃÇÏ¿© ÀÔ·ÂÇÑ´Ù.<br>
+            <p><font size="-1"> Response  Ç°  'Purity', Predictors  
+              Ã°  'R_Time' <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Ï¿ Ô·Ñ´.<br>
               <br>
               <img src="images/Regression2_05.gif" width="543" height="377"> </font></p>
-            <p> <font size="-1">¢Ñ ¿É¼ÇÃ¢ ¼³¸í <br>
+            <p> <font size="-1"> É¼Ã¢  <br>
               <br>
-              : È¸±ÍºÐ¼®À» ½Ç½ÃÇÏ±â Àü¿¡ ÇÊ¿äÇÑ °æ¿ì, °¢ ¿É¼ÇÃ¢¿¡ ÇØ´çÇÏ´Â ¹öÆ°À» Å¬¸¯ÇÏ¿©, ¿É¼ÇÀ» ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù. ÀÚ¼¼ÇÑ 
-              ¼³¸íÀº 7ÀÇ ±âÅ¸¸¦ ÂüÁ¶.<br>
+              : È¸ÍºÐ¼ Ç½Ï±  Ê¿ ,  É¼Ã¢ Ø´Ï´ Æ° Å¬Ï¿, É¼   Ö´. Ú¼ 
+               7 Å¸ .<br>
               <br>
               <img src="images/Regression2_06.gif" width="521" height="352"> <br>
               <br>
@@ -83,199 +85,199 @@
               <img src="images/Regression2_07.gif" width="585" height="357"><br>
               <br>
               <br>
-              ¢Ñ Regression -> Options -> Display <br>
+               Regression -> Options -> Display <br>
               <br>
               <u>Variance inflation factors</u> <br>
-              Á¾¼Óº¯¼ö°£¿¡ »ó°ü¼ºÀÌ ÀÖÀ» ¶§ ÃßÁ¤µÈ È¸±Í½Ä °è¼öÀÇ º¯µ¿ÀÌ ¾î´À Á¤µµ·Î Ä¿Áö ´Â°¡¸¦ ÃøÁ¤ÇÑ ºÐ»ê ÆØÃ¢ °è¼öÀÌ´Ù. (°ªÀÌ 
-              1ÀÌ¸é ¿¹Ãø º¯¼ö°£ÀÇ »ó°ü¼ºÀÌ ¾ø´Ù´Â °ÍÀ» ÀÇ¹ÌÇÏ¸ç, 5~10º¸´Ù Å©¸é µ¶¸³º¯¼ö °£¿¡ »ó°ü¼ºÀÌ Å©´Ù´Â ÀÇ¹ÌÀÌ´Ù.) 
+              Óº     È¸Í½     Ä¿ Â°  Ð» Ã¢ Ì´. ( 
+              1Ì¸    Ù´  Ç¹Ï¸, 5~10 Å©    Å©Ù´ Ç¹Ì´.) 
               <br>
               <br>
               <u>Durbin-Waston statistic</u> <br>
-              ÀÜÂ÷µéÀÇ ÀÚ±â »ó°üÀ» °ËÃâÇÏ°íÀÚ ÇÒ ¶§ Ã¼Å©ÇÏ¸ç, ÀÌ °ªÀÌ 4¿¡ °¡±î¿ì¸é À½ÀÇ ÀÚ±â»ó°ü, 0¿¡ °¡±î¿ì¸é ¾çÀÇ ÀÚ±â»ó°üÀÌ 
-              ÀÖ´Ù°í º¼ ¼ö ÀÖ´Ù. <br>
+               Ú±  Ï°   Ã¼Å©Ï¸,   4   Ú±, 0   Ú± 
+              Ö´Ù°   Ö´. <br>
               <br>
               <u>PRESS and predicted R-square</u><br>
-              PRESS Åë°è·®°ú Adjusted R-square ¸¦ Ãâ·Â¿¡ ³ªÅ¸³»°íÀÚ ÇÒ ¶§ Ã¼Å©.<br>
+              PRESS è·® Adjusted R-square  Â¿ Å¸   Ã¼Å©.<br>
               <br>
-              ¢Ñ Regression -> Options -> Prediction intervals for new observations<br>
-              : ¿¹¸¦ µé¾î, ¹ÝÀÀ½Ã°£ÀÌ 9.5ÀÏ ¶§ »ý»êµÇ´Â ³ó¾à¿øÁ¦ÀÇ ¼øµµ¿¡ ´ëÇÑ ±â´ë°ªÀ» ÃßÁ¤ÇÒ ¼ö ÀÖ´Ù. <br>
+               Regression -> Options -> Prediction intervals for new observations<br>
+              :  , Ã° 9.5  Ç´    ë°ª   Ö´. <br>
               <br>
               <br>
-              ¨é OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù.<br>
+               OK Æ° Å¬Ñ´.<br>
               <br>
-              <b>Session Ã¢¿¡ ³ªÅ¸³­ °á°ú</b><br>
+              <b>Session Ã¢ Å¸ </b><br>
               <br>
               <img src="images/Regression2_08.gif" width="558" height="304"><br>
               <br>
-              À§ °á°ú¿¡¼­ ¼øµµ¿Í ¹ÝÀÀ½Ã°£ °£ÀÇ È¸±Í½ÄÀº <font color="#0000FF">Purity = 101 - 0.589 
-              R_time</font> ÀÌ´Ù. Áï,<font face="symbol"> b</font><sub>0</sub> = 
-              101, <font face="symbol">b</font><sub>1</sub> = -0.589 ÀÌ´Ù. <br>
+                 Ã°  È¸Í½ <font color="#0000FF">Purity = 101 - 0.589 
+              R_time</font> Ì´. ,<font face="symbol"> b</font><sub>0</sub> = 
+              101, <font face="symbol">b</font><sub>1</sub> = -0.589 Ì´. <br>
               <br>
               <br>
-              2.3 À§¿¡¼­ ¾ò¾îÁø È¸±Í½ÄÀ» »êÁ¡µµ »ó¿¡ µµ½Ã <br>
+              2.3   È¸Í½    <br>
               <br>
-              ¨ç Stat > Regression > Fitted Line Plot À» ¼±ÅÃÇÑ´Ù.<br>
+               Stat > Regression > Fitted Line Plot  Ñ´.<br>
               <br>
               <img src="images/Regression2_09.gif" width="457" height="237"><br>
               <br>
               <br>
-              ¨è Response (Y )¿¡ Á¦Ç°¼øµµ µ¥ÀÌÅÍ 'Purity', Predictor (X)¿¡ ¹ÝÀÀ½Ã°£ 'R_time'À» 
-              ÀÔ·Â. Type of<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; Regression ModelÀº 'Linear'·Î ¼±ÅÃÇÑ´Ù. <br>
+               Response (Y ) Ç°  'Purity', Predictor (X) Ã° 'R_time' 
+              Ô·. Type of<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Regression Model 'Linear' Ñ´. <br>
               <br>
-              ¢Ñ ¿É¼ÇÃ¢ ¼³¸í<br>
-              : È¸±Í½ÄÀ» µµ½ÃÇÏ±â Àü¿¡ ÇÊ¿äÇÑ °æ¿ì, ¿É¼Ç ¹öÆ°À» Å¬¸¯ÇÏ¿©, ¿É¼ÇÀ» ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.<br>
+               É¼Ã¢ <br>
+              : È¸Í½ Ï±  Ê¿ , É¼ Æ° Å¬Ï¿, É¼   Ö´.<br>
               <br>
               [Options] <br>
               <img src="images/Regression2_10.gif" width="500" height="224"> <br>
               <br>
               <br>
-              ¨é OK¸¦ Å¬¸¯ÇÑ´Ù. <br>
+               OK Å¬Ñ´. <br>
               <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;´ÙÀ½°ú °°ÀÌ µ¥ÀÌÅÍ¿Í È¸±Í Á÷¼±ÀÌ Æ÷ÇÔµÈ Ã¢ÀÌ ³ªÅ¸³­´Ù.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;  Í¿ È¸  Ôµ Ã¢ Å¸.<br>
               <br>
               <img src="images/Regression2_11.gif" width="433" height="322"> <br>
               <br>
-              À§ ±×¸²ÀÇ µ¥ÀÌÅÍµéÀ» º¸¸é Á÷¼±ÀÌ ¹ÝÀÀ½Ã°£°ú ¼øµµ°£ÀÇ °ü°è¸¦ Àß Ç¥ÇöÇÏ°í ÀÖ´Ù°í ÇÒ ¼ö ÀÖ´Ù. µû¶ó¼­ ¼±Çü È¸±Í½ÄÀÌ 
-              Àß µé¾î ¸ÂÀ½À» ¾Ë ¼ö ÀÖ´Ù. <br>
+               ×¸ Íµ   Ã°  è¸¦  Ç¥Ï° Ö´Ù°   Ö´.   È¸Í½ 
+                   Ö´. <br>
               <br>
               <br>
-              <a name="1"></a>2.4 ÀÜÂ÷ ºÐ¼® (Residual Analysis) <a href="data/reg01.zip">(µ¥ÀÌÅÍ 
+              <a name="1"></a>2.4  Ð¼ (Residual Analysis) <a href="data/reg01.zip">( 
               : Reg01.mtw)</a> <b><br>
               <br>
-              </b>ÀÜÂ÷ ºÐ¼®À» ÅëÇØ »óÁ¤ÇÑ È¸±Í½ÄÀÇ ÀûÇÕ¼º (Á¤±Ô¼º, µîºÐ»ê¼º, µ¶¸³¼ºÀÇ °¡Á¤ ¹× Á÷¼± °ü°èÀÇ Å¸´ç¼º)À» °ËÅäÇÒ 
-              ¼ö ÀÖ´Ù. ÀÜÂ÷ÀÇ Á¾·ù´Â ¼¼°¡Áö°¡ ÀÖÀ¸¸ç, ÀÜÂ÷ºÐ¼®ÀÇ °úÁ¤Àº ´ÙÀ½°ú °°´Ù. <br>
+              </b> Ð¼   È¸Í½ Õ¼ (Ô¼, Ð»ê¼º,      Å¸ç¼º)  
+               Ö´.    , Ð¼   . <br>
               <br>
-              ¨ç ÀÜÂ÷ÀÇ ÀúÀå<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;Stat > Regression > Regression¿¡¼­ Storage 
-              ¹öÆ°À» Å¬¸¯ÇÏ°í Fits¿Í Residual (¶Ç´Â Standard residual)À» ¼±ÅÃÇÑ´Ù. <br>
+                <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Stat > Regression > Regression Storage 
+              Æ° Å¬Ï° Fits Residual (Ç´ Standard residual) Ñ´. <br>
               <br>
               <img src="images/Regression2_12.gif" width="493" height="208"> <br>
               <br>
               <br>
-              ¨è Stat > Regression > Residual Plots À» ¼±ÅÃÇÑ´Ù.<br>
+               Stat > Regression > Residual Plots  Ñ´.<br>
               <br>
               <img src="images/Regression2_13.gif" width="430" height="220"> <br>
               <br>
               <br>
-              ¨é Residuals¿¡ Worksheet¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ 'RES1', Fits¿¡ ¿ª½Ã Worksheet¿¡ ÀúÀåµÈ 
-              µ¥ÀÌÅÍ<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; 'FITS1'À» ÀÔ·Â. <br>
+               Residuals Worksheet   'RES1', Fits  Worksheet  
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; 'FITS1' Ô·. <br>
               <br>
               <img src="images/Regression2_14.gif" width="409" height="184"><br>
               <br>
               <br>
-              ¨ê OK ¹öÆ°À» Å¬¸¯ÇÑ´Ù. <br>
+               OK Æ° Å¬Ñ´. <br>
               <br>
-              <b>Graph Ã¢¿¡ ³ªÅ¸³­ °á°ú <br>
+              <b>Graph Ã¢ Å¸  <br>
               <br>
               <img src="images/Regression2_15.gif" width="604" height="448"><br>
               <br>
-              </b>ÀÜÂ÷ºÐ¼® °á°ú, µ¶¸³¼º ¹× µîºÐ»ê¼º¿¡ ¹®Á¦°¡ ÀÖ¾î º¸¿©, È¸±Í¸ðÇüÀÌ ÀûÇÕÇÏ´Ù°í º¸±â ¾î·Æ´Ù. <b><br>
+              </b>Ð¼ ,   Ð»ê¼º  Ö¾ , È¸Í¸ Ï´Ù°  Æ´. <b><br>
               <br>
               <br>
-              </b>2.5 °á°ú ÇØ¼®<b><br>
+              </b>2.5  Ø¼<b><br>
               <br>
-              1) ±â¿ï±â´Â 0ÀÌ ¾Æ´Ï¶ó°í ÇÒ ¼ö ÀÖ´Â°¡? <br>
+              1)  0 Æ´Ï¶   Ö´Â°? <br>
               <br>
-              </b>Session Ã¢¿¡ ³ª¿À´Â °á°ú Áß ¾Æ·¡ ³»¿ëÀº ¸ðµ¨ÀÇ ¸ð¼ö¿¡ ´ëÇÑ °ËÁ¤ °á°ú ÀÌ´Ù. È¸±ÍÁ÷¼±ÀÇ ½Ä¿¡¼­ ¥â<sub>0</sub> 
-              ¿Í ¥â<sub>1</sub>´Â °¢°¢ »ó¼ö Ç× (constant)°ú ±â¿ï±â¸¦ ³ªÅ¸³»¸ç, ÀÌ Áß ¿ì¸®´Â ¹ÝÀÀ½Ã°£ÀÇ °è¼öÀÎ 
-              ¥â<sub>1</sub>ÀÌ 0ÀÇ °ªÀ» °®Áö ¾Ê´Â ÁöÀÇ ¿©ºÎ¸¦ ¾Ë¾Æ¾ß ÇÑ´Ù. ¥â<sub>1</sub>ÀÌ 0ÀÌ¶ó´Â °ÍÀº 
-              Á÷¼±½ÄÀÇ ±â¿ï±â°¡ 0 ÀÌ¿©¼­ Á¦Ç°ÀÇ ¼øµµ´Â ¹ÝÀÀ½Ã°£°ú ÀüÇô °ü°è°¡ ¾ø´Ù´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù. <br>
-              ¸ðµ¨¿¡¼­ ¥â<sub>1</sub>ÀÌ 0ÀÌ ¾Æ´Ñ ÁöÀÇ ¿©ºÎ¸¦ °ËÁ¤ÇÏ±â À§ÇØ ¸ðÆò±ÕÀÇ °ËÁ¤ÇÏ´Âµ¥ »ç¿ëµÇ´Â t °ËÁ¤À» »ç¿ëÇÑ´Ù.<br>
+              </b>Session Ã¢    Æ·       Ì´. È¸ Ä¿ <sub>0</sub> 
+               <sub>1</sub>    (constant) â¸¦ Å¸,   ì¸® Ã°  
+              <sub>1</sub> 0   Ê´  Î¸ Ë¾Æ¾ Ñ´. <sub>1</sub> 0Ì¶  
+               â°¡ 0 Ì¿ Ç°  Ã°  è°¡ Ù´  Ç¹Ñ´. <br>
+              ðµ¨¿ <sub>1</sub> 0 Æ´  Î¸ Ï±   Ï´Âµ Ç´ t  Ñ´.<br>
               <br>
               <img src="images/Regression2_16.gif" width="498" height="156"> <br>
               <br>
-              Coef : °è¼ö (coefficient)<br>
-              StDev : Ç¥ÁØÆíÂ÷ (Standard Deviation)<br>
-              T : ÁÖ¾îÁø µ¥ÀÌÅÍ¸¦ t Åë°è·®À» »ç¿ëÇØ °è»êµÈ °ª<br>
-              P : À¯ÀÇÈ®·ü (P °ª)<br>
+              Coef :  (coefficient)<br>
+              StDev : Ç¥ (Standard Deviation)<br>
+              T : Ö¾ Í¸ t è·®   <br>
+              P : È® (P )<br>
               <br>
-              P °ªÀº T °ªÀ» »ç¿ëÇØ ¾ò¾îÁø À¯ÀÇ È®·ü·Î¼­ ÀÌ °ªÀÌ ÀÛÀ¸¸é ¥â<sub>1</sub> °ªÀÌ 0ÀÌ¶ó°í ÇÏ±â ¾î·Æ´Ù°í 
-              ÆÇ´ÜÇÒ ¼ö ÀÖ´Ù. ÀÏ¹ÝÀûÀ¸·Î P°ªÀÌ 0.05 (¶§·Î´Â 0.01) º¸´Ù ÀÛÀ» °æ¿ì, ¥â<sub>1</sub>Àº 0ÀÌ 
-              ¾Æ´Ï¶ó°í ÇØ¼®ÇÑ´Ù. À§ ¿¹ÀÇ °æ¿ì´Â ¹ÝÀÀ½Ã°£ÀÇ P °ªÀÌ 0.041·Î¼­ 0.05º¸´Ù ÀÛ¾Æ ¥â<sub>1</sub> Àº 
-              0 ÀÌ¶ó°í ÇÒ ¼ö ¾ø´Ù. µû¶ó¼­ ¹ÝÀÀ½Ã°£Àº Á¦Ç°ÀÇ ¼øµµ¿¡ À¯ÀÇÇÑ (significant) ÀÎÀÚ¶ó°í ÇØ¼®ÇÒ ¼ö ÀÖ´Ù. 
+              P  T     È®Î¼    <sub>1</sub>  0Ì¶ Ï± Æ´Ù° 
+              Ç´  Ö´. Ï¹ P 0.05 (Î´ 0.01)   , <sub>1</sub> 0 
+              Æ´Ï¶ Ø¼Ñ´.    Ã° P  0.041Î¼ 0.05 Û¾ <sub>1</sub>  
+              0 Ì¶   .  Ã° Ç°   (significant) Ú¶ Ø¼  Ö´. 
               <br>
               <br>
               <br>
-              <b>2) R-SquareÀÇ ÇØ¼® <br>
+              <b>2) R-Square Ø¼ <br>
               <br>
-              </b>R-Square (R<sub>2</sub>) ´Â °áÁ¤°è¼ö¶ó°í ºÒ¸®¸ç, y º¯¼öÀÇ µ¥ÀÌÅÍ°¡ °¡Áö°í ÀÖ´Â ÀüÃ¼ 
-              º¯µ¿ (»êÆ÷) Áß¿¡¼­ x¿Í y°£ÀÇ È¸±Í ¸ðµ¨·Î ¼³¸íÇÒ ¼ö ÀÖ´Â º¯µ¿(»êÆ÷) ÀÌ Â÷ÁöÇÏ´Â ºñÀ²À» ÀÇ¹ÌÇÑ´Ù. Áï, È¸±Í¸ðÇüÀ» 
-              ÅëÇØ y °ªÀÇ º¯È­¸¦ x °ªÀÇ º¯È­´Â ¾ó¸¶³ª Àß ¼³¸íÇÒ ¼ö ÀÖ´Â °¡¸¦ ³ªÅ¸ ³½´Ù. <br>
+              </b>R-Square (R<sub>2</sub>)   Ò¸, y  Í°  Ö´ Ã¼ 
+               () ß¿ x y È¸ ðµ¨·   Ö´ ()  Ï´  Ç¹Ñ´. , È¸Í¸ 
+               y  È­ x  È­ ó¸¶³    Ö´  Å¸ . <br>
               <br>
-              R-Square´Â ¾Æ·¡¿Í °°Àº ½ÄÀ¸·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.<br>
+              R-Square Æ·   Ç¥  Ö´.<br>
               <br>
               <img src="images/Regression2_17.gif" width="183" height="27"> <br>
               <br>
-              SS (Sum of Square) : Á¦°öÀÇ ÇÕ, º¯µ¿À» Á¤·®È­ÇÏ´Â ¹æ¹ý Áß ÇÏ³ª<br>
+              SS (Sum of Square) :  ,  È­Ï´   Ï³<br>
               <br>
-              ¾ÕÀÇ ¿¹¿¡¼­ R-Sq =53% (¶Ç´Â 0.53) ¶ó´Â ÀÇ¹Ì´Â Á¦Ç°ÀÇ ¼øµµ°¡ °¡Áö°í ÀÖ´Â ÀüÃ¼ º¯µ¿ Áß 53%´Â ¹ÝÀÀ½Ã°£°úÀÇ 
-              ¼±Çü È¸±Í½ÄÀ¸·Î ¼³¸íÇÒ ¼ö ÀÖ°í, ³ª¸ÓÁö 47%´Â ¹ÝÀÀ½Ã°£À¸·Î´Â ¼³¸íÇÒ ¼ö ¾ø´Â º¯µ¿ÀÌ¶ó´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù. µû¶ó¼­ 
-              ¹ÝÀÀ½Ã°£ ÀÌ¿Ü¿¡ ´Ù¸¥ ¿äÀÎÀ» Ã£¾Æ ³»¾î Á¦Ç°ÀÇ ¼øµµ°¡ °¡Áö°í ÀÖ´Â º¯µ¿À» ¼³¸íÇÒ ¼ö ÀÖ¾î¾ß ÇÑ´Ù.<br>
-              R-Square´Â 0¿¡¼­ 1»çÀÌÀÇ °ªÀ» °¡Áú ¼ö ÀÖÀ¸¸ç, R-Square °ªÀÌ Å¬¼ö·Ï µÎ º¯¼ö°£ÀÇ °ü°è°¡ ±í´Ù´Â °ÍÀ» 
-              ÀÇ¹ÌÇÑ´Ù. R-Square°¡ 1ÀÏ ¶§´Â ¸ðµç µ¥ÀÌÅÍ°¡ È¸±Í¼± »ó¿¡ ³õ ¿© ÀÖ´Â »óÅÂ·Î¼­ È¸±Í½ÄÀÌ yÀÇ ÀüÃ¼ º¯µ¿À» 
-              ¿ÏÀüÈ÷ ¼³¸íÇÏ°í ÀÖ´Â »óÅÂ¸¦ ÀÇ¹ÌÇÏ°Ô µÇ¸ç R- Square°¡ 0ÀÏ ¶§´Â x¿Í y°£¿¡ ÀüÇô °ü°è°¡ ¾ø´Â »óÅÂ¸¦ ÀÇ¹ÌÇÏ°Ô 
-              µÈ´Ù.<br>
-              ÀÏ¹ÝÀûÀ¸·Î R-Square°¡ 80% ÀÌ»óÀÌ¸é ÇØ´ç È¸±Í Á÷¼±ÀÌ ¸Å¿ì ÀûÀýÇÏ´Ù°í ÆÇ´ÜÇÒ ¼ö ÀÖ´Ù.<br>
-              <br>
-              <br>
-              <b><font size="2">3. ±â Å¸ </font></b><br>
+                R-Sq =53% (Ç´ 0.53)  Ç¹Ì´ Ç°   Ö´ Ã¼   53% Ã° 
+               È¸Í½   Ö°,  47% Ã°Î´    Ì¶  Ç¹Ñ´.  
+              Ã° Ì¿Ü¿ Ù¸  Ã£  Ç°   Ö´    Ö¾ Ñ´.<br>
+              R-Square 0 1    , R-Square  Å¬   è°¡ Ù´  
+              Ç¹Ñ´. R-Square 1   Í° È¸Í¼    Ö´ Â·Î¼ È¸Í½ y Ã¼  
+               Ï° Ö´ Â¸ Ç¹Ï° Ç¸ R- Square 0  x y  è°¡  Â¸ Ç¹Ï° 
+              È´.<br>
+              Ï¹ R-Square 80% Ì»Ì¸ Ø´ È¸  Å¿ Ï´Ù° Ç´  Ö´.<br>
               <br>
               <br>
-              3.1 ÀÜÂ÷ ºÐ¼® <br>
+              <b><font size="2">3.  Å¸ </font></b><br>
               <br>
-              È¸±ÍºÐ¼®¿¡ ÀÖ¾î¼­ ÀÜÂ÷ºÐ¼®Àº ¿ÀÂ÷Ç×¿¡ ´ëÇÑ °¡Á¤ °ËÅä¸¦ ÅëÇØ ¸ðÇüÀÇ ÀûÇÕ¼ºÀ» µûÁö´Âµ¥ Áß¿äÇÑ ¿ªÇÒÀ» ÇÑ´Ù. ÀÜÂ÷¶õ 
-              ½ÇÁ¦°ª¿¡¼­ ¸ðÇü¿¡ ÀÇÇØ ÀûÇÕµÈ °ªÀ» »« °ÍÀ¸·Î, ÀÜÂ÷ÀÇ µµ½Ã¸¦ ÅëÇØ È¸±ÍºÐ¼®ÀÇ ±âº» °¡Á¤ÀÎ ¿ÀÂ÷Ç×ÀÇ Á¤±Ô¼º °¡Á¤, 
-              µ¶¸³¼º °¡Á¤, µîºÐ»ê¼º °¡Á¤À» °ËÅäÇÒ ¼ö ÀÖ´Ù. ÀÜÂ÷ÀÇ Á¾·ù¿¡´Â ¾Æ·¡ÀÇ ¼¼°¡Áö°¡ ÀÖ´Ù.<br>
+              <br>
+              3.1  Ð¼ <br>
+              <br>
+              È¸ÍºÐ¼ Ö¾î¼­ Ð¼ ×¿   ä¸¦   Õ¼ Âµ ß¿  Ñ´.  
+                 Õµ   ,  Ã¸  È¸ÍºÐ¼ âº»   Ô¼ , 
+               , Ð»ê¼º    Ö´.   Æ·  Ö´.<br>
               <br>
               <img src="images/Regression2_18.gif" width="350" height="160"> <br>
               <br>
-              2.4¿¡ ¼³¸íÇÑ ÀÜÂ÷ ºÐ¼® °úÁ¤°ú´Â º°µµ·Î Stat - Regression - Regression¿¡¼­ Graph ¹öÆ°À» 
-              Å¬¸¯ÇÏ¿© ÀûÀýÇÑ ÀÜÂ÷ ºÐ¼®À» ½Ç½ÃÇÒ ¼ö ÀÖÀ¸¸ç, ±× °á°ú´Â 2.4ÀÇ Stat - Regression - Residual 
-              Plots°ú °°´Ù.<br>
+              2.4   Ð¼   Stat - Regression - Regression Graph Æ° 
+              Å¬Ï¿   Ð¼ Ç½  ,   2.4 Stat - Regression - Residual 
+              Plots .<br>
               <br>
               <br>
-              3.2 ÀýÆí ¾ø´Â È¸±Í¸ðÇü<br>
+              3.2   È¸Í¸<br>
               <br>
-              No intercept ¸ðÇüÀº È¸±Í¸ðÇü Áß ÀýÆí (intercept)°¡ ¾ø´Â ¸ðÇüÀ¸·Î ¾Æ·¡¿Í °°´Ù. <br>
+              No intercept  È¸Í¸   (intercept)   Æ· . <br>
               <br>
               <img src="images/Regression2_21.gif" width="105" height="17"> <br>
               <br>
-              No intercept ¸ðÇüÀº (y, x) = (0,0) Áï ¿øÁ¡À» Áö³ª°Ô µÈ´Ù. Áï, ÀÌ ¸ðÇüÀº ´ëºÎºÐ ÀÌ·ÐÀû ¹è°æ 
-              (Æ¯È÷ ¹°¸®/È­ÇÐ)ÀÌ µÞ¹ÞÄ§ µÇ¾î¾ß¸¸ À¯È¿ÇÒ ¼ö ÀÖ´Â ¸ðÇüÀÌ´Ù. ¿¹¸¦ µé¸é, ¹ÝÀÀº¯¼ö y°¡ Æ¯Á¤ È­ÇÕ¹°ÀÇ ¹ÝÀÀ·®ÀÌ°í 
-              µ¶¸³º¯¼ö°¡ ¿Âµµ xÀÏ ¶§, Æ¯Á¤ È­ÇÕ¹°ÀÇ °æ¿ì, È­¾¾ 0µµ¿¡¼­ ÀÌ·ÐÀûÀ¸·Î³ª °æÇèÀûÀ¸·Î ¹ÝÀÀÀÌ ÀüÇô ÀÏ¾î³ªÁö ¾Ê´Â´Ù°í 
-              ¾Ë·ÁÁ® ÀÖ´Ù¸é, no intercept ¸ðÇüÀÌ ¸Å¿ì ÀûÀýÇÒ ¼ö ÀÖ´Ù (µ¿ÀÏÇÑ µ¥ÀÌÅÍ¿¡ ´ëÇØ, ÀýÆíÀÌ ÀÖ´Â ¸ðÇüº¸´Ù 
-              °áÁ¤°è¼ö °ªÀÌ ÀÛ°Ô °è»êµÇ¹Ç·Î ÀÌ·ÐÀû ¹è°æÀÌ µÞ¹ÞÄ§ÀÌ µÈ´Ù¸é È¿°úÀûÀÎ È¸±Í½ÄÀ» ±¸ÇÒ ¼ö ÀÖ°Ô µÈ´Ù.)<br>
+              No intercept  (y, x) = (0,0)    È´. ,   Îº Ì·  
+              (Æ¯ /È­) Þ¹Ä§ Ç¾ß¸ È¿  Ö´ Ì´.  ,  y Æ¯ È­Õ¹ Ì° 
+               Âµ x , Æ¯ È­Õ¹ , È­ 0 Ì·Î³    Ï¾î³ª Ê´Â´Ù° 
+              Ë· Ö´Ù¸, no intercept  Å¿   Ö´ ( Í¿ ,  Ö´  
+                Û° Ç¹Ç· Ì·  Þ¹Ä§ È´Ù¸ È¿ È¸Í½   Ö° È´.)<br>
               <br>
               <br>
-              3.3 ÀûÇÕ °á¿© °ËÁ¤ (Lack-of-Fit test)<br>
+              3.3  á¿©  (Lack-of-Fit test)<br>
               <br>
-              ÀûÇÕ°á¿© °ËÁ¤ÀÇ ¸ñÀûÀº 1Â÷ ¼±Çü ¸ðÇü°ú 2Â÷ °î¼± ¸ðÇüÀ» ºñ±³ÇÔÀ¸·Î½á °¡Á¤ÇÑ 1Â÷ ¼±Çü ¸ðÇüÀÇ ÀûÇÕ¼º ¿©ºÎ¸¦ ÆÇ´ÜÇÏ´Âµ¥ 
-              ÀÖÀ¸¸ç, ÀÌ °ËÁ¤À» ¼öÇàÇÏ±â À§ÇØ¼­´Â Àû¾îµµ ÇÑ Á¡ ÀÌ»óÀÇ x¿¡¼­ ¹Ýº¹ ½ÇÇèÀÌ ÇÊ¿äÇÏ´Ù. ÀûÇÕ °á¿© °ËÁ¤ °á°ú, À¯ÀÇÈ®·ü 
-              °ªÀÌ »çÀü¿¡ ¼³Á¤ÇÑ À¯ÀÇ¼öÁØº¸´Ù Å©¸é °¡Á¤ÇÑ 1Â÷ ¼±Çü ¸ðÇüÀÌ ÀûÇÕÇÏ´Ù°í ÇÒ ¼ö ÀÖ´Ù (¾Æ·¡ ÇØ¼® ¿¹ ÂüÁ¶). <br>
+              Õ°á¿©   1   2 î¼±  Î½  1   Õ¼ Î¸ Ç´Ï´Âµ 
+              ,   Ï± Ø¼ îµµ   Ì» x Ýº  Ê¿Ï´.  á¿©  , È® 
+                 Ç¼Øº Å©  1   Ï´Ù°   Ö´ (Æ· Ø¼  ). <br>
               <br>
               <img src="images/Regression2_22.gif" width="562" height="258"> <br>
               <br>
-              3.4 ½Å·Ú±¸°£ ¹× ¿¹Ãø±¸°£<br>
+              3.4 Å·Ú±  <br>
               <br>
-              µ¥ÀÌÅÍ¸¦ ÅëÇØ ÀûÇÕµÈ È¸±Í½ÄÀ» ÀÌ¿ëÇÏ¿© µ¶¸³º¯¼ö x°¡ Æ¯Á¤ °ªÀ» °¡Áú ¶§, ¹ÝÀÀº¯¼ö yÀÇ °ª¿¡ ´ëÇÑ ½Å·Ú±¸°£°ú ¿¹Ãø±¸°£À» 
-              °è»êÇÒ ¼ö ÀÖ´Ù. Âü°íÀûÀ¸·Î, ½Å·Ú±¸°£Àº µ¶¸³º¯¼ö x¿¡ ´ëÇÑ ¹ÝÀÀº¯¼ö yÀÇ ±â´ë°ªÀÌ ¼ÓÇÒ ±¸°£À» ÀÇ¹ÌÇÏ¸ç, ¿¹Ãø±¸°£Àº 
-              µ¶¸³º¯¼ö x¿¡ ´ëÇÑ ¹ÝÀÀº¯¼ö yÀÇ °³º°°ªÀÌ ¼ÓÇÒ ±¸°£À» ÀÇ¹ÌÇÑ´Ù. ¿¹¸¦ µé¾î, ¹ÝÀÀ½Ã°£ 9.5¿¡¼­ÀÇ ¼øµµ°ª¿¡ ´ëÇÑ 
-              ½Å·Ú±¸°£°ú ¿¹Ãø±¸°£Àº ´ÙÀ½°ú °°ÀÌ °è»êµÉ ¼ö ÀÖ´Ù. <br>
+              Í¸  Õµ È¸Í½ Ì¿Ï¿  x Æ¯   ,  y   Å·Ú±  
+                Ö´. , Å·Ú±  x   y ë°ª   Ç¹Ï¸,  
+               x   y    Ç¹Ñ´.  , Ã° 9.5   
+              Å·Ú±      Ö´. <br>
               <br>
-              ¸ÕÀú, Stat > Regression > Regression¿¡¼­ Option ¹öÆ°À» Å¬¸¯ÇÏ°í Prediction 
-              intervals for new observations¿¡ '9.5'¸¦ ÀÔ·Â <br>
+              , Stat > Regression > Regression Option Æ° Å¬Ï° Prediction 
+              intervals for new observations '9.5' Ô· <br>
               <br>
               <img src="images/Regression2_23.gif" width="445" height="287"><br>
               <br>
-              ÀÌÈÄ OK ¹öÆ°À» Å¬¸¯ÇÏ¸é, ´ÙÀ½°ú °°Àº °á°ú°¡ SessionÃ¢¿¡ Ãâ·ÂµÈ´Ù. <br>
+               OK Æ° Å¬Ï¸,    SessionÃ¢ ÂµÈ´. <br>
               <br>
               <img src="images/Regression2_24.gif" width="565" height="158"> <br>
               <br>
-              Áï, ¹ÝÀÀ½Ã°£ 9.5¿¡¼­ ¼øµµ°ªÀº Æò±ÕÀûÀ¸·Î 113.73À¸·Î ¿¹ÃøµÇ¸ç, ¼øµµÀÇ Æò±Õ°ªÀÌ 96.66 ~ 130.80¿¡ 
-              ¼ÓÇÒ È®·üÀº 95%·Î ¿¹ÃøµÈ´Ù°í ÇÒ ¼ö ÀÖÀ¸¸ç, ¼øµµÀÇ °³º° °üÃø°ªÀº 70.05~157.42¿¡ ¼ÓÇÒ È®·üÀÌ 95%·Î 
-              ¿¹ÃøµÈ´Ù°í ÇÒ ¼ö ÀÖ´Ù. </font></p>
+              , Ã° 9.5   113.73 Ç¸,  Õ° 96.66 ~ 130.80 
+               È® 95% È´Ù°   ,    70.05~157.42  È® 95% 
+              È´Ù°   Ö´. </font></p>
           </td>
         </tr>
         <tr> 

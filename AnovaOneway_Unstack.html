@@ -1,4 +1,7 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+</head>
 <title>One-Way ANOVA </title>
 
 <style><!--
@@ -27,12 +30,12 @@
             </center>
             <br>
             <br>
-            <font size=3><b><font size="2">1. 사용 방법 <a href="data/Anova02.zip">(데이터 
+            <font size=3><b><font size="2">1.   <a href="data/Anova02.zip">( 
             : Anova02.mtw)</a></font></b></font><br>
             <br>
-            <font size="-1">이번에는 데이터가 Unstacked 형태인 경우 일원배치 분산분석을 수행한다. PVC Resin 
-            입자의 평균 입경은 중합공정의 교반기 종류의 영향을 받는 것으로 예상되어 교반기 종류 4수준(A, B, C, D)에 대하여 
-            5회씩 실험을 실시하였다. 교반기 종류별로 유의한 차이가 있는지 조사하라. <br>
+            <font size="-1">譴 叩 Unstacked   臼치 剋劇 磯. PVC Resin 
+              蹈 卵 膚   濱  퓸 膚  4(A, B, C, D) 臼 
+            5회  퓰臼. 膚   隔 獵 灸. <br>
             </font><br>
           </td>
         </tr>
@@ -44,9 +47,9 @@
           </td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.1 데이터의 입력</b><br>
+          <td > <font size="-1"><b>1.1  韜</b><br>
             <br>
-            MINITAB worksheet에 아래의 데이터를 입력한다. <br>
+            MINITAB worksheet 틔 拷 韜磯. <br>
             <br>
             </font></td>
         </tr>
@@ -58,11 +61,11 @@
             </font></td>
         </tr>
         <tr> 
-          <td > <font size="-1"><b>1.2 Interval Plot을 그려본다.</b><br>
+          <td > <font size="-1"><b>1.2 Interval Plot 瀏.</b><br>
             <br>
-            Interval Plot를 그리려면 먼저 데이터를 Stack해야 한다.<br>
+            Interval Plot 琉  拷 Stack瞞 磯.<br>
             <br>
-            ① Manip > Stack > Stack Columns 선택<br>
+             Manip > Stack > Stack Columns <br>
             <br>
             </font></td>
         </tr>
@@ -74,9 +77,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ② Stack the following columns란에 A B 
-            C D를 입력하고 Column of current Worksheet 란에 <br>
-            &nbsp;&nbsp;&nbsp; '입경'을 입력하고 Store subscripts in란에 '종류'를 입력 </font></td>
+          <td ><font size="-1">  Stack the following columns A B 
+            C D 韜構 Column of current Worksheet  <br>
+            &nbsp;&nbsp;&nbsp; '蹈' 韜構 Store subscripts in '' 韜 </font></td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -88,9 +91,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ③ OK 버튼을 클릭 <br>
+          <td ><font size="-1">  OK 튼 클 <br>
             <br>
-            <b> [ Worksheet에 나타난 결과</b></font> <b>]</b></td>
+            <b> [ Worksheet 타 </b></font> <b>]</b></td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -100,12 +103,12 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> A열에서 D열까지 데이터가 Stack되어 '입경'과 '종류'에 
-            저장되었다. <br>
+          <td ><font size="-1"> A D 叩 Stack퓸 '蹈' '' 
+            퓸. <br>
             <br>
             <br>
             <br>
-            ④ Stat > ANOVA > Interval Plot 선택<br>
+             Stat > ANOVA > Interval Plot <br>
             <br>
             </font></td>
         </tr>
@@ -117,8 +120,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ⑤ Y variable 란에 '입경'와 Group variable란에 
-            '종류'를 입력 </font></td>
+          <td ><font size="-1">  Y variable  '蹈' Group variable 
+            '' 韜 </font></td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -130,9 +133,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ⑥ OK 버튼을 클릭<br>
+          <td ><font size="-1">  OK 튼 클<br>
             <br>
-            <b> &nbsp;&nbsp; [ Graph 창에 나타난 결과 ]</b></font> </td>
+            <b> &nbsp;&nbsp; [ Graph 창 타  ]</b></font> </td>
         </tr>
         <tr> 
           <td> <font size="-1"><br>
@@ -142,14 +145,14 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> 교반기 A와 B의 입경이 교반기C와 D에 비해 작으며 표준오차 
-            구간도 넓어 보인다.<br>
+          <td ><font size="-1"> 膚 A B 蹈 膚C D   표萬 
+             棘 灌.<br>
             <br>
             <br>
             <br>
-            <b>1.3 분산분석을 실시한다.</b><br>
+            <b>1.3 剋劇 퓰磯.</b><br>
             <br>
-            ① Stat > ANOVA > One-way (Unstacked) 선택<br>
+             Stat > ANOVA > One-way (Unstacked) <br>
             </font></td>
         </tr>
         <tr> 
@@ -161,8 +164,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> ② Responses란에 A-D를 입력한다. 이것은 A B C 
-            D를 입력한 것과 같다.<br>
+          <td ><font size="-1">  Responses A-D 韜磯. 隔 A B C 
+            D 韜 叩 .<br>
             <br>
             </font></td>
         </tr>
@@ -174,9 +177,9 @@
             </font></td>
         </tr>
         <tr> 
-          <td><font size="-1"> ③ OK 버튼을 클릭한다.<br>
+          <td><font size="-1">  OK 튼 클磯.<br>
             <br>
-            <b>[ Session 창에 나타난 결과 ]</b><br>
+            <b>[ Session 창 타  ]</b><br>
             </font></td>
         </tr>
         <tr> 
@@ -186,8 +189,8 @@
             </font></td>
         </tr>
         <tr> 
-          <td ><font size="-1"> 위의 결과에서 P-value가 0.101이므로 교반기 종류가 평균입경에 
-            유의한 영향을 미친다고 볼 수 없다.<br>
+          <td ><font size="-1">   P-value 0.101譴퓐 膚  蹈嚥� 
+              친鳴   .<br>
             <br>
             </font> 
             <hr size=1 color=#C0BDD6 width=90% align=center>

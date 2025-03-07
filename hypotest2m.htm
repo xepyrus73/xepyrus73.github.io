@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>¸ðºÐ»êÀÇ °ËÁ¤(Hypothesis tests of variance)</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+<title>Ð» (Hypothesis tests of variance)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script language="JavaScript" src="test.js"></script>
 </head>
@@ -21,117 +23,117 @@
         <tr> 
           <td height="153"><a href="hypotest2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/b_basic_on.gif',1)"><img name="Image19" border="0" src="images/B_basic.gif" width="55" height="24"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/b_pro01_on.gif',1)"><img name="Image18" border="0" src="images/B_pro01.gif" width="55" height="24"></a><br>
             <br>
-            <font size="4" color="#a70105"><b><font color="#a70105">¸ðºÐ»êÀÇ °ËÁ¤(Hypothesis 
+            <font size="4" color="#a70105"><b><font color="#a70105">Ð» (Hypothesis 
             tests of variance)</font></b></font><br>
             <br>
                 
             <br>
             <ul>
-              <li><font size="-1"> <a href="#1">Åë°èÀû °¡¼³°ËÁ¤ÀÇ °³¿ä</a> <br>
+              <li><font size="-1"> <a href="#1">  </a> <br>
                 </font> 
-              <li> <font size="-1"> MINITABÀ» »ç¿ëÇÑ ºÐ»êÀÇ °ËÁ¤<br>
+              <li> <font size="-1"> MINITAB  Ð» <br>
                 <a href="hypovar2.htm">- 2 Variances</a><br>
                 <a href="equal_var.htm">- Test for Equal Variances</a></font> 
             </ul>
             <br>
-            <font size=3><b><a name="1"></a>Åë°èÀû °¡¼³ °ËÁ¤(Hypothesis Test)</b></font><br>
+            <font size=3><b><a name="1"></a>  (Hypothesis Test)</b></font><br>
                 <br>
-                <b><font size="2">1. °¡¼³ °ËÁ¤ÀÌ¶õ? </font></b><br>
+                <b><font size="2">1.  Ì¶? </font></b><br>
                 <br>
-            <font size="-1">¸ðÁý´ÜÀÇ ºÐÆ÷ ¸ð¾çÀÌ³ª ¸ð¼ö (Æò±Õ, ºÐ»ê, ºÒ·®·ü µî) ¿¡ ´ëÇÑ °¡¼³À» ¼¼¿ì°í, »ùÇÃ¿¡ 
-            ±âÃÊÇÏ¿© °¡¼³ÀÇ Ã¤ÅÃ ¶Ç´Â ±â°¢À» °áÁ¤ÇÏ´Â Åë°èÀû ±â¹ýÀ» ¸»ÇÑ´Ù. ¿¹¸¦ µé¾î AÈ¸»ç¿¡¼­ »ý»êÇÑ Á¦Ç°ÀÇ Æò±Õ ¼ö¸íÀº 60,000km¶ó´Â 
-            ÁÖÀåÀ» ÇßÀ» ¶§ ÀÌ¿Í °°Àº ÁÖÀåÀº °¡¼³ÀÌ µÈ´Ù. ÀÌ·¯ÇÑ °¡¼³À» °ËÁ¤ÇÏ±â À§ÇÏ¿© Á¦Ç° 30°³¸¦ ÀÓÀÇ·Î ¼±ÅÃÇÏ¿© ¼ö¸í½ÃÇè 
-            ÈÄ ÀÌ¸¦ ±âÃÊ·Î °¡¼³ÀÇ Ã¤ÅÃÀÌ³ª ±â°¢À» °áÁ¤ÇÏ´Â °ÍÀ» ¸»ÇÑ´Ù. <br>
+            <font size="-1">  Ì³  (, Ð», Ò· )    , Ã¿ 
+            Ï¿  Ã¤ Ç´ â°¢ Ï´   Ñ´.   AÈ¸ç¿¡  Ç°   60,000km 
+               Ì¿    È´. Ì·  Ï± Ï¿ Ç° 30 Ç· Ï¿  
+             Ì¸ Ê·  Ã¤Ì³ â°¢ Ï´  Ñ´. <br>
             </font><font size="2"><b><br>
-                2. ¿ë¾î Á¤ÀÇ </b></font><br>
+                2.   </b></font><br>
                 <br>
-                <font size="-1">2.1 ´ë¸³°¡¼³ H<sub>1</sub>°ú ±Í¹«°¡¼³ H<sub>0</sub> <br>
+                <font size="-1">2.1 ë¸³ H<sub>1</sub> Í¹ H<sub>0</sub> <br>
                 <br>
-                - ´ë¸³°¡¼³ (Alternative Hypothesis : H<sub>1</sub> )<br>
-                »ùÇÃ·ÎºÎÅÍ È®½ÇÇÑ ±Ù°Å¿¡ ÀÇÇÏ¿© ÀÔÁõÇÏ°íÀÚ ÇÏ´Â °¡¼³·Î¼­, ÈçÈ÷ H<sub>1</sub>À¸·Î ³ªÅ¸³½ ´Ù. ÁÖ·Î 
-                ¿ì¸®ÀÇ °ü½ÉÀº ´ë¸³°¡¼³¿¡ ÀÖ´Ù°í º¼ ¼ö ÀÖ´Ù. <br>
+                - ë¸³ (Alternative Hypothesis : H<sub>1</sub> )<br>
+                Ã·Îº È® Ù°Å¿ Ï¿ Ï° Ï´ Î¼,  H<sub>1</sub> Å¸ . Ö· 
+                ì¸®  ë¸³ Ö´Ù°   Ö´. <br>
                 <br>
-                - ±Í¹«°¡¼³ (Null Hypothesis : H<sub>o</sub> )<br>
-                ´ë¸³°¡¼³°ú »ó¹ÝµÇ´Â °¡¼³·Î¼­ ÈçÈ÷ H<sub>0</sub>À¸·Î ³ªÅ¸³½´Ù. ÀÏ¹ÝÀûÀ¸·Î ¾Ë·ÁÁ® ÀÖ´Â »ç½ÇÀº ±Í¹«°¡¼³·Î 
-                ¼³Á¤ÇÑ´Ù. <br>
-                <br>
-                <br>
-                2.2 À¯ÀÇ¼öÁØ(Significance level)ÀÌ¶õ? <br>
-                <br>
-                ±Í¹«°¡¼³ H0 °¡ ÂüÀÏ ¶§ ±Í¹«°¡¼³À» ±â°¢ÇÏ´Â ¿À·ù¸¦ ¹üÇÒ È®·üÀÇ ÃÖ´ë Çã¿ë ÇÑ°èÀÌ ´Ù. ÀÏ¹ÝÀûÀ¸·Î À¯ÀÇ¼öÁØÀ» 
-                ³ªÅ¸³»±â À§ÇÏ¿© <font face="symbol">a</font>¶ó´Â ±âÈ£¸¦ »ç¿ëÇÑ´Ù. °¡¼³°ËÁ¤¿¡¼­ ´Â ¿À·ùÀÇ 
-                Çã¿ë È®·üÀ» ¹Ì¸® Á¤ÇØ³õ°í, ±× ±âÁØ¿¡ µû¶ó °¡¼³ÀÇ Ã¤ÅÃÀÌ³ª ±â°¢À» °áÁ¤ÇÏ°Ô µÈ´Ù. <br>
+                - Í¹ (Null Hypothesis : H<sub>o</sub> )<br>
+                ë¸³ ÝµÇ´ Î¼  H<sub>0</sub> Å¸. Ï¹ Ë· Ö´  Í¹ 
+                Ñ´. <br>
                 <br>
                 <br>
-                2.3 P-Value¿Í À¯ÀÇ¼öÁØÀÇ °ü°è<br>
+                2.2 Ç¼(Significance level)Ì¶? <br>
                 <br>
-                P-Value´Â ±Í¹«°¡¼³ H0¸¦ ±â°¢ÇßÀ» ¶§, ¿ì¸®ÀÇ ÆÇ´ÜÀÌ Àß¸øµÇ¾úÀ» È®·üÀ» ÀÇ¹ÌÇÑ´Ù. µû¶ó¼­ À¯ÀÇ¼öÁØ <font face="symbol">a</font>º¸´Ù 
-                P-Value°¡ ÀÛ°Ô µÇ¸é ±Í¹«°¡¼³ H0¸¦ ±â°¢ÇÒ ¼ö ÀÖ´Ù. <br>
+                Í¹ H0    Í¹ â°¢Ï´   È® Ö´  Ñ° . Ï¹ Ç¼ 
+                Å¸ Ï¿ <font face="symbol">a</font> È£ Ñ´.    
+                 È® Ì¸ Ø³,  Ø¿   Ã¤Ì³ â°¢ Ï° È´. <br>
                 <br>
                 <br>
-                2.4 ½Å·Ú±¸°£(Confidence Interval) <br>
+                2.3 P-Value Ç¼ <br>
                 <br>
-                ½Å·Ú±¸°£ : ¹ÌÁöÀÇ ¸ð¼ö <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle">(Æò±Õ, 
-                Ç¥ÁØÆíÂ÷, ¶Ç´Â ºÒ·®·üÀÌ µÉ ¼ö ÀÖ´Ù)¿¡ ´ëÇÏ¿© <br>
-                µÎ Åë°è·® <img src="images/HypoTest1m_02.gif" width="110" height="20" align="absmiddle">°ú 
-                <img src="images/HypoTest1m_03.gif" width="109" height="20" align="absmiddle">°¡ 
-                ÀÖ¾î¼­ <br>
+                P-Value Í¹ H0 â°¢ , ì¸® Ç´ ß¸Ç¾ È® Ç¹Ñ´.  Ç¼ <font face="symbol">a</font> 
+                P-Value Û° Ç¸ Í¹ H0 â°¢  Ö´. <br>
+                <br>
+                <br>
+                2.4 Å·Ú±(Confidence Interval) <br>
+                <br>
+                Å·Ú± :   <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle">(, 
+                Ç¥, Ç´ Ò·   Ö´) Ï¿ <br>
+                 è·® <img src="images/HypoTest1m_02.gif" width="110" height="20" align="absmiddle"> 
+                <img src="images/HypoTest1m_03.gif" width="109" height="20" align="absmiddle"> 
+                Ö¾î¼­ <br>
                 <br>
                 <img src="images/HypoTest1m_04.gif" width="319" height="19"><br>
                 <br>
-                À» ¸¸Á·ÇÒ ¶§, <img src="images/HypoTest1m_02.gif" width="110" height="20" align="absmiddle">°ú 
-                <img src="images/HypoTest1m_03.gif" width="109" height="20" align="absmiddle">¸¦ 
-                °¢°¢ ¸ð¼ö <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle">¿¡ 
-                ´ëÇÑ <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle">½Å·Ú»óÇÑ 
-                ¹× ½Å·ÚÇÏÇÑÀÌ¶ó°í ÇÑ´Ù. <br>
-                ½Å·Ú±¸°£ÀÇ ÇØ¼®Àº ´ÙÀ½ÀÇ µÎ ±¸°£ÀÌ ¹ÌÁöÀÇ ¸ð¼ö <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle">¸¦ 
-                Æ÷ÇÔÇÒ È®·üÀÌ <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle">ÀÓÀ» 
-                ÀÇ¹ÌÇÑ´Ù. ¿©±â¼­ <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle">¸¦ 
-                ½Å·Ú¼öÁØ(Confidence Level)ÀÌ¶ó ÇÑ´Ù. <br>
+                  , <img src="images/HypoTest1m_02.gif" width="110" height="20" align="absmiddle"> 
+                <img src="images/HypoTest1m_03.gif" width="109" height="20" align="absmiddle"> 
+                  <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle"> 
+                 <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle">Å·Ú» 
+                 Å·Ì¶ Ñ´. <br>
+                Å·Ú± Ø¼      <img src="images/HypoTest1m_01.gif" width="17" height="18" align="absmiddle"> 
+                 È® <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle"> 
+                Ç¹Ñ´. â¼­ <img src="images/HypoTest1m_05.gif" width="67" height="17" align="absmiddle"> 
+                Å·Ú¼(Confidence Level)Ì¶ Ñ´. <br>
                 <br>
                 <img src="images/HypoTest1m_08.gif" width="241" height="23"> <br>
                 <br>
                 <br>
-                <b><font size="2">3. °¡¼³ °ËÁ¤ÀÇ Á¾·ù </font></b><br>
+                <b><font size="2">3.    </font></b><br>
                 <br>
                 <br>
-                3.1 ¸ðÆò±ÕÀÇ °ËÁ¤<br>
+                3.1  <br>
                 <br>
-                - ÇÑ °³ÀÇ ¸ðÆò±Õ¿¡ °üÇÑ °¡¼³ÀÇ °ËÁ¤<br>
-            <a href="hypomean_z2.htm">1-Sample Z</a> : Ç¥ÁØÆíÂ÷¸¦ ¾Ë ¶§ ¸ðÆò±ÕÀÇ °ËÁ¤<br>
-            <a href="hypomean_1t2.htm">1-Sample t</a> : Ç¥ÁØÆíÂ÷¸¦ ¸ð¸¦ ¶§ ¸ðÆò±ÕÀÇ °ËÁ¤<br>
+                -   Õ¿   <br>
+            <a href="hypomean_z2.htm">1-Sample Z</a> : Ç¥    <br>
+            <a href="hypomean_1t2.htm">1-Sample t</a> : Ç¥    <br>
                 <br>
-                - µÎ °³ ¸ðÆò±ÕÀÇ ºñ±³<br>
-            <a href="hypomean_2t2.htm">2-Sample t</a> : ¼­·Î µ¶¸³ÀÎ µÎ Áý´ÜÀÇ Æò±Õ ºñ±³¸¦ À§ÇØ 
-            »ç¿ë <br>
-            <a href="hypomean_pair2.htm">Paired t</a> : µ¥ÀÌÅÍ°¡ ½ÖÀÇ ÇüÅÂ¸¦ ¶é ¶§, µÎ Á¶ÀÇ 
-            ¸ðÆò±Õ Â÷¿¡ °üÇÑ °ËÁ¤<br>
-                <br>
-                <br>
-                3.2 ¸ðºÐ»êÀÇ °ËÁ¤ <br>
-                <br>
-                - ¿©·¯ °³ ºÐ»êÀÇ µ¿ÀÏ¼º °ËÁ¤<br>
-            <a href="hypovar2.htm">2 Variances</a> : µÎ °³ ¸ðÁý´ÜÀÇ ºÐ»ê¿¡ ´ëÇÑ µ¿ÀÏ¼º °ËÁ¤<br>
-            <a href="equal_var.htm">Test for Equal Variances</a> : µÎ °³ ÀÌ»ó ¸ðÁý´ÜÀÇ 
-            ºÐ»ê¿¡ ´ëÇÑ µ¿ÀÏ¼º °ËÁ¤ <br>
+                -    <br>
+            <a href="hypomean_2t2.htm">2-Sample t</a> :      ñ±³¸  
+             <br>
+            <a href="hypomean_pair2.htm">Paired t</a> : Í°  Â¸  ,   
+               <br>
                 <br>
                 <br>
-                3.3 ¸ðºñÀ²ÀÇ °ËÁ¤ <br>
+                3.2 Ð»  <br>
                 <br>
-                - ÇÑ °³ÀÇ ¸ðºñÀ²¿¡ °üÇÑ °¡¼³ÀÇ °ËÁ¤<br>
-            <a href="hypoprop_1p2.htm">1 Proportion</a> : ¸ðºñÀ² p¿¡ °üÇÑ °ËÁ¤<br>
-                - µÎ °³ÀÇ ¸ðºñÀ² Â÷¿¡ °üÇÑ °¡¼³ÀÇ °ËÁ¤<br>
-            <a href="hypoprop_2p2.htm">2 Proportions</a> : µÎ ¸ðºñÀ²ÀÇ Â÷ÀÎ <img src="images/HypoProp_2P2_08.gif" width="40" height="18" align="absmiddle">¿¡ 
-            °üÇÑ °ËÁ¤ </font><font size="-1"> <br>
+                -   Ð» Ï¼ <br>
+            <a href="hypovar2.htm">2 Variances</a> :    Ð»ê¿¡  Ï¼ <br>
+            <a href="equal_var.htm">Test for Equal Variances</a> :   Ì»  
+            Ð»ê¿¡  Ï¼  <br>
                 <br>
                 <br>
-            3.4 <a href="hypochi2.htm">Ä«ÀÌÁ¦°ö °ËÁ¤</a><br>
+                3.3   <br>
                 <br>
-            ¹üÁÖÇü ÀÚ·áÀÇ °¡¼³°ËÁ¤À» À§ÇØ È°¿ëµÇ´Â °ËÁ¤ ¹æ¹ýÀ¸·Î °ËÁ¤ÀÇ Á¾·ù´Â µ¶¸³¼º °ËÁ¤, µ¿ÀÏ¼º °ËÁ¤ ¹× ÀûÇÕµµ °ËÁ¤ÀÌ ÀÖ´Ù. 
-            ¿©±â¼­, ¹üÁÖÇü ÀÚ·á(Categorical Data)¶õ, ¿¹¸¦ µé¾î Á¶»ç´ë»óÀ» ³²ÀÚ ¶Ç´Â ¿©ÀÚ·Î ºÐ·ùÇÏ°Å³ª, Áúº´ÀÇ Ä¡·á 
-            °á°ú¸¦ ¾ÇÈ­, Çö»óÀ¯Áö, È£Àü µîÀ¸·Î ºÐ·ùÇÏ°Å³ª, ¶Ç´Â Á¦Ç°ÀÇ °Ë»ç°á°ú¸¦ ¾çÈ£, º¸Åë, ºÒ·® µîÀ¸·Î ºÐ·ùÇÏ´Â °æ¿ì°¡ ÀÖ´Ù. 
-            ÀÌ¿Í °°ÀÌ ÃøÁ¤ °á°ú¸¦ Æ¯Á¤ ¼Ó¼ºÀÌ³ª ¹üÁÖ·Î ±¸ºÐÇÏ¿© µ¾¼ö·Î ³ªÅ¸³½ ÀÚ·á¸¦ ¹üÁÖÇü ÀÚ·á¶ó°í ÇÑ´Ù. ¹üÁÖÇü ÀÚ·á´Â ÀÌ»êÇü 
-            ÀÚ·áÀÇ ÀÏÁ¾ÀÌ´Ù.</font> </td>
+                -      <br>
+            <a href="hypoprop_1p2.htm">1 Proportion</a> :  p  <br>
+                -       <br>
+            <a href="hypoprop_2p2.htm">2 Proportions</a> :    <img src="images/HypoProp_2P2_08.gif" width="40" height="18" align="absmiddle"> 
+              </font><font size="-1"> <br>
+                <br>
+                <br>
+            3.4 <a href="hypochi2.htm">Ä« </a><br>
+                <br>
+             Ú·   È°Ç´      , Ï¼   Õµ  Ö´. 
+            â¼­,  Ú·(Categorical Data),     Ç´ Ú· Ð·Ï°Å³,  Ä¡ 
+             È­, , È£  Ð·Ï°Å³, Ç´ Ç° Ë» È£, , Ò·  Ð·Ï´ ì°¡ Ö´. 
+            Ì¿    Æ¯ Ó¼Ì³ Ö· Ï¿  Å¸ Ú·á¸¦  Ú· Ñ´.  Ú· Ì» 
+            Ú· Ì´.</font> </td>
         </tr>
         <tr> 
           <td> <br>

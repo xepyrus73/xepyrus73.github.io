@@ -1,5 +1,8 @@
 <html>
-<title>ÀÌ¿ø¹èÄ¡¹ý</title>
+<head>
+    <meta charset="UTF-8">
+</head>
+<title>Ì¿Ä¡</title>
 <style><!--
 .leading200 { line-height: 200% }
 .leading180 { line-height: 180% }
@@ -21,16 +24,16 @@
             <center>
               <font size="4" color="#a70105"></font>
               <div align="left"> <b><font size="4" color="#a70105"><font color="#000000"> 
-                <font color="#a70105">ÀÌ¿ø¹èÄ¡¹ý(Two-way ANOVA)</font></font></font></b></div>
+                <font color="#a70105">Ì¿Ä¡(Two-way ANOVA)</font></font></font></b></div>
             </CENTER>
             <br>
             <br>
                        <br>
             <UL>
-              <LI><A HREF=#1><font size="-1">ºÐ»êºÐ¼®(ANOVA)ÀÇ °³¿ä</font></a> <font size="-1"><br>
+              <LI><A HREF=#1><font size="-1">Ð»Ð¼(ANOVA) </font></a> <font size="-1"><br>
                 <br>
                 </font> 
-              <LI><font size="-1"><A HREF=AnovaTwoway.html#1>MINITABÀ» »ç¿ëÇÑ ÀÌ¿ø¹èÄ¡¹ý 
+              <LI><font size="-1"><A HREF=AnovaTwoway.html#1>MINITAB  Ì¿Ä¡ 
                 (Two-way ANOVA)</a> <br>
                 <br>
                 <br>
@@ -39,50 +42,50 @@
 
             <br>
             <br>
-            <a name="1"></a><font size=3 ><b> ºÐ»êºÐ¼®(Analysis of Variance)</b></font><br>
+            <a name="1"></a><font size=3 ><b> Ð»Ð¼(Analysis of Variance)</b></font><br>
             <br><br>
-            <font size=3><b><font size="2">1. ºÐ»êºÐ¼®(ANOVA)ÀÌ¶õ?</font></b></font><br>
+            <font size=3><b><font size="2">1. Ð»Ð¼(ANOVA)Ì¶?</font></b></font><br>
             <br>
-            <font size="-1">½ÇÇè°èÈ¹¹ý¿¡¼­ °¡Àå ¸¹ÀÌ »ç¿ëµÇ´Â µ¥ÀÌÅÍ ºÐ¼®¹æ¹ýÀ¸·Î ÃøÁ¤°ªÀÇ »êÆ÷¸¦ ¿©·¯ º¯µ¿¿äÀÎº°·Î ºÐÇØÇÏ¿© 
-            ¾î¶² ¿äÀÎÀÌ ÃøÁ¤°ª¿¡ °¡Àå Å« ¿µÇâÀ» ¹ÌÄ¡´Â°¡¸¦ ÆÄ¾ÇÇÏ´Â ¹æ¹ýÀÌ´Ù. ÀÌ·¯ÇÑ ÆÇ´ÜÀ» À§ÇØ °¡¼³°ËÁ¤ ¹× <a href="Regression.html">È¸±ÍºÐ¼®</a> 
-            µîÀÇ Åë°èÀû ±â¹ýÀÌ µ¿¿øµÈ´Ù.<br>
-            ¿¹¸¦ µé¾î ¾î´À ±Ý¼ÓºÎÇ°ÀÇ ÀÎÀå°­µµ°¡ ¾î¶² »ý»êÁ¶°Ç¿¡¼­ °¡Àå °­ÇÑÁö¸¦ ¾Ë±â À§ÇØ ÀÎÀå°­µµ¿¡ °¡Àå Å« ¿µÇâÀ» ¹ÌÄ¥ °ÍÀ¸·Î 
-            ¿¹»óµÇ´Â 4°¡ÁöÀÇ ÇÕ¼º¿Âµµ 100¡ÆC, 120¡ÆC, 140¡ÆC, 160¡ÆC¿Í 3°¡Áö Á¦Á¶°ø¹ý A, B, C¿¡¼­ °¢°¢ ·£´ýÇÏ°Ô 
-            ½ÇÇèÀ» ÇÏ¿© ÃøÁ¤°ªÀ» ¾ò¾ú´Ù°í ÇÏÀÚ. ÀÌ ¼öÁýµÈ ÃøÁ¤°ªµé¿¡´Â ÇÕ¼º¿ÂµµÀÇ Â÷ÀÌ, Á¦Á¶°ø¹ýÀÇ Á¾·ù, ÇÕ¼º¿Âµµ¿Í Á¦Á¶°ø¹ý °£ÀÇ 
-            Á¶ÇÕ¿¡ µû¸¥ È¿°ú, ½ÇÇè ¿ÀÂ÷ µî ¿©·¯ °¡Áö ¿øÀÎÀ¸·Î ÀÎÇÏ¿© º¯µ¿ÀÌ Á¸ÀçÇÏ°Ô µÈ´Ù. ºÐ»êºÐ¼®Àº ÀÌ·¯ÇÑ ÃøÁ¤°ªµéÀÇ º¯µ¿À» 
-            ¿äÀÎº°·Î ºÐÇØÇÏ°í ÇÊ¿äÇÑ Åë°è·®µéÀ» °è»êÇÏ¿© ÀÌ·¯ÇÑ º¯µ¿ÀÌ À¯ÀÇÇÑ °ÍÀÎÁö¸¦ °ËÁ¤ÇÔÀ¸·Î½á ¾î¶² ¿Âµµ¿Í Á¦Á¶°ø¹ýÀÌ °¡Àå °­ÇÑ 
-            ÀÎÀå°­µµ¸¦ ÁÖ´ÂÁö¸¦ ¿¹»óÇÏ°í ÇÊ¿äÇÑ Á¤º¸¸¦ ¾ò¾î¼­ °øÁ¤À» °³¼±ÇÒ ¼ö ÀÖ´Ù.<br>
-            ÀÏ¹ÝÀûÀ¸·Î ÀÌ¸¦ À§ÇØ¼­ ½ÇÇè¼³°è, ½ÇÇè¼öÇà, µ¥ÀÌÅÍ ¼öÁý ¹× ºÐ¼®ÀÇ °úÁ¤À» °ÅÄ¡°Ô µÈ´Ù. ¿Ã¹Ù¸¥ ½ÇÇè°èÈ¹ ¹× ºÐ¼®Àº ¸Å¿ì 
-            Áß¿äÇÏ¸ç ºÐ¼®¹æ¹ý°ú ¿¬°üÁö¾î ½ÇÇèÀ» ¼³°èÇÏ´Â °ÍÀÌ º¸ÅëÀÌ´Ù. ¸ðµç ½ÇÇèÀº ·£´ýÇÏ°Ô ¼±ÅÃµÈ ¼ø¼­¿¡ ÀÇÇÏ¿© ½Ç½ÃµÇ¾î¾ß ÇÏ¸ç 
-            ±×·¸Áö ¸øÇÑ °æ¿ì¿¡´Â º°µµÀÇ ½ÇÇè°èÈ¹ ¹× ¹æ¹ýÀ¸·Î ºÐ¼®ÇØ¾ß ÇÑ´Ù. <br>
-            ºÐ»êºÐ¼®¿¡¼­´Â ÃøÁ¤°ª¿¡ ¿µÇâÀ» ¹ÌÄ¡´Â ÇÕ¼º¿Âµµ¿Í Á¦Á¶°ø¹ý °°Àº ÀÎÀÚ(Factor)°¡ ¸î °³ÀÌ¸ç ¾î¶»°Ô °áÇÕµÇ¾î ÃøÁ¤°ª¿¡ 
-            ÀÛ¿ëÇÏ¸ç µ¿ÀÏÁ¶°Ç¿¡¼­ ½ÇÇèÀ» ¸î ¹ø ¹Ýº¹Çß´Â°¡ µî¿¡ µû¶ó ÀÏ¿ø¹èÄ¡¹ý, ÀÌ¿ø¹èÄ¡¹ý, ´Ù¿ø¹èÄ¡¹ý µî ¿©·¯ ½ÇÇè¸ðÇüÀ» ±¸¼ºÇÏ¿© 
-            ¿øÇÏ´Â ºÐ¼®À» ¼öÇàÇÒ ¼ö ÀÖ´Ù.<br>
+            <font size="-1">È¹   Ç´  Ð¼    Îº Ï¿ 
+            î¶²    Å«  Ä¡Â° Ä¾Ï´ Ì´. Ì· Ç´    <a href="Regression.html">È¸ÍºÐ¼</a> 
+               È´.<br>
+               Ý¼ÓºÇ° å°­ î¶² Ç¿   Ë±  å°­  Å«  Ä¥  
+            Ç´ 4 Õ¼Âµ 100C, 120C, 140C, 160C 3  A, B, C  Ï° 
+             Ï¿  Ù° .   é¿¡ Õ¼Âµ ,  , Õ¼Âµ   
+            Õ¿  È¿,       Ï¿  Ï° È´. Ð»Ð¼ Ì·   
+            Îº Ï° Ê¿ è·® Ï¿ Ì·    Î½ î¶² Âµ    
+            å°­ Ö´ Ï° Ê¿  î¼­    Ö´.<br>
+            Ï¹ Ì¸ Ø¼ è¼³, ,    Ð¼  Ä¡ È´. Ã¹Ù¸ È¹  Ð¼ Å¿ 
+            ß¿Ï¸ Ð¼   Ï´  Ì´.   Ï° Ãµ  Ï¿ Ç½ÃµÇ¾ Ï¸ 
+            ×·  ì¿¡  È¹   Ð¼Ø¾ Ñ´. <br>
+            Ð»Ð¼   Ä¡ Õ¼Âµ   (Factor)  Ì¸ î¶» ÕµÇ¾  
+            Û¿Ï¸ Ç¿    Ýºß´Â° î¿¡  Ï¿Ä¡, Ì¿Ä¡, Ù¿Ä¡    Ï¿ 
+            Ï´ Ð¼   Ö´.<br>
             <br>
             <br>
-            <b><font size="2">2. ÀÎÀÚ¿Í ¸ðÇü</font></b></font><br>
+            <b><font size="2">2. Ú¿ </font></b></font><br>
             <br> 
 <br>
-            <font size=2><b><font size="-1">2.1. ÀÎÀÚ(Factor)¿Í ¼öÁØ(Level)</font></b></font><font size="-1"><br>
+            <font size=2><b><font size="-1">2.1. (Factor) (Level)</font></b></font><font size="-1"><br>
             <br>
-            ÃøÁ¤°ª¿¡ ¿µÇâÀ» ÁÖ´Â ¿øÀÎÀÇ Á¾·ù¸¦ ÀÎÀÚ¶ó°í ÇÑ´Ù. À§ÀÇ ¿¹¿¡¼­´Â ÀÎÀå°­µµ¿¡ ¿µÇâÀ» ¹ÌÄ¡´Â ÇÕ¼º¿Âµµ, Á¦Á¶°ø¹ýÀÌ ÀÎÀÚ¿¡ 
-            ÇØ´çµÈ´Ù. ¼öÁØÀº ÀÎÀÚÀÇ ¿©·¯ °¡Áö Á¶°ÇÀ» ¶æÇÑ´Ù. Áï, À§¿¡¼­ ÇÕ¼º¿ÂµµÀÇ ¼öÁØÀº 100¡ÆC, 120¡ÆC, 140¡ÆC, 
-            160¡ÆC 4°³ÀÌ¸ç Á¦Á¶°ø¹ýÀÇ ¼öÁØÀº A, B, C 3°³ÀÌ´Ù. ÀÎÀÚ´Â ÀÎÀÚÀÇ ¼º°Ý¿¡ µû¶ó ¸ð¼öÀÎÀÚ¿Í º¯·®ÀÎÀÚ·Î ±¸ºÐµÈ´Ù.<br>
+              Ö´   Ú¶ Ñ´.   å°­  Ä¡ Õ¼Âµ,  Ú¿ 
+            Ø´È´.      Ñ´. ,  Õ¼Âµ  100C, 120C, 140C, 
+            160C 4Ì¸   A, B, C 3Ì´. Ú´  Ý¿  Ú¿ Ú· ÐµÈ´.<br>
             <br>
-            - ¸ð¼öÀÎÀÚ(Fixed Factor): °¢ ¼öÁØÀÌ ±â¼úÀûÀÎ ÀÇ¹Ì¸¦ °¡Áö°í ÀÖ´Â ÀÎÀÚÀÌ´Ù. ÇÕ¼º¿Âµµ¿Í Á¦Á¶°ø¹ýÀº ¼öÁØ¿¡ 
-            µû¶ó ÀÎÀå°­µµ¿¡ ±â¼úÀûÀ¸·Î ¿µÇâÀ» ¹ÌÄ¡¹Ç·Î ¸ð¼öÀÎÀÚ¿¡ ÇØ´çÇÑ´Ù.<br>
+            - (Fixed Factor):    Ç¹Ì¸  Ö´ Ì´. Õ¼Âµ  Ø¿ 
+             å°­   Ä¡Ç· Ú¿ Ø´Ñ´.<br>
             <br>
-            - º¯·®ÀÎÀÚ(Random Factor): °¢ ¼öÁØÀÌ ±â¼úÀûÀÎ ÀÇ¹Ì¸¦ °®Áö ¾Ê°í ¼öÁØÀÇ ¼±ÅÃÀÌ ·£´ýÇÏ°Ô ÀÌ·ç¾îÁø ÀÎÀÚÀÌ´Ù. 
-            ¿©·¯ ´ë»ó Áß¿¡¼­ ·£´ýÇÏ°Ô ¼±Á¤µÈ ÀÛ¾÷ÀÚ, ½ÇÇèÀÏ, ½ÇÇè±¸¿ª µîÀº º¯·®ÀÎÀÚÀÌ´Ù. ¸¸ÀÏ ÀÛ¾÷ÀÚ¸¦ ¼÷·Ã, º¸Åë, ¹Ì¼÷·Ã¿¡¼­ 
-            ¼±¹ßÇß´Ù¸é ÀÌ¶§´Â ÀÛ¾÷ÀÚ´Â ±â¼úÀûÀÎ ÀÇ¹Ì°¡ ÀÖ´Â ¸ð¼öÀÎÀÚ°¡ µÈ´Ù.<br>
+            - (Random Factor):    Ç¹Ì¸  Ê°   Ï° Ì· Ì´. 
+              ß¿ Ï°  Û¾, , è±¸  Ì´.  Û¾Ú¸ , , Ì¼Ã¿ 
+            ß´Ù¸ Ì¶ Û¾Ú´  Ç¹Ì° Ö´ Ú° È´.<br>
             <br>
             <br>
-            <b>2.2. ¸ðÇü(Model)</b><br>
+            <b>2.2. (Model)</b><br>
             <br>
-            »ç¿ëÇÏ´Â ÀÎÀÚÀÇ Á¾·ù¿¡ µû¶ó ¸ð¼ö¸ðÇü, º¯·®¸ðÇü, È¥ÇÕ¸ðÇü µîÀ¸·Î ºÐ·ùµÈ´Ù.<br>
-            - ¸ð¼ö¸ðÇü(Fixed Model): ¸ð¼öÀÎÀÚ¸¸À¸·Î ±¸¼ºµÈ ¸ðÇü<br>
-            - º¯·®¸ðÇü(Random Model): º¯·®ÀÎÀÚ¸¸À¸·Î ±¸¼ºµÈ ¸ðÇü<br>
-            - È¥ÇÕ¸ðÇü(Mixed Model): ¸ð¼öÀÎÀÚ¿Í º¯·®ÀÎÀÚ°¡ ¼¯¿© ÀÖ´Â ¸ðÇü<br>
+            Ï´    , , È¥Õ¸  Ð·È´.<br>
+            - (Fixed Model): Ú¸  <br>
+            - (Random Model): Ú¸  <br>
+            - È¥Õ¸(Mixed Model): Ú¿ Ú°  Ö´ <br>
             <br>
             </font> 
             <hr size=1 color=#C0BDD6 width=90% align=center>
